@@ -10,7 +10,7 @@ import { generateBlogListSchema } from '@/lib/schema';
 import { blogPosts, getBlogCategories } from '@/data/blog-posts';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Painting Tips & Blog | Paint-Techs LLC Jacksonville FL',
+  title: 'Painting Tips & Blog - Paint-Techs LLC Jacksonville FL',
   description: 'Expert painting tips, guides, and advice from Jacksonville painting professionals. Learn about color selection, preparation, maintenance, and more.',
   path: '/blog',
 });

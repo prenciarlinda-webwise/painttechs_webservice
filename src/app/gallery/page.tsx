@@ -63,23 +63,6 @@ export default function GalleryPage() {
         </Container>
       </section>
 
-      {/* Service Category Links */}
-      <section className="py-6 bg-white border-b border-gray-100">
-        <Container>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/gallery/exterior" className="px-5 py-2.5 bg-orange-50 hover:bg-orange-100 text-orange-700 rounded-lg font-medium transition-colors text-sm">
-              Exterior Painting Gallery
-            </Link>
-            <Link href="/gallery/interior" className="px-5 py-2.5 bg-teal-50 hover:bg-teal-100 text-teal-700 rounded-lg font-medium transition-colors text-sm">
-              Interior Painting Gallery
-            </Link>
-            <Link href="/gallery/cabinet" className="px-5 py-2.5 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg font-medium transition-colors text-sm">
-              Cabinet Painting Gallery
-            </Link>
-          </div>
-        </Container>
-      </section>
-
       {/* Filter Tabs */}
       <section className="py-6 bg-gray-50 sticky top-0 z-20">
         <Container>
@@ -176,7 +159,18 @@ export default function GalleryPage() {
                     </svg>
                     {project.location}
                   </div>
-                  <p className="text-gray-600 text-sm line-clamp-2">{project.description}</p>
+                  <p className="text-gray-600 text-sm line-clamp-2 mb-3">{project.description}</p>
+                  {project.projectUrl && (
+                    <Link
+                      href={project.projectUrl}
+                      className="inline-flex items-center gap-1 text-orange-500 font-semibold text-sm hover:text-orange-600 hover:gap-2 transition-all"
+                    >
+                      View Project
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}

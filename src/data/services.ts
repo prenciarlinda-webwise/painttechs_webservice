@@ -25,7 +25,7 @@ export const servicesData: ServiceDetail[] = [
     heroTitle: 'Professional Interior Painting Services',
     heroSubtitle: 'Transform Your Jacksonville Home with Expert Interior Painting',
     description: 'Our professional interior painting services bring new life to your living spaces. From single rooms to complete home makeovers, Paint-Techs delivers flawless results with premium paints and meticulous attention to detail.',
-    image: '/images/interior/interior-painting-before-after-nocatee-fl-1.webp',
+    image: '/images/interior-painting-before-after-nocatee-fl-1.webp',
     longDescription: `At Paint-Techs LLC, we understand that your home's interior is a reflection of your personal style. Our experienced painting professionals are dedicated to transforming your living spaces with precision, care, and exceptional craftsmanship.
 
 We use only premium quality paints and materials from trusted brands, ensuring vibrant colors that last for years. Our team handles everything from thorough surface preparation to the final clean-up, leaving you with beautiful, freshly painted rooms without the hassle.
@@ -55,7 +55,7 @@ Whether you're looking to refresh a single room, update your entire home, or nee
       { question: 'Do you offer color consultation?', answer: 'Yes! Our experienced team can help you choose the perfect colors that complement your home\'s style and lighting.' },
     ],
     keywords: ['interior painting', 'house painting', 'room painting', 'wall painting', 'residential painting'],
-    metaTitle: 'Interior Painting Services Jacksonville FL | Paint-Techs LLC',
+    metaTitle: 'Interior Painting Services Jacksonville FL - Paint-Techs LLC',
     metaDescription: 'Professional interior painting services in Jacksonville, FL. Expert painters, premium paints, and flawless results. Get a free quote from Paint-Techs LLC today!',
   },
   {
@@ -65,7 +65,7 @@ Whether you're looking to refresh a single room, update your entire home, or nee
     heroTitle: 'Exterior House Painting Services in Jacksonville, FL',
     heroSubtitle: 'Florida-Certified Painters Protecting Your Home from Sun, Salt & Humidity',
     description: 'Jacksonville\'s trusted exterior house painters since 2018. Paint-Techs LLC specializes in weather-resistant exterior painting that protects your home from Florida\'s intense UV rays, coastal salt air, and humidity while boosting curb appeal.',
-    image: '/images/exterior/exterior-painting-nocatee-fl-1.webp',
+    image: '/images/exterior-painting-nocatee-fl-1.webp',
     longDescription: `## Why Jacksonville Homes Need Specialized Exterior Painting
 
 Your home's exterior faces unique challenges in Northeast Florida. The combination of intense UV radiation, high humidity, salt air (especially in beach communities), and seasonal storms can deteriorate exterior paint faster than in other regions. That's why Paint-Techs LLC uses only premium, Florida-formulated exterior coatings designed for our climate.
@@ -124,7 +124,7 @@ Unlike national chains, we're a local Jacksonville painting company that underst
       { question: 'Can you help with HOA color approval?', answer: 'Absolutely. Many Jacksonville communities (Nocatee, Ponte Vedra, World Golf Village) have strict HOA color requirements. We can help you select approved colors and submit samples to your HOA for pre-approval.' },
     ],
     keywords: ['exterior painting jacksonville fl', 'house painters jacksonville', 'exterior house painting', 'outside house painters near me', 'jacksonville painting contractors', 'exterior paint jacksonville'],
-    metaTitle: 'Exterior Painting Jacksonville FL | House Painters Near You | Paint-Techs LLC',
+    metaTitle: 'Exterior Painting Jacksonville FL - House Painters Near You - Paint-Techs LLC',
     metaDescription: 'Top-rated exterior house painting in Jacksonville, FL. Weather-resistant coatings, wood rot repair, 5-year warranty. Free estimates: (904) 762-7062. Serving Nocatee, Ponte Vedra & St. Augustine.',
   },
   {
@@ -133,8 +133,8 @@ Unlike national chains, we're a local Jacksonville painting company that underst
     slug: 'cabinet-painting',
     heroTitle: 'Professional Cabinet Painting & Refinishing in Jacksonville, FL',
     heroSubtitle: 'Transform Your Kitchen at 50-70% Less Than Cabinet Replacement Cost',
-    description: 'Jacksonville\'s trusted cabinet painting and refinishing experts. Paint-Techs LLC delivers factory-smooth finishes that transform dated cabinets into stunning focal points—without the cost or hassle of full replacement.',
-    image: '/images/cabinet/cabinet-painting-before-after-nocatee-fl-1.webp',
+    description: 'Jacksonville\'s trusted cabinet painting and refinishing experts. Paint-Techs LLC delivers factory-smooth finishes that transform dated cabinets into stunning focal points, without the cost or hassle of full replacement.',
+    image: '/images/cabinet-painting-before-after-nocatee-before-after.webp',
     longDescription: `Are you considering a kitchen update but dreading the $15,000-$50,000 price tag for new cabinets? Cabinet painting and refinishing from Paint-Techs LLC offers Jacksonville homeowners a smarter alternative that delivers dramatic results at a fraction of the cost.
 
 ## Cabinet Refinishing vs. Replacement: The Smart Choice
@@ -156,7 +156,7 @@ Many Jacksonville homeowners don't realize that professional cabinet refinishing
 
 At Paint-Techs LLC, we've refined our cabinet painting process to deliver results that rival factory finishes. We use professional HVLP spray equipment and specialized cabinet coatings from Sherwin-Williams and Benjamin Moore that are specifically formulated for cabinetry.
 
-Our meticulous preparation process—including TSP cleaning, deglossing, sanding, and bonding primer application—ensures your painted cabinets will resist chipping, peeling, and everyday wear for 10+ years.
+Our meticulous preparation process, including TSP cleaning, deglossing, sanding, and bonding primer application, ensures your painted cabinets will resist chipping, peeling, and everyday wear for 10+ years.
 
 ## Popular Cabinet Painting Trends in Jacksonville
 
@@ -177,7 +177,7 @@ Jacksonville homeowners are embracing these cabinet color trends:
       '10+ year durability with proper care',
     ],
     process: [
-      { step: 1, title: 'Free In-Home Assessment', description: 'We evaluate your cabinets\' condition, discuss color options, and provide an exact quote—no surprises.' },
+      { step: 1, title: 'Free In-Home Assessment', description: 'We evaluate your cabinets\' condition, discuss color options, and provide an exact quote, no surprises.' },
       { step: 2, title: 'Professional Preparation', description: 'Cabinet doors and drawers are carefully removed, labeled, and transported. All surfaces are TSP-cleaned, deglossed, and sanded.' },
       { step: 3, title: 'Bonding Primer Application', description: 'We apply specialized bonding primer designed specifically for cabinetry to ensure maximum paint adhesion.' },
       { step: 4, title: 'HVLP Spray Finishing', description: 'Multiple coats of premium cabinet paint are applied using professional spray equipment for a flawless, factory-smooth finish.' },
@@ -188,10 +188,10 @@ Jacksonville homeowners are embracing these cabinet color trends:
       { question: 'Can any type of cabinet be painted?', answer: 'Yes! We successfully paint wood, MDF, laminate, and thermofoil cabinets. Our specialized primers and preparation techniques ensure proper adhesion on virtually any cabinet surface. We\'ll assess your specific cabinets during our free consultation.' },
       { question: 'How long does cabinet refinishing take?', answer: 'Most kitchen cabinet projects are completed in 3-5 days. We work efficiently while ensuring each coat cures properly. You\'ll have limited kitchen access during the project, but full use of your kitchen within a week.' },
       { question: 'Will painted cabinets hold up to daily use?', answer: 'Absolutely. We use commercial-grade cabinet coatings designed for high-traffic areas. With proper care, professionally painted cabinets last 10-15 years. Our finish resists chips, scratches, and moisture far better than DIY approaches.' },
-      { question: 'What\'s the difference between cabinet painting and refinishing?', answer: 'Cabinet painting and cabinet refinishing are often used interchangeably. Both involve applying new finish to existing cabinets. We use the term "refinishing" to emphasize our comprehensive process that includes repair, prep, primer, and multiple finish coats—not just paint over existing finish.' },
+      { question: 'What\'s the difference between cabinet painting and refinishing?', answer: 'Cabinet painting and cabinet refinishing are often used interchangeably. Both involve applying new finish to existing cabinets. We use the term "refinishing" to emphasize our comprehensive process that includes repair, prep, primer, and multiple finish coats, not just paint over existing finish.' },
     ],
     keywords: ['cabinet painting jacksonville', 'cabinet refinishing jacksonville', 'kitchen cabinet painting', 'cabinet painting cost', 'cabinet refinishing cost', 'kitchen cabinet refinishing', 'painted cabinets jacksonville'],
-    metaTitle: 'Cabinet Painting Jacksonville FL | Refinishing from $3,500 | Paint-Techs LLC',
+    metaTitle: 'Cabinet Painting Jacksonville FL - Refinishing from $3,500 - Paint-Techs LLC',
     metaDescription: 'Professional cabinet painting & refinishing in Jacksonville, FL. Save 50-70% vs replacement. Factory-smooth finish, 3-5 day completion. Free quotes: (904) 762-7062',
   },
   {
@@ -201,7 +201,7 @@ Jacksonville homeowners are embracing these cabinet color trends:
     heroTitle: 'Commercial Painting Services',
     heroSubtitle: 'Professional Painting Solutions for Jacksonville Businesses',
     description: 'Paint-Techs provides professional commercial painting services for offices, retail spaces, restaurants, and industrial facilities throughout Jacksonville and Northeast Florida.',
-    image: '/images/commercial/commercial-painting-nocatee-fl-1.webp',
+    image: '/images/commercial-painting-company-jacksonville.webp',
     longDescription: `Your commercial space makes a powerful first impression on clients, customers, and employees. At Paint-Techs LLC, we understand that businesses have unique painting needs, including minimal disruption, strict timelines, and professional results.
 
 Our commercial painting services cover a wide range of properties, from small offices and retail stores to large warehouses and multi-unit complexes. We work flexible hours, including evenings and weekends, to minimize impact on your business operations.
@@ -231,7 +231,7 @@ We're equipped to handle specialty coatings for high-traffic areas, epoxy floor 
       { question: 'Can you handle large multi-location projects?', answer: 'Yes, we have the capacity and experience to manage multiple locations simultaneously while maintaining quality and consistency.' },
     ],
     keywords: ['commercial painting', 'office painting', 'business painting', 'industrial painting', 'retail painting'],
-    metaTitle: 'Commercial Painting Services Jacksonville FL | Paint-Techs LLC',
+    metaTitle: 'Commercial Painting Services Jacksonville FL - Paint-Techs LLC',
     metaDescription: 'Professional commercial painting in Jacksonville, FL. Offices, retail, restaurants & industrial. Flexible scheduling, minimal disruption. Get a free estimate!',
   },
 ];

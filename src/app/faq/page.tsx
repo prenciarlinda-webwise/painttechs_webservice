@@ -9,7 +9,7 @@ import { generateMetadata } from '@/lib/metadata';
 import { faqData, getCategories, getFAQsByCategory } from '@/data/faq';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'FAQ | Painting Questions Answered | Paint-Techs LLC',
+  title: 'FAQ - Painting Questions Answered - Paint-Techs LLC',
   description: 'Frequently asked questions about painting services in Jacksonville, FL. Learn about our process, pricing, timelines, and more. Paint-Techs LLC has answers!',
   path: '/faq',
 });

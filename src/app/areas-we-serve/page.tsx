@@ -10,7 +10,7 @@ import { locationsData } from '@/data/locations';
 import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Service Areas | Painters in Jacksonville & Northeast Florida',
+  title: 'Service Areas - Painters in Jacksonville & Northeast Florida',
   description: 'Paint-Techs LLC serves Jacksonville, Nocatee, Ponte Vedra Beach, St. Augustine, and all of Northeast Florida. Professional painting services near you. Free estimates!',
   path: '/areas-we-serve',
 });

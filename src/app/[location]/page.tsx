@@ -59,8 +59,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
 
   // Get testimonials from this area or nearby
   const localTestimonials = testimonials.filter(
-    (t) => t.location.toLowerCase().includes(locationData.name.toLowerCase()) ||
-           t.location.toLowerCase().includes('jacksonville')
+    (t) => t.location.toLowerCase().includes(locationData.name.toLowerCase()) || t.location.toLowerCase().includes('jacksonville')
   ).slice(0, 3);
 
   return (

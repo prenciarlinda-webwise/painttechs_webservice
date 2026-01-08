@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Container, SectionHeading, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
@@ -8,7 +9,7 @@ import { generateAboutPageSchema } from '@/lib/schema';
 import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'About Paint-Techs LLC | Jacksonville Painting Contractor',
+  title: 'About Paint-Techs LLC - Jacksonville Painting Contractor',
   description: 'Learn about Paint-Techs LLC, Jacksonville\'s trusted painting contractor. Our experienced team delivers quality interior, exterior, and cabinet painting services throughout Northeast Florida.',
   path: '/about',
 });
@@ -194,7 +195,7 @@ export default function AboutPage() {
                 Experienced Professionals You Can Trust
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Our painters aren&apos;t just employees—they&apos;re skilled craftsmen who take pride in their work. Each team member is carefully selected, background-checked, and trained to meet our high standards.
+                Our painters aren&apos;t just employees, they&apos;re skilled craftsmen who take pride in their work. Each team member is carefully selected, background-checked, and trained to meet our high standards.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 We invest in ongoing training and education to ensure our team stays current with the latest techniques, products, and safety practices. When Paint-Techs arrives at your home, you can expect professionalism, respect, and expert workmanship.

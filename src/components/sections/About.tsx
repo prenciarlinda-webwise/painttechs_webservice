@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container, Button } from '@/components/ui';
 import { BUSINESS_INFO } from '@/lib/constants';
 
@@ -83,28 +84,31 @@ export default function About() {
 
           {/* Image/Visual Side */}
           <div className="relative">
-            <div className="relative z-10 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl p-8 text-white">
-              <div className="text-6xl font-bold mb-4">5+</div>
-              <p className="text-xl font-semibold mb-2">Years Serving Jacksonville</p>
-              <p className="text-teal-100 mb-8">
-                Hundreds of satisfied customers throughout Northeast Florida trust Paint-Techs for their painting needs.
-              </p>
+            {/* Main project image */}
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/exterior-painting-nocatee-fl-1.webp"
+                alt="Professional exterior painting project in Nocatee FL"
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover"
+              />
+            </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 rounded-xl p-4 text-center">
+            {/* Stats overlay card */}
+            <div className="absolute -bottom-6 left-6 z-20 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl p-5 text-white shadow-xl">
+              <div className="flex items-center gap-6">
+                <div className="text-center">
                   <div className="text-3xl font-bold">500+</div>
-                  <div className="text-sm text-teal-100">Projects</div>
+                  <div className="text-xs text-teal-100">Projects</div>
                 </div>
-                <div className="bg-white/10 rounded-xl p-4 text-center">
+                <div className="w-px h-12 bg-white/20"></div>
+                <div className="text-center">
                   <div className="text-3xl font-bold">5.0</div>
-                  <div className="text-sm text-teal-100">Google Rating</div>
+                  <div className="text-xs text-teal-100">Google Rating</div>
                 </div>
               </div>
             </div>
-
-            {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-2xl -z-10"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-navy-800 rounded-2xl -z-10"></div>
           </div>
         </div>
       </Container>

@@ -21,7 +21,7 @@ export const locationsData: LocationData[] = [
     description: 'Jacksonville\'s trusted painting contractor since 2018. Paint-Techs LLC provides professional interior, exterior, cabinet, and commercial painting services throughout Duval County. 5-star rated with 50+ Google reviews.',
     longDescription: `## Professional Painting Contractor Serving Jacksonville, FL
 
-Paint-Techs LLC is proud to be one of Jacksonville's most trusted painting contractors. As Florida's largest city by area, Jacksonville offers diverse neighborhoods, architectural styles, and painting challenges—and we've worked in all of them.
+Paint-Techs LLC is proud to be one of Jacksonville's most trusted painting contractors. As Florida's largest city by area, Jacksonville offers diverse neighborhoods, architectural styles, and painting challenges, and we've worked in all of them.
 
 ## Serving Every Jacksonville Neighborhood
 
@@ -42,13 +42,13 @@ Paint-Techs LLC is proud to be one of Jacksonville's most trusted painting contr
 
 ## Why Jacksonville Homeowners Choose Paint-Techs
 
-**Local Business, Local Knowledge:** We're not a franchise or national chain. Paint-Techs LLC is a Jacksonville painting company that knows Jacksonville homes—from the humidity challenges near the St. Johns River to the salt exposure in beach-adjacent areas.
+**Local Business, Local Knowledge:** We're not a franchise or national chain. Paint-Techs LLC is a Jacksonville painting company that knows Jacksonville homes, from the humidity challenges near the St. Johns River to the salt exposure in beach-adjacent areas.
 
 **5-Star Reputation:** With 50+ five-star Google reviews, Jacksonville homeowners trust Paint-Techs for quality workmanship.
 
 **Climate Expertise:** Jacksonville's combination of humidity, UV exposure, and occasional storms requires the right products applied correctly. We use premium Sherwin-Williams and Benjamin Moore paints formulated for Florida conditions.
 
-**Full-Service Painting:** Interior painting, exterior painting, cabinet refinishing, and commercial painting—all from one trusted contractor.`,
+**Full-Service Painting:** Interior painting, exterior painting, cabinet refinishing, and commercial painting, all from one trusted contractor.`,
     highlights: [
       'Jacksonville\'s 5-star rated painting contractor',
       'Serving all Duval County neighborhoods',
@@ -58,7 +58,7 @@ Paint-Techs LLC is proud to be one of Jacksonville's most trusted painting contr
       'Same-day free estimates available',
     ],
     neighborhoods: ['Riverside', 'Avondale', 'San Marco', 'Mandarin', 'Southside', 'Arlington', 'Beaches', 'Northside', 'Westside', 'Ortega', 'Springfield', 'Murray Hill', 'Baymeadows', 'Town Center', 'Lakewood', 'San Jose'],
-    metaTitle: 'Jacksonville Painters | Top-Rated Painting Contractor | Paint-Techs LLC',
+    metaTitle: 'Jacksonville Painters - Top-Rated Painting Contractor - Paint-Techs LLC',
     metaDescription: 'Jacksonville\'s trusted painting contractor. 5-star rated, 50+ reviews. Interior, exterior & cabinet painting throughout Duval County. Free estimates: (904) 762-7062',
     keywords: ['jacksonville painters', 'painting contractor jacksonville fl', 'house painters jacksonville', 'jacksonville painting company', 'painters near me jacksonville', 'duval county painters'],
   },
@@ -69,7 +69,7 @@ Paint-Techs LLC is proud to be one of Jacksonville's most trusted painting contr
     description: 'Nocatee\'s trusted painting contractor since 2018. Paint-Techs LLC specializes in interior, exterior, and cabinet painting for homes throughout Nocatee\'s master-planned neighborhoods in Ponte Vedra.',
     longDescription: `## Professional Painters Serving Nocatee, FL
 
-Paint-Techs LLC is proud to be one of Nocatee's most trusted painting contractors. As one of the nation's top-selling master-planned communities, Nocatee homeowners expect quality—and that's exactly what we deliver.
+Paint-Techs LLC is proud to be one of Nocatee's most trusted painting contractors. As one of the nation's top-selling master-planned communities, Nocatee homeowners expect quality, and that's exactly what we deliver.
 
 ## Painting Every Nocatee Neighborhood
 
@@ -109,7 +109,7 @@ Most Nocatee neighborhoods have HOA guidelines governing exterior paint colors. 
       'Licensed and insured in St. Johns County',
     ],
     neighborhoods: ['Twenty Mile', 'Twenty Mile Village', 'Tidewater', 'Coastal Oaks', 'Austin Park', 'Addison Park', 'Greenleaf Village', 'Lakeside', 'Artisan Lakes', 'Town Center', 'Willowcove', 'Kelly Pointe'],
-    metaTitle: 'Nocatee Painters | Trusted Painting Contractor | Paint-Techs LLC',
+    metaTitle: 'Nocatee Painters - Trusted Painting Contractor - Paint-Techs LLC',
     metaDescription: 'Nocatee\'s preferred painting contractor. HOA-compliant colors, premium paints, serving Twenty Mile, Tidewater & all Nocatee neighborhoods. Free quotes: (904) 762-7062',
     keywords: ['nocatee painters', 'painting contractor nocatee fl', 'house painters nocatee', 'nocatee painting company', 'painters in nocatee', 'nocatee fl painters'],
   },
@@ -120,7 +120,7 @@ Most Nocatee neighborhoods have HOA guidelines governing exterior paint colors. 
     description: 'Premium painting services for Ponte Vedra Beach\'s luxury homes. Paint-Techs LLC serves Sawgrass, Marsh Landing, TPC Sawgrass, and oceanfront properties with expert craftsmanship and marine-grade coatings.',
     longDescription: `## Luxury Home Painting in Ponte Vedra Beach, FL
 
-Paint-Techs LLC is proud to serve Ponte Vedra Beach—one of Northeast Florida's most prestigious coastal communities—with painting services that match its high standards. From oceanfront estates to golf course homes near TPC Sawgrass, we deliver exceptional quality.
+Paint-Techs LLC is proud to serve Ponte Vedra Beach, one of Northeast Florida's most prestigious coastal communities, with painting services that match its high standards. From oceanfront estates to golf course homes near TPC Sawgrass, we deliver exceptional quality.
 
 ## Serving Ponte Vedra's Premier Neighborhoods
 
@@ -144,7 +144,7 @@ Ponte Vedra Beach's oceanfront location creates unique challenges:
 
 ## What Sets Paint-Techs Apart in Ponte Vedra
 
-**Quality Without Compromise:** We use only premium paints and materials—the same products specified by luxury home builders.
+**Quality Without Compromise:** We use only premium paints and materials, the same products specified by luxury home builders.
 
 **Respect for Your Property:** Our crews are professional, clean, and respectful of your home and landscaping.
 
@@ -158,7 +158,7 @@ Ponte Vedra Beach's oceanfront location creates unique challenges:
       'Premium materials and expert craftsmanship',
     ],
     neighborhoods: ['Sawgrass', 'TPC Sawgrass', 'Marsh Landing', 'Ponte Vedra Colony', 'Old Ponte Vedra', 'The Plantation', 'Sawgrass Country Club', 'Sawgrass Players Club', 'Ocean Grande'],
-    metaTitle: 'Ponte Vedra Beach Painters | Luxury Home Painting | Paint-Techs LLC',
+    metaTitle: 'Ponte Vedra Beach Painters - Luxury Home Painting | Paint-Techs LLC',
     metaDescription: 'Premium painting services in Ponte Vedra Beach, FL. Serving Sawgrass, Marsh Landing, TPC Sawgrass area. Marine-grade coatings. Free estimates: (904) 762-7062',
     keywords: ['ponte vedra beach painters', 'painting contractor ponte vedra fl', 'house painters ponte vedra beach', 'ponte vedra painting company', 'luxury home painters ponte vedra', 'sawgrass painters'],
   },
@@ -213,7 +213,7 @@ We work with Atlantic Beach's mix of historic cottages, mid-century homes, and n
     description: 'Top-rated painting contractor serving St. Augustine, FL and all of St. Johns County. Paint-Techs LLC specializes in historic home painting, beach house protection, and residential painting throughout America\'s oldest city.',
     longDescription: `## Top-Rated Painting Contractor in St. Augustine, FL
 
-Paint-Techs LLC is proud to serve St. Augustine—America's oldest city—with professional painting services that honor its unique architectural heritage while providing modern protection against Florida's coastal climate.
+Paint-Techs LLC is proud to serve St. Augustine, America's oldest city, with professional painting services that honor its unique architectural heritage while providing modern protection against Florida's coastal climate.
 
 ## Serving All St. Augustine Neighborhoods
 
@@ -231,7 +231,7 @@ Our painting crews are familiar with every corner of St. Augustine:
 
 ## Why St. Augustine Homeowners Choose Paint-Techs LLC
 
-**Local Expertise:** As a Northeast Florida painting company, we understand St. Johns County's unique combination of historic architecture, coastal exposure, and HOA communities. We're not a national chain—we're local painters who live and work in your community.
+**Local Expertise:** As a Northeast Florida painting company, we understand St. Johns County's unique combination of historic architecture, coastal exposure, and HOA communities. We're not a national chain, we're local painters who live and work in your community.
 
 **Historic Home Experience:** St. Augustine's older homes often require specialized techniques: lead paint encapsulation, preservation-appropriate colors, and careful surface preparation that respects original materials. Our team has the training and experience to handle these projects properly.
 

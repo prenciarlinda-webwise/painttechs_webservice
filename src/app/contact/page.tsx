@@ -7,7 +7,7 @@ import { generateContactPageSchema } from '@/lib/schema';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink, getEmailLink } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Contact Paint-Techs LLC | Free Painting Estimates Jacksonville FL',
+  title: 'Contact Paint-Techs LLC - Free Painting Estimates Jacksonville FL',
   description: 'Contact Paint-Techs LLC for free painting estimates in Jacksonville, FL. Call (904) 762-7062 or message us on WhatsApp. Available 7 days a week, 8AM-10PM.',
   path: '/contact',
 });

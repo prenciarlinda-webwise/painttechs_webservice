@@ -19,7 +19,7 @@ export const generateMetadata = ({
   noIndex = false,
 }: PageMetadata): Metadata => {
   const url = `${BUSINESS_INFO.website}${path}`;
-  const fullTitle = title.includes('Paint-Techs') ? title : `${title} | Paint-Techs LLC`;
+  const fullTitle = title.includes('Paint-Techs') ? title : `${title} - Paint-Techs LLC`;
 
   return {
     title: fullTitle,
@@ -65,8 +65,8 @@ export const generateMetadata = ({
 // Default metadata for the site
 export const defaultMetadata: Metadata = {
   title: {
-    default: 'Paint-Techs LLC | Professional Painting Services Jacksonville FL',
-    template: '%s | Paint-Techs LLC',
+    default: 'Paint-Techs LLC - Professional Painting Services Jacksonville FL',
+    template: '%s - Paint-Techs LLC',
   },
   description: BUSINESS_INFO.description,
   metadataBase: new URL(BUSINESS_INFO.website),
@@ -139,7 +139,7 @@ export const generateLocationMetadata = (
   slug: string
 ): Metadata => {
   return generateMetadata({
-    title: `${locationName} Painters | House Painting ${locationName} FL`,
+    title: `${locationName} Painters - House Painting ${locationName} FL`,
     description: `${description.substring(0, 155)}...`,
     path: `/${slug}-painting-contractor`,
   });

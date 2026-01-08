@@ -9,7 +9,7 @@ import { locationsData } from '@/data/locations';
 import { SERVICES, BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Sitemap | Paint-Techs LLC',
+  title: 'Sitemap - Paint-Techs LLC',
   description: 'Browse all pages on the Paint-Techs LLC website. Find information about our painting services, service areas, gallery, and more.',
   path: '/sitemap-page',
 });

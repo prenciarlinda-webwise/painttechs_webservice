@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container, SectionHeading, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
@@ -9,32 +10,16 @@ import { generateServicesListSchema } from '@/lib/schema';
 import { servicesData } from '@/data/services';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Painting Services Jacksonville FL | Interior, Exterior, Cabinet',
+  title: 'Painting Services Jacksonville FL - Interior, Exterior, Cabinet',
   description: 'Professional painting services in Jacksonville, FL. Interior painting, exterior painting, cabinet refinishing, and commercial painting. Free estimates from Paint-Techs LLC.',
   path: '/services',
 });
 
-const serviceIcons: Record<string, React.ReactNode> = {
-  'interior-painting': (
-    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-    </svg>
-  ),
-  'exterior-painting': (
-    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-    </svg>
-  ),
-  'cabinet-painting': (
-    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-    </svg>
-  ),
-  'commercial-painting': (
-    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-    </svg>
-  ),
+const serviceImages: Record<string, string> = {
+  'interior-painting': '/images/painting-project-jacksonville-fl-10.webp',
+  'exterior-painting': '/images/exterior-painting-nocatee-fl-1.webp',
+  'cabinet-painting': '/images/cabinet-painting-before-after-nocatee-before-after.webp',
+  'commercial-painting': '/images/commercial-painting-company-jacksonville.webp',
 };
 
 export default function ServicesPage() {
@@ -63,37 +48,44 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {servicesData.map((service) => (
               <Link key={service.id} href={`/services/${service.slug}`}>
-                <Card className="h-full group cursor-pointer border-2 border-transparent hover:border-teal-500" padding="lg">
-                  <div className="flex gap-6">
-                    <div className="text-teal-500 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      {serviceIcons[service.slug]}
-                    </div>
-                    <div>
-                      <h2 className="text-2xl font-bold text-navy-800 mb-3 group-hover:text-teal-600 transition-colors">
-                        {service.name}
-                      </h2>
-                      <p className="text-gray-600 mb-4">
-                        {service.description}
-                      </p>
-                      <ul className="space-y-2 mb-6">
-                        {service.benefits.slice(0, 4).map((benefit, index) => (
-                          <li key={index} className="flex items-center gap-2 text-sm text-gray-600">
-                            <svg className="w-4 h-4 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            {benefit}
-                          </li>
-                        ))}
-                      </ul>
-                      <span className="inline-flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
-                        Learn More
-                        <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                    </div>
+                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group h-full border border-gray-100 hover:border-teal-500">
+                  {/* Service Image */}
+                  <div className="relative h-56 overflow-hidden">
+                    <Image
+                      src={serviceImages[service.slug]}
+                      alt={`${service.name} in Jacksonville FL`}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-navy-900/20 to-transparent"></div>
+                    <h2 className="absolute bottom-4 left-6 right-6 text-2xl font-bold text-white">
+                      {service.name}
+                    </h2>
                   </div>
-                </Card>
+
+                  {/* Service Content */}
+                  <div className="p-6">
+                    <p className="text-gray-600 mb-4">
+                      {service.description}
+                    </p>
+                    <ul className="space-y-2 mb-6">
+                      {service.benefits.slice(0, 4).map((benefit, index) => (
+                        <li key={index} className="flex items-center gap-2 text-sm text-gray-600">
+                          <svg className="w-4 h-4 text-teal-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          </svg>
+                          {benefit}
+                        </li>
+                      ))}
+                    </ul>
+                    <span className="inline-flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
+                      Learn More
+                      <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>

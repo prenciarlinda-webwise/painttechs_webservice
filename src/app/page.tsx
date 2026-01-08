@@ -6,7 +6,7 @@ import { generateMetadata } from '@/lib/metadata';
 import { generateHomePageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Professional Painting Services Jacksonville FL | Paint-Techs LLC',
+  title: 'Professional Painting Services Jacksonville FL - Paint-Techs LLC',
   description: 'Paint-Techs LLC is Jacksonville\'s premier painting contractor. Expert interior, exterior, cabinet & commercial painting services. Licensed, insured, 5-star rated. Get a free quote today!',
   path: '/',
 });

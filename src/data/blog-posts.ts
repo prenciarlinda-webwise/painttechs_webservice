@@ -23,11 +23,11 @@ export const blogPosts: BlogPost[] = [
     slug: 'how-to-choose-paint-colors-for-your-home',
     title: 'How to Choose the Perfect Paint Colors for Your Jacksonville Home',
     excerpt: 'Selecting the right paint colors can transform your space. Learn expert tips for choosing colors that complement your home\'s style and Florida\'s unique light.',
-    featuredImage: '/images/interior/interior-painting-before-after-nocatee-fl-1.webp',
+    featuredImage: '/images/interior-painting-before-after-nocatee-fl-1.webp',
     content: `
 # How to Choose the Perfect Paint Colors for Your Jacksonville Home
 
-![Interior painting transformation in Nocatee FL](/images/interior/interior-painting-before-after-nocatee-fl-1.webp)
+![Interior painting transformation in Nocatee FL](/images/interior-painting-before-after-nocatee-fl-1.webp)
 
 Choosing paint colors for your home can feel overwhelming with thousands of options available. However, with the right approach, you can select colors that enhance your space and reflect your personal style.
 
@@ -66,7 +66,7 @@ Never skip the testing phase. Purchase sample pots and paint large swatches (at 
 
 ## Popular Color Trends in Jacksonville
 
-![Interior painting project in Ponte Vedra Beach FL](/images/interior/interior-painting-before-after-ponte-vedra-beach-fl-2.webp)
+![Interior painting project in Ponte Vedra Beach FL](/images/interior-painting-before-after-ponte-vedra-beach-fl-2.webp)
 
 Currently, Jacksonville homeowners are gravitating toward:
 - Coastal-inspired blues and greens
@@ -92,7 +92,7 @@ Ready to transform your Jacksonville home with fresh paint colors? Contact Paint
     publishedAt: '2024-11-15',
     updatedAt: '2024-11-15',
     readingTime: '5 min read',
-    metaTitle: 'How to Choose Paint Colors for Your Jacksonville Home | Paint-Techs',
+    metaTitle: 'How to Choose Paint Colors for Your Jacksonville Home - Paint-Techs',
     metaDescription: 'Expert tips for selecting the perfect paint colors for your Jacksonville home. Learn about lighting, color schemes, and trending colors in Florida.',
   },
   {
@@ -100,13 +100,13 @@ Ready to transform your Jacksonville home with fresh paint colors? Contact Paint
     slug: 'benefits-of-professional-exterior-painting',
     title: 'Why Professional Exterior Painting is Worth the Investment in Florida',
     excerpt: 'Florida\'s climate is tough on home exteriors. Discover why professional exterior painting protects your investment and saves money long-term.',
-    featuredImage: '/images/exterior/exterior-painting-jacksonville-beach-fl-4.webp',
+    featuredImage: '/images/exterior-painting-jacksonville-beach-fl-4.webp',
     content: `
 # Why Professional Exterior Painting is Worth the Investment in Florida
 
-![Professional exterior painting in Jacksonville Beach FL](/images/exterior/exterior-painting-jacksonville-beach-fl-4.webp)
+![Professional exterior painting in Jacksonville Beach FL](/images/exterior-painting-jacksonville-beach-fl-4.webp)
 
-Your home's exterior faces constant challenges from Florida's intense sun, humidity, and occasional storms. Professional exterior painting isn't just about aesthetics—it's essential protection for your most valuable asset.
+Your home's exterior faces constant challenges from Florida's intense sun, humidity, and occasional storms. Professional exterior painting isn't just about aesthetics, it's essential protection for your most valuable asset.
 
 ## Florida's Climate Challenges
 
@@ -143,7 +143,7 @@ We use premium, weather-resistant paints formulated specifically for Florida's c
 
 ### 3. Expert Application
 
-![Exterior painting project in Ponte Vedra Beach FL](/images/exterior/exterior-painting-ponte-vedra-beach-fl-2.webp)
+![Exterior painting project in Ponte Vedra Beach FL](/images/exterior-painting-ponte-vedra-beach-fl-2.webp)
 
 Proper technique matters. We know:
 - Optimal weather conditions for painting
@@ -157,7 +157,7 @@ While professional painting costs more upfront, consider:
 - A professional job typically lasts 7-10 years vs. 3-5 years for DIY
 - Proper preparation prevents wood rot and structural damage
 - Increased curb appeal can boost property values by 2-5%
-- Time savings—no weekends spent on scaffolding
+- Time savings, no weekends spent on scaffolding
 
 ## Signs Your Exterior Needs Painting
 
@@ -186,7 +186,7 @@ Contact Paint-Techs LLC today for a free exterior painting estimate. Let us help
     publishedAt: '2024-10-28',
     updatedAt: '2024-10-28',
     readingTime: '6 min read',
-    metaTitle: 'Benefits of Professional Exterior Painting in Florida | Paint-Techs',
+    metaTitle: 'Benefits of Professional Exterior Painting in Florida - Paint-Techs',
     metaDescription: 'Learn why professional exterior painting is essential for Florida homes. Protect against UV, humidity, and storms with expert painting services.',
   },
   {
@@ -194,11 +194,11 @@ Contact Paint-Techs LLC today for a free exterior painting estimate. Let us help
     slug: 'cabinet-painting-vs-replacement-cost-comparison',
     title: 'Cabinet Painting vs. Replacement: A Complete Cost Comparison',
     excerpt: 'Torn between painting your cabinets or replacing them? This detailed cost comparison helps Jacksonville homeowners make the right choice.',
-    featuredImage: '/images/cabinet/cabinet-painting-before-after-nocatee-fl-1.webp',
+    featuredImage: '/images/cabinet-painting-before-after-nocatee-before-after.webp',
     content: `
 # Cabinet Painting vs. Replacement: A Complete Cost Comparison
 
-![Cabinet painting transformation in Nocatee FL](/images/cabinet/cabinet-painting-before-after-nocatee-fl-1.webp)
+![Cabinet painting transformation in Nocatee FL](/images/cabinet-painting-before-after-nocatee-before-after.webp)
 
 Kitchen renovations are expensive, and cabinets are often the biggest line item. If your cabinets are structurally sound but looking dated, painting might be the smart choice. Let's break down the costs.
 
@@ -236,7 +236,7 @@ Professional cabinet painting for a typical kitchen:
 
 ## Quality Comparison
 
-![Cabinet painting before and after in Ponte Vedra Beach FL](/images/cabinet/cabinet-painting-before-after-ponte-vedra-beach-fl-2.webp)
+![Cabinet painting before and after in Ponte Vedra Beach FL](/images/cabinet-painting-before-after-ponte-vedra-beach-fl-before-after.webp)
 
 ### Can Painted Cabinets Look as Good?
 
@@ -304,7 +304,7 @@ Learn more about our [professional cabinet painting services](/services/cabinet-
     publishedAt: '2024-10-15',
     updatedAt: '2024-10-15',
     readingTime: '7 min read',
-    metaTitle: 'Cabinet Painting vs. Replacement Cost Comparison | Paint-Techs Jacksonville',
+    metaTitle: 'Cabinet Painting vs. Replacement Cost Comparison - Paint-Techs Jacksonville',
     metaDescription: 'Compare the costs of cabinet painting vs. replacement in Jacksonville. Save up to 70% with professional cabinet painting. Free estimates available.',
   },
   {
@@ -312,13 +312,13 @@ Learn more about our [professional cabinet painting services](/services/cabinet-
     slug: 'preparing-your-home-for-painting',
     title: 'How to Prepare Your Home for Professional Painters',
     excerpt: 'Getting ready for your painting project? Here\'s what you should (and shouldn\'t) do before the painters arrive.',
-    featuredImage: '/images/gallery/painting-project-nocatee-fl-1.webp',
+    featuredImage: '/images/painting-project-nocatee-fl-1.webp',
     content: `
 # How to Prepare Your Home for Professional Painters
 
-![Professional painting project in Nocatee FL](/images/gallery/painting-project-nocatee-fl-1.webp)
+![Professional painting project in Nocatee FL](/images/painting-project-nocatee-fl-1.webp)
 
-You've booked your painting project—congratulations! Proper preparation helps ensure the job goes smoothly and your results are beautiful. Here's what to expect and how to prepare.
+You've booked your painting project, congratulations! Proper preparation helps ensure the job goes smoothly and your results are beautiful. Here's what to expect and how to prepare.
 
 ## What We Handle (You Don't Have To)
 
@@ -382,7 +382,7 @@ We use drop cloths, but consider:
 
 ## Exterior Painting Prep
 
-![Exterior painting preparation in Jacksonville FL](/images/exterior/exterior-painting-jacksonville-fl-10.webp)
+![Exterior painting preparation in Jacksonville FL](/images/exterior-painting-jacksonville-fl-10.webp)
 
 ### Landscaping
 
@@ -438,7 +438,7 @@ With proper preparation on both sides, your painting project will be smooth and 
     publishedAt: '2024-09-20',
     updatedAt: '2024-09-20',
     readingTime: '5 min read',
-    metaTitle: 'How to Prepare Your Home for Painters | Paint-Techs Jacksonville',
+    metaTitle: 'How to Prepare Your Home for Painters - Paint-Techs Jacksonville',
     metaDescription: 'Essential tips for preparing your home for professional painters. What to do (and not do) before your Jacksonville painting project begins.',
   },
   {
@@ -446,13 +446,13 @@ With proper preparation on both sides, your painting project will be smooth and 
     slug: 'best-paint-finishes-for-every-room',
     title: 'The Best Paint Finishes for Every Room in Your Home',
     excerpt: 'Flat, eggshell, satin, or semi-gloss? Learn which paint finish works best for each room and why it matters.',
-    featuredImage: '/images/interior/interior-painting-before-after-st-augustine-fl-3.webp',
+    featuredImage: '/images/interior-painting-before-after-st-augustine-fl-3.webp',
     content: `
 # The Best Paint Finishes for Every Room in Your Home
 
-![Interior painting in St Augustine FL](/images/interior/interior-painting-before-after-st-augustine-fl-3.webp)
+![Interior painting in St Augustine FL](/images/interior-painting-before-after-st-augustine-fl-3.webp)
 
-Choosing the right paint color is only half the battle—selecting the proper finish is equally important. The finish affects durability, washability, and appearance. Here's your complete guide.
+Choosing the right paint color is only half the battle, selecting the proper finish is equally important. The finish affects durability, washability, and appearance. Here's your complete guide.
 
 ## Understanding Paint Finishes
 
@@ -500,7 +500,7 @@ However, high-gloss paint shows absolutely every surface imperfection, requiring
 
 ## Room-by-Room Recommendations
 
-![Interior painting project in Atlantic Beach FL](/images/interior/interior-painting-atlantic-beach-fl-15.webp)
+![Interior painting project in Atlantic Beach FL](/images/interior-painting-atlantic-beach-fl-15.webp)
 
 Now that you understand the characteristics of each finish, let's explore specific recommendations for every room in your Jacksonville home. These suggestions balance aesthetics, durability, and practicality for each space's unique demands.
 
@@ -574,7 +574,7 @@ Finally, remember that paint quality matters more than finish level. A high-qual
 
 ## Need Expert Advice?
 
-Choosing finishes can be confusing. Contact Paint-Techs LLC for a free consultation—we'll recommend the perfect finishes for every room in your Jacksonville home!
+Choosing finishes can be confusing. Contact Paint-Techs LLC for a free consultation, we'll recommend the perfect finishes for every room in your Jacksonville home!
 
 ---
 
@@ -589,7 +589,7 @@ Choosing finishes can be confusing. Contact Paint-Techs LLC for a free consultat
     publishedAt: '2024-09-05',
     updatedAt: '2024-09-05',
     readingTime: '12 min read',
-    metaTitle: 'Best Paint Finishes for Every Room | Paint-Techs Jacksonville',
+    metaTitle: 'Best Paint Finishes for Every Room - Paint-Techs Jacksonville',
     metaDescription: 'Learn which paint finishes work best for kitchens, bathrooms, bedrooms, and more. Expert guide from Jacksonville painting professionals.',
   },
 ];

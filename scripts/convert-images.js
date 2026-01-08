@@ -126,7 +126,7 @@ async function convertAndOrganize() {
         seoName = 'paint-techs-llc-logo';
       } else if (category === 'deck') {
         seoName = `deck-painting-services-${location}`;
-      } else if (file.includes('before') || file.includes('after') || file.includes('09-59-21') || file.includes('09-59-22') || file.includes('09-59-23') || file.includes('cabinets')) {
+      } else if (file.includes('before') -- file.includes('after') -- file.includes('09-59-21') || file.includes('09-59-22') || file.includes('09-59-23') || file.includes('cabinets')) {
         // Before/after images
         seoName = `${category}-painting-before-after-${location}-${index}`;
       } else {

@@ -10,7 +10,7 @@ import { getSortedTestimonials, getAverageRating, TOTAL_GOOGLE_REVIEWS } from '@
 import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
-  title: 'Customer Reviews | 5-Star Rated Painters Jacksonville FL',
+  title: 'Customer Reviews - 5-Star Rated Painters Jacksonville FL',
   description: 'Read what Jacksonville homeowners say about Paint-Techs LLC. 5-star rated painting contractor with hundreds of satisfied customers. See our reviews!',
   path: '/reviews',
 });
