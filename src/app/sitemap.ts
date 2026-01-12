@@ -80,8 +80,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Location pages - Critical for Local SEO
+  // Using -house-painters for higher search volume (100 SV vs 40 for contractor)
   const locationPages = locationsData.map((location) => ({
-    url: `${baseUrl}/${location.slug}-painting-contractor`,
+    url: `${baseUrl}/${location.slug}-house-painters`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.85,

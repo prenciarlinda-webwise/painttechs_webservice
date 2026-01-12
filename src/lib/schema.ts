@@ -9,6 +9,7 @@ export const LOCATION_DATA: Record<string, {
   postalCodes: string[];
   county: string;
   fips?: string;
+  wikipediaSameAs?: string;
 }> = {
   'jacksonville': {
     lat: 30.3322,
@@ -18,11 +19,12 @@ export const LOCATION_DATA: Record<string, {
     fips: '12031',
   },
   'nocatee': {
-    lat: 30.0883,
-    lng: -81.4064,
+    lat: 30.1033,
+    lng: -81.3931,
     postalCodes: ['32081', '32082'],
     county: 'St. Johns County',
     fips: '12109',
+    wikipediaSameAs: 'https://en.wikipedia.org/wiki/Nocatee,_Florida',
   },
   'ponte-vedra-beach': {
     lat: 30.2397,
@@ -87,17 +89,18 @@ export const LOCATION_GEO: Record<string, { lat: number; lng: number }> = Object
   Object.entries(LOCATION_DATA).map(([key, value]) => [key, { lat: value.lat, lng: value.lng }])
 );
 
-// LocalBusiness Schema
-export const generateLocalBusinessSchema = () => ({
+// Premium HousePainter Master Schema (Primary schema for homepage)
+// Uses specific HousePainter type for better Local SEO and Map Pack visibility
+export const generateHousePainterSchema = () => ({
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${BUSINESS_INFO.website}/#business`,
-  name: BUSINESS_INFO.name,
-  legalName: BUSINESS_INFO.legalName,
-  description: BUSINESS_INFO.description,
-  url: BUSINESS_INFO.website,
-  telephone: BUSINESS_INFO.phone,
+  '@type': 'HousePainter',
+  '@id': `${BUSINESS_INFO.website}/#localbusiness`,
+  name: 'Paint-Techs LLC - Painting Company',
+  url: `${BUSINESS_INFO.website}/`,
+  telephone: BUSINESS_INFO.phoneRaw,
   email: BUSINESS_INFO.email,
+  image: `${BUSINESS_INFO.website}/logo.png`,
+  priceRange: '$',
   address: {
     '@type': 'PostalAddress',
     addressLocality: BUSINESS_INFO.address.city,
@@ -107,8 +110,8 @@ export const generateLocalBusinessSchema = () => ({
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: BUSINESS_INFO.geo.latitude,
-    longitude: BUSINESS_INFO.geo.longitude,
+    latitude: String(BUSINESS_INFO.geo.latitude),
+    longitude: String(BUSINESS_INFO.geo.longitude),
   },
   openingHoursSpecification: [
     {
@@ -118,13 +121,69 @@ export const generateLocalBusinessSchema = () => ({
       closes: '22:00',
     },
   ],
-  priceRange: '$$',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '41',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Painting Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cabinet Painting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Interior Painting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Exterior Painting' } },
+    ],
+  },
+});
+
+// LocalBusiness Schema (legacy support)
+export const generateLocalBusinessSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'HousePainter',
+  '@id': `${BUSINESS_INFO.website}/#localbusiness`,
+  name: 'Paint-Techs LLC - Painting Company',
+  alternateName: 'Jacksonville Painters',
+  legalName: BUSINESS_INFO.legalName,
+  description: 'Professional Jacksonville painters offering residential and commercial painting services. Interior, exterior, and cabinet painting throughout Northeast Florida. Evening estimates available until 10PM.',
+  url: `${BUSINESS_INFO.website}/`,
+  telephone: BUSINESS_INFO.phoneRaw,
+  email: BUSINESS_INFO.email,
+  image: `${BUSINESS_INFO.website}/logo.png`,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: BUSINESS_INFO.address.city,
+    addressRegion: BUSINESS_INFO.address.stateAbbr,
+    postalCode: BUSINESS_INFO.address.zip,
+    addressCountry: BUSINESS_INFO.address.country,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: String(BUSINESS_INFO.geo.latitude),
+    longitude: String(BUSINESS_INFO.geo.longitude),
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '08:00',
+      closes: '22:00',
+    },
+  ],
+  priceRange: '$',
   paymentAccepted: ['Cash', 'Credit Card', 'Check'],
   areaServed: SERVICE_AREAS.map((area) => ({
     '@type': 'City',
     name: area.name,
-    '@id': `${BUSINESS_INFO.website}/areas/${area.slug}`,
+    '@id': `${BUSINESS_INFO.website}/${area.slug}-house-painters`,
   })),
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '41',
+    bestRating: '5',
+    worstRating: '1',
+  },
   sameAs: [
     BUSINESS_INFO.links.gmb,
     BUSINESS_INFO.links.facebook,
@@ -133,16 +192,11 @@ export const generateLocalBusinessSchema = () => ({
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Painting Services',
-    itemListElement: SERVICES.map((service, index) => ({
-      '@type': 'Offer',
-      itemOffered: {
-        '@type': 'Service',
-        name: service.name,
-        description: service.shortDescription,
-        url: `${BUSINESS_INFO.website}/services/${service.slug}`,
-      },
-      position: index + 1,
-    })),
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cabinet Painting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Interior Painting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Exterior Painting' } },
+    ],
   },
 });
 
@@ -152,15 +206,17 @@ export const generateOrganizationSchema = () => ({
   '@type': 'Organization',
   '@id': `${BUSINESS_INFO.website}/#organization`,
   name: BUSINESS_INFO.name,
+  alternateName: 'Jacksonville Painters',
   legalName: BUSINESS_INFO.legalName,
   url: BUSINESS_INFO.website,
   logo: `${BUSINESS_INFO.website}/images/logo/paint-techs-llc-logo.webp`,
   image: `${BUSINESS_INFO.website}/images/logo/paint-techs-llc-logo.webp`,
-  description: BUSINESS_INFO.description,
+  description: 'Professional Jacksonville painters offering residential and commercial painting services. Interior, exterior, and cabinet painting throughout Northeast Florida.',
   telephone: BUSINESS_INFO.phone,
   email: BUSINESS_INFO.email,
   address: {
     '@type': 'PostalAddress',
+    streetAddress: BUSINESS_INFO.address.street,
     addressLocality: BUSINESS_INFO.address.city,
     addressRegion: BUSINESS_INFO.address.stateAbbr,
     postalCode: BUSINESS_INFO.address.zip,
@@ -197,7 +253,106 @@ export const generateOrganizationSchema = () => ({
   })),
 });
 
-// Service Schema
+// Priority Nocatee Service Area Schema
+// Uses Geographical Entity Injection with Wikipedia sameAs for Local Map Pack visibility
+export const generateNocateeLocationSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'HousePainter',
+  name: 'Paint-Techs LLC - Nocatee',
+  description: 'Premium residential painting services in Nocatee, FL. Specializing in cabinet refinishing and luxury interior painting. Evening estimates available until 10PM.',
+  url: `${BUSINESS_INFO.website}/nocatee-house-painters/`,
+  telephone: BUSINESS_INFO.phoneRaw,
+  areaServed: [
+    {
+      '@type': 'Place',
+      name: 'Nocatee',
+      sameAs: 'https://en.wikipedia.org/wiki/Nocatee,_Florida',
+    },
+    {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: '30.1033',
+        longitude: '-81.3931',
+      },
+      geoRadius: '10000',
+    },
+  ],
+  knowsAbout: ['Cabinet Painting', 'Interior Painting', 'Residential Painting'],
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': `${BUSINESS_INFO.website}/nocatee-house-painters/`,
+  },
+});
+
+// Specialized Cabinet Painting Service Schema
+// Helps Google pull "Provides this service" justifications in search results
+export const generateCabinetPaintingServiceSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Cabinet Painting',
+  provider: {
+    '@type': 'HousePainter',
+    name: 'Paint-Techs LLC',
+    url: `${BUSINESS_INFO.website}/`,
+  },
+  areaServed: {
+    '@type': 'State',
+    name: 'Florida',
+  },
+  description: 'Professional cabinet painting and refinishing services in Northeast Florida. High-quality finishes for kitchen and bathroom cabinetry.',
+  offers: {
+    '@type': 'Offer',
+    availability: 'https://schema.org/InStock',
+    description: 'Contact for custom pricing and free estimates.',
+  },
+});
+
+// Interior Painting Service Schema
+export const generateInteriorPaintingServiceSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Interior Painting',
+  provider: {
+    '@type': 'HousePainter',
+    name: 'Paint-Techs LLC',
+    url: `${BUSINESS_INFO.website}/`,
+  },
+  areaServed: {
+    '@type': 'State',
+    name: 'Florida',
+  },
+  description: 'Professional interior house painting services in Jacksonville and Northeast Florida. Transform your indoor spaces with expert color consultation and flawless application.',
+  offers: {
+    '@type': 'Offer',
+    availability: 'https://schema.org/InStock',
+    description: 'Contact for custom pricing and free estimates.',
+  },
+});
+
+// Exterior Painting Service Schema
+export const generateExteriorPaintingServiceSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Exterior Painting',
+  provider: {
+    '@type': 'HousePainter',
+    name: 'Paint-Techs LLC',
+    url: `${BUSINESS_INFO.website}/`,
+  },
+  areaServed: {
+    '@type': 'State',
+    name: 'Florida',
+  },
+  description: 'Professional exterior house painting services in Jacksonville and Northeast Florida. Weather-resistant coatings designed for Florida climate.',
+  offers: {
+    '@type': 'Offer',
+    availability: 'https://schema.org/InStock',
+    description: 'Contact for custom pricing and free estimates.',
+  },
+});
+
+// Service Schema (generic)
 export const generateServiceSchema = (
   serviceName: string,
   serviceDescription: string,
@@ -209,9 +364,9 @@ export const generateServiceSchema = (
   description: serviceDescription,
   url: serviceUrl,
   provider: {
-    '@type': 'LocalBusiness',
+    '@type': 'HousePainter',
     name: BUSINESS_INFO.name,
-    '@id': `${BUSINESS_INFO.website}/#business`,
+    '@id': `${BUSINESS_INFO.website}/#localbusiness`,
   },
   areaServed: {
     '@type': 'State',
@@ -337,7 +492,8 @@ export const generateWebsiteSchema = () => ({
   },
 });
 
-// Location-specific LocalBusiness Schema with enhanced AreaServed
+// Location-specific HousePainter Schema with enhanced AreaServed
+// Uses HousePainter type and Geographical Entity Injection for Local Map Pack
 export const generateLocationBusinessSchema = (
   locationName: string,
   locationSlug: string,
@@ -347,17 +503,28 @@ export const generateLocationBusinessSchema = (
 ) => {
   const locationData = LOCATION_DATA[locationSlug] || LOCATION_DATA['jacksonville'];
 
+  // Build areaServed with Wikipedia sameAs if available
+  const primaryAreaServed: Record<string, unknown> = {
+    '@type': 'Place',
+    name: locationName,
+  };
+
+  // Add Wikipedia sameAs for geographical entity injection
+  if (locationData.wikipediaSameAs) {
+    primaryAreaServed.sameAs = locationData.wikipediaSameAs;
+  }
+
   return {
     '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'ProfessionalService'],
-    '@id': `${BUSINESS_INFO.website}/${locationSlug}-painting-contractor/#business`,
-    name: `${BUSINESS_INFO.name} - ${locationName} Painters`,
-    alternateName: `Paint-Techs ${locationName}`,
-    description: description,
-    url: `${BUSINESS_INFO.website}/${locationSlug}-painting-contractor`,
-    telephone: BUSINESS_INFO.phone,
+    '@type': 'HousePainter',
+    '@id': `${BUSINESS_INFO.website}/${locationSlug}-house-painters/#localbusiness`,
+    name: `Paint-Techs LLC - ${locationName}`,
+    alternateName: `Paint-Techs ${locationName} Painters`,
+    description: `${description} Evening estimates available until 10PM.`,
+    url: `${BUSINESS_INFO.website}/${locationSlug}-house-painters/`,
+    telephone: BUSINESS_INFO.phoneRaw,
     email: BUSINESS_INFO.email,
-    image: `${BUSINESS_INFO.website}/images/logo/paint-techs-llc-logo.webp`,
+    image: `${BUSINESS_INFO.website}/logo.png`,
     address: {
       '@type': 'PostalAddress',
       addressLocality: locationName,
@@ -367,23 +534,19 @@ export const generateLocationBusinessSchema = (
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: locationData.lat,
-      longitude: locationData.lng,
+      latitude: String(locationData.lat),
+      longitude: String(locationData.lng),
     },
     areaServed: [
+      primaryAreaServed,
       {
-        '@type': 'City',
-        name: locationName,
-        '@id': `https://www.wikidata.org/wiki/Q${locationSlug === 'jacksonville' ? '16568' : ''}`,
-        containedInPlace: {
-          '@type': 'AdministrativeArea',
-          name: county,
-          containedInPlace: {
-            '@type': 'State',
-            name: 'Florida',
-            '@id': 'https://www.wikidata.org/wiki/Q812',
-          },
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: String(locationData.lat),
+          longitude: String(locationData.lng),
         },
+        geoRadius: '10000',
       },
       // Add neighborhoods as additional service areas
       ...(neighborhoods || []).slice(0, 5).map((neighborhood) => ({
@@ -395,12 +558,17 @@ export const generateLocationBusinessSchema = (
         },
       })),
     ],
+    knowsAbout: ['Cabinet Painting', 'Interior Painting', 'Exterior Painting', 'Residential Painting'],
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${BUSINESS_INFO.website}/${locationSlug}-house-painters/`,
+    },
     serviceArea: {
       '@type': 'GeoCircle',
       geoMidpoint: {
         '@type': 'GeoCoordinates',
-        latitude: locationData.lat,
-        longitude: locationData.lng,
+        latitude: String(locationData.lat),
+        longitude: String(locationData.lng),
       },
       geoRadius: '25 mi',
     },
@@ -421,7 +589,7 @@ export const generateLocationBusinessSchema = (
         },
       })),
     },
-    priceRange: '$$',
+    priceRange: '$',
     currenciesAccepted: 'USD',
     paymentAccepted: ['Cash', 'Credit Card', 'Check'],
     openingHoursSpecification: [
@@ -435,9 +603,7 @@ export const generateLocationBusinessSchema = (
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5.0',
-      reviewCount: '50',
-      bestRating: '5',
-      worstRating: '1',
+      reviewCount: '41',
     },
     sameAs: [
       BUSINESS_INFO.links.gmb,
@@ -487,13 +653,13 @@ export const generateContactPageSchema = () => ({
   '@type': 'ContactPage',
   '@id': `${BUSINESS_INFO.website}/contact/#webpage`,
   name: 'Contact Paint-Techs LLC',
-  description: 'Contact Paint-Techs LLC for free painting estimates in Jacksonville, FL. Call (904) 762-7062 or message us on WhatsApp.',
+  description: 'Contact Paint-Techs LLC for free painting estimates in Jacksonville, FL. Call (904) 762-7062 or message us on WhatsApp. Evening estimates available until 10PM.',
   url: `${BUSINESS_INFO.website}/contact`,
   mainEntity: {
-    '@type': 'LocalBusiness',
-    '@id': `${BUSINESS_INFO.website}/#business`,
-    name: BUSINESS_INFO.name,
-    telephone: BUSINESS_INFO.phone,
+    '@type': 'HousePainter',
+    '@id': `${BUSINESS_INFO.website}/#localbusiness`,
+    name: 'Paint-Techs LLC - Painting Company',
+    telephone: BUSINESS_INFO.phoneRaw,
     email: BUSINESS_INFO.email,
     address: {
       '@type': 'PostalAddress',
@@ -504,8 +670,8 @@ export const generateContactPageSchema = () => ({
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: BUSINESS_INFO.geo.latitude,
-      longitude: BUSINESS_INFO.geo.longitude,
+      latitude: String(BUSINESS_INFO.geo.latitude),
+      longitude: String(BUSINESS_INFO.geo.longitude),
     },
     openingHoursSpecification: [
       {
@@ -517,9 +683,9 @@ export const generateContactPageSchema = () => ({
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: BUSINESS_INFO.phone,
+      telephone: BUSINESS_INFO.phoneRaw,
       contactType: 'customer service',
-      availableLanguage: ['English', 'Spanish'],
+      availableLanguage: ['English', 'Spanish', 'Portuguese'],
     },
   },
 });
@@ -553,7 +719,7 @@ export const generateServicesListSchema = () => ({
   '@type': 'ItemList',
   '@id': `${BUSINESS_INFO.website}/services/#itemlist`,
   name: 'Paint-Techs Painting Services',
-  description: 'Professional painting services offered by Paint-Techs LLC in Jacksonville, FL.',
+  description: 'Professional painting services offered by Paint-Techs LLC in Jacksonville, FL. Evening estimates available until 10PM.',
   url: `${BUSINESS_INFO.website}/services`,
   numberOfItems: SERVICES.length,
   itemListElement: SERVICES.map((service, index) => ({
@@ -565,8 +731,8 @@ export const generateServicesListSchema = () => ({
       description: service.shortDescription,
       url: `${BUSINESS_INFO.website}/services/${service.slug}`,
       provider: {
-        '@type': 'LocalBusiness',
-        '@id': `${BUSINESS_INFO.website}/#business`,
+        '@type': 'HousePainter',
+        '@id': `${BUSINESS_INFO.website}/#localbusiness`,
         name: BUSINESS_INFO.name,
       },
     },
@@ -579,17 +745,25 @@ export const generateServiceAreasSchema = () => ({
   '@type': 'WebPage',
   '@id': `${BUSINESS_INFO.website}/areas-we-serve/#webpage`,
   name: 'Paint-Techs Service Areas',
-  description: 'Paint-Techs LLC serves Jacksonville, Nocatee, Ponte Vedra Beach, St. Augustine, and all of Northeast Florida.',
+  description: 'Paint-Techs LLC serves Jacksonville, Nocatee, Ponte Vedra Beach, St. Augustine, and all of Northeast Florida. Evening estimates available until 10PM.',
   url: `${BUSINESS_INFO.website}/areas-we-serve`,
   mainEntity: {
-    '@type': 'LocalBusiness',
-    '@id': `${BUSINESS_INFO.website}/#business`,
-    name: BUSINESS_INFO.name,
-    areaServed: SERVICE_AREAS.map((area) => ({
-      '@type': 'City',
-      name: area.name,
-      '@id': `${BUSINESS_INFO.website}/${area.slug}-painting-contractor`,
-    })),
+    '@type': 'HousePainter',
+    '@id': `${BUSINESS_INFO.website}/#localbusiness`,
+    name: 'Paint-Techs LLC - Painting Company',
+    areaServed: SERVICE_AREAS.map((area) => {
+      const locationData = LOCATION_DATA[area.slug];
+      const areaServed: Record<string, unknown> = {
+        '@type': 'Place',
+        name: area.name,
+        '@id': `${BUSINESS_INFO.website}/${area.slug}-house-painters`,
+      };
+      // Add Wikipedia sameAs for geographical entity injection
+      if (locationData?.wikipediaSameAs) {
+        areaServed.sameAs = locationData.wikipediaSameAs;
+      }
+      return areaServed;
+    }),
   },
 });
 
@@ -662,8 +836,8 @@ export const generateGalleryCategorySchema = (
       name: `${category} Painting`,
       url: `${BUSINESS_INFO.website}${info.serviceLink}`,
       provider: {
-        '@type': 'LocalBusiness',
-        '@id': `${BUSINESS_INFO.website}/#business`,
+        '@type': 'HousePainter',
+        '@id': `${BUSINESS_INFO.website}/#localbusiness`,
         name: BUSINESS_INFO.name,
       },
     },
@@ -695,8 +869,17 @@ export const generateGalleryCategorySchema = (
 };
 
 // Homepage Schema (combines multiple schemas)
+// Uses premium HousePainter master schema for optimal Local SEO
 export const generateHomePageSchema = () => [
-  generateLocalBusinessSchema(),
+  generateHousePainterSchema(),
   generateWebsiteSchema(),
   generateOrganizationSchema(),
+];
+
+// Alternative homepage schema with Cabinet Painting service emphasis
+export const generateHomePageSchemaWithServices = () => [
+  generateHousePainterSchema(),
+  generateWebsiteSchema(),
+  generateOrganizationSchema(),
+  generateCabinetPaintingServiceSchema(),
 ];

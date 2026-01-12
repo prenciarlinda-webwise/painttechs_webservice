@@ -58,22 +58,22 @@ Paint-Techs LLC is proud to be one of Jacksonville's most trusted painting contr
       'Same-day free estimates available',
     ],
     neighborhoods: ['Riverside', 'Avondale', 'San Marco', 'Mandarin', 'Southside', 'Arlington', 'Beaches', 'Northside', 'Westside', 'Ortega', 'Springfield', 'Murray Hill', 'Baymeadows', 'Town Center', 'Lakewood', 'San Jose'],
-    metaTitle: 'Jacksonville Painters - Top-Rated Painting Contractor - Paint-Techs LLC',
-    metaDescription: 'Jacksonville\'s trusted painting contractor. 5-star rated, 50+ reviews. Interior, exterior & cabinet painting throughout Duval County. Free estimates: (904) 762-7062',
-    keywords: ['jacksonville painters', 'painting contractor jacksonville fl', 'house painters jacksonville', 'jacksonville painting company', 'painters near me jacksonville', 'duval county painters'],
+    metaTitle: 'Top-Rated Painters in Jacksonville FL - House Painters - Paint-Techs LLC',
+    metaDescription: 'Jacksonville\'s trusted house painters. 5-star rated, 41 reviews. Interior, exterior & cabinet painting throughout Duval County. Evening estimates until 10PM. Free quotes: (904) 762-7062',
+    keywords: ['jacksonville painters', 'painters jacksonville fl', 'house painters jacksonville', 'jacksonville house painters', 'interior painter jacksonville fl', 'exterior painters jacksonville fl', 'painting companies jacksonville', 'jacksonville painting company', 'painters near me jacksonville'],
   },
   {
     name: 'Nocatee',
     slug: 'nocatee',
     county: 'St. Johns County',
-    description: 'Nocatee\'s trusted painting contractor since 2018. Paint-Techs LLC specializes in interior, exterior, and cabinet painting for homes throughout Nocatee\'s master-planned neighborhoods in Ponte Vedra.',
-    longDescription: `## Professional Painters Serving Nocatee, FL
+    description: 'Top-rated house painters serving Nocatee and the greater St. Johns County area. Paint-Techs LLC specializes in cabinet refinishing, interior painting, and exterior painting for luxury homes throughout Nocatee\'s master-planned neighborhoods.',
+    longDescription: `## Top-Rated House Painters Serving Nocatee and St. Johns County
 
-Paint-Techs LLC is proud to be one of Nocatee's most trusted painting contractors. As one of the nation's top-selling master-planned communities, Nocatee homeowners expect quality, and that's exactly what we deliver.
+Paint-Techs LLC is proud to be one of Nocatee's most trusted house painters. Serving luxury homes in Nocatee and the greater St. Johns area, we deliver the quality that Florida's top-selling master-planned community deserves.
 
-## Painting Every Nocatee Neighborhood
+## Serving Luxury Homes in Nocatee and the Greater St. Johns Area
 
-We've completed projects in neighborhoods throughout the Nocatee community:
+As St. Johns County's premier painting company, we've completed projects in neighborhoods throughout the Nocatee community:
 
 **Twenty Mile & Twenty Mile Village:** The newest sections of Nocatee feature contemporary architecture with clean lines. We handle both new construction touch-ups and full repaints for Twenty Mile homeowners.
 
@@ -93,25 +93,27 @@ Most Nocatee neighborhoods have HOA guidelines governing exterior paint colors. 
 - We know which colors have been approved in each neighborhood
 - We ensure your paint project complies with community standards
 
-## Why Nocatee Homeowners Choose Paint-Techs
+## Why Nocatee and St. Johns County Homeowners Choose Paint-Techs
 
-**Proximity:** Our crews service Nocatee regularly, meaning quick response times and familiarity with your community.
+**Evening Estimates Until 10PM:** We understand busy professionals. Schedule your free estimate after work - we're available daily until 10PM.
+
+**Cabinet Refinishing Specialists:** Our cabinet painting and refinishing services are perfect for Nocatee's luxury kitchens. Save 50-70% vs. cabinet replacement.
 
 **Quality Materials:** We use premium paints from Sherwin-Williams and Benjamin Moore that withstand St. Johns County's humidity and UV exposure.
 
 **Clean, Professional Service:** We protect your home and landscaping, arriving on time and leaving work areas clean.`,
     highlights: [
-      'Nocatee\'s trusted painting contractor',
+      'Nocatee\'s trusted house painters',
+      'Serving Nocatee and greater St. Johns County',
+      'Cabinet refinishing specialists',
       'HOA/ARB color compliance expertise',
-      'Serving Twenty Mile, Tidewater, Austin Park & all neighborhoods',
-      'Premium paints for Florida climate',
-      'Flexible scheduling for families',
+      'Evening estimates available until 10PM',
       'Licensed and insured in St. Johns County',
     ],
     neighborhoods: ['Twenty Mile', 'Twenty Mile Village', 'Tidewater', 'Coastal Oaks', 'Austin Park', 'Addison Park', 'Greenleaf Village', 'Lakeside', 'Artisan Lakes', 'Town Center', 'Willowcove', 'Kelly Pointe'],
-    metaTitle: 'Nocatee Painters - Trusted Painting Contractor - Paint-Techs LLC',
-    metaDescription: 'Nocatee\'s preferred painting contractor. HOA-compliant colors, premium paints, serving Twenty Mile, Tidewater & all Nocatee neighborhoods. Free quotes: (904) 762-7062',
-    keywords: ['nocatee painters', 'painting contractor nocatee fl', 'house painters nocatee', 'nocatee painting company', 'painters in nocatee', 'nocatee fl painters'],
+    metaTitle: 'Nocatee House Painters - St. Johns County - Paint-Techs LLC',
+    metaDescription: 'Top-rated house painters serving Nocatee and St. Johns County. Cabinet refinishing, interior & exterior painting. Evening estimates until 10PM. Free quotes: (904) 762-7062',
+    keywords: ['nocatee painters', 'nocatee house painters', 'st johns painting', 'house painters nocatee', 'nocatee painting company', 'painters in nocatee', 'st johns county painters', 'cabinet painting nocatee'],
   },
   {
     name: 'Ponte Vedra Beach',
@@ -158,7 +160,7 @@ Ponte Vedra Beach's oceanfront location creates unique challenges:
       'Premium materials and expert craftsmanship',
     ],
     neighborhoods: ['Sawgrass', 'TPC Sawgrass', 'Marsh Landing', 'Ponte Vedra Colony', 'Old Ponte Vedra', 'The Plantation', 'Sawgrass Country Club', 'Sawgrass Players Club', 'Ocean Grande'],
-    metaTitle: 'Ponte Vedra Beach Painters - Luxury Home Painting | Paint-Techs LLC',
+    metaTitle: 'Ponte Vedra Beach Painters - Luxury Home Painting - Paint-Techs LLC',
     metaDescription: 'Premium painting services in Ponte Vedra Beach, FL. Serving Sawgrass, Marsh Landing, TPC Sawgrass area. Marine-grade coatings. Free estimates: (904) 762-7062',
     keywords: ['ponte vedra beach painters', 'painting contractor ponte vedra fl', 'house painters ponte vedra beach', 'ponte vedra painting company', 'luxury home painters ponte vedra', 'sawgrass painters'],
   },
@@ -180,7 +182,7 @@ From classic beach cottages to modern oceanfront condos, we have experience with
       'Quick response for beach area',
     ],
     neighborhoods: ['Jacksonville Beach', 'Beaches Town Center', 'South Jax Beach'],
-    metaTitle: 'Jacksonville Beach Painters | Coastal Painting Services | Paint-Techs LLC',
+    metaTitle: 'Jacksonville Beach Painters - Coastal Painting Services - Paint-Techs LLC',
     metaDescription: 'Professional painters in Jacksonville Beach, FL. Coastal home specialists with salt-resistant paints. Protect your beach home. Call (904) 762-7062!',
     keywords: ['jacksonville beach painters', 'jax beach painting', 'painters jacksonville beach fl', 'beach house painting'],
   },
@@ -202,7 +204,7 @@ We work with Atlantic Beach's mix of historic cottages, mid-century homes, and n
       'Local knowledge and quick response',
     ],
     neighborhoods: ['Atlantic Beach', 'Selva Marina', 'Plaza'],
-    metaTitle: 'Atlantic Beach Painters | House Painting Services | Paint-Techs LLC',
+    metaTitle: 'Atlantic Beach Painters - House Painting Services - Paint-Techs LLC',
     metaDescription: 'Expert painters serving Atlantic Beach, FL. Coastal painting specialists for beach homes. Quality work, fair prices. Call Paint-Techs: (904) 762-7062',
     keywords: ['atlantic beach painters', 'painting atlantic beach fl', 'atlantic beach painting services', 'painters near atlantic beach'],
   },
@@ -247,7 +249,7 @@ Our painting crews are familiar with every corner of St. Augustine:
       'Licensed and insured in St. Johns County',
     ],
     neighborhoods: ['Historic District', 'Davis Shores', 'Anastasia Island', 'World Golf Village', 'Vilano Beach', 'Crescent Beach', 'Butler Beach', 'Palencia', 'St. Augustine Beach', 'Uptown', 'Lincolnville'],
-    metaTitle: 'St. Augustine Painters | Top-Rated Painting Contractor | Paint-Techs LLC',
+    metaTitle: 'St. Augustine Painters - Top-Rated House Painters - Paint-Techs LLC',
     metaDescription: 'Top-rated painting contractor in St. Augustine, FL. Historic home specialists serving Davis Shores, Anastasia Island & World Golf Village. Free estimates: (904) 762-7062',
     keywords: ['st augustine painters', 'painting contractor st augustine fl', 'house painters st augustine', 'st augustine painting company', 'painters near st augustine', 'st johns county painters'],
   },
@@ -269,7 +271,7 @@ From the Victorian homes of the historic downtown to the luxury properties of Am
       'Resort property experience',
     ],
     neighborhoods: ['Historic Downtown', 'Amelia Island Plantation', 'Summer Beach', 'American Beach', 'Amelia Park'],
-    metaTitle: 'Fernandina Beach Painters | Amelia Island Painting | Paint-Techs LLC',
+    metaTitle: 'Fernandina Beach Painters - Amelia Island Painting - Paint-Techs LLC',
     metaDescription: 'Professional painters in Fernandina Beach & Amelia Island, FL. Coastal home specialists, historic expertise. Free estimates: (904) 762-7062',
     keywords: ['fernandina beach painters', 'amelia island painting', 'painters fernandina beach fl', 'amelia island painters'],
   },
@@ -291,7 +293,7 @@ Whether you're refreshing your home's interior, protecting your exterior from Fl
       'Quality work guaranteed',
     ],
     neighborhoods: ['Middleburg', 'Black Creek', 'Swimming Pen Creek'],
-    metaTitle: 'Middleburg Painters | House Painting Services | Paint-Techs LLC',
+    metaTitle: 'Middleburg Painters - House Painting Services - Paint-Techs LLC',
     metaDescription: 'Professional painters serving Middleburg, FL and Clay County. Quality interior & exterior painting. Free estimates. Call Paint-Techs: (904) 762-7062',
     keywords: ['middleburg painters', 'painting contractor middleburg', 'house painters middleburg fl', 'clay county painters'],
   },
@@ -313,7 +315,7 @@ We also serve the surrounding Clay County communities, including Fleming Island,
       'Flexible scheduling available',
     ],
     neighborhoods: ['Orange Park', 'Fleming Island', 'Oakleaf', 'Eagle Harbor', 'Green Cove Springs'],
-    metaTitle: 'Orange Park Painters | House Painting Clay County | Paint-Techs LLC',
+    metaTitle: 'Orange Park Painters - House Painting Clay County - Paint-Techs LLC',
     metaDescription: 'Professional painters in Orange Park & Fleming Island, FL. Quality painting services for Clay County homes. Call Paint-Techs: (904) 762-7062',
     keywords: ['orange park painters', 'painting contractor orange park', 'house painters orange park fl', 'fleming island painters'],
   },
@@ -335,7 +337,7 @@ We also serve the broader Nassau County area, including Callahan and Hilliard, b
       'Quality materials and workmanship',
     ],
     neighborhoods: ['Yulee', 'Nassauville', 'Callahan', 'Hilliard'],
-    metaTitle: 'Yulee Painters | Nassau County Painting Services | Paint-Techs LLC',
+    metaTitle: 'Yulee Painters - Nassau County Painting Services - Paint-Techs LLC',
     metaDescription: 'Professional painters in Yulee & Nassau County, FL. Quality painting for new and existing homes. Free estimates. Call Paint-Techs: (904) 762-7062',
     keywords: ['yulee painters', 'painting contractor yulee', 'house painters yulee fl', 'nassau county painters'],
   },

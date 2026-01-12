@@ -15,15 +15,16 @@ interface LocationPageProps {
 }
 
 // Generate paths for all location pages
+// Using -house-painters for higher search volume (100 SV vs 40 for contractor)
 export async function generateStaticParams() {
   return locationsData.map((location) => ({
-    location: `${location.slug}-painting-contractor`,
+    location: `${location.slug}-house-painters`,
   }));
 }
 
 export async function generateMetadata({ params }: LocationPageProps): Promise<Metadata> {
   const { location } = await params;
-  const slug = location.replace('-painting-contractor', '').replace('-painters', '').replace('-painting-services', '');
+  const slug = location.replace('-house-painters', '').replace('-painting-contractor', '').replace('-painters', '').replace('-painting-services', '');
   const locationData = getLocationBySlug(slug);
 
   if (!locationData) {
@@ -50,7 +51,7 @@ export async function generateMetadata({ params }: LocationPageProps): Promise<M
 
 export default async function LocationPage({ params }: LocationPageProps) {
   const { location } = await params;
-  const slug = location.replace('-painting-contractor', '').replace('-painters', '').replace('-painting-services', '');
+  const slug = location.replace('-house-painters', '').replace('-painting-contractor', '').replace('-painters', '').replace('-painting-services', '');
   const locationData = getLocationBySlug(slug);
 
   if (!locationData) {
@@ -339,7 +340,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
               .map((loc) => (
                 <Link
                   key={loc.slug}
-                  href={`/${loc.slug}-painting-contractor`}
+                  href={`/${loc.slug}-house-painters`}
                   className="px-4 py-2 bg-gray-100 hover:bg-teal-50 text-gray-700 hover:text-teal-600 rounded-full transition-colors"
                 >
                   {loc.name}

@@ -14,9 +14,10 @@ export const BUSINESS_INFO = {
   email: 'info@paint-techs.us',
   website: 'https://www.paint-techs.us',
 
-  // Address
+  // Address (NAP consistency - critical for local SEO)
+  // Note: Service Area Business (SAB) - no street address displayed publicly
   address: {
-    street: '',
+    street: '', // SAB - not displayed
     city: 'Jacksonville',
     state: 'Florida',
     stateAbbr: 'FL',
@@ -25,10 +26,10 @@ export const BUSINESS_INFO = {
     full: 'Jacksonville, FL 32246',
   },
 
-  // Coordinates for schema markup
+  // Coordinates for schema markup (Jacksonville service area center)
   geo: {
-    latitude: 30.3322,
-    longitude: -81.6557,
+    latitude: 30.3164,
+    longitude: -81.4883,
   },
 
   // Business Hours
@@ -96,6 +97,13 @@ export const SERVICES = [
     shortDescription: 'Refresh your kitchen with professional cabinet painting and refinishing.',
     slug: 'cabinet-painting',
     icon: 'cabinet',
+  },
+  {
+    id: 'pool-deck-painting',
+    name: 'Pool Deck Painting',
+    shortDescription: 'Professional pool deck painting and staining with cool deck coatings for Florida homes.',
+    slug: 'pool-deck-painting-staining',
+    icon: 'pool',
   },
   {
     id: 'commercial-painting',
