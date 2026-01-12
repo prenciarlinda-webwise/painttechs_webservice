@@ -53,7 +53,7 @@ export default function WhatsAppCTA({
   }
 
   return (
-    <section className="py-20 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-800 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-navy-800 via-navy-900 to-navy-800 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-72 h-72 bg-teal-500 rounded-full blur-3xl"></div>
@@ -62,10 +62,10 @@ export default function WhatsAppCTA({
 
       <Container className="relative z-10">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
             {title}
           </h2>
-          <p className="text-xl text-gray-300 mb-10">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-10">
             {subtitle}
           </p>
 

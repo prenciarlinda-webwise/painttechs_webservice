@@ -36,7 +36,7 @@ export default function Hero({
           {/* Left Side - Text & CTAs */}
           <div>
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
               {title.split('Jacksonville').map((part, i, arr) => (
                 <span key={i}>
                   {part}
@@ -48,7 +48,7 @@ export default function Hero({
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
               {subtitle}
             </p>
 

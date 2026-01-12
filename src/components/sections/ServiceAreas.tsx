@@ -4,20 +4,20 @@ import { SERVICE_AREAS } from '@/lib/constants';
 
 export default function ServiceAreas() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
       <Container>
         <SectionHeading
           title="Serving Jacksonville & Northeast Florida"
           subtitle="Paint-Techs proudly serves homeowners and businesses throughout the greater Jacksonville area."
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
           {SERVICE_AREAS.map((area) => (
             <Link
               key={area.slug}
-              href={`/${area.slug}-painting-contractor`}
+              href={`/${area.slug}-house-painters`}
               title={`${area.name} Painters - House Painting Services`}
-              className={`group relative p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border-2 ${
+              className={`group relative p-3 sm:p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border-2 ${
                 area.priority ? 'border-teal-500' : 'border-transparent hover:border-teal-300'
               }`}
             >

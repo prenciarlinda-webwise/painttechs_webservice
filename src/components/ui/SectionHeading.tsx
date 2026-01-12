@@ -18,12 +18,12 @@ export default function SectionHeading({
   const subtitleColor = light ? 'text-gray-200' : 'text-gray-600';
 
   return (
-    <div className={`mb-12 ${alignClass} ${className}`}>
-      <h2 className={`text-3xl md:text-4xl font-bold ${titleColor} mb-4`}>
+    <div className={`mb-8 sm:mb-12 ${alignClass} ${className}`}>
+      <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold ${titleColor} mb-3 sm:mb-4`}>
         {title}
       </h2>
       {subtitle && (
-        <p className={`text-lg md:text-xl ${subtitleColor} max-w-3xl ${centered ? 'mx-auto' : ''}`}>
+        <p className={`text-base sm:text-lg md:text-xl ${subtitleColor} max-w-3xl ${centered ? 'mx-auto' : ''}`}>
           {subtitle}
         </p>
       )}
