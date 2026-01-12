@@ -26,7 +26,7 @@ export default function ContactPage() {
               Get in Touch with <span className="text-teal-400">Paint-Techs</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Ready to transform your space? Contact us for a free, no-obligation estimate. We&apos;re available 7 days a week to answer your questions.
+              Ready to transform your space? Contact our <a href="/" title="Jacksonville Painters - Home" className="text-teal-400 hover:text-teal-300 underline">Jacksonville painters</a> for a free, no-obligation estimate. We&apos;re available 7 days a week to answer your questions.
             </p>
           </div>
         </Container>

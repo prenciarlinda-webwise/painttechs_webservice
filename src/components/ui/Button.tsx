@@ -10,6 +10,7 @@ interface ButtonProps {
   className?: string;
   external?: boolean;
   icon?: ReactNode;
+  title?: string;
 }
 
 export default function Button({
@@ -21,6 +22,7 @@ export default function Button({
   className = '',
   external = false,
   icon,
+  title,
 }: ButtonProps) {
   const baseClasses = 'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2';
 
@@ -55,20 +57,21 @@ export default function Button({
           target="_blank"
           rel="noopener noreferrer"
           className={classes}
+          title={title}
         >
           {content}
         </a>
       );
     }
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} title={title}>
         {content}
       </Link>
     );
   }
 
   return (
-    <button onClick={onClick} className={classes}>
+    <button onClick={onClick} className={classes} title={title}>
       {content}
     </button>
   );

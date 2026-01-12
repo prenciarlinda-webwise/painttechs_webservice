@@ -16,6 +16,7 @@ export default function ServiceAreas() {
             <Link
               key={area.slug}
               href={`/${area.slug}-painting-contractor`}
+              title={`${area.name} Painters - House Painting Services`}
               className={`group relative p-4 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border-2 ${
                 area.priority ? 'border-teal-500' : 'border-transparent hover:border-teal-300'
               }`}
@@ -48,6 +49,7 @@ export default function ServiceAreas() {
         <div className="mt-12 text-center">
           <Link
             href="/areas-we-serve"
+            title="All Service Areas - Northeast Florida Painters"
             className="inline-flex items-center gap-2 bg-navy-800 hover:bg-navy-900 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             View All Service Areas

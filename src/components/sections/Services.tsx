@@ -36,7 +36,7 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {SERVICES.map((service) => (
-            <Link key={service.id} href={`/services/${service.slug}`}>
+            <Link key={service.id} href={`/services/${service.slug}`} title={`${service.name} Jacksonville FL`}>
               <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group h-full border border-gray-100 hover:border-orange-300">
                 {/* Service Icon */}
                 <div className="text-teal-500 mb-4 group-hover:text-orange-500 transition-colors">
@@ -64,6 +64,7 @@ export default function Services() {
         <div className="text-center mt-12">
           <Link
             href="/services"
+            title="All Painting Services Jacksonville FL"
             className="inline-flex items-center gap-2 text-navy-800 hover:text-orange-600 font-semibold transition-colors"
           >
             View All Services

@@ -216,7 +216,7 @@ export default function AboutPage() {
               Proudly Serving Jacksonville & Northeast Florida
             </h2>
             <p className="text-gray-600 mb-8">
-              Paint-Techs LLC serves homeowners and businesses throughout the greater Jacksonville area, including Nocatee, Ponte Vedra Beach, Jacksonville Beach, Atlantic Beach, St. Augustine, Fernandina Beach, Middleburg, Orange Park, and Yulee.
+              As trusted <a href="/" title="Jacksonville Painters - Home" className="text-teal-600 hover:text-teal-700 font-medium">Jacksonville painters</a>, Paint-Techs LLC serves homeowners and businesses throughout the greater Jacksonville area, including Nocatee, Ponte Vedra Beach, Jacksonville Beach, Atlantic Beach, St. Augustine, Fernandina Beach, Middleburg, Orange Park, and Yulee.
             </p>
             <Button href="/areas-we-serve" variant="outline">
               View All Service Areas

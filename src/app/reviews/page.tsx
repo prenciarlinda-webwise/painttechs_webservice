@@ -6,7 +6,7 @@ import GoogleReviewsEmbed from '@/components/features/GoogleReviewsEmbed';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateReviewSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { generateMetadata } from '@/lib/metadata';
-import { getSortedTestimonials, getAverageRating, TOTAL_GOOGLE_REVIEWS } from '@/data/testimonials';
+import { testimonials, getSortedTestimonials, getAverageRating, TOTAL_GOOGLE_REVIEWS } from '@/data/testimonials';
 import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({

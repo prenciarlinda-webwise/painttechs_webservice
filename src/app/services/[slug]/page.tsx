@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    keywords: service.keywords,
     alternates: {
       canonical: `${BUSINESS_INFO.website}/services/${slug}`,
     },
@@ -39,7 +40,20 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       title: service.metaTitle,
       description: service.metaDescription,
       url: `${BUSINESS_INFO.website}/services/${slug}`,
+      siteName: BUSINESS_INFO.name,
+      locale: 'en_US',
       type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: service.metaTitle,
+      description: service.metaDescription,
+    },
+    other: {
+      'geo.region': 'US-FL',
+      'geo.placename': 'Jacksonville',
+      'geo.position': `${BUSINESS_INFO.geo.latitude};${BUSINESS_INFO.geo.longitude}`,
+      'ICBM': `${BUSINESS_INFO.geo.latitude}, ${BUSINESS_INFO.geo.longitude}`,
     },
   };
 }
@@ -223,6 +237,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                     <Link
                       key={area.slug}
                       href={`/${area.slug}-painting-contractor`}
+                      title={`${area.name} Painters`}
                       className="px-4 py-2 bg-gray-100 hover:bg-teal-50 text-gray-700 hover:text-teal-600 rounded-full transition-colors text-sm"
                     >
                       {area.name}

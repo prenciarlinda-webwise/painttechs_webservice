@@ -77,7 +77,7 @@ export default function About() {
               ))}
             </div>
 
-            <Button href="/about" variant="primary">
+            <Button href="/about" variant="primary" title="About Paint-Techs LLC Jacksonville Painters">
               Learn More About Us
             </Button>
           </div>
@@ -89,6 +89,7 @@ export default function About() {
               <Image
                 src="/images/exterior-painting-nocatee-fl-1.webp"
                 alt="Professional exterior painting project in Nocatee FL"
+                title="Exterior House Painting by Jacksonville Painters"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"

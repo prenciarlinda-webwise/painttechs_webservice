@@ -20,13 +20,13 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services', hasDropdown: true },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/areas-we-serve', label: 'Areas' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/', label: 'Home', title: 'Jacksonville Painters - Home' },
+    { href: '/about', label: 'About', title: 'About Paint-Techs LLC Jacksonville Painters' },
+    { href: '/services', label: 'Services', title: 'Painting Services Jacksonville FL', hasDropdown: true },
+    { href: '/gallery', label: 'Gallery', title: 'Painting Project Gallery Jacksonville' },
+    { href: '/areas-we-serve', label: 'Areas', title: 'Service Areas - Jacksonville & Northeast FL' },
+    { href: '/blog', label: 'Blog', title: 'Painting Tips & Blog' },
+    { href: '/contact', label: 'Contact', title: 'Contact Jacksonville Painters - Free Estimate' },
   ];
 
   return (
@@ -40,10 +40,11 @@ export default function Header() {
       <Container>
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" title="Jacksonville Painters - Home" className="flex items-center gap-2">
             <Image
               src="/images/logo/paint-techs-llc-logo.webp"
               alt="Paint-Techs LLC - Professional Painting Services Jacksonville FL"
+              title="Paint-Techs LLC - Jacksonville Painters"
               width={180}
               height={180}
               className="h-12 w-auto"
@@ -64,6 +65,7 @@ export default function Header() {
                   >
                     <Link
                       href={link.href}
+                      title={link.title}
                       className="px-4 py-2 text-gray-700 hover:text-orange-500 font-medium transition-colors flex items-center gap-1"
                     >
                       {link.label}
@@ -81,6 +83,7 @@ export default function Header() {
                         <Link
                           key={service.id}
                           href={`/services/${service.slug}`}
+                          title={`${service.name} Jacksonville FL`}
                           className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors"
                         >
                           <span className="font-medium">{service.name}</span>
@@ -94,6 +97,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={link.href}
+                    title={link.title}
                     className="px-4 py-2 text-gray-700 hover:text-orange-500 font-medium transition-colors"
                   >
                     {link.label}
@@ -158,6 +162,7 @@ export default function Header() {
               <div key={link.href}>
                 <Link
                   href={link.href}
+                  title={link.title}
                   className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-lg font-medium transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -169,6 +174,7 @@ export default function Header() {
                       <Link
                         key={service.id}
                         href={`/services/${service.slug}`}
+                        title={`${service.name} Jacksonville FL`}
                         className="block px-4 py-2 text-gray-600 hover:text-orange-500 text-sm transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
