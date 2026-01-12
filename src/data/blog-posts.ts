@@ -382,7 +382,7 @@ We use drop cloths, but consider:
 
 ## Exterior Painting Prep
 
-![Exterior painting preparation in Jacksonville FL](/images/exterior-painting-jacksonville-fl-10.webp)
+![Exterior painting preparation in Jacksonville FL](/images/exterior-painting-nocatee-fl-11.webp)
 
 ### Landscaping
 
@@ -597,11 +597,11 @@ Choosing finishes can be confusing. Contact Paint-Techs LLC for a free consultat
     slug: 'can-you-paint-vinyl-siding',
     title: 'Can You Paint Vinyl Siding? (Yes, and Here is the Jacksonville Guide to Doing it Right)',
     excerpt: 'Thinking about painting your vinyl siding instead of replacing it? Learn the proper techniques, best paints, and critical mistakes to avoid for a lasting finish in Florida.',
-    featuredImage: '/images/exterior-painting-jacksonville-fl-10.webp',
+    featuredImage: '/images/exterior-painting-nocatee-fl-11.webp',
     content: `
 # Can You Paint Vinyl Siding? (Yes, and Here is the Jacksonville Guide to Doing it Right)
 
-![Exterior painting project Jacksonville FL](/images/exterior-painting-jacksonville-fl-10.webp)
+![Exterior painting project Jacksonville FL](/images/exterior-painting-nocatee-fl-11.webp)
 
 Yes, you can absolutely paint vinyl siding - and for many Jacksonville homeowners, it's a smart alternative to costly siding replacement. When done correctly, painted vinyl siding can look fantastic and last for years. But there are specific rules you need to follow, especially in Florida's challenging climate.
 
