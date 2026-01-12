@@ -26,8 +26,8 @@ export const servicesData: ServiceDetail[] = [
     heroTitle: 'Interior Painting Jacksonville FL - Professional Interior Painters',
     heroSubtitle: 'Jacksonville\'s trusted interior painting contractor delivering flawless results for homes throughout Northeast Florida.',
     description: 'Paint-Techs LLC is Jacksonville\'s premier interior painting company. Our professional interior painters transform homes with expert craftsmanship, premium paints, and meticulous attention to detail. We provide interior house painting, interior home painting, and interior residential painting services throughout Jacksonville and surrounding areas.',
-    image: '/images/interior-painting-before-after-nocatee-fl-1.webp',
-    imageAlt: 'Interior painting project Nocatee FL',
+    image: '/images/interior-living-room-sage-green-accent-wall.webp',
+    imageAlt: 'Interior painting Jacksonville FL - living room with sage green accent wall',
     longDescription: `## Interior Painting Services in Jacksonville, FL
 
 At Paint-Techs LLC, we understand that your home's interior is a reflection of your personal style. As Jacksonville's trusted interior painting contractor, our experienced painting professionals are dedicated to transforming your living spaces with precision, care, and exceptional craftsmanship.
@@ -338,7 +338,7 @@ Our commercial painting services cover a wide range of properties, from small of
     heroTitle: 'Pool Deck Painting Jacksonville FL - Cool Deck Coatings',
     heroSubtitle: 'Professional pool deck painting, staining, and cool deck coatings for Jacksonville homes. Beat the Florida heat with heat-reflective pool deck surfaces.',
     description: 'Paint-Techs LLC provides professional pool deck painting and staining services in Jacksonville, FL. Our cool deck coatings and heat-reflective finishes keep your pool deck comfortable in the Florida sun while protecting against UV damage, moisture, and wear.',
-    image: '/images/pool-deck-painting-jacksonville-fl.webp',
+    image: '/images/deck-painting-services-nocatee-fl.webp',
     imageAlt: 'Pool deck painting and staining Jacksonville FL',
     longDescription: `## Pool Deck Painting and Staining Services in Jacksonville, FL
 
