@@ -16,9 +16,10 @@ export const metadata: Metadata = generateMetadata({
 });
 
 const serviceImages: Record<string, string> = {
-  'interior-painting': '/images/painting-project-jacksonville-fl-10.webp',
+  'interior-painting': '/images/interior-living-room-sage-green-accent-wall.webp',
   'exterior-painting': '/images/exterior-painting-nocatee-fl-1.webp',
   'cabinet-painting': '/images/cabinet-painting-before-after-nocatee-before-after.webp',
+  'pool-deck-painting-staining': '/images/deck-painting-services-nocatee-fl.webp',
   'commercial-painting': '/images/commercial-painting-company-jacksonville.webp',
 };
 
