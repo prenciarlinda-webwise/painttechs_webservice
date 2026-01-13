@@ -160,7 +160,7 @@ Ponte Vedra Beach's oceanfront location creates unique challenges:
       'Premium materials and expert craftsmanship',
     ],
     neighborhoods: ['Sawgrass', 'TPC Sawgrass', 'Marsh Landing', 'Ponte Vedra Colony', 'Old Ponte Vedra', 'The Plantation', 'Sawgrass Country Club', 'Sawgrass Players Club', 'Ocean Grande'],
-    metaTitle: 'Ponte Vedra Beach Painters - Luxury Home Painting - Paint-Techs LLC',
+    metaTitle: 'Ponte Vedra Beach Painters | Premium Coastal Painting | Paint-Techs LLC',
     metaDescription: 'Premium painting services in Ponte Vedra Beach, FL. Serving Sawgrass, Marsh Landing, TPC Sawgrass area. Marine-grade coatings. Free estimates: (904) 762-7062',
     keywords: ['ponte vedra beach painters', 'painting contractor ponte vedra fl', 'house painters ponte vedra beach', 'ponte vedra painting company', 'luxury home painters ponte vedra', 'sawgrass painters'],
   },

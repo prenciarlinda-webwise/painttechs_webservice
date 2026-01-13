@@ -180,9 +180,9 @@ export const generateLocalBusinessSchema = () => ({
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5.0',
-    reviewCount: '41',
+    reviewCount: '50',
     bestRating: '5',
-    worstRating: '1',
+    worstRating: '5',
   },
   sameAs: [
     BUSINESS_INFO.links.gmb,
@@ -407,7 +407,7 @@ export const generateReviewSchema = (reviews: {
       ratingValue: avgRating.toFixed(1),
       reviewCount: reviews.length,
       bestRating: '5',
-      worstRating: '1',
+      worstRating: '5',
     },
     review: reviews.map((review) => ({
       '@type': 'Review',
@@ -419,7 +419,7 @@ export const generateReviewSchema = (reviews: {
         '@type': 'Rating',
         ratingValue: review.rating,
         bestRating: '5',
-        worstRating: '1',
+        worstRating: '5',
       },
       reviewBody: review.text,
       datePublished: review.date,
@@ -603,7 +603,9 @@ export const generateLocationBusinessSchema = (
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5.0',
-      reviewCount: '41',
+      reviewCount: '50',
+      bestRating: '5',
+      worstRating: '5',
     },
     sameAs: [
       BUSINESS_INFO.links.gmb,

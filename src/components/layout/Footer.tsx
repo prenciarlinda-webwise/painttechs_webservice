@@ -194,9 +194,20 @@ export default function Footer() {
       <div className="border-t border-gray-800 py-6">
         <Container>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
-              &copy; {currentYear} {BUSINESS_INFO.name}. All rights reserved.
-            </p>
+            <div className="text-gray-500 text-sm text-center md:text-left">
+              <p>&copy; {currentYear} {BUSINESS_INFO.name}. All rights reserved.</p>
+              <p className="mt-1">
+                SEO and Website Building by{' '}
+                <a
+                  href="https://www.websiteandseoagency.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-orange-400 transition-colors"
+                >
+                  Web Wise
+                </a>
+              </p>
+            </div>
             <div className="flex gap-6 text-sm">
               <Link href="/privacy-policy" title="Privacy Policy - Paint-Techs LLC" className="text-gray-500 hover:text-orange-400 transition-colors">
                 Privacy Policy

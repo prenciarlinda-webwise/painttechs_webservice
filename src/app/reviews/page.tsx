@@ -23,7 +23,7 @@ export default function ReviewsPage() {
     <>
       <JsonLd
         data={generateReviewSchema(
-          testimonials.map((t) => ({
+          sortedReviews.map((t) => ({
             name: t.name,
             rating: t.rating,
             text: t.text,
