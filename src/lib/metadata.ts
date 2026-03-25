@@ -141,7 +141,7 @@ export const generateLocationMetadata = (
   return generateMetadata({
     title: `${locationName} Painters - House Painting ${locationName} FL`,
     description: `${description.substring(0, 155)}...`,
-    path: `/${slug}-painting-contractor`,
+    path: `/${slug}-house-painters`,
   });
 };
 

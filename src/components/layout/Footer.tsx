@@ -98,7 +98,7 @@ export default function Footer() {
                 {SERVICE_AREAS.slice(0, 6).map((area) => (
                   <li key={area.slug}>
                     <Link
-                      href={`/${area.slug}-painting-contractor`}
+                      href={`/${area.slug}-house-painters`}
                       title={`${area.name} Painters - House Painting Services`}
                       className="text-gray-400 hover:text-orange-400 transition-colors"
                     >
@@ -209,12 +209,6 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex gap-6 text-sm">
-              <Link href="/privacy-policy" title="Privacy Policy - Paint-Techs LLC" className="text-gray-500 hover:text-orange-400 transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms-of-service" title="Terms of Service - Paint-Techs LLC" className="text-gray-500 hover:text-orange-400 transition-colors">
-                Terms of Service
-              </Link>
               <Link href="/sitemap-page" title="Sitemap - Paint-Techs LLC Jacksonville Painters" className="text-gray-500 hover:text-orange-400 transition-colors">
                 Sitemap
               </Link>

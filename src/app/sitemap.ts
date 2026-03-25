@@ -71,6 +71,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Gallery category pages
+  const galleryPages = ['interior', 'exterior', 'cabinet'].map((category) => ({
+    url: `${baseUrl}/gallery/${category}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
+  // Project pages
+  const projectPages = [
+    'cabinet-refinishing-nocatee',
+    'residential-exterior-painting-jacksonville',
+    'commercial-retail-renovation',
+  ].map((slug) => ({
+    url: `${baseUrl}/projects/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.5,
+  }));
+
   // Service pages
   const servicePages = servicesData.map((service) => ({
     url: `${baseUrl}/services/${service.slug}`,
@@ -96,5 +116,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...locationPages, ...blogPages];
+  return [...staticPages, ...galleryPages, ...projectPages, ...servicePages, ...locationPages, ...blogPages];
 }

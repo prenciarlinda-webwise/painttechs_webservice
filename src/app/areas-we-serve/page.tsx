@@ -74,7 +74,7 @@ export default function AreasPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {locationsData.map((location) => (
-              <Link key={location.slug} href={`/${location.slug}-painting-contractor`}>
+              <Link key={location.slug} href={`/${location.slug}-house-painters`}>
                 <Card className="h-full group cursor-pointer hover:border-orange-300 transition-all">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
@@ -125,7 +125,7 @@ export default function AreasPage() {
                   {locationsByCounty[county].map((location) => (
                     <li key={location.slug}>
                       <Link
-                        href={`/${location.slug}-painting-contractor`}
+                        href={`/${location.slug}-house-painters`}
                         className="flex items-center gap-2 text-gray-700 hover:text-orange-600 transition-colors py-1"
                       >
                         <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

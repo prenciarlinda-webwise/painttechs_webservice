@@ -236,7 +236,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   {SERVICE_AREAS.map((area) => (
                     <Link
                       key={area.slug}
-                      href={`/${area.slug}-painting-contractor`}
+                      href={`/${area.slug}-house-painters`}
                       title={`${area.name} Painters`}
                       className="px-4 py-2 bg-gray-100 hover:bg-teal-50 text-gray-700 hover:text-teal-600 rounded-full transition-colors text-sm"
                     >

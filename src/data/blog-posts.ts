@@ -1134,7 +1134,7 @@ Professional painters have the equipment to properly clean and coat stucco surfa
 
 Your stucco home is a significant investment. Proper painting protects the stucco, enhances curb appeal, and prevents costly damage from moisture intrusion.
 
-At Paint-Techs LLC, we specialize in stucco painting throughout Jacksonville, [Ponte Vedra](/ponte-vedra-painting-contractor), [St. Augustine](/st-augustine-painting-contractor), and all of Northeast Florida. We understand the unique challenges of Florida's climate and use proven techniques for lasting results.
+At Paint-Techs LLC, we specialize in stucco painting throughout Jacksonville, [Ponte Vedra](/ponte-vedra-beach-house-painters), [St. Augustine](/st-augustine-house-painters), and all of Northeast Florida. We understand the unique challenges of Florida's climate and use proven techniques for lasting results.
 
 Ready to refresh your stucco exterior? Contact us for a free estimate.
 

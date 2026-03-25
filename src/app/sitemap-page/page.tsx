@@ -167,7 +167,7 @@ export default function SitemapPage() {
                 {locationsData.map((location) => (
                   <li key={location.slug}>
                     <Link
-                      href={`/${location.slug}-painting-contractor`}
+                      href={`/${location.slug}-house-painters`}
                       className="group flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                     >
                       <svg className="w-5 h-5 text-gray-400 group-hover:text-blue-500 mt-0.5 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
