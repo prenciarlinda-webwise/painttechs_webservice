@@ -82,7 +82,7 @@ export default function Header() {
                       {SERVICES.map((service) => (
                         <Link
                           key={service.id}
-                          href={`/services/${service.slug}`}
+                          href={`/${service.slug}`}
                           title={`${service.name} Jacksonville FL`}
                           className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors"
                         >
@@ -173,7 +173,7 @@ export default function Header() {
                     {SERVICES.map((service) => (
                       <Link
                         key={service.id}
-                        href={`/services/${service.slug}`}
+                        href={`/${service.slug}`}
                         title={`${service.name} Jacksonville FL`}
                         className="block px-4 py-2 text-gray-600 hover:text-orange-500 text-sm transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}

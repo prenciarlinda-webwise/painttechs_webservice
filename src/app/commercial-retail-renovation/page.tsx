@@ -7,20 +7,98 @@ import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
 
 const projectImages = [
   {
-    src: '/images/cabinet-painting-before-after-nocatee-before-after.webp',
-    alt: 'Kitchen cabinet before and after transformation Nocatee FL',
-    title: 'After: Kitchen Cabinet Transformation',
+    src: '/images/commercial-painting-before-orange-walls.webp',
+    alt: 'Commercial retail renovation before - orange walls Jacksonville FL',
+    title: 'Before: Original Orange Walls',
+    category: 'before',
+  },
+  {
+    src: '/images/commercial-painting-after-orange-accent.webp',
+    alt: 'Commercial retail renovation before - orange accent wall Jacksonville FL',
+    title: 'Before: Orange Accent Wall',
+    category: 'before',
+  },
+  {
+    src: '/images/commercial-painting-before-wall-prep.webp',
+    alt: 'Commercial retail renovation before - wall preparation Jacksonville FL',
+    title: 'Before: Wall Prep Stage',
+    category: 'before',
+  },
+  {
+    src: '/images/commercial-interior-painting-completed.webp',
+    alt: 'Commercial retail renovation completed Jacksonville FL',
+    title: 'After: Interior Complete',
     category: 'after',
   },
   {
-    src: '/images/cabinet-painting-before-after-ponte-vedra-beach-fl-before-after.webp',
-    alt: 'Cabinet refinishing completed Nocatee FL',
-    title: 'After: Cabinet Refinishing Complete',
+    src: '/images/commercial-painting-before-retail-prep.webp',
+    alt: 'Commercial retail renovation before - retail space preparation Jacksonville FL',
+    title: 'Before: Retail Space Prep',
+    category: 'before',
+  },
+  {
+    src: '/images/commercial-painting-retail-store-dark-walls.webp',
+    alt: 'Commercial retail renovation with dark accent walls Jacksonville FL',
+    title: 'After: Dark Accent Walls',
+    category: 'after',
+  },
+  {
+    src: '/images/commercial-painting-before-demolition.webp',
+    alt: 'Commercial retail renovation before - demolition Jacksonville FL',
+    title: 'Before: Demo & Prep',
+    category: 'before',
+  },
+  {
+    src: '/images/commercial-painting-services-retail-space.webp',
+    alt: 'Commercial retail renovation completed Jacksonville FL',
+    title: 'After: Retail Space Complete',
+    category: 'after',
+  },
+  {
+    src: '/images/commercial-interior-painting-office-hallway.webp',
+    alt: 'Commercial retail renovation office hallway Jacksonville FL',
+    title: 'After: Office Hallway',
+    category: 'after',
+  },
+  {
+    src: '/images/commercial-painting-jacksonville-retail.webp',
+    alt: 'Commercial retail renovation complete Jacksonville FL',
+    title: 'After: Retail Location Complete',
+    category: 'after',
+  },
+  {
+    src: '/images/commercial-painting-company-jacksonville.webp',
+    alt: 'Commercial retail renovation project Jacksonville FL',
+    title: 'After: Project Showcase',
+    category: 'after',
+  },
+  {
+    src: '/images/commercial-painting-contractor-florida.webp',
+    alt: 'Commercial retail renovation workmanship Jacksonville FL',
+    title: 'After: Professional Workmanship',
+    category: 'after',
+  },
+  {
+    src: '/images/commercial-painting-services-preparation.webp',
+    alt: 'Commercial retail renovation surface preparation Jacksonville FL',
+    title: 'After: Surface Preparation Complete',
+    category: 'after',
+  },
+  {
+    src: '/images/commercial-painting-near-me-jacksonville.webp',
+    alt: 'Commercial retail renovation project Jacksonville FL',
+    title: 'After: Jacksonville Project',
+    category: 'after',
+  },
+  {
+    src: '/images/commercial-painting-project-retail-interior.webp',
+    alt: 'Commercial retail renovation interior design Jacksonville FL',
+    title: 'After: Retail Interior Design',
     category: 'after',
   },
 ];
 
-export default function CabinetRefinishingNocatee() {
+export default function CommercialRetailRenovation() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const [filter, setFilter] = useState<'all' | 'before' | 'after'>('all');
@@ -48,13 +126,14 @@ export default function CabinetRefinishingNocatee() {
         <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           <div className="max-w-4xl">
             <span className="inline-block px-4 py-2 bg-orange-500/20 text-orange-400 rounded-full text-sm font-medium mb-4">
-              Cabinet Refinishing Project
+              Commercial Painting Project
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Kitchen Cabinet Refinishing in Nocatee, FL
+              Commercial Retail Renovation in Jacksonville, FL
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Complete kitchen cabinet transformation delivering a factory-smooth finish at a fraction of replacement cost.
+              Complete commercial space transformation featuring retail store renovation with modern color schemes,
+              professional prep work, and durable commercial-grade finishes.
             </p>
             <div className="flex flex-wrap gap-4 text-gray-400">
               <span className="flex items-center gap-2">
@@ -62,13 +141,13 @@ export default function CabinetRefinishingNocatee() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Nocatee, FL
+                Jacksonville, FL
               </span>
               <span className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
-                Residential Kitchen
+                Retail & Commercial Space
               </span>
               <span className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,7 +184,7 @@ export default function CabinetRefinishingNocatee() {
               </div>
 
               {/* Image Gallery Grid */}
-              <div className="grid sm:grid-cols-2 gap-4 mb-12">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
                 {filteredImages.map((image, index) => (
                   <div
                     key={index}
@@ -141,27 +220,31 @@ export default function CabinetRefinishingNocatee() {
               <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
                 <h2 className="text-2xl font-bold text-navy-900 mb-6">Project Overview</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  This cabinet refinishing project in Nocatee showcases our expertise in transforming outdated kitchen cabinets
-                  into stunning focal points. Working with the homeowner, we delivered a factory-quality finish that completely
-                  revitalized their kitchen at 50-70% less than cabinet replacement cost.
+                  This comprehensive commercial painting project in Jacksonville showcases Paint-Techs LLC expertise
+                  in transforming retail and business spaces. Our team completed a full-scale renovation of this
+                  commercial property, including extensive demolition work, surface preparation, and application
+                  of durable commercial-grade finishes.
                 </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Our meticulous process included thorough TSP cleaning, professional deglossing, precision sanding,
-                  and application of specialized bonding primer. The final finish was applied using professional HVLP
-                  spray equipment, ensuring a smooth, durable coating that will resist chips and scratches for years to come.
+                  The project featured dramatic before-and-after transformations, including the conversion of
+                  dated orange walls to modern accent features, professional office hallway painting, and
+                  complete retail space renovations with sophisticated dark accent walls that create a
+                  contemporary shopping experience.
                 </p>
 
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">Services Provided</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">Scope of Work</h3>
                 <ul className="grid md:grid-cols-2 gap-3 mb-6">
                   {[
-                    'Complete cabinet door removal & labeling',
-                    'TSP cleaning & deglossing',
-                    'Professional sanding & prep',
-                    'Bonding primer application',
-                    'HVLP spray finishing',
-                    'Hardware replacement',
-                    'Precise reinstallation',
-                    'Final inspection & touch-ups',
+                    'Complete space demolition & prep',
+                    'Drywall repair & finishing',
+                    'Commercial-grade primer application',
+                    'Multi-room color coordination',
+                    'Accent wall creation',
+                    'Office hallway painting',
+                    'Retail floor-to-ceiling coverage',
+                    'Trim & detail work',
+                    'High-traffic durability coatings',
+                    'Final walkthrough & touch-ups',
                   ].map((service, index) => (
                     <li key={index} className="flex items-center gap-2 text-gray-600">
                       <svg className="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -172,25 +255,29 @@ export default function CabinetRefinishingNocatee() {
                   ))}
                 </ul>
 
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">Results</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">Why Choose Paint-Techs for Commercial Projects?</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Commercial spaces require specialized attention to minimize business disruption while delivering
+                  exceptional results. Paint-Techs LLC offers flexible scheduling including nights and weekends,
+                  uses fast-drying commercial-grade paints, and maintains strict timelines to keep your business
+                  operational.
+                </p>
                 <p className="text-gray-600 leading-relaxed">
-                  The homeowner received a complete kitchen transformation with a smooth, factory-like finish.
-                  The project was completed within 4 days with minimal disruption. The new finish is designed
-                  to withstand daily use, moisture, and cleaning for 10+ years with proper care.
+                  We understand that your commercial space represents your brand. Our team works closely with
+                  business owners to select colors and finishes that align with brand identity while providing
+                  the durability needed for high-traffic environments.
                 </p>
               </div>
 
               {/* Location Info */}
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">About Nocatee</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">Commercial Painting Service Areas</h3>
                 <p className="text-gray-600 mb-4">
-                  Nocatee is a master-planned community in Ponte Vedra, Florida, known for its beautiful homes and
-                  family-friendly amenities. Paint-Techs LLC is proud to serve Nocatee homeowners with professional
-                  cabinet painting and refinishing services.
+                  Paint-Techs LLC provides professional commercial painting services for businesses throughout
+                  Northeast Florida, including offices, retail stores, restaurants, and industrial facilities in:
                 </p>
-                <h4 className="font-semibold text-navy-900 mb-2">We Also Serve:</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['Ponte Vedra Beach', 'Jacksonville', 'Jacksonville Beach', 'St. Augustine', 'Atlantic Beach', 'St. Johns'].map((area) => (
+                  {['Jacksonville', 'Nocatee', 'Ponte Vedra Beach', 'Jacksonville Beach', 'St. Augustine', 'Orange Park', 'Fleming Island', 'Mandarin'].map((area) => (
                     <span key={area} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
                       {area}
                     </span>
@@ -205,15 +292,15 @@ export default function CabinetRefinishingNocatee() {
                 {/* WhatsApp Quote Box */}
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6">
                   <div className="bg-gradient-to-r from-green-500 to-green-600 p-6 text-white">
-                    <h3 className="text-xl font-bold mb-2">Get a Free Quote</h3>
+                    <h3 className="text-xl font-bold mb-2">Get a Free Commercial Quote</h3>
                     <p className="text-green-100 text-sm">Quick response via WhatsApp</p>
                   </div>
                   <div className="p-6">
                     <p className="text-gray-600 mb-6">
-                      Ready to transform your kitchen cabinets? Get a free, no-obligation quote today!
+                      Need professional painting for your business? Get a free, no-obligation quote today!
                     </p>
                     <a
-                      href={getWhatsAppLink("Hi! I'm interested in cabinet painting services. I saw your Nocatee project and would like a free quote.")}
+                      href={getWhatsAppLink("Hi! I'm interested in commercial painting services for my business in Jacksonville. I saw your retail project and would like a free quote.")}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200"
@@ -238,25 +325,33 @@ export default function CabinetRefinishingNocatee() {
                   </div>
                 </div>
 
-                {/* Project Stats */}
+                {/* Commercial Benefits */}
                 <div className="bg-navy-900 rounded-xl p-6 text-white mb-6">
-                  <h3 className="font-semibold mb-4">Project Highlights</h3>
+                  <h3 className="font-semibold mb-4">Commercial Painting Benefits</h3>
                   <ul className="space-y-3">
-                    <li className="flex justify-between">
-                      <span className="text-gray-400">Savings vs Replacement</span>
-                      <span className="font-semibold text-orange-400">50-70%</span>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-gray-300 text-sm">Flexible night & weekend scheduling</span>
                     </li>
-                    <li className="flex justify-between">
-                      <span className="text-gray-400">Completion Time</span>
-                      <span className="font-semibold">4 Days</span>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-gray-300 text-sm">Minimal business disruption</span>
                     </li>
-                    <li className="flex justify-between">
-                      <span className="text-gray-400">Finish Durability</span>
-                      <span className="font-semibold">10+ Years</span>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-gray-300 text-sm">Commercial-grade durability</span>
                     </li>
-                    <li className="flex justify-between">
-                      <span className="text-gray-400">Location</span>
-                      <span className="font-semibold">Nocatee, FL</span>
+                    <li className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-gray-300 text-sm">Fully licensed & insured</span>
                     </li>
                   </ul>
                 </div>
@@ -266,19 +361,27 @@ export default function CabinetRefinishingNocatee() {
                   <h3 className="font-semibold text-navy-900 mb-4">Related Services</h3>
                   <ul className="space-y-2">
                     <li>
-                      <Link href="/services/cabinet-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
+                      <Link href="/commercial-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
-                        Cabinet Painting Services
+                        Commercial Painting Services
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/interior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
+                      <Link href="/interior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                         Interior Painting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/exterior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                        Exterior Painting
                       </Link>
                     </li>
                     <li>

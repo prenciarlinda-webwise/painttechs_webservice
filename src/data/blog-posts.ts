@@ -76,15 +76,15 @@ Currently, Jacksonville homeowners are gravitating toward:
 
 ## When to Hire a Professional
 
-While choosing colors is personal, a professional color consultation can save time and prevent costly mistakes. At Paint-Techs, we offer expert color advice as part of our [interior painting services](/services/interior-painting).
+While choosing colors is personal, a professional color consultation can save time and prevent costly mistakes. At Paint-Techs, we offer expert color advice as part of our [interior painting services](/interior-painting).
 
 Ready to transform your Jacksonville home with fresh paint colors? Contact Paint-Techs LLC for a free consultation and quote!
 
 ---
 
 **Related Services:**
-- [Interior Painting Services](/services/interior-painting) -Expert color consultation and flawless application
-- [Cabinet Painting](/services/cabinet-painting) -Transform your kitchen with updated cabinet colors
+- [Interior Painting Services](/interior-painting) -Expert color consultation and flawless application
+- [Cabinet Painting](/cabinet-painting) -Transform your kitchen with updated cabinet colors
     `,
     category: 'Tips & Guides',
     tags: ['color selection', 'interior design', 'home improvement', 'jacksonville'],
@@ -170,15 +170,15 @@ Watch for these warning signs:
 
 ## Protect Your Investment
 
-Your Jacksonville home is likely your largest investment. Professional [exterior painting](/services/exterior-painting) protects that investment while enhancing your home's beauty and value.
+Your Jacksonville home is likely your largest investment. Professional [exterior painting](/exterior-painting) protects that investment while enhancing your home's beauty and value.
 
 Contact Paint-Techs LLC today for a free exterior painting estimate. Let us help protect your home from Florida's challenging climate!
 
 ---
 
 **Related Services:**
-- [Exterior Painting Services](/services/exterior-painting) -Weather-resistant coatings for Florida homes
-- [Interior Painting](/services/interior-painting) -Complete your home's transformation inside and out
+- [Exterior Painting Services](/exterior-painting) -Weather-resistant coatings for Florida homes
+- [Interior Painting](/interior-painting) -Complete your home's transformation inside and out
     `,
     category: 'Home Improvement',
     tags: ['exterior painting', 'florida weather', 'home protection', 'professional painting'],
@@ -290,13 +290,13 @@ Cabinet painting is also the eco-friendly choice:
 
 Not sure which option is right for your Jacksonville kitchen? Contact Paint-Techs LLC for a free consultation. We'll honestly assess your cabinets and help you make the best decision for your home and budget.
 
-Learn more about our [professional cabinet painting services](/services/cabinet-painting) and see why Jacksonville homeowners save thousands compared to cabinet replacement.
+Learn more about our [professional cabinet painting services](/cabinet-painting) and see why Jacksonville homeowners save thousands compared to cabinet replacement.
 
 ---
 
 **Related Services:**
-- [Cabinet Painting & Refinishing](/services/cabinet-painting) -Save 50-70% vs. cabinet replacement
-- [Interior Painting](/services/interior-painting) -Complete your kitchen transformation with fresh wall colors
+- [Cabinet Painting & Refinishing](/cabinet-painting) -Save 50-70% vs. cabinet replacement
+- [Interior Painting](/interior-painting) -Complete your kitchen transformation with fresh wall colors
     `,
     category: 'Kitchen',
     tags: ['cabinet painting', 'kitchen renovation', 'cost comparison', 'home value'],
@@ -428,9 +428,9 @@ With proper preparation on both sides, your painting project will be smooth and 
 ---
 
 **Our Painting Services:**
-- [Interior Painting](/services/interior-painting) -Transform your living spaces with expert color application
-- [Exterior Painting](/services/exterior-painting) -Protect and beautify your home's exterior
-- [Cabinet Painting](/services/cabinet-painting) -Refresh your kitchen without the cost of replacement
+- [Interior Painting](/interior-painting) -Transform your living spaces with expert color application
+- [Exterior Painting](/exterior-painting) -Protect and beautify your home's exterior
+- [Cabinet Painting](/cabinet-painting) -Refresh your kitchen without the cost of replacement
     `,
     category: 'Tips & Guides',
     tags: ['painting preparation', 'home painting', 'tips', 'professional painting'],
@@ -579,9 +579,9 @@ Choosing finishes can be confusing. Contact Paint-Techs LLC for a free consultat
 ---
 
 **Our Painting Services:**
-- [Interior Painting](/services/interior-painting) -Expert finish selection and flawless application for every room
-- [Cabinet Painting](/services/cabinet-painting) -Durable semi-gloss and high-gloss finishes for kitchen cabinets
-- [Exterior Painting](/services/exterior-painting) -Weather-resistant finishes for Florida's climate
+- [Interior Painting](/interior-painting) -Expert finish selection and flawless application for every room
+- [Cabinet Painting](/cabinet-painting) -Durable semi-gloss and high-gloss finishes for kitchen cabinets
+- [Exterior Painting](/exterior-painting) -Weather-resistant finishes for Florida's climate
     `,
     category: 'Tips & Guides',
     tags: ['paint finishes', 'interior painting', 'paint selection', 'home improvement'],
@@ -755,7 +755,7 @@ Painting vinyl siding yourself makes sense if:
 
 ### When to Hire a Professional
 
-Consider professional [exterior painting services](/services/exterior-painting) when:
+Consider professional [exterior painting services](/exterior-painting) when:
 - Your home is two stories or higher
 - You lack spray equipment experience
 - The siding needs significant prep work
@@ -919,12 +919,12 @@ The keys to success are:
 - Proper application technique
 - Following Florida-specific timing guidelines
 
-For Jacksonville homeowners considering this project, Paint-Techs LLC offers professional vinyl siding painting with proper prep, premium paints, and lasting results. Contact us for a free estimate on your [exterior painting project](/services/exterior-painting).
+For Jacksonville homeowners considering this project, Paint-Techs LLC offers professional vinyl siding painting with proper prep, premium paints, and lasting results. Contact us for a free estimate on your [exterior painting project](/exterior-painting).
 
 ---
 
 **Related Services:**
-- [Exterior Painting Services](/services/exterior-painting) - Professional exterior painting for Jacksonville homes
+- [Exterior Painting Services](/exterior-painting) - Professional exterior painting for Jacksonville homes
     `,
     category: 'Exterior Painting',
     tags: ['vinyl siding', 'exterior painting', 'home improvement', 'jacksonville'],
@@ -1120,7 +1120,7 @@ Work in favorable weather. Start early, follow the shade, stop before afternoon 
 
 ## When to Call a Professional
 
-Painting stucco isn't a typical DIY project. Consider professional [exterior painting services](/services/exterior-painting) when:
+Painting stucco isn't a typical DIY project. Consider professional [exterior painting services](/exterior-painting) when:
 
 - Your home is two stories or higher
 - There's significant crack repair needed
@@ -1141,7 +1141,7 @@ Ready to refresh your stucco exterior? Contact us for a free estimate.
 ---
 
 **Related Services:**
-- [Exterior Painting Services](/services/exterior-painting) - Expert stucco painting for Florida homes
+- [Exterior Painting Services](/exterior-painting) - Expert stucco painting for Florida homes
     `,
     category: 'Exterior Painting',
     tags: ['stucco', 'exterior painting', 'florida homes', 'ponte vedra', 'jacksonville'],
@@ -1650,14 +1650,14 @@ The best white paint color won't matter if the application isn't professional. C
 - Professional spray application for smooth finish
 - Multiple coats for durability
 
-At Paint-Techs LLC, we specialize in [cabinet painting](/services/cabinet-painting) throughout Jacksonville and Northeast Florida. We can help you select the perfect white and deliver a flawless, factory-smooth finish that lasts.
+At Paint-Techs LLC, we specialize in [cabinet painting](/cabinet-painting) throughout Jacksonville and Northeast Florida. We can help you select the perfect white and deliver a flawless, factory-smooth finish that lasts.
 
 Ready to transform your kitchen with beautiful white cabinets? Contact us for a free consultation and estimate.
 
 ---
 
 **Related Services:**
-- [Cabinet Painting & Refinishing](/services/cabinet-painting) - Professional cabinet painting in Jacksonville
+- [Cabinet Painting & Refinishing](/cabinet-painting) - Professional cabinet painting in Jacksonville
     `,
     category: 'Kitchen',
     tags: ['cabinet painting', 'white paint', 'kitchen design', 'paint colors', 'benjamin moore'],
@@ -1886,8 +1886,8 @@ Ready to discuss your painting project? Contact Paint-Techs LLC for expert advic
 ---
 
 **Related Services:**
-- [Interior Painting](/services/interior-painting) - Professional interior painting in Jacksonville
-- [Exterior Painting](/services/exterior-painting) - Expert exterior painting for Florida homes
+- [Interior Painting](/interior-painting) - Professional interior painting in Jacksonville
+- [Exterior Painting](/exterior-painting) - Expert exterior painting for Florida homes
     `,
     category: 'Tips & Guides',
     tags: ['sherwin williams', 'paint comparison', 'duration', 'emerald', 'florida painting'],

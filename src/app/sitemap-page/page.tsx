@@ -118,7 +118,7 @@ export default function SitemapPage() {
                 {SERVICES.map((service) => (
                   <li key={service.id}>
                     <Link
-                      href={`/services/${service.slug}`}
+                      href={`/${service.slug}`}
                       className="group flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                     >
                       <svg className="w-5 h-5 text-gray-400 group-hover:text-teal-500 mt-0.5 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">

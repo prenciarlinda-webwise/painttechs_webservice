@@ -581,7 +581,7 @@ export const generateLocationBusinessSchema = (
           '@type': 'Service',
           name: `${service.name} in ${locationName}`,
           description: service.shortDescription,
-          url: `${BUSINESS_INFO.website}/services/${service.slug}`,
+          url: `${BUSINESS_INFO.website}/${service.slug}`,
           areaServed: {
             '@type': 'City',
             name: locationName,
@@ -731,7 +731,7 @@ export const generateServicesListSchema = () => ({
       '@type': 'Service',
       name: service.name,
       description: service.shortDescription,
-      url: `${BUSINESS_INFO.website}/services/${service.slug}`,
+      url: `${BUSINESS_INFO.website}/${service.slug}`,
       provider: {
         '@type': 'HousePainter',
         '@id': `${BUSINESS_INFO.website}/#localbusiness`,
@@ -806,17 +806,17 @@ export const generateGalleryCategorySchema = (
     Exterior: {
       name: 'Exterior Painting Gallery',
       description: 'Browse our portfolio of exterior house painting projects in Jacksonville, FL. Before and after photos of home exteriors throughout Northeast Florida.',
-      serviceLink: '/services/exterior-painting',
+      serviceLink: '/exterior-painting',
     },
     Interior: {
       name: 'Interior Painting Gallery',
       description: 'View our interior painting project gallery featuring homes in Jacksonville, FL. Room transformations, color choices, and finished results.',
-      serviceLink: '/services/interior-painting',
+      serviceLink: '/interior-painting',
     },
     Cabinet: {
       name: 'Cabinet Painting Gallery',
       description: 'See our cabinet painting and refinishing transformations in Jacksonville, FL. Before and after photos showing kitchen cabinet makeovers.',
-      serviceLink: '/services/cabinet-painting',
+      serviceLink: '/cabinet-painting',
     },
   };
 

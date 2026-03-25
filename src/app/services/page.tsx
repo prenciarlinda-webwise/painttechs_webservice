@@ -48,7 +48,7 @@ export default function ServicesPage() {
         <Container>
           <div className="grid md:grid-cols-2 gap-8">
             {servicesData.map((service) => (
-              <Link key={service.id} href={`/services/${service.slug}`}>
+              <Link key={service.id} href={`/${service.slug}`}>
                 <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group h-full border border-gray-100 hover:border-teal-500">
                   {/* Service Image */}
                   <div className="relative h-56 overflow-hidden">

@@ -7,98 +7,56 @@ import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
 
 const projectImages = [
   {
-    src: '/images/commercial-painting-before-orange-walls.webp',
-    alt: 'Commercial retail renovation before - orange walls Jacksonville FL',
-    title: 'Before: Original Orange Walls',
-    category: 'before',
-  },
-  {
-    src: '/images/commercial-painting-after-orange-accent.webp',
-    alt: 'Commercial retail renovation before - orange accent wall Jacksonville FL',
-    title: 'Before: Orange Accent Wall',
-    category: 'before',
-  },
-  {
-    src: '/images/commercial-painting-before-wall-prep.webp',
-    alt: 'Commercial retail renovation before - wall preparation Jacksonville FL',
-    title: 'Before: Wall Prep Stage',
-    category: 'before',
-  },
-  {
-    src: '/images/commercial-interior-painting-completed.webp',
-    alt: 'Commercial retail renovation completed Jacksonville FL',
-    title: 'After: Interior Complete',
+    src: '/images/residential-painting.webp',
+    alt: 'Residential exterior painting project completed Jacksonville FL',
+    title: 'After: Exterior Painting Complete',
     category: 'after',
   },
   {
-    src: '/images/commercial-painting-before-retail-prep.webp',
-    alt: 'Commercial retail renovation before - retail space preparation Jacksonville FL',
-    title: 'Before: Retail Space Prep',
-    category: 'before',
-  },
-  {
-    src: '/images/commercial-painting-retail-store-dark-walls.webp',
-    alt: 'Commercial retail renovation with dark accent walls Jacksonville FL',
-    title: 'After: Dark Accent Walls',
+    src: '/images/painting-project-nocatee-fl-1.webp',
+    alt: 'Residential exterior painting front view Jacksonville FL',
+    title: 'After: Front Exterior View',
     category: 'after',
   },
   {
-    src: '/images/commercial-painting-before-demolition.webp',
-    alt: 'Commercial retail renovation before - demolition Jacksonville FL',
-    title: 'Before: Demo & Prep',
-    category: 'before',
-  },
-  {
-    src: '/images/commercial-painting-services-retail-space.webp',
-    alt: 'Commercial retail renovation completed Jacksonville FL',
-    title: 'After: Retail Space Complete',
+    src: '/images/painting-project-ponte-vedra-beach-fl-2.webp',
+    alt: 'Residential exterior siding and trim detail Jacksonville FL',
+    title: 'After: Siding & Trim Detail',
     category: 'after',
   },
   {
-    src: '/images/commercial-interior-painting-office-hallway.webp',
-    alt: 'Commercial retail renovation office hallway Jacksonville FL',
-    title: 'After: Office Hallway',
+    src: '/images/painting-project-st-augustine-fl-3.webp',
+    alt: 'Exterior house painting completed Jacksonville FL',
+    title: 'After: Exterior House Painting',
     category: 'after',
   },
   {
-    src: '/images/commercial-painting-jacksonville-retail.webp',
-    alt: 'Commercial retail renovation complete Jacksonville FL',
-    title: 'After: Retail Location Complete',
+    src: '/images/painting-project-jacksonville-beach-fl-4.webp',
+    alt: 'Exterior painting surface preparation Jacksonville FL',
+    title: 'After: Surface Preparation',
     category: 'after',
   },
   {
-    src: '/images/commercial-painting-company-jacksonville.webp',
-    alt: 'Commercial retail renovation project Jacksonville FL',
-    title: 'After: Project Showcase',
+    src: '/images/painting-project-atlantic-beach-fl-5.webp',
+    alt: 'Residential exterior paint application Jacksonville FL',
+    title: 'After: Paint Application',
     category: 'after',
   },
   {
-    src: '/images/commercial-painting-contractor-florida.webp',
-    alt: 'Commercial retail renovation workmanship Jacksonville FL',
-    title: 'After: Professional Workmanship',
+    src: '/images/painting-project-orange-park-fl-6.webp',
+    alt: 'Exterior trim and fascia painting Jacksonville FL',
+    title: 'After: Trim & Fascia Work',
     category: 'after',
   },
   {
-    src: '/images/commercial-painting-services-preparation.webp',
-    alt: 'Commercial retail renovation surface preparation Jacksonville FL',
-    title: 'After: Surface Preparation Complete',
-    category: 'after',
-  },
-  {
-    src: '/images/commercial-painting-near-me-jacksonville.webp',
-    alt: 'Commercial retail renovation project Jacksonville FL',
-    title: 'After: Jacksonville Project',
-    category: 'after',
-  },
-  {
-    src: '/images/commercial-painting-project-retail-interior.webp',
-    alt: 'Commercial retail renovation interior design Jacksonville FL',
-    title: 'After: Retail Interior Design',
+    src: '/images/painting-project-middleburg-fl-17.webp',
+    alt: 'Complete residential exterior transformation Jacksonville FL',
+    title: 'After: Final Transformation',
     category: 'after',
   },
 ];
 
-export default function CommercialRetailRenovation() {
+export default function ResidentialExteriorPaintingProject() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const [filter, setFilter] = useState<'all' | 'before' | 'after'>('all');
@@ -126,14 +84,14 @@ export default function CommercialRetailRenovation() {
         <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           <div className="max-w-4xl">
             <span className="inline-block px-4 py-2 bg-orange-500/20 text-orange-400 rounded-full text-sm font-medium mb-4">
-              Commercial Painting Project
+              Exterior Painting Project
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Commercial Retail Renovation in Jacksonville, FL
+              Residential Exterior Painting in Jacksonville, FL
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Complete commercial space transformation featuring retail store renovation with modern color schemes,
-              professional prep work, and durable commercial-grade finishes.
+              Complete home exterior transformation featuring premium weather-resistant coatings,
+              meticulous prep work, and professional application for lasting curb appeal.
             </p>
             <div className="flex flex-wrap gap-4 text-gray-400">
               <span className="flex items-center gap-2">
@@ -145,9 +103,9 @@ export default function CommercialRetailRenovation() {
               </span>
               <span className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
-                Retail & Commercial Space
+                Single-Family Home
               </span>
               <span className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -220,31 +178,29 @@ export default function CommercialRetailRenovation() {
               <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
                 <h2 className="text-2xl font-bold text-navy-900 mb-6">Project Overview</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  This comprehensive commercial painting project in Jacksonville showcases Paint-Techs LLC expertise
-                  in transforming retail and business spaces. Our team completed a full-scale renovation of this
-                  commercial property, including extensive demolition work, surface preparation, and application
-                  of durable commercial-grade finishes.
+                  This comprehensive residential exterior painting project in Jacksonville showcases Paint-Techs LLC's expertise
+                  in transforming home exteriors. Our team delivered a complete exterior makeover that not only enhanced
+                  curb appeal but also provides long-lasting protection against Florida's challenging weather conditions.
                 </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  The project featured dramatic before-and-after transformations, including the conversion of
-                  dated orange walls to modern accent features, professional office hallway painting, and
-                  complete retail space renovations with sophisticated dark accent walls that create a
-                  contemporary shopping experience.
+                  The project included thorough power washing, scraping and sanding of all surfaces, caulking
+                  of gaps and cracks, and application of premium UV-resistant exterior coatings. Special attention
+                  was paid to trim, fascia, soffits, and all architectural details to ensure a flawless finish.
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy-900 mb-4">Scope of Work</h3>
                 <ul className="grid md:grid-cols-2 gap-3 mb-6">
                   {[
-                    'Complete space demolition & prep',
-                    'Drywall repair & finishing',
-                    'Commercial-grade primer application',
-                    'Multi-room color coordination',
-                    'Accent wall creation',
-                    'Office hallway painting',
-                    'Retail floor-to-ceiling coverage',
-                    'Trim & detail work',
-                    'High-traffic durability coatings',
-                    'Final walkthrough & touch-ups',
+                    'Complete power washing',
+                    'Scraping & sanding prep',
+                    'Caulking gaps & cracks',
+                    'Wood rot repair',
+                    'Primer application',
+                    'Two coats exterior paint',
+                    'Trim & fascia painting',
+                    'Soffit refinishing',
+                    'Front door painting',
+                    'Final inspection & touch-ups',
                   ].map((service, index) => (
                     <li key={index} className="flex items-center gap-2 text-gray-600">
                       <svg className="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -255,29 +211,32 @@ export default function CommercialRetailRenovation() {
                   ))}
                 </ul>
 
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">Why Choose Paint-Techs for Commercial Projects?</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">Premium Materials Used</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Commercial spaces require specialized attention to minimize business disruption while delivering
-                  exceptional results. Paint-Techs LLC offers flexible scheduling including nights and weekends,
-                  uses fast-drying commercial-grade paints, and maintains strict timelines to keep your business
-                  operational.
+                  We used only premium Florida-formulated exterior paints from Sherwin-Williams, specifically
+                  chosen for their UV resistance, mold and mildew inhibitors, and durability in humid conditions.
+                  The coating is designed to expand and contract with temperature changes while maintaining
+                  a beautiful finish for 7-10 years.
                 </p>
+
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">Results</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We understand that your commercial space represents your brand. Our team works closely with
-                  business owners to select colors and finishes that align with brand identity while providing
-                  the durability needed for high-traffic environments.
+                  The homeowner received a stunning exterior transformation that dramatically improved their
+                  home's curb appeal and property value. The new paint job provides excellent protection
+                  against Florida's intense sun, humidity, and seasonal storms.
                 </p>
               </div>
 
               {/* Location Info */}
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">Commercial Painting Service Areas</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">Exterior Painting Service Areas</h3>
                 <p className="text-gray-600 mb-4">
-                  Paint-Techs LLC provides professional commercial painting services for businesses throughout
-                  Northeast Florida, including offices, retail stores, restaurants, and industrial facilities in:
+                  Paint-Techs LLC provides professional residential exterior painting services throughout
+                  Northeast Florida. We understand the unique challenges Florida homes face and use
+                  products specifically designed for our climate.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {['Jacksonville', 'Nocatee', 'Ponte Vedra Beach', 'Jacksonville Beach', 'St. Augustine', 'Orange Park', 'Fleming Island', 'Mandarin'].map((area) => (
+                  {['Jacksonville', 'Nocatee', 'Ponte Vedra Beach', 'St. Augustine', 'Jacksonville Beach', 'Atlantic Beach', 'Orange Park', 'Middleburg', 'Fleming Island'].map((area) => (
                     <span key={area} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
                       {area}
                     </span>
@@ -292,15 +251,15 @@ export default function CommercialRetailRenovation() {
                 {/* WhatsApp Quote Box */}
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6">
                   <div className="bg-gradient-to-r from-green-500 to-green-600 p-6 text-white">
-                    <h3 className="text-xl font-bold mb-2">Get a Free Commercial Quote</h3>
+                    <h3 className="text-xl font-bold mb-2">Get a Free Quote</h3>
                     <p className="text-green-100 text-sm">Quick response via WhatsApp</p>
                   </div>
                   <div className="p-6">
                     <p className="text-gray-600 mb-6">
-                      Need professional painting for your business? Get a free, no-obligation quote today!
+                      Ready to transform your home's exterior? Get a free, no-obligation quote today!
                     </p>
                     <a
-                      href={getWhatsAppLink("Hi! I'm interested in commercial painting services for my business in Jacksonville. I saw your retail project and would like a free quote.")}
+                      href={getWhatsAppLink("Hi! I'm interested in exterior painting services. I saw your residential project and would like a free quote for my home.")}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200"
@@ -325,33 +284,25 @@ export default function CommercialRetailRenovation() {
                   </div>
                 </div>
 
-                {/* Commercial Benefits */}
+                {/* Project Stats */}
                 <div className="bg-navy-900 rounded-xl p-6 text-white mb-6">
-                  <h3 className="font-semibold mb-4">Commercial Painting Benefits</h3>
+                  <h3 className="font-semibold mb-4">Project Highlights</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-gray-300 text-sm">Flexible night & weekend scheduling</span>
+                    <li className="flex justify-between">
+                      <span className="text-gray-400">Project Type</span>
+                      <span className="font-semibold text-orange-400">Exterior</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-gray-300 text-sm">Minimal business disruption</span>
+                    <li className="flex justify-between">
+                      <span className="text-gray-400">Paint Durability</span>
+                      <span className="font-semibold">7-10 Years</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-gray-300 text-sm">Commercial-grade durability</span>
+                    <li className="flex justify-between">
+                      <span className="text-gray-400">UV Protection</span>
+                      <span className="font-semibold">Premium</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-orange-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-gray-300 text-sm">Fully licensed & insured</span>
+                    <li className="flex justify-between">
+                      <span className="text-gray-400">Warranty</span>
+                      <span className="font-semibold">5 Years</span>
                     </li>
                   </ul>
                 </div>
@@ -361,15 +312,15 @@ export default function CommercialRetailRenovation() {
                   <h3 className="font-semibold text-navy-900 mb-4">Related Services</h3>
                   <ul className="space-y-2">
                     <li>
-                      <Link href="/services/commercial-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
+                      <Link href="/exterior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
-                        Commercial Painting Services
+                        Exterior Painting Services
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/interior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
+                      <Link href="/interior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
@@ -377,11 +328,11 @@ export default function CommercialRetailRenovation() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/exterior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
+                      <Link href="/cabinet-refinishing-nocatee" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
-                        Exterior Painting
+                        Cabinet Refinishing Project
                       </Link>
                     </li>
                     <li>

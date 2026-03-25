@@ -85,7 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'residential-exterior-painting-jacksonville',
     'commercial-retail-renovation',
   ].map((slug) => ({
-    url: `${baseUrl}/projects/${slug}`,
+    url: `${baseUrl}/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.5,
@@ -93,7 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Service pages
   const servicePages = servicesData.map((service) => ({
-    url: `${baseUrl}/services/${service.slug}`,
+    url: `${baseUrl}/${service.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.9,

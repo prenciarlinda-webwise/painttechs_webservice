@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Container, SectionHeading, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
@@ -9,57 +8,11 @@ import { servicesData, getServiceBySlug } from '@/data/services';
 import { BUSINESS_INFO, getWhatsAppLink, SERVICE_AREAS } from '@/lib/constants';
 import Link from 'next/link';
 
-interface ServicePageProps {
-  params: Promise<{ slug: string }>;
+interface ServicePageContentProps {
+  slug: string;
 }
 
-export async function generateStaticParams() {
-  return servicesData.map((service) => ({
-    slug: service.slug,
-  }));
-}
-
-export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const service = getServiceBySlug(slug);
-
-  if (!service) {
-    return {
-      title: 'Service Not Found',
-    };
-  }
-
-  return {
-    title: service.metaTitle,
-    description: service.metaDescription,
-    keywords: service.keywords,
-    alternates: {
-      canonical: `${BUSINESS_INFO.website}/services/${slug}`,
-    },
-    openGraph: {
-      title: service.metaTitle,
-      description: service.metaDescription,
-      url: `${BUSINESS_INFO.website}/services/${slug}`,
-      siteName: BUSINESS_INFO.name,
-      locale: 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: service.metaTitle,
-      description: service.metaDescription,
-    },
-    other: {
-      'geo.region': 'US-FL',
-      'geo.placename': 'Jacksonville',
-      'geo.position': `${BUSINESS_INFO.geo.latitude};${BUSINESS_INFO.geo.longitude}`,
-      'ICBM': `${BUSINESS_INFO.geo.latitude}, ${BUSINESS_INFO.geo.longitude}`,
-    },
-  };
-}
-
-export default async function ServicePage({ params }: ServicePageProps) {
-  const { slug } = await params;
+export default function ServicePageContent({ slug }: ServicePageContentProps) {
   const service = getServiceBySlug(slug);
 
   if (!service) {
@@ -72,7 +25,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         data={generateServiceSchema(
           service.name,
           service.description,
-          `${BUSINESS_INFO.website}/services/${slug}`
+          `${BUSINESS_INFO.website}/${slug}`
         )}
       />
       <JsonLd data={generateFAQSchema(service.faqs)} />
@@ -80,7 +33,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         data={generateBreadcrumbSchema([
           { name: 'Home', url: BUSINESS_INFO.website },
           { name: 'Services', url: `${BUSINESS_INFO.website}/services` },
-          { name: service.name, url: `${BUSINESS_INFO.website}/services/${slug}` },
+          { name: service.name, url: `${BUSINESS_INFO.website}/${slug}` },
         ])}
       />
 
@@ -283,7 +236,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                       .map((s) => (
                         <li key={s.id}>
                           <a
-                            href={`/services/${s.slug}`}
+                            href={`/${s.slug}`}
                             className="flex items-center gap-2 text-gray-600 hover:text-teal-600 transition-colors"
                           >
                             <svg className="w-4 h-4 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">

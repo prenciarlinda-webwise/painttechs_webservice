@@ -28,7 +28,7 @@ export const galleryProjects: GalleryProject[] = [
       { src: '/images/residential-painting.webp', alt: 'Residential exterior painting project Jacksonville FL' },
     ],
     completedDate: '2025-12',
-    projectUrl: '/projects/residential-exterior-painting-jacksonville',
+    projectUrl: '/residential-exterior-painting-jacksonville',
   },
 
   // CABINET PROJECT
@@ -43,7 +43,7 @@ export const galleryProjects: GalleryProject[] = [
       { src: '/images/cabinet-painting-before-after-ponte-vedra-beach-fl-before-after.webp', alt: 'Cabinet painting Ponte Vedra Beach FL' },
     ],
     completedDate: '2025-11',
-    projectUrl: '/projects/cabinet-refinishing-nocatee',
+    projectUrl: '/cabinet-refinishing-nocatee',
   },
 
   // COMMERCIAL PROJECT
@@ -62,7 +62,7 @@ export const galleryProjects: GalleryProject[] = [
       { src: '/images/commercial-painting-jacksonville-retail.webp', alt: 'Jacksonville retail painting' },
     ],
     completedDate: '2025-10',
-    projectUrl: '/projects/commercial-retail-renovation',
+    projectUrl: '/commercial-retail-renovation',
   },
 ];
 

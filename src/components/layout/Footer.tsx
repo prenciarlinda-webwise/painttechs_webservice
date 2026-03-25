@@ -75,7 +75,7 @@ export default function Footer() {
                 {SERVICES.map((service) => (
                   <li key={service.id}>
                     <Link
-                      href={`/services/${service.slug}`}
+                      href={`/${service.slug}`}
                       title={`${service.name} Jacksonville FL`}
                       className="text-gray-400 hover:text-orange-400 transition-colors"
                     >

@@ -128,7 +128,7 @@ export const generateServiceMetadata = (
   return generateMetadata({
     title: `${serviceName} Services Jacksonville FL`,
     description: `${serviceDescription} Professional ${serviceName.toLowerCase()} services in Jacksonville and Northeast Florida. Free estimates from Paint-Techs LLC. Call (904) 762-7062!`,
-    path: `/services/${slug}`,
+    path: `/${slug}`,
   });
 };
 

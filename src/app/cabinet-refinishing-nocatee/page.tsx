@@ -7,56 +7,20 @@ import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
 
 const projectImages = [
   {
-    src: '/images/residential-painting.webp',
-    alt: 'Residential exterior painting project completed Jacksonville FL',
-    title: 'After: Exterior Painting Complete',
+    src: '/images/cabinet-painting-before-after-nocatee-before-after.webp',
+    alt: 'Kitchen cabinet before and after transformation Nocatee FL',
+    title: 'After: Kitchen Cabinet Transformation',
     category: 'after',
   },
   {
-    src: '/images/painting-project-nocatee-fl-1.webp',
-    alt: 'Residential exterior painting front view Jacksonville FL',
-    title: 'After: Front Exterior View',
-    category: 'after',
-  },
-  {
-    src: '/images/painting-project-ponte-vedra-beach-fl-2.webp',
-    alt: 'Residential exterior siding and trim detail Jacksonville FL',
-    title: 'After: Siding & Trim Detail',
-    category: 'after',
-  },
-  {
-    src: '/images/painting-project-st-augustine-fl-3.webp',
-    alt: 'Exterior house painting completed Jacksonville FL',
-    title: 'After: Exterior House Painting',
-    category: 'after',
-  },
-  {
-    src: '/images/painting-project-jacksonville-beach-fl-4.webp',
-    alt: 'Exterior painting surface preparation Jacksonville FL',
-    title: 'After: Surface Preparation',
-    category: 'after',
-  },
-  {
-    src: '/images/painting-project-atlantic-beach-fl-5.webp',
-    alt: 'Residential exterior paint application Jacksonville FL',
-    title: 'After: Paint Application',
-    category: 'after',
-  },
-  {
-    src: '/images/painting-project-orange-park-fl-6.webp',
-    alt: 'Exterior trim and fascia painting Jacksonville FL',
-    title: 'After: Trim & Fascia Work',
-    category: 'after',
-  },
-  {
-    src: '/images/painting-project-middleburg-fl-17.webp',
-    alt: 'Complete residential exterior transformation Jacksonville FL',
-    title: 'After: Final Transformation',
+    src: '/images/cabinet-painting-before-after-ponte-vedra-beach-fl-before-after.webp',
+    alt: 'Cabinet refinishing completed Nocatee FL',
+    title: 'After: Cabinet Refinishing Complete',
     category: 'after',
   },
 ];
 
-export default function ResidentialExteriorPaintingProject() {
+export default function CabinetRefinishingNocatee() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
   const [filter, setFilter] = useState<'all' | 'before' | 'after'>('all');
@@ -84,14 +48,13 @@ export default function ResidentialExteriorPaintingProject() {
         <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           <div className="max-w-4xl">
             <span className="inline-block px-4 py-2 bg-orange-500/20 text-orange-400 rounded-full text-sm font-medium mb-4">
-              Exterior Painting Project
+              Cabinet Refinishing Project
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Residential Exterior Painting in Jacksonville, FL
+              Kitchen Cabinet Refinishing in Nocatee, FL
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Complete home exterior transformation featuring premium weather-resistant coatings,
-              meticulous prep work, and professional application for lasting curb appeal.
+              Complete kitchen cabinet transformation delivering a factory-smooth finish at a fraction of replacement cost.
             </p>
             <div className="flex flex-wrap gap-4 text-gray-400">
               <span className="flex items-center gap-2">
@@ -99,13 +62,13 @@ export default function ResidentialExteriorPaintingProject() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Jacksonville, FL
+                Nocatee, FL
               </span>
               <span className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
-                Single-Family Home
+                Residential Kitchen
               </span>
               <span className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,7 +105,7 @@ export default function ResidentialExteriorPaintingProject() {
               </div>
 
               {/* Image Gallery Grid */}
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+              <div className="grid sm:grid-cols-2 gap-4 mb-12">
                 {filteredImages.map((image, index) => (
                   <div
                     key={index}
@@ -178,28 +141,26 @@ export default function ResidentialExteriorPaintingProject() {
               <div className="bg-white rounded-xl p-8 shadow-lg mb-8">
                 <h2 className="text-2xl font-bold text-navy-900 mb-6">Project Overview</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  This comprehensive residential exterior painting project in Jacksonville showcases Paint-Techs LLC's expertise
-                  in transforming home exteriors. Our team delivered a complete exterior makeover that not only enhanced
-                  curb appeal but also provides long-lasting protection against Florida's challenging weather conditions.
+                  This cabinet refinishing project in Nocatee showcases our expertise in transforming outdated kitchen cabinets
+                  into stunning focal points. Working with the homeowner, we delivered a factory-quality finish that completely
+                  revitalized their kitchen at 50-70% less than cabinet replacement cost.
                 </p>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  The project included thorough power washing, scraping and sanding of all surfaces, caulking
-                  of gaps and cracks, and application of premium UV-resistant exterior coatings. Special attention
-                  was paid to trim, fascia, soffits, and all architectural details to ensure a flawless finish.
+                  Our meticulous process included thorough TSP cleaning, professional deglossing, precision sanding,
+                  and application of specialized bonding primer. The final finish was applied using professional HVLP
+                  spray equipment, ensuring a smooth, durable coating that will resist chips and scratches for years to come.
                 </p>
 
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">Scope of Work</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">Services Provided</h3>
                 <ul className="grid md:grid-cols-2 gap-3 mb-6">
                   {[
-                    'Complete power washing',
-                    'Scraping & sanding prep',
-                    'Caulking gaps & cracks',
-                    'Wood rot repair',
-                    'Primer application',
-                    'Two coats exterior paint',
-                    'Trim & fascia painting',
-                    'Soffit refinishing',
-                    'Front door painting',
+                    'Complete cabinet door removal & labeling',
+                    'TSP cleaning & deglossing',
+                    'Professional sanding & prep',
+                    'Bonding primer application',
+                    'HVLP spray finishing',
+                    'Hardware replacement',
+                    'Precise reinstallation',
                     'Final inspection & touch-ups',
                   ].map((service, index) => (
                     <li key={index} className="flex items-center gap-2 text-gray-600">
@@ -211,32 +172,25 @@ export default function ResidentialExteriorPaintingProject() {
                   ))}
                 </ul>
 
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">Premium Materials Used</h3>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  We used only premium Florida-formulated exterior paints from Sherwin-Williams, specifically
-                  chosen for their UV resistance, mold and mildew inhibitors, and durability in humid conditions.
-                  The coating is designed to expand and contract with temperature changes while maintaining
-                  a beautiful finish for 7-10 years.
-                </p>
-
                 <h3 className="text-xl font-semibold text-navy-900 mb-4">Results</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  The homeowner received a stunning exterior transformation that dramatically improved their
-                  home's curb appeal and property value. The new paint job provides excellent protection
-                  against Florida's intense sun, humidity, and seasonal storms.
+                  The homeowner received a complete kitchen transformation with a smooth, factory-like finish.
+                  The project was completed within 4 days with minimal disruption. The new finish is designed
+                  to withstand daily use, moisture, and cleaning for 10+ years with proper care.
                 </p>
               </div>
 
               {/* Location Info */}
               <div className="bg-white rounded-xl p-8 shadow-lg">
-                <h3 className="text-xl font-semibold text-navy-900 mb-4">Exterior Painting Service Areas</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">About Nocatee</h3>
                 <p className="text-gray-600 mb-4">
-                  Paint-Techs LLC provides professional residential exterior painting services throughout
-                  Northeast Florida. We understand the unique challenges Florida homes face and use
-                  products specifically designed for our climate.
+                  Nocatee is a master-planned community in Ponte Vedra, Florida, known for its beautiful homes and
+                  family-friendly amenities. Paint-Techs LLC is proud to serve Nocatee homeowners with professional
+                  cabinet painting and refinishing services.
                 </p>
+                <h4 className="font-semibold text-navy-900 mb-2">We Also Serve:</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['Jacksonville', 'Nocatee', 'Ponte Vedra Beach', 'St. Augustine', 'Jacksonville Beach', 'Atlantic Beach', 'Orange Park', 'Middleburg', 'Fleming Island'].map((area) => (
+                  {['Ponte Vedra Beach', 'Jacksonville', 'Jacksonville Beach', 'St. Augustine', 'Atlantic Beach', 'St. Johns'].map((area) => (
                     <span key={area} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
                       {area}
                     </span>
@@ -256,10 +210,10 @@ export default function ResidentialExteriorPaintingProject() {
                   </div>
                   <div className="p-6">
                     <p className="text-gray-600 mb-6">
-                      Ready to transform your home's exterior? Get a free, no-obligation quote today!
+                      Ready to transform your kitchen cabinets? Get a free, no-obligation quote today!
                     </p>
                     <a
-                      href={getWhatsAppLink("Hi! I'm interested in exterior painting services. I saw your residential project and would like a free quote for my home.")}
+                      href={getWhatsAppLink("Hi! I'm interested in cabinet painting services. I saw your Nocatee project and would like a free quote.")}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200"
@@ -289,20 +243,20 @@ export default function ResidentialExteriorPaintingProject() {
                   <h3 className="font-semibold mb-4">Project Highlights</h3>
                   <ul className="space-y-3">
                     <li className="flex justify-between">
-                      <span className="text-gray-400">Project Type</span>
-                      <span className="font-semibold text-orange-400">Exterior</span>
+                      <span className="text-gray-400">Savings vs Replacement</span>
+                      <span className="font-semibold text-orange-400">50-70%</span>
                     </li>
                     <li className="flex justify-between">
-                      <span className="text-gray-400">Paint Durability</span>
-                      <span className="font-semibold">7-10 Years</span>
+                      <span className="text-gray-400">Completion Time</span>
+                      <span className="font-semibold">4 Days</span>
                     </li>
                     <li className="flex justify-between">
-                      <span className="text-gray-400">UV Protection</span>
-                      <span className="font-semibold">Premium</span>
+                      <span className="text-gray-400">Finish Durability</span>
+                      <span className="font-semibold">10+ Years</span>
                     </li>
                     <li className="flex justify-between">
-                      <span className="text-gray-400">Warranty</span>
-                      <span className="font-semibold">5 Years</span>
+                      <span className="text-gray-400">Location</span>
+                      <span className="font-semibold">Nocatee, FL</span>
                     </li>
                   </ul>
                 </div>
@@ -312,27 +266,19 @@ export default function ResidentialExteriorPaintingProject() {
                   <h3 className="font-semibold text-navy-900 mb-4">Related Services</h3>
                   <ul className="space-y-2">
                     <li>
-                      <Link href="/services/exterior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
+                      <Link href="/cabinet-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
-                        Exterior Painting Services
+                        Cabinet Painting Services
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services/interior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
+                      <Link href="/interior-painting" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                         Interior Painting
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/projects/cabinet-refinishing-nocatee" className="text-gray-600 hover:text-orange-500 flex items-center gap-2">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                        Cabinet Refinishing Project
                       </Link>
                     </li>
                     <li>

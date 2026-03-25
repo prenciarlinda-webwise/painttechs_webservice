@@ -11,8 +11,8 @@ export const BUSINESS_INFO = {
   phone: '(904) 762-7062',
   phoneRaw: '+19047627062',
   whatsapp: '+19047627062',
-  email: 'info@floridapainttechs.com',
-  website: 'https://www.floridapainttechs.com',
+  email: 'info@paint-techs.com',
+  website: 'https://www.paint-techs.com',
 
   // Address (NAP consistency - critical for local SEO)
   // Note: Service Area Business (SAB) - no street address displayed publicly
