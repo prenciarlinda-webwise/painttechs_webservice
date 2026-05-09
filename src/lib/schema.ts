@@ -187,8 +187,7 @@ export const generateLocalBusinessSchema = () => ({
   sameAs: [
     BUSINESS_INFO.links.gmb,
     BUSINESS_INFO.links.facebook,
-    BUSINESS_INFO.links.instagram,
-  ].filter((link) => link !== '#'),
+  ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Painting Services',
@@ -235,10 +234,7 @@ export const generateOrganizationSchema = () => ({
   sameAs: [
     BUSINESS_INFO.links.gmb,
     BUSINESS_INFO.links.facebook,
-    BUSINESS_INFO.links.instagram,
-    BUSINESS_INFO.links.linkedin,
-    BUSINESS_INFO.links.yelp,
-  ].filter((link) => link && link !== '#'),
+  ],
   knowsAbout: [
     'Interior Painting',
     'Exterior Painting',
@@ -610,8 +606,7 @@ export const generateLocationBusinessSchema = (
     sameAs: [
       BUSINESS_INFO.links.gmb,
       BUSINESS_INFO.links.facebook,
-      BUSINESS_INFO.links.instagram,
-    ].filter((link) => link !== '#'),
+    ],
   };
 };
 

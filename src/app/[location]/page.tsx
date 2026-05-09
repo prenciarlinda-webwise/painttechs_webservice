@@ -196,7 +196,7 @@ export default async function LocationPage({ params }: LocationPageProps) {
                 {SERVICES.map((service) => (
                   <Link
                     key={service.id}
-                    href={`/services/${service.slug}`}
+                    href={`/${service.slug}`}
                     className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow group"
                   >
                     <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-500 transition-colors">

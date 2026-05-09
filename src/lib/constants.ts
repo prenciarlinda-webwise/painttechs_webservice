@@ -45,10 +45,6 @@ export const BUSINESS_INFO = {
     gmb: 'https://maps.app.goo.gl/cMBt1hHzYeySz4h28',
     gmbSearch: 'https://www.google.com/search?q=Paint-Techs+LLC+-+Painting+Company',
     facebook: 'https://www.facebook.com/p/Paint-Techs-100083284513462/',
-    instagram: '#',
-    linkedin: '#',
-    twitter: '#',
-    yelp: '#',
   },
 
   // Brand Colors
