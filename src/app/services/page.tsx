@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Container, SectionHeading, Card, Button } from '@/components/ui';
+import { Container, SectionHeading, Card } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateMetadata } from '@/lib/metadata';
 import { generateServicesListSchema } from '@/lib/schema';
 import { servicesData } from '@/data/services';
+import { locationsData } from '@/data/locations';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Painting Services Jacksonville FL - Interior, Exterior, Cabinet',
@@ -90,6 +91,49 @@ export default function ServicesPage() {
               </Link>
             ))}
           </div>
+        </Container>
+      </section>
+
+      {/* Service Areas — locations come first */}
+      <section className="py-16 bg-gray-50">
+        <Container>
+          <SectionHeading
+            title="Service areas across Northeast Florida"
+            subtitle="Every service above runs in each of these communities. Click a location to see local pricing, neighborhood specifics, and recent projects."
+          />
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-3">
+            {locationsData.map((location) => (
+              <Link
+                key={location.slug}
+                href={`/${location.slug}-house-painters`}
+                className="group bg-white rounded-2xl px-4 py-3 border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all"
+              >
+                <div className="font-semibold text-navy-800 group-hover:text-orange-600 transition-colors">
+                  {location.name}
+                </div>
+                <div className="text-xs text-gray-500">{location.county}</div>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Map — comes after the locations list */}
+      <section className="py-12 bg-white">
+        <Container>
+          <Card className="p-0 overflow-hidden" hover={false}>
+            <iframe
+              src="https://maps.google.com/maps?q=Paint-Techs+LLC+Painting+Company+Jacksonville+FL&z=11&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Paint-Techs LLC service area map"
+            ></iframe>
+          </Card>
         </Container>
       </section>
 

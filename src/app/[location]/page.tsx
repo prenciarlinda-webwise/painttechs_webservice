@@ -1,67 +1,115 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { Container, SectionHeading, Card, Button } from '@/components/ui';
+import { Container, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
+import BrushDivider from '@/components/seo/BrushDivider';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
+import QuickQuoteForm from '@/components/features/QuickQuoteForm';
+import PaintChipFAQ from '@/components/features/PaintChipFAQ';
+import TrustBadgeRow from '@/components/features/TrustBadgeRow';
+import StickyMobileCallBar from '@/components/features/StickyMobileCallBar';
+import GoogleReviewsEmbed from '@/components/features/GoogleReviewsEmbed';
+import ServiceInLocation from '@/components/sections/ServiceInLocation';
+import WhyHireSection from '@/components/sections/WhyHireSection';
+import ServicesShowcase from '@/components/sections/ServicesShowcase';
 import JsonLd from '@/components/seo/JsonLd';
-import { generateLocationBusinessSchema, generateServiceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import {
+  generateLocationBusinessSchema,
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+  LOCATION_DATA,
+} from '@/lib/schema';
 import { locationsData, getLocationBySlug } from '@/data/locations';
-import { SERVICES, BUSINESS_INFO, getWhatsAppLink } from '@/lib/constants';
-import { testimonials } from '@/data/testimonials';
+import { getSortedTestimonials } from '@/data/testimonials';
+import { SERVICES, BUSINESS_INFO, getPhoneLink } from '@/lib/constants';
 
 interface LocationPageProps {
   params: Promise<{ location: string }>;
 }
 
-// Generate paths for all location pages
-// Using -house-painters for higher search volume (100 SV vs 40 for contractor)
 export async function generateStaticParams() {
   return locationsData.map((location) => ({
     location: `${location.slug}-house-painters`,
   }));
 }
 
+const slugFromParam = (param: string) => param.replace(/-house-painters$/, '');
+
 export async function generateMetadata({ params }: LocationPageProps): Promise<Metadata> {
   const { location } = await params;
-  const slug = location.replace('-house-painters', '').replace('-painting-contractor', '').replace('-painters', '').replace('-painting-services', '');
+  const slug = slugFromParam(location);
   const locationData = getLocationBySlug(slug);
 
   if (!locationData) {
-    return {
-      title: 'Location Not Found',
-    };
+    return { title: 'Location Not Found' };
   }
+
+  const canonicalUrl = `${BUSINESS_INFO.website}/${location}`;
+  const ogImage = `${BUSINESS_INFO.website}${locationData.heroImage || '/images/hero-painting-jacksonville-fl-1.webp'}`;
 
   return {
     title: locationData.metaTitle,
     description: locationData.metaDescription,
-    alternates: {
-      canonical: `${BUSINESS_INFO.website}/${location}`,
-    },
-    keywords: locationData.keywords,
+    alternates: { canonical: canonicalUrl },
+    // Per client direction 2026-05-09: no meta keywords on location pages — we don't surface our keyword strategy.
     openGraph: {
       title: locationData.metaTitle,
       description: locationData.metaDescription,
-      url: `${BUSINESS_INFO.website}/${location}`,
+      url: canonicalUrl,
       type: 'website',
+      images: [{ url: ogImage, width: 1200, height: 630, alt: `${locationData.name} painters - Paint-Techs LLC` }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: locationData.metaTitle,
+      description: locationData.metaDescription,
+      images: [ogImage],
     },
   };
 }
 
 export default async function LocationPage({ params }: LocationPageProps) {
   const { location } = await params;
-  const slug = location.replace('-house-painters', '').replace('-painting-contractor', '').replace('-painters', '').replace('-painting-services', '');
+  const slug = slugFromParam(location);
   const locationData = getLocationBySlug(slug);
 
   if (!locationData) {
     notFound();
   }
 
-  // Get testimonials from this area or nearby
-  const localTestimonials = testimonials.filter(
-    (t) => t.location.toLowerCase().includes(locationData.name.toLowerCase()) || t.location.toLowerCase().includes('jacksonville')
-  ).slice(0, 3);
+  const sortedReviews = getSortedTestimonials();
+  const localReviews = sortedReviews.filter((t) =>
+    t.location.toLowerCase().includes(locationData.name.toLowerCase())
+  );
+  const reviewsToShow = localReviews.length >= 3 ? localReviews : sortedReviews;
+
+  const postalCodes = (LOCATION_DATA[locationData.slug]?.postalCodes || []).slice(0, 4);
+
+  const nearbyMap: Record<string, string[]> = {
+    jacksonville: ['orange-park', 'jacksonville-beach', 'atlantic-beach', 'middleburg'],
+    nocatee: ['ponte-vedra-beach', 'st-augustine', 'jacksonville', 'jacksonville-beach'],
+    'ponte-vedra-beach': ['nocatee', 'jacksonville-beach', 'atlantic-beach', 'st-augustine'],
+    'jacksonville-beach': ['atlantic-beach', 'ponte-vedra-beach', 'jacksonville', 'nocatee'],
+    'atlantic-beach': ['jacksonville-beach', 'jacksonville', 'ponte-vedra-beach', 'fernandina-beach'],
+    'st-augustine': ['nocatee', 'ponte-vedra-beach', 'jacksonville-beach', 'jacksonville'],
+    'fernandina-beach': ['yulee', 'atlantic-beach', 'jacksonville', 'jacksonville-beach'],
+    middleburg: ['orange-park', 'jacksonville', 'fernandina-beach', 'yulee'],
+    'orange-park': ['middleburg', 'jacksonville', 'jacksonville-beach', 'st-augustine'],
+    yulee: ['fernandina-beach', 'jacksonville', 'atlantic-beach', 'orange-park'],
+  };
+  const nearbyLocations = (nearbyMap[locationData.slug] || [])
+    .map((s) => locationsData.find((l) => l.slug === s))
+    .filter((l): l is NonNullable<typeof l> => Boolean(l));
+
+  const heroAccent = locationData.heroAccent || `${locationData.name}, FL`;
+  const heroSubtitle = locationData.heroSubtitle || locationData.description;
+  const aeoAnswer = locationData.aeoAnswer;
+  const sil = locationData.serviceInLocation;
+  const faqs = locationData.faqs;
+  const whyHireCards = locationData.whyHireCards;
+  const whyHireHeading = locationData.whyHireHeading;
+  const servicesShowcase = locationData.servicesShowcase_block;
 
   return (
     <>
@@ -75,19 +123,13 @@ export default async function LocationPage({ params }: LocationPageProps) {
         )}
       />
       <JsonLd
-        data={generateServiceSchema(
-          `Painting Services in ${locationData.name}`,
-          locationData.description,
-          `${BUSINESS_INFO.website}/${location}`
-        )}
-      />
-      <JsonLd
         data={generateBreadcrumbSchema([
           { name: 'Home', url: BUSINESS_INFO.website },
           { name: 'Service Areas', url: `${BUSINESS_INFO.website}/areas-we-serve` },
           { name: `${locationData.name} Painters`, url: `${BUSINESS_INFO.website}/${location}` },
         ])}
       />
+      {faqs && faqs.length > 0 && <JsonLd data={generateFAQSchema(faqs)} />}
 
       <Breadcrumbs
         items={[
@@ -96,70 +138,98 @@ export default async function LocationPage({ params }: LocationPageProps) {
         ]}
       />
 
-      {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-navy-800 to-navy-900 text-white">
+      {/* Hero - paint-drips vibe, orange + blue + pastel */}
+      <section className="relative overflow-hidden bg-[#fff6ec]">
+        <span aria-hidden className="absolute top-10 left-12 text-orange-300 text-3xl tracking-widest select-none">· *  ·</span>
+        <span aria-hidden className="absolute bottom-24 right-16 text-orange-300/70 text-2xl tracking-widest select-none">· · *</span>
+
         <Container>
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-teal-500/20 text-teal-300 rounded-full px-4 py-2 mb-6">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-              </svg>
-              {locationData.county}
+          <div className="grid lg:grid-cols-2 gap-12 py-16 md:py-20 items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wider text-orange-700 mb-3">
+                Serving {locationData.county}
+              </p>
+              <h1 className="text-4xl md:text-5xl font-bold text-navy-800 leading-tight mb-2">
+                Painters in <span className="text-orange-600">{heroAccent}</span>
+              </h1>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-xl mt-3">
+                {heroSubtitle}
+              </p>
+
+              <div className="flex flex-wrap items-center gap-3 mb-6">
+                <Button href={getPhoneLink()} variant="primary" size="lg" external>
+                  Call {BUSINESS_INFO.phone}
+                </Button>
+                <span className="text-sm text-navy-700/80">or fill the form →</span>
+              </div>
+
+              {locationData.driveTimeFromHQ && (
+                <p className="text-sm text-navy-700/80">
+                  <span className="font-semibold text-navy-800">From our Jacksonville office:</span> {locationData.driveTimeFromHQ}
+                </p>
+              )}
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Professional Painters in <span className="text-teal-400">{locationData.name}, FL</span>
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              {locationData.description}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                href={getWhatsAppLink(`Hi! I'm looking for painting services in ${locationData.name}. Can I get a free quote?`)}
-                variant="whatsapp"
-                size="lg"
-                external
-              >
-                Get Free Quote
-              </Button>
-              <Button href={`tel:${BUSINESS_INFO.phoneRaw}`} variant="white" size="lg" external>
-                Call {BUSINESS_INFO.phone}
-              </Button>
+
+            <div className="lg:justify-self-end w-full">
+              <QuickQuoteForm locationName={locationData.name} promoTag={`${locationData.slug}-hero`} />
             </div>
           </div>
         </Container>
+
+        <Container>
+          <div className="pb-10">
+            <TrustBadgeRow />
+            <div className="mt-6 flex justify-center gap-1 opacity-90">
+              {['#fde2c7', '#dbeafe', '#fff1de', '#e5edf5', '#fff6ec'].map((c) => (
+                <span key={c} className="h-2 w-12 md:w-16 rounded-full" style={{ background: c }} />
+              ))}
+            </div>
+          </div>
+        </Container>
+
+        <BrushDivider color="#ffffff" />
       </section>
 
-      {/* About This Area */}
-      <section className="py-20 bg-white">
-        <Container>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-navy-800 mb-6">
-                Trusted Painting Contractor in {locationData.name}
+      {/* AEO snippet block — moved to the top so the highest-intent question gets prime real estate */}
+      {aeoAnswer && (
+        <section className="py-16 bg-white">
+          <Container>
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-navy-800 mb-4">
+                {aeoAnswer.question}
               </h2>
+              <p className="text-lg text-gray-700 leading-relaxed bg-orange-50/60 border-l-4 border-orange-400 rounded-r-2xl pl-5 py-4">
+                {aeoAnswer.answer}
+              </p>
+            </div>
+          </Container>
+        </section>
+      )}
+
+      {/* About this area — longDescription on left, sticky services + CTA on right */}
+      <section className="py-16 bg-white">
+        <Container>
+          <div className="grid lg:grid-cols-3 gap-10 items-start">
+            <div className="lg:col-span-2">
               <div className="prose prose-gray max-w-none prose-headings:text-navy-800 prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-8 prose-h2:mb-4 prose-strong:text-navy-700 prose-li:text-gray-600">
                 {locationData.longDescription.split('\n\n').map((paragraph, index) => {
-                  // Handle H2 headers
                   if (paragraph.startsWith('## ')) {
                     return <h2 key={index}>{paragraph.replace('## ', '')}</h2>;
                   }
-                  // Handle bold text and list items
                   const processedText = paragraph
                     .split('\n')
                     .map((line, lineIndex) => {
-                      // List items starting with **text:**
                       if (line.startsWith('**') && line.includes(':**')) {
                         const parts = line.match(/^\*\*(.+?):\*\*\s*(.*)$/);
                         if (parts) {
                           return (
                             <div key={lineIndex} className="mb-3">
-                              <strong className="text-navy-700">{parts[1]}:</strong>{' '}
+                              <strong className="text-navy-700">{parts[1]}.</strong>{' '}
                               <span className="text-gray-600">{parts[2]}</span>
                             </div>
                           );
                         }
                       }
-                      // Bullet list items
                       if (line.startsWith('- ')) {
                         return (
                           <li key={lineIndex} className="text-gray-600 ml-4">
@@ -167,199 +237,162 @@ export default async function LocationPage({ params }: LocationPageProps) {
                           </li>
                         );
                       }
-                      // Regular line
                       return line ? <span key={lineIndex}>{line} </span> : null;
                     });
                   return <div key={index} className="mb-4">{processedText}</div>;
                 })}
               </div>
 
-              {/* Highlights */}
               <div className="mt-8 space-y-3">
                 {locationData.highlights.map((highlight, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <svg className="w-6 h-6 text-teal-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex-shrink-0 flex items-center justify-center text-sm">✓</span>
                     <span className="text-gray-700">{highlight}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Services Card */}
-            <Card className="bg-gray-50" hover={false}>
-              <h3 className="text-xl font-bold text-navy-800 mb-6">
-                Our Services in {locationData.name}
-              </h3>
-              <div className="space-y-4">
-                {SERVICES.map((service) => (
-                  <Link
-                    key={service.id}
-                    href={`/${service.slug}`}
-                    className="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-shadow group"
-                  >
-                    <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center group-hover:bg-teal-500 transition-colors">
-                      <svg className="w-6 h-6 text-teal-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                      </svg>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-navy-800 group-hover:text-teal-600 transition-colors">
-                        {service.name}
-                      </h4>
-                      <p className="text-sm text-gray-500">{service.shortDescription}</p>
-                    </div>
-                    <svg className="w-5 h-5 text-gray-400 group-hover:text-teal-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                ))}
+            {/* Sticky right rail: services list + inline CTA card. Stays in view while reading the long content. */}
+            <aside className="lg:sticky lg:top-24 self-start space-y-6">
+              <Card className="bg-[#fff6ec] border border-orange-200/60" hover={false}>
+                <h3 className="text-xl font-bold text-navy-800 mb-2">
+                  Services in {locationData.name}
+                </h3>
+                <p className="text-sm text-gray-600 mb-5">
+                  Tap a service to see scope, prep, and what&apos;s included.
+                </p>
+                <div className="space-y-3">
+                  {SERVICES.map((service, i) => {
+                    const chipBg = ['#fde2c7', '#dbeafe', '#fff1de', '#e5edf5', '#ffe4d1'][i % 5];
+                    return (
+                      <Link
+                        key={service.id}
+                        href={`/${service.slug}`}
+                        className="flex items-center gap-4 p-3 rounded-2xl bg-white hover:shadow-md transition-shadow group"
+                        style={{ borderLeft: `6px solid ${chipBg}` }}
+                      >
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-navy-800 group-hover:text-orange-600 transition-colors text-sm">
+                            {service.name}
+                          </h4>
+                        </div>
+                        <span aria-hidden className="text-gray-400 group-hover:text-orange-500 transition-colors">→</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </Card>
+
+              {/* Inline conversion CTA — keeps the lead path visible while reading */}
+              <div className="rounded-3xl bg-gradient-to-br from-orange-500 to-orange-600 text-white p-6 shadow-[0_18px_48px_-12px_rgba(234,113,30,0.45)]">
+                <h3 className="text-xl font-bold mb-2">Free quote in {locationData.name}</h3>
+                <p className="text-sm text-white/90 mb-4">
+                  Same crew from estimate to walk-through. Reply within 24 hours.
+                </p>
+                <Button href={getPhoneLink()} variant="white" size="md" external>
+                  Call {BUSINESS_INFO.phone}
+                </Button>
               </div>
-            </Card>
+            </aside>
           </div>
         </Container>
       </section>
 
-      {/* Neighborhoods */}
-      {locationData.neighborhoods && locationData.neighborhoods.length > 0 && (
-        <section className="py-16 bg-gray-50">
-          <Container>
-            <SectionHeading
-              title={`Areas We Serve in ${locationData.name}`}
-              subtitle={`Paint-Techs LLC provides painting services throughout ${locationData.name} and surrounding neighborhoods.`}
-            />
+      <BrushDivider color="#fff6ec" />
 
+      {/* {Service} in {Location} block */}
+      {sil && (
+        <ServiceInLocation
+          heading={sil.heading}
+          paragraph={sil.paragraph}
+          mapEmbedSrc={sil.mapEmbedSrc}
+          postalCodes={postalCodes}
+          driveTimeFromHQ={locationData.driveTimeFromHQ}
+        />
+      )}
+
+      <BrushDivider color="#ffffff" flip />
+
+      {/* Services showcase — services-first emphasis per client direction
+          (interior, exterior, cabinet, pool deck, commercial). The SIL block
+          above already covers neighborhood/local-area signal inline, so this
+          section is intentionally service-focused, not geography-focused. */}
+      {servicesShowcase && <ServicesShowcase block={servicesShowcase} />}
+
+      {/* Why hire — extracted from longDescription, white cards on cream pastel */}
+      {whyHireCards && whyHireCards.length > 0 && whyHireHeading && (
+        <WhyHireSection heading={whyHireHeading} cards={whyHireCards} />
+      )}
+
+      <BrushDivider color="#ffffff" flip />
+
+      {/* Google reviews — official embed style */}
+      <section className="py-20 bg-white">
+        <Container>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-navy-800">
+              Google reviews from {locationData.name} customers
+            </h2>
+            <p className="text-gray-600 mt-2">
+              {BUSINESS_INFO.aggregateRating.reviewCount} verified Google reviews · 5-star rated.
+            </p>
+          </div>
+          <GoogleReviewsEmbed reviews={reviewsToShow} />
+        </Container>
+      </section>
+
+      {/* FAQ */}
+      {faqs && faqs.length > 0 && (
+        <section className="py-20 bg-[#fff6ec]">
+          <Container>
+            <PaintChipFAQ
+              faqs={faqs}
+              heading={`${locationData.name} painters FAQs`}
+              subheading={`Real questions from ${locationData.name} homeowners. Same crew answering them on the estimate.`}
+            />
+          </Container>
+        </section>
+      )}
+
+      <BrushDivider color="#ffffff" flip />
+
+      {/* Nearby areas */}
+      {nearbyLocations.length > 0 && (
+        <section className="py-12 bg-white">
+          <Container>
+            <h2 className="text-xl font-bold text-navy-800 mb-6 text-center">
+              Service areas near {locationData.name}
+            </h2>
             <div className="flex flex-wrap justify-center gap-3">
-              {locationData.neighborhoods.map((neighborhood) => (
-                <span
-                  key={neighborhood}
-                  className="px-4 py-2 bg-white rounded-full text-gray-700 border border-gray-200 hover:border-teal-300 hover:text-teal-600 transition-colors"
-                >
-                  {neighborhood}
-                </span>
-              ))}
-            </div>
-          </Container>
-        </section>
-      )}
-
-      {/* Local Testimonials */}
-      {localTestimonials.length > 0 && (
-        <section className="py-20 bg-white">
-          <Container>
-            <SectionHeading
-              title={`What ${locationData.name} Residents Say`}
-              subtitle="Read what your neighbors have to say about their experience with Paint-Techs."
-            />
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {localTestimonials.map((testimonial) => (
-                <Card key={testimonial.id}>
-                  <div className="flex mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="text-gray-700 mb-4">&ldquo;{testimonial.text}&rdquo;</p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center text-white font-bold">
-                      {testimonial.name.charAt(0)}
-                    </div>
-                    <div>
-                      <p className="font-semibold text-navy-800">{testimonial.name}</p>
-                      <p className="text-sm text-gray-500">{testimonial.location}</p>
-                    </div>
-                  </div>
-                </Card>
-              ))}
-            </div>
-
-            <div className="text-center mt-8">
-              <Button href="/reviews" variant="outline">
-                Read More Reviews
-              </Button>
-            </div>
-          </Container>
-        </section>
-      )}
-
-      {/* Why Choose Us for This Area */}
-      <section className="py-16 bg-gray-50">
-        <Container>
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-navy-800 mb-2">Local Expertise</h3>
-              <p className="text-gray-600">
-                We know {locationData.name} and understand the unique needs of homes in this area.
-              </p>
-            </div>
-            <div>
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-navy-800 mb-2">Fast Response</h3>
-              <p className="text-gray-600">
-                Quick estimates and flexible scheduling for {locationData.name} residents.
-              </p>
-            </div>
-            <div>
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-navy-800 mb-2">Trusted Quality</h3>
-              <p className="text-gray-600">
-                Licensed, insured, and committed to exceptional results in every {locationData.name} project.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Other Service Areas */}
-      <section className="py-12 bg-white">
-        <Container>
-          <h2 className="text-xl font-bold text-navy-800 mb-6 text-center">
-            We Also Serve These Areas
-          </h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {locationsData
-              .filter((loc) => loc.slug !== locationData.slug)
-              .slice(0, 6)
-              .map((loc) => (
+              {nearbyLocations.map((loc) => (
                 <Link
                   key={loc.slug}
                   href={`/${loc.slug}-house-painters`}
-                  className="px-4 py-2 bg-gray-100 hover:bg-teal-50 text-gray-700 hover:text-teal-600 rounded-full transition-colors"
+                  className="px-4 py-2 bg-orange-50 hover:bg-orange-100 text-navy-700 hover:text-orange-700 rounded-full transition-colors border border-orange-200/60"
                 >
                   {loc.name}
                 </Link>
               ))}
-            <Link
-              href="/areas-we-serve"
-              className="px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-full transition-colors"
-            >
-              View All Areas
-            </Link>
-          </div>
-        </Container>
-      </section>
+              <Link
+                href="/areas-we-serve"
+                className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-full transition-colors"
+              >
+                All service areas
+              </Link>
+            </div>
+          </Container>
+        </section>
+      )}
 
       <WhatsAppCTA
-        title={`Ready to Paint Your ${locationData.name} Home?`}
-        subtitle={`Get a free, no-obligation estimate for your painting project in ${locationData.name}.`}
+        title={`Ready to repaint your ${locationData.name} home?`}
+        subtitle={`Free, no-obligation estimate. Open daily until 10 PM.`}
         message={`Hi! I'm looking for painting services in ${locationData.name}. Can I get a free quote?`}
+      />
+
+      <StickyMobileCallBar
+        whatsappMessage={`Hi! I'm looking for painting services in ${locationData.name}. Can I get a free quote?`}
       />
     </>
   );

@@ -26,11 +26,20 @@ export const BUSINESS_INFO = {
     full: 'Jacksonville, FL 32246',
   },
 
-  // Coordinates for schema markup (Jacksonville service area center)
+  // Coordinates for schema markup — canonical from GBP place pin (2026-05-09)
   geo: {
-    latitude: 30.3164,
-    longitude: -81.4883,
+    latitude: 30.1729195,
+    longitude: -81.6287255,
   },
+
+  // Aggregate review signal — single source so schema and on-page copy stay aligned with live GBP
+  aggregateRating: {
+    ratingValue: '5.0',
+    reviewCount: 52,
+  },
+
+  // Logo asset (used in schema `image` fields)
+  logoPath: '/images/logo/paint-techs-llc-logo.webp',
 
   // Business Hours
   hours: {

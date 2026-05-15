@@ -99,7 +99,7 @@ export const generateHousePainterSchema = () => ({
   url: `${BUSINESS_INFO.website}/`,
   telephone: BUSINESS_INFO.phoneRaw,
   email: BUSINESS_INFO.email,
-  image: `${BUSINESS_INFO.website}/logo.png`,
+  image: `${BUSINESS_INFO.website}${BUSINESS_INFO.logoPath}`,
   priceRange: '$',
   address: {
     '@type': 'PostalAddress',
@@ -123,8 +123,8 @@ export const generateHousePainterSchema = () => ({
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '50',
+    ratingValue: BUSINESS_INFO.aggregateRating.ratingValue,
+    reviewCount: String(BUSINESS_INFO.aggregateRating.reviewCount),
   },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -149,7 +149,7 @@ export const generateLocalBusinessSchema = () => ({
   url: `${BUSINESS_INFO.website}/`,
   telephone: BUSINESS_INFO.phoneRaw,
   email: BUSINESS_INFO.email,
-  image: `${BUSINESS_INFO.website}/logo.png`,
+  image: `${BUSINESS_INFO.website}${BUSINESS_INFO.logoPath}`,
   address: {
     '@type': 'PostalAddress',
     addressLocality: BUSINESS_INFO.address.city,
@@ -179,8 +179,8 @@ export const generateLocalBusinessSchema = () => ({
   })),
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '50',
+    ratingValue: BUSINESS_INFO.aggregateRating.ratingValue,
+    reviewCount: String(BUSINESS_INFO.aggregateRating.reviewCount),
     bestRating: '5',
     worstRating: '5',
   },
@@ -463,7 +463,7 @@ export const generateArticleSchema = (
     name: BUSINESS_INFO.name,
     logo: {
       '@type': 'ImageObject',
-      url: `${BUSINESS_INFO.website}/images/logo.png`,
+      url: `${BUSINESS_INFO.website}${BUSINESS_INFO.logoPath}`,
     },
   },
   ...(imageUrl && {
@@ -488,8 +488,9 @@ export const generateWebsiteSchema = () => ({
   },
 });
 
-// Location-specific HousePainter Schema with enhanced AreaServed
-// Uses HousePainter type and Geographical Entity Injection for Local Map Pack
+// Location-specific business schema for combo pages.
+// Per page-seo skill (combo branch): same canonical `@id` site-wide; address stays HQ;
+// per-page localization happens in `areaServed` and the page-specific `description`.
 export const generateLocationBusinessSchema = (
   locationName: string,
   locationSlug: string,
@@ -499,13 +500,14 @@ export const generateLocationBusinessSchema = (
 ) => {
   const locationData = LOCATION_DATA[locationSlug] || LOCATION_DATA['jacksonville'];
 
-  // Build areaServed with Wikipedia sameAs if available
   const primaryAreaServed: Record<string, unknown> = {
-    '@type': 'Place',
+    '@type': 'City',
     name: locationName,
+    containedInPlace: {
+      '@type': 'AdministrativeArea',
+      name: county,
+    },
   };
-
-  // Add Wikipedia sameAs for geographical entity injection
   if (locationData.wikipediaSameAs) {
     primaryAreaServed.sameAs = locationData.wikipediaSameAs;
   }
@@ -513,51 +515,38 @@ export const generateLocationBusinessSchema = (
   return {
     '@context': 'https://schema.org',
     '@type': 'HousePainter',
-    '@id': `${BUSINESS_INFO.website}/${locationSlug}-house-painters/#localbusiness`,
-    name: `Paint-Techs LLC - ${locationName}`,
+    '@id': `${BUSINESS_INFO.website}/#localbusiness`,
+    name: 'Paint-Techs LLC - Painting Company',
     alternateName: `Paint-Techs ${locationName} Painters`,
     description: `${description} Evening estimates available until 10PM.`,
-    url: `${BUSINESS_INFO.website}/${locationSlug}-house-painters/`,
+    url: `${BUSINESS_INFO.website}/${locationSlug}-house-painters`,
     telephone: BUSINESS_INFO.phoneRaw,
     email: BUSINESS_INFO.email,
-    image: `${BUSINESS_INFO.website}/logo.png`,
+    image: `${BUSINESS_INFO.website}${BUSINESS_INFO.logoPath}`,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: locationName,
-      addressRegion: 'FL',
-      postalCode: locationData.postalCodes[0],
-      addressCountry: 'US',
+      addressLocality: BUSINESS_INFO.address.city,
+      addressRegion: BUSINESS_INFO.address.stateAbbr,
+      postalCode: BUSINESS_INFO.address.zip,
+      addressCountry: BUSINESS_INFO.address.country,
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: String(locationData.lat),
-      longitude: String(locationData.lng),
+      latitude: String(BUSINESS_INFO.geo.latitude),
+      longitude: String(BUSINESS_INFO.geo.longitude),
     },
     areaServed: [
       primaryAreaServed,
-      {
-        '@type': 'GeoCircle',
-        geoMidpoint: {
-          '@type': 'GeoCoordinates',
-          latitude: String(locationData.lat),
-          longitude: String(locationData.lng),
-        },
-        geoRadius: '10000',
-      },
-      // Add neighborhoods as additional service areas
       ...(neighborhoods || []).slice(0, 5).map((neighborhood) => ({
         '@type': 'Neighborhood',
         name: neighborhood,
-        containedInPlace: {
-          '@type': 'City',
-          name: locationName,
-        },
+        containedInPlace: { '@type': 'City', name: locationName },
       })),
     ],
     knowsAbout: ['Cabinet Painting', 'Interior Painting', 'Exterior Painting', 'Residential Painting'],
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${BUSINESS_INFO.website}/${locationSlug}-house-painters/`,
+      '@id': `${BUSINESS_INFO.website}/${locationSlug}-house-painters`,
     },
     serviceArea: {
       '@type': 'GeoCircle',
@@ -578,14 +567,11 @@ export const generateLocationBusinessSchema = (
           name: `${service.name} in ${locationName}`,
           description: service.shortDescription,
           url: `${BUSINESS_INFO.website}/${service.slug}`,
-          areaServed: {
-            '@type': 'City',
-            name: locationName,
-          },
+          areaServed: { '@type': 'City', name: locationName },
         },
       })),
     },
-    priceRange: '$',
+    priceRange: '$$',
     currenciesAccepted: 'USD',
     paymentAccepted: ['Cash', 'Credit Card', 'Check'],
     openingHoursSpecification: [
@@ -598,8 +584,8 @@ export const generateLocationBusinessSchema = (
     ],
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '5.0',
-      reviewCount: '50',
+      ratingValue: BUSINESS_INFO.aggregateRating.ratingValue,
+      reviewCount: String(BUSINESS_INFO.aggregateRating.reviewCount),
       bestRating: '5',
       worstRating: '5',
     },

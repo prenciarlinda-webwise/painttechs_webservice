@@ -105,8 +105,10 @@ export const testimonials: Testimonial[] = [
 ];
 
 // Total reviews on Google (actual count from GMB)
-export const TOTAL_GOOGLE_REVIEWS = 50;
-export const GOOGLE_RATING = 5.0;
+import { BUSINESS_INFO } from '@/lib/constants';
+
+export const TOTAL_GOOGLE_REVIEWS = BUSINESS_INFO.aggregateRating.reviewCount;
+export const GOOGLE_RATING = Number(BUSINESS_INFO.aggregateRating.ratingValue);
 
 export const getAverageRating = (): number => {
   return GOOGLE_RATING;

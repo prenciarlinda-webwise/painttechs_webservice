@@ -4,12 +4,26 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BUSINESS_INFO, SERVICES, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
+import { locationsData } from '@/data/locations';
 import { Button, Container } from '@/components/ui';
+
+type DropdownItem = {
+  href: string;
+  label: string;
+  description?: string;
+};
+
+type NavLink = {
+  href: string;
+  label: string;
+  title: string;
+  dropdownItems?: DropdownItem[];
+};
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,12 +33,34 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
+  const servicesDropdown: DropdownItem[] = SERVICES.map((s) => ({
+    href: `/${s.slug}`,
+    label: s.name,
+    description: s.shortDescription,
+  }));
+
+  const areasDropdown: DropdownItem[] = locationsData.map((loc) => ({
+    href: `/${loc.slug}-house-painters`,
+    label: loc.name,
+    description: loc.county,
+  }));
+
+  const navLinks: NavLink[] = [
     { href: '/', label: 'Home', title: 'Jacksonville Painters - Home' },
     { href: '/about', label: 'About', title: 'About Paint-Techs LLC Jacksonville Painters' },
-    { href: '/services', label: 'Services', title: 'Painting Services Jacksonville FL', hasDropdown: true },
+    {
+      href: '/services',
+      label: 'Services',
+      title: 'Painting Services Jacksonville FL',
+      dropdownItems: servicesDropdown,
+    },
     { href: '/gallery', label: 'Gallery', title: 'Painting Project Gallery Jacksonville' },
-    { href: '/areas-we-serve', label: 'Areas', title: 'Service Areas - Jacksonville & Northeast FL' },
+    {
+      href: '/areas-we-serve',
+      label: 'Areas',
+      title: 'Service Areas - Jacksonville & Northeast FL',
+      dropdownItems: areasDropdown,
+    },
     { href: '/blog', label: 'Blog', title: 'Painting Tips & Blog' },
     { href: '/contact', label: 'Contact', title: 'Contact Jacksonville Painters - Free Estimate' },
   ];
@@ -55,56 +91,62 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <div key={link.href} className="relative group">
-                {link.hasDropdown ? (
-                  <div
-                    className="relative"
-                    onMouseEnter={() => setIsServicesOpen(true)}
-                    onMouseLeave={() => setIsServicesOpen(false)}
-                  >
+            {navLinks.map((link) => {
+              const isOpen = openDropdown === link.href;
+              const dropdownWidth = link.href === '/areas-we-serve' ? 'w-72' : 'w-64';
+              return (
+                <div key={link.href} className="relative group">
+                  {link.dropdownItems ? (
+                    <div
+                      className="relative"
+                      onMouseEnter={() => setOpenDropdown(link.href)}
+                      onMouseLeave={() => setOpenDropdown(null)}
+                    >
+                      <Link
+                        href={link.href}
+                        title={link.title}
+                        className="px-4 py-2 text-gray-700 hover:text-orange-500 font-medium transition-colors flex items-center gap-1"
+                      >
+                        {link.label}
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </Link>
+                      {/* Dropdown */}
+                      <div
+                        className={`absolute top-full left-0 ${dropdownWidth} bg-white shadow-xl rounded-lg py-2 transition-all duration-200 max-h-[480px] overflow-y-auto ${
+                          isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                        }`}
+                      >
+                        {link.dropdownItems.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            title={`${item.label} - Paint-Techs LLC`}
+                            className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors"
+                          >
+                            <span className="font-medium">{item.label}</span>
+                            {item.description && (
+                              <span className="block text-sm text-gray-500 mt-0.5 line-clamp-1">
+                                {item.description}
+                              </span>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
                     <Link
                       href={link.href}
                       title={link.title}
-                      className="px-4 py-2 text-gray-700 hover:text-orange-500 font-medium transition-colors flex items-center gap-1"
+                      className="px-4 py-2 text-gray-700 hover:text-orange-500 font-medium transition-colors"
                     >
                       {link.label}
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
                     </Link>
-                    {/* Dropdown */}
-                    <div
-                      className={`absolute top-full left-0 w-64 bg-white shadow-xl rounded-lg py-2 transition-all duration-200 ${
-                        isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-                      }`}
-                    >
-                      {SERVICES.map((service) => (
-                        <Link
-                          key={service.id}
-                          href={`/${service.slug}`}
-                          title={`${service.name} Jacksonville FL`}
-                          className="block px-4 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors"
-                        >
-                          <span className="font-medium">{service.name}</span>
-                          <span className="block text-sm text-gray-500 mt-0.5">
-                            {service.shortDescription.substring(0, 50)}...
-                          </span>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : (
-                  <Link
-                    href={link.href}
-                    title={link.title}
-                    className="px-4 py-2 text-gray-700 hover:text-orange-500 font-medium transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              );
+            })}
           </nav>
 
           {/* CTA Buttons */}
@@ -168,17 +210,17 @@ export default function Header() {
                 >
                   {link.label}
                 </Link>
-                {link.hasDropdown && (
+                {link.dropdownItems && (
                   <div className="ml-4 space-y-1 mt-1">
-                    {SERVICES.map((service) => (
+                    {link.dropdownItems.map((item) => (
                       <Link
-                        key={service.id}
-                        href={`/${service.slug}`}
-                        title={`${service.name} Jacksonville FL`}
+                        key={item.href}
+                        href={item.href}
+                        title={`${item.label} - Paint-Techs LLC`}
                         className="block px-4 py-2 text-gray-600 hover:text-orange-500 text-sm transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                        {service.name}
+                        {item.label}
                       </Link>
                     ))}
                   </div>

@@ -71,20 +71,7 @@ export const defaultMetadata: Metadata = {
   description: BUSINESS_INFO.description,
   metadataBase: new URL(BUSINESS_INFO.website),
   // Icons are handled by Next.js App Router convention (files in src/app/)
-  keywords: [
-    'painters jacksonville fl',
-    'painting contractor jacksonville',
-    'house painters jacksonville',
-    'interior painting jacksonville',
-    'exterior painting jacksonville',
-    'cabinet painting jacksonville',
-    'commercial painting jacksonville',
-    'nocatee painters',
-    'ponte vedra painters',
-    'jacksonville beach painters',
-    'st augustine painters',
-    'painting company near me',
-  ],
+  // Per client direction 2026-05-09: no meta keywords site-wide — we don't surface our keyword strategy.
   authors: [{ name: BUSINESS_INFO.name }],
   creator: BUSINESS_INFO.name,
   publisher: BUSINESS_INFO.name,

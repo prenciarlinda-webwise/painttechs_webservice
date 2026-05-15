@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { Container, SectionHeading, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
+import ServicePicker from '@/components/features/ServicePicker';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateMetadata } from '@/lib/metadata';
 import { generateServiceAreasSchema } from '@/lib/schema';
 import { locationsData } from '@/data/locations';
-import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Service Areas - Painters in Jacksonville & Northeast Florida',
@@ -39,28 +39,11 @@ export default function AreasPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Serving <span className="text-teal-400">Jacksonville</span> & Northeast Florida
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-300 leading-relaxed mb-6">
               Paint-Techs LLC proudly provides professional painting services to homeowners and businesses throughout the greater Jacksonville area and surrounding communities.
             </p>
+            {/*<ServicePicker label="Looking for a specific service?" />*/}
           </div>
-        </Container>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-12 bg-white">
-        <Container>
-          <Card className="p-0 overflow-hidden" hover={false}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440835.85687389!2d-81.95!3d30.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5b716f1ceafeb%3A0xc4cd7d3896fcc7e2!2sJacksonville%2C%20FL!5e0!3m2!1sen!2sus!4v1704652800000!5m2!1sen!2sus"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Paint-Techs Service Area Map"
-            ></iframe>
-          </Card>
         </Container>
       </section>
 
@@ -104,43 +87,61 @@ export default function AreasPage() {
         </Container>
       </section>
 
-      {/* Service Areas by County */}
-      <section className="py-20 bg-white">
+      {/* Map Section — moved below the locations grid per client direction (locations first, map after) */}
+      <section className="py-12 bg-white">
         <Container>
-          <SectionHeading
-            title="Browse by County"
-            subtitle="Find painting services in your specific county."
-          />
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {counties.map((county) => (
-              <div key={county} className="bg-gray-50 rounded-2xl p-6">
-                <h3 className="font-bold text-navy-800 text-lg mb-4 flex items-center gap-2">
-                  <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                  </svg>
-                  {county}
-                </h3>
-                <ul className="space-y-2">
-                  {locationsByCounty[county].map((location) => (
-                    <li key={location.slug}>
-                      <Link
-                        href={`/${location.slug}-house-painters`}
-                        className="flex items-center gap-2 text-gray-700 hover:text-orange-600 transition-colors py-1"
-                      >
-                        <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                        {location.name} Painters
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <Card className="p-0 overflow-hidden" hover={false}>
+            <iframe
+              src="https://maps.google.com/maps?q=Paint-Techs+LLC+Painting+Company+Jacksonville+FL&z=11&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Paint-Techs LLC service area map"
+            ></iframe>
+          </Card>
         </Container>
       </section>
+
+      {/*/!* Service Areas by County *!/*/}
+      {/*<section className="py-20 bg-white">*/}
+      {/*  <Container>*/}
+      {/*    <SectionHeading*/}
+      {/*      title="Browse by County"*/}
+      {/*      subtitle="Find painting services in your specific county."*/}
+      {/*    />*/}
+
+      {/*    <div className="grid md:grid-cols-3 gap-8">*/}
+      {/*      {counties.map((county) => (*/}
+      {/*        <div key={county} className="bg-gray-50 rounded-2xl p-6">*/}
+      {/*          <h3 className="font-bold text-navy-800 text-lg mb-4 flex items-center gap-2">*/}
+      {/*            <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">*/}
+      {/*              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />*/}
+      {/*            </svg>*/}
+      {/*            {county}*/}
+      {/*          </h3>*/}
+      {/*          <ul className="space-y-2">*/}
+      {/*            {locationsByCounty[county].map((location) => (*/}
+      {/*              <li key={location.slug}>*/}
+      {/*                <Link*/}
+      {/*                  href={`/${location.slug}-house-painters`}*/}
+      {/*                  className="flex items-center gap-2 text-gray-700 hover:text-orange-600 transition-colors py-1"*/}
+      {/*                >*/}
+      {/*                  <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">*/}
+      {/*                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />*/}
+      {/*                  </svg>*/}
+      {/*                  {location.name} Painters*/}
+      {/*                </Link>*/}
+      {/*              </li>*/}
+      {/*            ))}*/}
+      {/*          </ul>*/}
+      {/*        </div>*/}
+      {/*      ))}*/}
+      {/*    </div>*/}
+      {/*  </Container>*/}
+      {/*</section>*/}
 
       {/* Service Coverage */}
       <section className="py-16 bg-gray-50">

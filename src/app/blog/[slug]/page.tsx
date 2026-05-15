@@ -207,7 +207,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 />
                 <div className="text-sm text-gray-600">
                   <p className="font-semibold text-navy-800 mb-1">Paint-Techs LLC — Jacksonville&apos;s Trusted Painters</p>
-                  <p>Licensed & insured painting contractor with 50+ five-star Google reviews. Serving Jacksonville, Nocatee, Ponte Vedra Beach, and Northeast Florida since {BUSINESS_INFO.foundedYear}.</p>
+                  <p>Licensed & insured painting contractor with {BUSINESS_INFO.aggregateRating.reviewCount} five-star Google reviews. Serving Jacksonville, Nocatee, Ponte Vedra Beach, and Northeast Florida since {BUSINESS_INFO.foundedYear}.</p>
                 </div>
               </div>
 
@@ -368,7 +368,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     <p className="font-bold text-navy-800">{post.author}</p>
                     <p className="text-sm text-gray-500 mb-2">Paint-Techs LLC — Jacksonville, FL</p>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      Expert painting advice from the Paint-Techs team. We&apos;re a licensed and insured painting contractor serving Jacksonville and Northeast Florida with 50+ five-star Google reviews. Our team combines years of hands-on experience with knowledge of Florida&apos;s unique climate challenges.
+                      Expert painting advice from the Paint-Techs team. We&apos;re a licensed and insured painting contractor serving Jacksonville and Northeast Florida with {BUSINESS_INFO.aggregateRating.reviewCount} five-star Google reviews. Our team combines years of hands-on experience with knowledge of Florida&apos;s unique climate challenges.
                     </p>
                     <div className="flex items-center gap-4 mt-3">
                       <Link href="/about" className="text-teal-600 hover:text-teal-700 text-sm font-medium">About Us</Link>

@@ -13,7 +13,7 @@ const homepageFAQs = [
   },
   {
     question: 'How do I find reliable house painters near me?',
-    answer: 'Look for licensed and insured painting contractors with strong Google reviews, like Paint-Techs LLC with 50+ five-star reviews. Ask for references, get multiple quotes, and verify they use quality paints from brands like Sherwin-Williams or Benjamin Moore.',
+    answer: `Look for licensed and insured painting contractors with strong Google reviews, like Paint-Techs LLC with ${BUSINESS_INFO.aggregateRating.reviewCount} five-star reviews. Ask for references, get multiple quotes, and verify they use quality paints from brands like Sherwin-Williams or Benjamin Moore.`,
   },
   {
     question: 'What painting services does Paint-Techs offer in Jacksonville?',
@@ -36,19 +36,6 @@ const homepageFAQs = [
 export const metadata: Metadata = {
   title: 'Jacksonville Painters - House Painters Near Me - Paint-Techs LLC',
   description: 'Top-rated Jacksonville painters offering professional house painting services. Interior, exterior & cabinet painting. Licensed, insured, 5-star rated. Free estimates!',
-  keywords: [
-    'jacksonville painters',
-    'painters near me',
-    'house painters near me',
-    'painting services near me',
-    'local painters near me',
-    'professional painters near me',
-    'home painters near me',
-    'jacksonville house painters',
-    'jacksonville painting company',
-    'painting contractor jacksonville fl',
-    'house painters in jacksonville fl',
-  ],
   alternates: {
     canonical: BUSINESS_INFO.website,
   },
