@@ -82,7 +82,7 @@ Whether you're looking for interior house painting near me, need specialty finis
       'interior painting',
       'interior painting contractor',
     ],
-    metaTitle: 'Interior Painters Jacksonville FL - Paint-Techs LLC',
+    metaTitle: 'Interior Painters Jacksonville - (904) 762-7062 - Paint-Techs LLC',
     metaDescription: 'Interior painters in Jacksonville, FL — 5★ rated, 52 Google reviews. Interior house painting, trim, and accent walls. Licensed, insured, evening estimates until 10 PM. Free quotes: (904) 762-7062',
   },
   {
@@ -170,7 +170,7 @@ Unlike national chains, we're a local Jacksonville painting company that underst
       'exterior painting cost',
       'residential exterior painting',
     ],
-    metaTitle: 'Exterior House Painters Jacksonville FL - Paint-Techs LLC',
+    metaTitle: 'Exterior House Painters Jacksonville - (904) 762-7062 - Paint-Techs',
     metaDescription: 'Exterior house painters in Jacksonville, FL. UV-resistant Sherwin-Williams Duration coatings, wood-rot repair, 5-year warranty. 5★ rated, 52 reviews. Free quotes: (904) 762-7062',
   },
   {
@@ -255,7 +255,7 @@ Our kitchen cabinet painting services are available throughout Jacksonville and 
       { question: 'What\'s the difference between cabinet refacing and cabinet painting?', answer: 'Cabinet refacing Jacksonville involves replacing your cabinet doors and drawer fronts while applying veneer to the cabinet boxes. Kitchen cabinet painting refinishes your existing doors and boxes. Both achieve a fresh look, but cabinet painting is more affordable, faster (3-5 days vs 2-3 weeks), and offers unlimited color options. Many homeowners searching for cabinet refacing near me discover that professional cabinet painting delivers comparable results at a fraction of the cost.' },
     ],
     keywords: ['cabinet painting jacksonville fl', 'cabinet refinishing jacksonville fl', 'kitchen cabinet painting', 'kitchen cabinet refinishing', 'kitchen cabinet painting contractors', 'kitchen cabinet painting near me', 'kitchen cabinet painting services', 'professional kitchen cabinet painting', 'cabinet painting near me', 'cabinet refinishing near me', 'kitchen cabinet refacing near me', 'kitchen cabinet painters near me', 'cabinet refacing jacksonville', 'cabinet refacing jacksonville fl', 'jacksonville cabinet painting'],
-    metaTitle: 'Cabinet Painting Jacksonville FL - Paint-Techs LLC',
+    metaTitle: 'Cabinet Painting Jacksonville FL - (904) 762-7062 - Paint-Techs',
     metaDescription: 'Kitchen cabinet painting & refinishing in Jacksonville, FL. Factory-smooth HVLP spray finish, 10+ year durability, saves 50-70% vs replacement. 5★ rated. Free quotes: (904) 762-7062',
   },
   {
@@ -328,7 +328,7 @@ Our commercial painting services cover a wide range of properties, from small of
       'commercial building exterior painting',
       'commercial painting prices',
     ],
-    metaTitle: 'Commercial Painting Contractors Jacksonville FL - Paint-Techs',
+    metaTitle: 'Commercial Painters Jacksonville FL - (904) 762-7062 - Paint-Techs',
     metaDescription: 'Commercial painting contractors in Jacksonville, FL. Offices, retail, warehouses, industrial. Off-hours scheduling, fully insured. 5★ rated. Free quotes: (904) 762-7062',
   },
   {
@@ -406,7 +406,7 @@ Whether you have a concrete pool deck, paver deck, or existing cool deck surface
       'deck staining near me',
       'pool deck coating florida',
     ],
-    metaTitle: 'Pool Deck Painting Jacksonville FL - Cool Deck Coatings',
+    metaTitle: 'Pool Deck Painting Jacksonville - (904) 762-7062 - Paint-Techs LLC',
     metaDescription: 'Pool deck painting & cool deck coatings in Jacksonville, FL. Heat-reflective surfaces 40°F cooler, slip-resistant, UV-proof. 5★ rated. Free quotes: (904) 762-7062',
   },
 ];
