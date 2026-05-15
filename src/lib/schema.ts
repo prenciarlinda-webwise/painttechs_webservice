@@ -130,9 +130,11 @@ export const generateHousePainterSchema = () => ({
     '@type': 'OfferCatalog',
     name: 'Painting Services',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cabinet Painting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Interior Painting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Exterior Painting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Interior Painting', url: `${BUSINESS_INFO.website}/interior-painting` } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Exterior Painting', url: `${BUSINESS_INFO.website}/exterior-painting` } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cabinet Painting', url: `${BUSINESS_INFO.website}/cabinet-painting` } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pool Deck Painting', url: `${BUSINESS_INFO.website}/pool-deck-painting-staining` } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Painting', url: `${BUSINESS_INFO.website}/commercial-painting` } },
     ],
   },
 });
@@ -182,7 +184,7 @@ export const generateLocalBusinessSchema = () => ({
     ratingValue: BUSINESS_INFO.aggregateRating.ratingValue,
     reviewCount: String(BUSINESS_INFO.aggregateRating.reviewCount),
     bestRating: '5',
-    worstRating: '5',
+    worstRating: '1',
   },
   sameAs: [
     BUSINESS_INFO.links.gmb,
@@ -192,9 +194,11 @@ export const generateLocalBusinessSchema = () => ({
     '@type': 'OfferCatalog',
     name: 'Painting Services',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cabinet Painting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Interior Painting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Exterior Painting' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Interior Painting', url: `${BUSINESS_INFO.website}/interior-painting` } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Exterior Painting', url: `${BUSINESS_INFO.website}/exterior-painting` } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cabinet Painting', url: `${BUSINESS_INFO.website}/cabinet-painting` } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pool Deck Painting', url: `${BUSINESS_INFO.website}/pool-deck-painting-staining` } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Painting', url: `${BUSINESS_INFO.website}/commercial-painting` } },
     ],
   },
 });
@@ -403,7 +407,7 @@ export const generateReviewSchema = (reviews: {
       ratingValue: avgRating.toFixed(1),
       reviewCount: reviews.length,
       bestRating: '5',
-      worstRating: '5',
+      worstRating: '1',
     },
     review: reviews.map((review) => ({
       '@type': 'Review',
@@ -415,7 +419,7 @@ export const generateReviewSchema = (reviews: {
         '@type': 'Rating',
         ratingValue: review.rating,
         bestRating: '5',
-        worstRating: '5',
+        worstRating: '1',
       },
       reviewBody: review.text,
       datePublished: review.date,
@@ -587,7 +591,7 @@ export const generateLocationBusinessSchema = (
       ratingValue: BUSINESS_INFO.aggregateRating.ratingValue,
       reviewCount: String(BUSINESS_INFO.aggregateRating.reviewCount),
       bestRating: '5',
-      worstRating: '5',
+      worstRating: '1',
     },
     sameAs: [
       BUSINESS_INFO.links.gmb,

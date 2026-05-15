@@ -132,8 +132,8 @@ We cover every Duval County ZIP code, including 32202 downtown, 32204-32210 in R
       'Same-day free estimates available',
     ],
     neighborhoods: ['Riverside', 'Avondale', 'San Marco', 'Mandarin', 'Southside', 'Arlington', 'Beaches', 'Northside', 'Westside', 'Ortega', 'Springfield', 'Murray Hill', 'Baymeadows', 'Town Center', 'Lakewood', 'San Jose'],
-    metaTitle: 'Jacksonville Painters - (904) 762-7062 - Paint-Techs LLC',
-    metaDescription: 'Jacksonville\'s trusted house painters. 5-star rated, 52 reviews. Interior, exterior & cabinet painting throughout Duval County. Evening estimates until 10PM. Free quotes: (904) 762-7062',
+    metaTitle: 'Jacksonville House Painters - Paint-Techs LLC (5★ 52 Reviews)',
+    metaDescription: 'House painters in Jacksonville, FL — 5★ rated, 52 Google reviews. Interior, exterior, cabinet & commercial painting across Duval County. Evening estimates until 10 PM. Free quotes: (904) 762-7062',
     keywords: ['jacksonville painters', 'painters jacksonville fl', 'house painters jacksonville', 'jacksonville house painters', 'interior painter jacksonville fl', 'exterior painters jacksonville fl', 'painting companies jacksonville', 'jacksonville painting company', 'painters near me jacksonville'],
   },
   {
@@ -199,8 +199,8 @@ Our Nocatee painting service covers ZIP codes 32081 and 32082 across every villa
       'Licensed and insured in St. Johns County',
     ],
     neighborhoods: ['Twenty Mile', 'Twenty Mile Village', 'Tidewater', 'Coastal Oaks', 'Austin Park', 'Addison Park', 'Greenleaf Village', 'Lakeside', 'Artisan Lakes', 'Town Center', 'Willowcove', 'Kelly Pointe'],
-    metaTitle: 'Nocatee Painters - (904) 762-7062 - Paint-Techs LLC',
-    metaDescription: 'Top-rated house painters serving Nocatee and St. Johns County. Cabinet refinishing, interior & exterior painting. Evening estimates until 10PM. Free quotes: (904) 762-7062',
+    metaTitle: 'Nocatee House Painters - Paint-Techs LLC (5★ 52 Reviews)',
+    metaDescription: 'House painters in Nocatee, FL — 5★ rated, 52 Google reviews. Interior, exterior, cabinet refinishing across St. Johns County. Same-week scheduling, evening estimates. Free quotes: (904) 762-7062',
     keywords: ['nocatee painters', 'nocatee house painters', 'st johns painting', 'house painters nocatee', 'nocatee painting company', 'painters in nocatee', 'st johns county painters', 'cabinet painting nocatee'],
   },
   {
@@ -265,8 +265,8 @@ Our Ponte Vedra painting service covers ZIP codes 32082 and 32004 across every n
       'Premium materials and expert craftsmanship',
     ],
     neighborhoods: ['Sawgrass', 'TPC Sawgrass', 'Marsh Landing', 'Ponte Vedra Colony', 'Old Ponte Vedra', 'The Plantation', 'Sawgrass Country Club', 'Sawgrass Players Club', 'Ocean Grande'],
-    metaTitle: 'Ponte Vedra Painters - (904) 762-7062 - Paint-Techs LLC',
-    metaDescription: 'Premium painting services in Ponte Vedra Beach, FL. Serving Sawgrass, Marsh Landing, TPC Sawgrass area. Marine-grade coatings. Free estimates: (904) 762-7062',
+    metaTitle: 'Ponte Vedra Beach House Painters - Paint-Techs LLC',
+    metaDescription: 'House painters in Ponte Vedra Beach, FL — 5★ rated. Serving Sawgrass, Marsh Landing, TPC Sawgrass with marine-grade coatings for coastal homes. Free quotes: (904) 762-7062',
     keywords: ['ponte vedra beach painters', 'painting contractor ponte vedra fl', 'house painters ponte vedra beach', 'ponte vedra painting company', 'luxury home painters ponte vedra', 'sawgrass painters'],
   },
   {
