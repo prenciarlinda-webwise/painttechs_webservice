@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateMetadata } from '@/lib/metadata';
-import { generateAboutPageSchema } from '@/lib/schema';
+import { generateAboutPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
@@ -50,6 +50,12 @@ export default function AboutPage() {
   return (
     <>
       <JsonLd data={generateAboutPageSchema()} />
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: 'Home', url: BUSINESS_INFO.website },
+          { name: 'About', url: `${BUSINESS_INFO.website}/about` },
+        ])}
+      />
       <Breadcrumbs items={[{ label: 'About' }]} />
 
       {/* Hero Section */}

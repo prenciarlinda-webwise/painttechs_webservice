@@ -808,6 +808,62 @@ export const generateBlogListSchema = (
   })),
 });
 
+// Project / case-study schema for the portfolio pages
+// (/cabinet-refinishing-nocatee, /residential-exterior-painting-jacksonville,
+// /commercial-retail-renovation). Models the page as a CollectionPage whose
+// main entity is a Service offering, with the before/after image set declared
+// as an ImageGallery so Google can surface the work product in image SERPs.
+export const generateProjectSchema = (params: {
+  projectName: string;
+  description: string;
+  url: string;
+  serviceName: string;
+  serviceSlug: string;
+  locationName: string;
+  images: { src: string; alt: string }[];
+}) => ({
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${params.url}#webpage`,
+  name: params.projectName,
+  description: params.description,
+  url: params.url,
+  inLanguage: 'en-US',
+  isPartOf: {
+    '@type': 'WebSite',
+    '@id': `${BUSINESS_INFO.website}/#website`,
+  },
+  primaryImageOfPage: params.images[0]
+    ? {
+        '@type': 'ImageObject',
+        url: `${BUSINESS_INFO.website}${params.images[0].src}`,
+        contentUrl: `${BUSINESS_INFO.website}${params.images[0].src}`,
+        description: params.images[0].alt,
+      }
+    : undefined,
+  mainEntity: {
+    '@type': 'Service',
+    name: params.serviceName,
+    description: params.description,
+    url: `${BUSINESS_INFO.website}/${params.serviceSlug}`,
+    serviceType: 'Painting Service',
+    provider: {
+      '@type': 'HousePainter',
+      '@id': `${BUSINESS_INFO.website}/#localbusiness`,
+      name: BUSINESS_INFO.name,
+    },
+    areaServed: {
+      '@type': 'Place',
+      name: params.locationName,
+    },
+    image: params.images.slice(0, 10).map((img) => ({
+      '@type': 'ImageObject',
+      contentUrl: `${BUSINESS_INFO.website}${img.src}`,
+      description: img.alt,
+    })),
+  },
+});
+
 // Gallery Category Schema for service-specific galleries
 export const generateGalleryCategorySchema = (
   category: 'Exterior' | 'Interior' | 'Cabinet',

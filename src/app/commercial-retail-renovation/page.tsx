@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
+import JsonLd from '@/components/seo/JsonLd';
+import { generateProjectSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
 const projectImages = [
   {
@@ -120,6 +122,25 @@ export default function CommercialRetailRenovation() {
 
   return (
     <>
+      <JsonLd
+        data={generateProjectSchema({
+          projectName: 'Commercial Retail Renovation Project — Jacksonville, FL',
+          description: 'Before-and-after photos of a commercial retail renovation in Jacksonville, FL by Paint-Techs LLC. Full interior repaint of a retail space with brand-color matching and after-hours scheduling.',
+          url: `${BUSINESS_INFO.website}/commercial-retail-renovation`,
+          serviceName: 'Commercial Painting',
+          serviceSlug: 'commercial-painting',
+          locationName: 'Jacksonville, FL',
+          images: projectImages.map((img) => ({ src: img.src, alt: img.alt })),
+        })}
+      />
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: 'Home', url: BUSINESS_INFO.website },
+          { name: 'Commercial Painting', url: `${BUSINESS_INFO.website}/commercial-painting` },
+          { name: 'Commercial Retail Renovation', url: `${BUSINESS_INFO.website}/commercial-retail-renovation` },
+        ])}
+      />
+
       {/* Hero Section */}
       <section className="relative bg-navy-900 py-16 md:py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900"></div>

@@ -8,7 +8,8 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import { getProjectsByCategory, GalleryProject } from '@/data/gallery';
 import JsonLd from '@/components/seo/JsonLd';
-import { generateGalleryCategorySchema } from '@/lib/schema';
+import { generateGalleryCategorySchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { BUSINESS_INFO } from '@/lib/constants';
 
 const cabinetProjects = getProjectsByCategory('Cabinet');
 const schemaProjects = cabinetProjects.map(p => ({
@@ -51,6 +52,13 @@ export default function CabinetGalleryPage() {
   return (
     <>
       <JsonLd data={generateGalleryCategorySchema('Cabinet', schemaProjects)} />
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: 'Home', url: BUSINESS_INFO.website },
+          { name: 'Gallery', url: `${BUSINESS_INFO.website}/gallery` },
+          { name: 'Cabinet Painting', url: `${BUSINESS_INFO.website}/gallery/cabinet` },
+        ])}
+      />
       <Breadcrumbs items={[{ label: 'Gallery', href: '/gallery' }, { label: 'Cabinet Painting' }]} />
 
       {/* Hero Section */}

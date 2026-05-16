@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
+import JsonLd from '@/components/seo/JsonLd';
+import { generateProjectSchema, generateBreadcrumbSchema } from '@/lib/schema';
 
 const projectImages = [
   {
@@ -78,6 +80,25 @@ export default function ResidentialExteriorPaintingProject() {
 
   return (
     <>
+      <JsonLd
+        data={generateProjectSchema({
+          projectName: 'Residential Exterior Painting Project — Jacksonville, FL',
+          description: 'Before-and-after photos of a residential exterior painting project in Jacksonville, FL by Paint-Techs LLC. Full power wash, surface prep, and two coats of UV-resistant Sherwin-Williams exterior.',
+          url: `${BUSINESS_INFO.website}/residential-exterior-painting-jacksonville`,
+          serviceName: 'Exterior Painting',
+          serviceSlug: 'exterior-painting',
+          locationName: 'Jacksonville, FL',
+          images: projectImages.map((img) => ({ src: img.src, alt: img.alt })),
+        })}
+      />
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: 'Home', url: BUSINESS_INFO.website },
+          { name: 'Exterior Painting', url: `${BUSINESS_INFO.website}/exterior-painting` },
+          { name: 'Residential Exterior Painting Jacksonville', url: `${BUSINESS_INFO.website}/residential-exterior-painting-jacksonville` },
+        ])}
+      />
+
       {/* Hero Section */}
       <section className="relative bg-navy-900 py-16 md:py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900"></div>

@@ -3,7 +3,7 @@ import { Container, SectionHeading, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateMetadata } from '@/lib/metadata';
-import { generateContactPageSchema } from '@/lib/schema';
+import { generateContactPageSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink, getEmailLink } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
@@ -16,6 +16,12 @@ export default function ContactPage() {
   return (
     <>
       <JsonLd data={generateContactPageSchema()} />
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: 'Home', url: BUSINESS_INFO.website },
+          { name: 'Contact', url: `${BUSINESS_INFO.website}/contact` },
+        ])}
+      />
       <Breadcrumbs items={[{ label: 'Contact' }]} />
 
       {/* Hero Section */}

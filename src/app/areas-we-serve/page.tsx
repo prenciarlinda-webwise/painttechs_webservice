@@ -6,8 +6,9 @@ import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import ServicePicker from '@/components/features/ServicePicker';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateMetadata } from '@/lib/metadata';
-import { generateServiceAreasSchema } from '@/lib/schema';
+import { generateServiceAreasSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { locationsData } from '@/data/locations';
+import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Service Areas - Painters in Jacksonville & Northeast Florida',
@@ -30,6 +31,12 @@ export default function AreasPage() {
   return (
     <>
       <JsonLd data={generateServiceAreasSchema()} />
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: 'Home', url: BUSINESS_INFO.website },
+          { name: 'Service Areas', url: `${BUSINESS_INFO.website}/areas-we-serve` },
+        ])}
+      />
       <Breadcrumbs items={[{ label: 'Service Areas' }]} />
 
       {/* Hero Section */}

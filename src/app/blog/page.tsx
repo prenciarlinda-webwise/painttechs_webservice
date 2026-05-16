@@ -6,8 +6,9 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateMetadata } from '@/lib/metadata';
-import { generateBlogListSchema } from '@/lib/schema';
+import { generateBlogListSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { blogPosts, getBlogCategories } from '@/data/blog-posts';
+import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Painting Tips & Blog - Paint-Techs LLC Jacksonville FL',
@@ -27,6 +28,12 @@ export default function BlogPage() {
   return (
     <>
       <JsonLd data={generateBlogListSchema(blogSchemaData)} />
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: 'Home', url: BUSINESS_INFO.website },
+          { name: 'Blog', url: `${BUSINESS_INFO.website}/blog` },
+        ])}
+      />
       <Breadcrumbs items={[{ label: 'Blog' }]} />
 
       {/* Hero Section */}

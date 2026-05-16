@@ -6,9 +6,10 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateMetadata } from '@/lib/metadata';
-import { generateServicesListSchema } from '@/lib/schema';
+import { generateServicesListSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { servicesData } from '@/data/services';
 import { locationsData } from '@/data/locations';
+import { BUSINESS_INFO } from '@/lib/constants';
 
 export const metadata: Metadata = generateMetadata({
   title: 'Painting Services Jacksonville FL - Interior, Exterior, Cabinet',
@@ -28,6 +29,12 @@ export default function ServicesPage() {
   return (
     <>
       <JsonLd data={generateServicesListSchema()} />
+      <JsonLd
+        data={generateBreadcrumbSchema([
+          { name: 'Home', url: BUSINESS_INFO.website },
+          { name: 'Services', url: `${BUSINESS_INFO.website}/services` },
+        ])}
+      />
       <Breadcrumbs items={[{ label: 'Services' }]} />
 
       {/* Hero Section */}
