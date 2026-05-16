@@ -441,7 +441,10 @@ export const generateBreadcrumbSchema = (
   })),
 });
 
-// Article/Blog Post Schema
+// Article / Blog Post Schema. Uses BlogPosting (more specific than Article)
+// and includes every field Google's Article rich-result documentation marks
+// as required or recommended: mainEntityOfPage, absolute image URL, author URL,
+// publisher logo with explicit dimensions, articleSection, keywords.
 export const generateArticleSchema = (
   title: string,
   description: string,
@@ -449,34 +452,57 @@ export const generateArticleSchema = (
   publishedDate: string,
   modifiedDate: string,
   authorName: string,
-  imageUrl?: string
-) => ({
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: title,
-  description: description,
-  url: url,
-  datePublished: publishedDate,
-  dateModified: modifiedDate,
-  author: {
-    '@type': 'Organization',
-    name: authorName,
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: BUSINESS_INFO.name,
-    logo: {
-      '@type': 'ImageObject',
-      url: `${BUSINESS_INFO.website}${BUSINESS_INFO.logoPath}`,
+  imageUrl?: string,
+  articleSection?: string,
+  keywords?: string[]
+) => {
+  const absoluteImage = imageUrl
+    ? imageUrl.startsWith('http')
+      ? imageUrl
+      : `${BUSINESS_INFO.website}${imageUrl}`
+    : `${BUSINESS_INFO.website}${BUSINESS_INFO.logoPath}`;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${url}#article`,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
     },
-  },
-  ...(imageUrl && {
+    headline: title,
+    description,
+    url,
+    datePublished: publishedDate,
+    dateModified: modifiedDate,
+    inLanguage: 'en-US',
+    isAccessibleForFree: true,
+    author: {
+      '@type': 'Organization',
+      name: authorName,
+      url: BUSINESS_INFO.website,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: BUSINESS_INFO.name,
+      url: BUSINESS_INFO.website,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${BUSINESS_INFO.website}${BUSINESS_INFO.logoPath}`,
+        width: 600,
+        height: 600,
+      },
+    },
     image: {
       '@type': 'ImageObject',
-      url: imageUrl,
+      url: absoluteImage,
+      width: 1200,
+      height: 630,
     },
-  }),
-});
+    ...(articleSection && { articleSection }),
+    ...(keywords && keywords.length > 0 && { keywords: keywords.join(', ') }),
+  };
+};
 
 // WebSite Schema for sitelinks searchbox
 export const generateWebsiteSchema = () => ({

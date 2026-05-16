@@ -6,8 +6,9 @@ import { Container, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
-import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema';
+import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { blogPosts, getBlogPostBySlug, getRecentPosts } from '@/data/blog-posts';
+import { locationsData } from '@/data/locations';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
 
 interface BlogPostPageProps {
@@ -121,7 +122,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           post.publishedAt,
           post.updatedAt,
           post.author,
-          post.featuredImage
+          post.featuredImage,
+          post.category,
+          post.tags
         )}
       />
       <JsonLd
@@ -326,6 +329,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     { name: 'Interior Painting', slug: 'interior-painting', desc: 'Walls, ceilings, trim & accent walls' },
                     { name: 'Exterior Painting', slug: 'exterior-painting', desc: 'Weather-resistant coatings for FL homes' },
                     { name: 'Cabinet Painting', slug: 'cabinet-painting', desc: 'Kitchen & bathroom cabinet refinishing' },
+                    { name: 'Pool Deck Painting', slug: 'pool-deck-painting-staining', desc: 'Cool-deck coatings & pool deck stain' },
                     { name: 'Commercial Painting', slug: 'commercial-painting', desc: 'Offices, retail & commercial spaces' },
                   ].map((svc) => (
                     <Link
@@ -344,6 +348,32 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                       </div>
                     </Link>
                   ))}
+                </div>
+              </div>
+
+              {/* Service Area Links — internal-link equity flow from blog to every location page */}
+              <div className="not-prose mt-10 p-6 bg-[#fff6ec] rounded-xl border border-orange-100/70">
+                <h3 className="text-xl font-bold text-navy-800 mb-2">Painting services in your neighborhood</h3>
+                <p className="text-sm text-navy-700/80 mb-4">
+                  Paint-Techs LLC works across Duval, St. Johns, Clay, and Nassau counties. Tap the city closest to you for pricing, neighborhood specifics, and recent local projects.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {locationsData.map((loc) => (
+                    <Link
+                      key={loc.slug}
+                      href={`/${loc.slug}-house-painters`}
+                      title={`${loc.name} House Painters - Paint-Techs LLC`}
+                      className="inline-flex items-center px-3 py-1.5 bg-white text-navy-700 hover:text-orange-600 hover:bg-orange-50 border border-orange-200/60 rounded-full text-sm font-medium transition-colors"
+                    >
+                      {loc.name}
+                    </Link>
+                  ))}
+                  <Link
+                    href="/areas-we-serve"
+                    className="inline-flex items-center px-3 py-1.5 bg-orange-500 hover:bg-orange-600 text-white rounded-full text-sm font-semibold transition-colors"
+                  >
+                    All service areas →
+                  </Link>
                 </div>
               </div>
 
