@@ -1,6 +1,10 @@
 // Paint-Techs LLC Business Information
 // NAP (Name, Address, Phone) - Consistent across all pages for Local SEO
 
+// Formspree form endpoint — all on-site lead forms POST here.
+// Endpoint: https://formspree.io/f/xgoqwope
+export const FORMSPREE_ID = 'xgoqwope';
+
 export const BUSINESS_INFO = {
   name: 'Paint-Techs LLC',
   legalName: 'Paint-Techs LLC',
