@@ -1898,6 +1898,163 @@ Ready to discuss your painting project? Contact Paint-Techs LLC for expert advic
     metaTitle: 'Duration vs Emerald Paint: Florida Comparison - Paint-Techs',
     metaDescription: 'Sherwin-Williams Duration vs Emerald: which is better for Florida? Expert comparison for Jacksonville homeowners choosing premium paint.',
   },
+  {
+    id: '11',
+    slug: 'how-to-remove-popcorn-ceiling',
+    title: 'How to Remove Popcorn Ceiling: A Step-by-Step 2026 Guide',
+    excerpt: 'A complete homeowner guide to removing popcorn ceiling — including asbestos testing, the easiest scraping method, what it costs, how to handle painted texture, and when to skim-coat or drywall over instead.',
+    featuredImage: '/images/interior-living-room-sage-green-accent-wall.webp',
+    content: `
+# How to Remove Popcorn Ceiling: A Step-by-Step 2026 Guide
+
+To remove popcorn ceiling, first test for asbestos if the home was built before 1985, then cover floors and walls in plastic sheeting, spray a small section of the ceiling with warm water, wait 10 to 15 minutes for the texture to soften, and scrape it off with a 6-inch drywall taping knife held at a low angle. After scraping the entire ceiling, patch any gouges, sand smooth, prime with a stain-blocking primer, and finish with two coats of ceiling paint. A typical 200 sq ft ceiling takes a confident DIYer 4 to 6 hours and runs $150 to $300 in supplies; a professional crew finishes the same room in a single day for $400 to $1,200.
+
+## How to remove popcorn ceiling, step by step
+
+The wet-scrape method below works for unpainted popcorn ceilings (also called cottage cheese, acoustic, or stipple ceilings) installed between roughly 1950 and the late 1980s. Painted texture is harder and is covered in its own section below.
+
+**1. Test for asbestos first.** If your home was built before 1985, do not skip this step. Order an inexpensive home asbestos test kit (\\$40–\\$80) or hire a certified inspector. Mail a chip of the texture to a lab and wait 3 to 5 days for results. If asbestos is detected, stop — only a licensed abatement contractor should handle removal under EPA rules. The dust from disturbed asbestos texture is the same material that causes mesothelioma decades later, and the cost of doing it wrong is much higher than the cost of the test.
+
+**2. Empty the room and protect surfaces.** Move furniture out completely. Cover floors edge-to-edge with 6-mil plastic drop cloths and tape the seams. Run plastic up the walls about 18 inches and tape it tight to baseboards. Cover light fixtures, ceiling fans, smoke detectors, and HVAC vents. Turn off power to ceiling outlets at the breaker.
+
+**3. Set up a workstation.** You will be on a ladder for hours. A 6-foot step ladder reaches an 8-foot ceiling comfortably; for 9-foot ceilings, rent a baker scaffold from Home Depot for about \\$50 a day. Wear an N95 respirator, safety glasses, and old long-sleeve clothes — even dust-free wet scraping is messy.
+
+**4. Spray a 4×4-foot section with warm water.** Use a garden pump sprayer filled with warm tap water plus a tiny squeeze of dish soap to help the water cling. Mist the ceiling — do not soak it. Heavy water seeps into the drywall paper above and weakens the panel.
+
+**5. Wait 10 to 15 minutes.** The texture should look slightly darker and feel soft to the touch. If you spray and scrape immediately, the texture chips into chunks and dulls your knife. Patience here saves an hour of frustration later.
+
+**6. Scrape with a 6-inch taping knife at a shallow angle.** Hold the blade nearly flat against the ceiling and push, do not gouge. The texture should peel off in soft ribbons onto the plastic below. A 10-inch knife covers more ground but is easier to gouge with; the 6-inch is the sweet spot. Use a dustpan-style mud pan held under the work area to catch wet texture before it falls.
+
+**7. Patch, sand, and clean.** Once the entire ceiling is scraped, let it dry for 24 hours. Skim-coat any divots or gouges with lightweight joint compound, let it dry, sand smooth with a 220-grit pole sander, and vacuum thoroughly. Wipe with a damp microfiber cloth to remove residual dust.
+
+**8. Prime and paint.** Apply a stain-blocking primer like Zinsser BIN or Sherwin-Williams Multi-Purpose Latex Primer to seal old water stains and lock down any remaining adhesive. Once the primer dries, finish with two coats of flat ceiling paint such as Sherwin-Williams ProMar Ceiling or Benjamin Moore Waterborne Ceiling. Roll in one direction with the first coat, then perpendicular for the second.
+
+## What is the easiest way to remove popcorn ceilings?
+
+The easiest way to remove popcorn ceilings is the wet-scrape method described above — spray warm water on a small section, wait 10 to 15 minutes for the texture to soften, then scrape with a 6-inch drywall knife. This works for roughly 85% of unpainted popcorn ceilings and requires no specialty tools beyond a pump sprayer, a knife, and plastic sheeting. It is far easier than dry-sanding (creates clouds of dust), chemical strippers (toxic and expensive), or drywalling over (heavy and structural).
+
+If wet scraping is not removing the texture on contact, the ceiling is probably painted. Skip down to the painted ceiling section below.
+
+## Tools and supplies you will need
+
+A standard popcorn-ceiling removal supply list for a single 200 sq ft room:
+
+- 6-mil plastic drop cloths and painter's tape (about \\$30)
+- 2-gallon garden pump sprayer (\\$25)
+- 6-inch drywall taping knife (\\$10)
+- 10-inch drywall taping knife for skim-coating (\\$15)
+- Lightweight joint compound, 4-gallon bucket (\\$18)
+- 220-grit pole sander with sanding screens (\\$30)
+- Stain-blocking primer, 1 gallon (\\$30)
+- Flat ceiling paint, 1–2 gallons (\\$45)
+- N95 respirator + safety glasses (\\$15)
+- Step ladder or rental scaffold (\\$0–\\$50)
+
+Total DIY budget for a single 200 sq ft room: \\$180 to \\$300 in supplies, plus 1 to 2 weekends of labor.
+
+## How to remove popcorn ceiling that has been painted
+
+Painted popcorn ceiling is dramatically harder to remove because the paint seals the texture against water absorption. Three options:
+
+**Option 1 — Long soak.** Spray a section repeatedly over 30 to 45 minutes, scoring the surface lightly with the taping knife between sprays to break the paint seal. This works but is slow, and the failure rate is high on multiple paint layers.
+
+**Option 2 — Skim coat over the texture.** Apply two thin coats of joint compound directly over the painted texture with a wide drywall knife or trowel. Sand smooth, prime, paint. The ceiling stays in place but reads as flat. This is what most professional crews recommend on painted texture: faster, cleaner, more reliable.
+
+**Option 3 — Drywall over the existing ceiling.** Screw 3/8-inch or 1/4-inch drywall directly into the joists through the popcorn ceiling. Tape, mud, sand, prime, paint. Adds about 4 weeks of project time and \\$2–\\$3 per square foot in material but gives you a perfect flat surface and skips the messy scraping entirely.
+
+For painted ceilings in Jacksonville and Northeast Florida, our [interior painting](/interior-painting) crews typically recommend Option 2 (skim coat) — it is the best ratio of cost to outcome and finishes in 2 to 3 days.
+
+## Is it safe to remove popcorn ceiling yourself?
+
+Removing popcorn ceiling yourself is safe **only** if three conditions are met: the home was built after 1985 (low asbestos risk), you have tested the texture for asbestos and the result is negative, and you wear an N95 respirator and safety glasses throughout the scraping process. With those three boxes checked, wet-scrape removal is one of the most common DIY home improvement projects in the country.
+
+It is not safe if any of the following are true:
+
+- The home was built before 1985 and you have not tested for asbestos.
+- The ceiling has water stains, soft spots, or visible drywall damage (you may break through during scraping).
+- The ceiling spans more than one room and you do not have time to do it properly in one pass.
+- You have respiratory conditions like asthma or COPD that make N95 use unreliable.
+
+In any of those cases, hire a licensed painting contractor or asbestos abatement specialist.
+
+## How much does it cost to remove popcorn ceiling?
+
+Popcorn ceiling removal cost in 2026 ranges from \\$150–\\$300 in DIY supplies for a single 200 sq ft room, up to \\$1.50–\\$3.50 per square foot for a professional crew including patching, priming, and a fresh coat of ceiling paint. For a typical Jacksonville home, that breaks down as:
+
+- **Single 200 sq ft room:** \\$400–\\$700 professional, \\$150–\\$300 DIY supplies
+- **Whole-home 1,500 sq ft ceilings:** \\$2,250–\\$5,250 professional
+- **Whole-home 2,500 sq ft ceilings:** \\$3,750–\\$8,750 professional
+- **Asbestos-positive removal:** \\$3–\\$7 per square foot through a licensed abatement contractor (separate from painting)
+
+Most full-home popcorn-ceiling-removal-and-repaint projects through Paint-Techs LLC fall between \\$3,500 and \\$7,500 depending on home size, ceiling height, and how many rooms need it. Free [estimates are available daily 8 AM to 10 PM](/contact) and include a fixed price with no surprises.
+
+## How can I cover my popcorn ceiling without removing it?
+
+You can cover a popcorn ceiling without removing it using one of four methods, ranked from cheapest to most permanent:
+
+**1. Skim coat with joint compound.** Apply two thin coats of lightweight compound directly over the texture, sand smooth, prime, paint. Cost: \\$1–\\$2 per square foot DIY or \\$2.50–\\$4 per square foot professional. Outcome: a flat ceiling that looks identical to fresh drywall. This is the most popular cover-up method.
+
+**2. Drywall directly over the popcorn.** Screw 1/4-inch or 3/8-inch drywall through the texture into the ceiling joists, then tape and mud the seams. Cost: \\$2–\\$3 per square foot in materials, plus labor. Outcome: a permanent, clean surface — at the cost of slightly lower ceiling height (about 1/2 inch) and more labor.
+
+**3. Ceiling planks or shiplap.** Install tongue-and-groove pine planks, MDF planks, or shiplap directly over the texture. Cost: \\$3–\\$8 per square foot installed. Outcome: a finished farmhouse or modern look. Popular in coastal homes throughout Ponte Vedra Beach, Atlantic Beach, and Jacksonville Beach.
+
+**4. Decorative ceiling tiles.** Glue or staple lightweight foam, tin, or PVC tiles directly over the texture. Cost: \\$2–\\$5 per square foot installed. Outcome: an ornamental look that is fast and reversible.
+
+If you are going to live in the home long-term, skim coat or drywall-over delivers the cleanest result. If you are flipping or staging, ceiling planks add more visible value per dollar.
+
+## Is it cheaper to remove popcorn ceiling or replace drywall?
+
+It is almost always cheaper to remove popcorn ceiling and refinish than to replace drywall. Removal-and-refinish runs \\$1.50–\\$3.50 per square foot installed; full drywall replacement runs \\$3–\\$5 per square foot because you are paying for tear-out, hauling, new drywall, taping, mudding, sanding, priming, and painting — plus a second layer of labor.
+
+The only times drywall replacement is cheaper or equivalent are:
+
+- The existing ceiling has structural water damage from a roof leak.
+- The drywall is sagging or has fallen in sections.
+- The texture is asbestos-positive and the abatement cost exceeds the cost of teardown-and-replace.
+
+For 95% of Jacksonville homeowners, scraping and refinishing the existing ceiling is the cheaper, faster path.
+
+## When to call a professional
+
+Hire a painting contractor for popcorn ceiling removal if any of the following apply:
+
+- The home was built before 1985 and you have not done asbestos testing.
+- The ceiling spans more than two rooms or your home is over 2,000 sq ft.
+- The ceiling is over 9 feet tall.
+- The texture is painted and you do not want to spend a weekend scoring and re-spraying every square foot.
+- You need the work done in days, not weekends.
+
+A professional crew brings a full set of HVLP-grade scaffolding, commercial dust extractors, and 10-inch skim-coat knives that finish the work in roughly one-third the time of a DIY job, plus a workmanship warranty on the finish.
+
+## Popcorn ceiling removal in Jacksonville and Northeast Florida
+
+Paint-Techs LLC removes and refinishes popcorn ceilings across [Jacksonville](/jacksonville-house-painters), [Nocatee](/nocatee-house-painters), [Ponte Vedra Beach](/ponte-vedra-beach-house-painters), [St. Augustine](/st-augustine-house-painters), [Atlantic Beach](/atlantic-beach-house-painters), and every community in our [service area](/areas-we-serve). Most older Jacksonville homes — especially in Mandarin, Arlington, Riverside, and Avondale — have popcorn ceilings installed between 1965 and 1985, which means asbestos testing is non-negotiable.
+
+Our standard popcorn ceiling project includes: asbestos pre-test (we coordinate with a licensed lab), full surface protection of floors and walls, wet-scrape or skim-coat depending on whether the ceiling is painted, drywall patching for any imperfections, stain-blocking primer, and two coats of premium flat ceiling paint. Most single rooms finish in one day; a whole-home repaint finishes in 3 to 5 working days.
+
+Pair popcorn ceiling removal with a fresh [interior repaint](/interior-painting) and you get a dramatically brighter, more modern-looking home for a fraction of the cost of a renovation. Free, written, fixed-price estimates daily 8 AM to 10 PM — [call (904) 762-7062](/contact) or send a quote request through any form on this site and a Paint-Techs estimator will be in touch within 24 hours.
+
+---
+
+**Related Services:**
+- [Interior Painting](/interior-painting) — Walls, ceilings, trim, and full-house repaints
+- [Cabinet Painting](/cabinet-painting) — Kitchen cabinet refinishing in Jacksonville
+- [Exterior Painting](/exterior-painting) — UV-resistant exterior coatings for Florida homes
+
+**Related Service Areas:**
+- [House Painters in Jacksonville, FL](/jacksonville-house-painters)
+- [House Painters in Nocatee, FL](/nocatee-house-painters)
+- [House Painters in Ponte Vedra Beach, FL](/ponte-vedra-beach-house-painters)
+    `,
+    category: 'Tips & Guides',
+    tags: ['popcorn ceiling', 'ceiling removal', 'asbestos', 'home improvement', 'diy painting', 'jacksonville'],
+    author: 'Paint-Techs Team',
+    publishedAt: '2026-05-16',
+    updatedAt: '2026-05-16',
+    readingTime: '11 min read',
+    metaTitle: 'How to Remove Popcorn Ceiling - (904) 762-7062 - Paint-Techs LLC',
+    metaDescription: 'Step-by-step popcorn ceiling removal guide for 2026. Asbestos testing, easiest scraping method, cost ($1.50-$3.50/sq ft), and how to handle painted texture. Jacksonville pros at Paint-Techs LLC.',
+  },
 ];
 
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
