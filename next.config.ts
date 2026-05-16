@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
       { source: '/services/cabinet-painting',            destination: '/cabinet-painting',            statusCode: 301 },
       { source: '/services/commercial-painting',         destination: '/commercial-painting',         statusCode: 301 },
       { source: '/services/pool-deck-painting-staining', destination: '/pool-deck-painting-staining', statusCode: 301 },
-      { source: '/services/:slug*',                      destination: '/services',                    statusCode: 301 },
+      { source: '/services/:slug+',                      destination: '/services',                    statusCode: 301 },
 
       { source: '/locations/:loc',                       destination: '/:loc-house-painters',         statusCode: 301 },
       { source: '/areas/:loc',                           destination: '/:loc-house-painters',         statusCode: 301 },
