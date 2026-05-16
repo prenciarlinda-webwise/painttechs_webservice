@@ -2055,6 +2055,331 @@ Pair popcorn ceiling removal with a fresh [interior repaint](/interior-painting)
     metaTitle: 'How to Remove Popcorn Ceiling - (904) 762-7062 - Paint-Techs LLC',
     metaDescription: 'Step-by-step popcorn ceiling removal guide for 2026. Asbestos testing, easiest scraping method, cost ($1.50-$3.50/sq ft), and how to handle painted texture. Jacksonville pros at Paint-Techs LLC.',
   },
+  {
+    id: '12',
+    slug: 'best-deck-paint-colors',
+    title: 'Deck Paint Colors: The 10 Best Picks for 2026 (Florida-Tested)',
+    excerpt: 'A 2026 deck paint color guide — the 10 best colors for modern, coastal, and traditional decks, with exact Sherwin-Williams, Benjamin Moore, and Behr codes plus advice on how long deck paint lasts in Florida heat.',
+    featuredImage: '/images/deck-painting-services-nocatee-fl.webp',
+    content: `
+# Deck Paint Colors: The 10 Best Picks for 2026 (Florida-Tested)
+
+The best deck paint colors for 2026 are warm gray (Sherwin-Williams Dorian Gray SW 7017), driftwood taupe (Benjamin Moore Revere Pewter HC-172), and soft black (Sherwin-Williams Tricorn Black SW 6258) — three colors that work on coastal, modern, and traditional homes alike, hide dirt between cleanings, and hold up to Florida UV when paired with a premium solid-color deck coating. Below are the full 10 picks with exact codes, plus the trade-off between deck paint and deck stain, modern color trends, and what to expect from each system in Jacksonville's heat and humidity.
+
+## How to choose deck paint colors for your home
+
+Before picking a color, two things drive the decision more than personal taste: the color of your siding, and the surface your deck is built from.
+
+**Match or contrast the siding.** Decks that share a color family with the house (a gray deck on a white-trim home, for example) read as part of the architecture. Decks painted in strong contrast (a black deck against beige siding) read as a feature. Both work — but pick a lane and commit.
+
+**Lighter colors fade slower in Florida.** Florida UV is hard on deck coatings. Dark colors (deep navy, charcoal, black) absorb more heat and chalk faster — typical repaint cycle is 3 to 5 years on a south-facing deck. Mid-tone grays and taupes hit the sweet spot of looking premium without burning off in two summers.
+
+**Solid color paint vs. semi-transparent stain.** Paint covers the grain completely and gives the cleanest, most modern look. Stain shows the wood grain and is the right call only if the wood is in great condition. If your deck has weathered spots, mismatched boards, or previous paint that is peeling, solid color paint is the better choice — it hides everything and locks down the previous finish.
+
+## The 10 best deck paint colors for 2026
+
+### 1. Dorian Gray (Sherwin-Williams SW 7017)
+
+A warm, slightly greige-leaning medium gray. Works on coastal homes from Jacksonville Beach to Ponte Vedra, modern farmhouses in Nocatee, and traditional ranches in San Marco. Hides leaf debris and pollen between cleanings — important for any Florida deck.
+
+**Best for:** any home with white or warm-white siding. Pairs especially well with stained cedar railings.
+
+### 2. Revere Pewter (Benjamin Moore HC-172)
+
+A driftwood taupe with just enough warmth to read as natural wood from a distance. Benjamin Moore Aura Grand Entrance in Revere Pewter holds color exceptionally well in Florida UV.
+
+**Best for:** coastal cottages, beach houses, and any deck attached to a home with a warm color palette. Loved by Atlantic Beach and Jacksonville Beach homeowners.
+
+### 3. Tricorn Black (Sherwin-Williams SW 6258)
+
+A soft, slightly warm black. The most-requested deck color in 2026 — pairs with modern farmhouse, contemporary, and Scandinavian-inspired homes. Bold but not aggressive.
+
+**Best for:** modern decks, screened porches, and houses with strong vertical board-and-batten siding. Heat-up factor is real; avoid full sun if you walk barefoot.
+
+### 4. Pavestone (Sherwin-Williams SW 7642)
+
+A medium warm gray with brown undertones. Reads as a natural deck color rather than a paint job. Excellent for replacing a stained deck without losing the wood-tone vibe.
+
+**Best for:** any deck where you want the painted look without the saturated paint feel. Works on both wood and composite.
+
+### 5. Iron Mountain (Benjamin Moore 2134-30)
+
+A deep, complex charcoal with a slight warm undertone. The Florida-friendly alternative to true black — absorbs less heat, fades slower, and still delivers the dramatic feel.
+
+**Best for:** modern homes, dark trim houses, and decks set against light landscaping. Common pick in Sawgrass and Marsh Landing.
+
+### 6. Repose Gray (Sherwin-Williams SW 7015)
+
+A cool-leaning light gray. The single safest choice if the home has cool-tone siding (white, light blue, silver gray). Hides dirt well and reads clean and crisp from the street.
+
+**Best for:** coastal contemporary, Cape Cod-style homes, and any deck near a pool or pool deck where the visual ties together.
+
+### 7. Hale Navy (Benjamin Moore HC-154)
+
+A rich, classic navy. Pairs with white-railing decks and brings strong nautical signal. Repaint cycle is shorter in full Florida sun (3 to 5 years) but the visual payoff is worth it on the right house.
+
+**Best for:** traditional Colonial homes, white-railing coastal homes, and any deck where bold color is part of the brand.
+
+### 8. Urbane Bronze (Sherwin-Williams SW 7048)
+
+A deep, sophisticated brown with green undertones. Named Sherwin-Williams Color of the Year a few cycles back and still going strong. Lower heat absorption than true black or navy.
+
+**Best for:** rustic modern, mountain-modern, and any deck where you want richness without the charcoal-to-black darkness.
+
+### 9. Iron Ore (Sherwin-Williams SW 7069)
+
+Almost-black with a subtle gray cast. Sits between Tricorn Black and Iron Mountain — slightly softer than pure black, slightly darker than Iron Mountain. The most-versatile near-black on the deck color shortlist.
+
+**Best for:** modern homes, board-and-batten, and decks that want to read black without committing to true black.
+
+### 10. Edgecomb Gray (Benjamin Moore HC-173)
+
+A light, warm greige with cream undertones. The light-end counterpart to Revere Pewter and one of the safest "I want a light, neutral deck" choices in 2026.
+
+**Best for:** Florida cottages, beach houses, and any deck attached to a warm-toned home (cream, beige, butter, soft yellow trim).
+
+## Modern deck paint colors
+
+Modern deck paint colors trend toward two extremes in 2026: very dark (Tricorn Black, Iron Ore, Iron Mountain) for the contemporary / modern farmhouse look, and very light warm grays (Edgecomb Gray, Repose Gray, Accessible Beige) for Scandinavian and minimalist looks. The mid-tones (Revere Pewter, Pavestone) are the workhorse — they look modern without dating quickly. If you cannot decide, pick a mid-tone — it will look intentional in 5 years; the extremes feel of-the-moment but date faster.
+
+The colors trending hardest right now on Pinterest, Houzz, and Instagram for residential deck painting:
+
+- **Tricorn Black** (Sherwin-Williams SW 6258) — the modern farmhouse staple
+- **Urbane Bronze** (Sherwin-Williams SW 7048) — rich, warm, sophisticated
+- **Dorian Gray** (Sherwin-Williams SW 7017) — the safe modern gray
+- **Hale Navy** (Benjamin Moore HC-154) — bold coastal classic
+- **Repose Gray** (Sherwin-Williams SW 7015) — cool minimalist
+
+## How to choose between deck paint and deck stain
+
+The decision between deck paint and deck stain comes down to three questions:
+
+**1. What condition is the wood in?** New or near-new wood (under 5 years, no checking, no splinters) takes stain beautifully. Older wood, mismatched boards, or wood with previous paint takes solid color paint — and only paint will hide the imperfections.
+
+**2. How often are you willing to refinish?** Deck paint lasts 5 to 7 years on a Florida deck if you use a premium product like Sherwin-Williams DeckScapes or Benjamin Moore Arborcoat Solid Color. Semi-transparent stain lasts 2 to 3 years. Transparent stain lasts 1 to 2. The longer life of paint is the single biggest reason most Florida homeowners switch from stain to solid paint after one repaint cycle.
+
+**3. Are you willing to lose the wood grain look?** Stain shows it; paint hides it. If grain is the look you love, stain wins.
+
+For composite decks (Trex, TimberTech, Fiberon), do not paint or stain — composite is engineered to keep its factory color. If your composite deck looks faded, the right product is a composite restoration coating, not a wood paint.
+
+## Best deck paint colors for Florida and coastal homes
+
+Florida adds three constraints to any deck paint color decision: UV intensity, salt air, and humidity. The best deck paint colors for coastal Florida homes (Jacksonville Beach, Atlantic Beach, Ponte Vedra, Fernandina Beach, St. Augustine) are warm mid-tone grays and driftwood taupes — they hold color, hide salt residue between rinses, and pair with the white-trim coastal aesthetic.
+
+Top 5 deck paint colors specifically for Florida coastal homes:
+
+- Dorian Gray (Sherwin-Williams SW 7017)
+- Revere Pewter (Benjamin Moore HC-172)
+- Pavestone (Sherwin-Williams SW 7642)
+- Edgecomb Gray (Benjamin Moore HC-173)
+- Iron Mountain (Benjamin Moore 2134-30) for darker accent decks
+
+Avoid pure white on coastal decks — it shows pollen, mildew, and salt deposit fastest. Stick to warm whites or off-whites if you want a "white" deck.
+
+## How long does deck paint last in Florida?
+
+Quality deck paint lasts 5 to 7 years on a typical Florida deck — longer than the 3-to-5-year industry average for the rest of the country because we use Florida-specific paint systems that include UV inhibitors, mildew resistance, and salt-tolerant primers. Cheap deck paint (under \\$25 a gallon at the big-box stores) typically fails in 18 to 24 months in Florida sun.
+
+Three things double the lifespan of any deck paint:
+
+1. **Proper prep.** Power wash, scrape any loose paint, sand smooth, and prime with a bonding primer. Most early failures are prep failures, not paint failures.
+2. **Premium product.** Sherwin-Williams DeckScapes, Benjamin Moore Arborcoat Solid Color, or Behr Premium DeckOver. Skip the budget tier.
+3. **A maintenance rinse every spring.** A garden hose plus a soft brush, 20 minutes, takes the mildew off and adds years to the finish.
+
+## How much does deck painting cost in Jacksonville?
+
+Deck painting in Jacksonville runs \\$3 to \\$8 per square foot installed for premium solid-color paint on a wood deck, or \\$2.50 to \\$5 per square foot for a deck recoat. A typical 300 sq ft Florida deck costs \\$900 to \\$2,400 to repaint professionally, including prep, primer, and two finish coats. Pool decks use a different coating system — see the [pool deck painting and staining](/pool-deck-painting-staining) service page for cool-deck coating prices.
+
+A typical Paint-Techs LLC deck painting project includes:
+
+- Power washing and full surface cleaning
+- Scraping and sanding loose or peeling existing paint
+- Wood-rot repair on any soft boards (additional, quoted on the spot)
+- One coat of bonding primer
+- Two coats of premium solid-color deck paint in your chosen color
+- Slip-resistant additive in the final coat (recommended for wet-area decks and pool surrounds)
+- Full cleanup and walk-through
+
+## Deck painting and pool-deck coating in Jacksonville
+
+Paint-Techs LLC paints, stains, and recoats decks across [Jacksonville](/jacksonville-house-painters), [Nocatee](/nocatee-house-painters), [Ponte Vedra Beach](/ponte-vedra-beach-house-painters), [Jacksonville Beach](/jacksonville-beach-house-painters), [Atlantic Beach](/atlantic-beach-house-painters), [St. Augustine](/st-augustine-house-painters), [Fernandina Beach](/fernandina-beach-house-painters), and every community in our [service area](/areas-we-serve). For raised wood decks, our [exterior painting](/exterior-painting) team handles the project as part of a broader exterior repaint when timing aligns. For pool surrounds, see the dedicated [pool deck painting and cool-deck coating](/pool-deck-painting-staining) service — different product, different prep, different price.
+
+Free, written, fixed-price estimates daily 8 AM to 10 PM. [Call (904) 762-7062](/contact) or send a quote request from any form on this site and a Paint-Techs estimator will be in touch within 24 hours with color samples and a clear price.
+
+---
+
+**Related Services:**
+- [Pool Deck Painting & Staining](/pool-deck-painting-staining) — Cool-deck coatings, slip-resistant pool surrounds
+- [Exterior Painting](/exterior-painting) — UV-resistant exterior coatings for Florida homes
+- [Interior Painting](/interior-painting) — Walls, ceilings, trim, and full-house repaints
+
+**Related Service Areas:**
+- [House Painters in Jacksonville, FL](/jacksonville-house-painters)
+- [House Painters in Ponte Vedra Beach, FL](/ponte-vedra-beach-house-painters)
+- [House Painters in Atlantic Beach, FL](/atlantic-beach-house-painters)
+- [House Painters in Jacksonville Beach, FL](/jacksonville-beach-house-painters)
+    `,
+    category: 'Tips & Guides',
+    tags: ['deck paint', 'deck colors', 'exterior painting', 'florida painting', 'pool deck', 'color trends', 'jacksonville'],
+    author: 'Paint-Techs Team',
+    publishedAt: '2026-05-16',
+    updatedAt: '2026-05-16',
+    readingTime: '10 min read',
+    metaTitle: 'Deck Paint Colors - (904) 762-7062 - Paint-Techs LLC',
+    metaDescription: 'The 10 best deck paint colors for 2026 — Sherwin-Williams, Benjamin Moore, and Behr codes with Florida-tested recommendations for coastal, modern, and traditional decks. Free quotes in Jacksonville.',
+  },
+  {
+    id: '13',
+    slug: 'what-is-elastomeric-paint',
+    title: 'Elastomeric Paint: Florida Homeowner Guide (When to Use, When Not To)',
+    excerpt: 'A complete guide to elastomeric paint — what it is, when to use it on Florida stucco, when NOT to use it, how long it lasts, primer requirements, and how it compares to standard acrylic exterior paint.',
+    featuredImage: '/images/exterior-painting-nocatee-fl-1.webp',
+    content: `
+# Elastomeric Paint: Florida Homeowner Guide (When to Use, When Not To)
+
+Elastomeric paint is a high-build, flexible exterior coating designed to bridge hairline cracks and waterproof masonry, stucco, brick, and concrete surfaces. It is applied 8 to 10 times thicker than standard acrylic paint (about 10 mils dry vs. 1 to 1.5 mils for regular exterior latex), can stretch and rebound with surface movement, and is the gold standard for repainting cracked Florida stucco. Elastomeric paint costs \\$50 to \\$90 per gallon, requires a clean and stable substrate plus a bonding primer, and lasts 8 to 12 years in Florida sun when applied correctly. It is the right choice for stucco, concrete block, and EIFS — and the wrong choice for wood siding, soft-rotting surfaces, or any wall that already traps moisture behind it.
+
+## What is elastomeric paint?
+
+Elastomeric paint is an acrylic-based exterior coating with added elastomeric polymers that allow the dry film to stretch up to 600% without cracking. The word "elastomeric" simply means "rubber-like" — the cured paint behaves more like a thin sheet of rubber bonded to the wall than like a traditional brittle paint film. That elasticity is what lets it span hairline cracks in stucco (up to about 1/16 inch wide) without splitting open the next time the wall expands and contracts.
+
+Elastomeric paint differs from regular exterior latex in three measurable ways:
+
+- **Thickness:** Applied at 10 mils dry per coat (vs. 1 to 1.5 mils for standard acrylic). Two coats give you a 20-mil membrane.
+- **Elongation:** 300% to 600% stretch before failure (vs. about 40% for standard acrylic).
+- **Waterproofing:** Tested to ASTM D6904 for wind-driven rain resistance. Standard paint is not.
+
+The result is a coating that looks like paint from 10 feet away but performs like a thin waterproof membrane up close.
+
+## What is elastomeric paint best for?
+
+Elastomeric paint is best for stucco, concrete block (CMU), poured concrete, brick, and EIFS (synthetic stucco) — any porous, rigid, masonry-style exterior surface that develops hairline cracks over time. In Florida specifically, three use cases account for 95% of our elastomeric paint projects through [Paint-Techs LLC](/exterior-painting):
+
+**1. Hairline-cracked stucco walls.** Florida stucco settles, hairline-cracks from thermal cycling, and develops water entry points along window flashings. Elastomeric coating seals all of those at once — including cracks too small to caulk.
+
+**2. CMU (concrete block) exteriors.** Common on older Jacksonville-area homes (Riverside, Avondale, San Marco) and on commercial buildings. CMU is porous and absorbs water; elastomeric paint waterproofs it without changing the masonry look.
+
+**3. Pool surrounds and exterior pool walls.** Constant moisture exposure breaks down standard paint within years. Elastomeric handles the splash zone and pairs well with our [pool deck painting and cool-deck coating](/pool-deck-painting-staining) work.
+
+It is also commonly used on warehouses, retail storefronts, and parking structures — every [commercial painting](/commercial-painting) project where the walls are concrete or block.
+
+## When NOT to use elastomeric paint
+
+The single biggest mistake homeowners make with elastomeric paint is using it on the wrong surface. Avoid elastomeric paint in these situations:
+
+**1. Wood siding.** Wood swells and contracts seasonally — elastomeric paint is too thick and traps moisture behind it, accelerating wood rot. Use a high-end acrylic exterior latex on wood instead.
+
+**2. Walls with active moisture or efflorescence.** If white mineral deposits keep coming through the paint, water is moving through the wall from the inside out. Elastomeric paint seals the surface, traps the moisture, and the wall blisters within 12 to 18 months. Solve the water source first, then paint.
+
+**3. Walls with severe structural cracks.** Elastomeric bridges hairline cracks up to about 1/16 inch wide. Anything wider — a 1/4-inch settlement crack, a step-crack in a foundation wall — needs to be patched and structurally evaluated before any paint touches it.
+
+**4. Surfaces that have not been properly cleaned and primed.** Elastomeric paint is unforgiving. If chalk, dust, or oil is on the wall, it will peel off in sheets within 2 years. Skipping prep is the second biggest reason elastomeric projects fail.
+
+**5. Asphalt-coated roofs and certain old coal-tar surfaces.** The plasticizers in those substrates bleed through and discolor the elastomeric coating. Different paint chemistry is required.
+
+If your wall fits any of those scenarios, the right call is a properly-spec'd acrylic exterior paint, not elastomeric.
+
+## Does elastomeric paint need a primer?
+
+Yes — elastomeric paint almost always needs a bonding primer. The two exceptions are: (a) walls already coated with a compatible elastomeric finish in the last 10 years that are clean and intact, and (b) freshly-cured Portland cement stucco (28+ days old) where the stucco itself acts as a base, though even then a primer extends life. For everything else, prime before painting.
+
+Recommended primers for Florida elastomeric projects:
+
+- **Sherwin-Williams Loxon Concrete & Masonry Primer** — the workhorse. Handles fresh stucco, old stucco, concrete, and block.
+- **Sherwin-Williams Loxon XP Primer** — for surfaces with light efflorescence that you have neutralized but want extra insurance.
+- **Benjamin Moore Fresh Start All Purpose Primer** — paired with their Ultra Spec elastomeric topcoat.
+- **Behr Multi-Surface Bonding Primer** — paired with Behr Premium Elastomeric Masonry, Stucco, and Brick Paint.
+
+Primer goes on at 4 to 5 mils wet, allowed to cure 4 to 12 hours depending on humidity, then the elastomeric topcoat is applied at the manufacturer's spec. Skipping primer to save a day is the fastest way to a peeling wall.
+
+## What's the difference between elastomeric and acrylic paint?
+
+Elastomeric and acrylic paint are both water-based and both use acrylic resin chemistry, but the formulation, application thickness, and end use are different.
+
+| Feature | Standard acrylic exterior paint | Elastomeric paint |
+|---|---|---|
+| Dry film thickness | 1 to 1.5 mils | 10 mils per coat |
+| Elongation | About 40% | 300% to 600% |
+| Crack-bridging | None | Up to 1/16 inch hairline |
+| Waterproofing | Moisture-resistant | Tested waterproof to ASTM D6904 |
+| Best surfaces | Wood, fiber cement, primed metal, stucco | Stucco, CMU, concrete, brick, EIFS |
+| Cost per gallon | \\$45 to \\$70 | \\$50 to \\$90 |
+| Repaint cycle (Florida) | 7 to 10 years | 8 to 12 years |
+| Coats required | 2 | 2 (one heavy coat at 10 mils dry, or two thinner coats) |
+
+In plain language: standard acrylic paint is a finish; elastomeric paint is a flexible waterproof membrane that looks like a finish. If the wall does not need waterproofing or crack-bridging, premium acrylic is fine and saves money. If the wall has hairline cracks, water exposure, or both, elastomeric is the right product.
+
+## How long does elastomeric coating last?
+
+Quality elastomeric coating lasts 8 to 12 years on a typical Florida exterior wall when applied at the correct thickness over a properly prepared and primed substrate. We have seen Sherwin-Williams Conflex Sherlastic and Benjamin Moore Ultra Spec Elastomeric Waterproofing projects across [Jacksonville](/jacksonville-house-painters), [Nocatee](/nocatee-house-painters), and [Ponte Vedra Beach](/ponte-vedra-beach-house-painters) holding up cleanly past the 10-year mark with only minor touch-ups.
+
+What shortens lifespan in Florida specifically:
+
+- **Underspraying** (applying less than the spec'd 10 mils dry per coat). Cheap contractors do this to stretch the budget; the wall lasts 4 years instead of 10.
+- **Skipping the bonding primer.** Direct application without primer typically fails within 18 to 24 months.
+- **Painting too soon after rain or pressure washing.** Moisture trapped under the coating creates blisters within months.
+- **Coastal salt exposure without a salt-tolerant primer underneath.** Mandatory within a mile of the ocean — Atlantic Beach, Jacksonville Beach, Ponte Vedra, Fernandina Beach.
+
+A correctly applied elastomeric system in Florida outlasts a standard acrylic exterior paint by roughly 30%, which is what justifies the higher upfront cost.
+
+## Best elastomeric paint brands for Florida
+
+The elastomeric paints we trust most for residential and light commercial work in Northeast Florida:
+
+- **Sherwin-Williams Conflex Sherlastic Elastomeric Coating** — our default spec for stucco and CMU repaints. Excellent dirt pickup resistance.
+- **Sherwin-Williams Loxon XP Elastomeric Masonry Coating** — premium tier; the right call for high-end coastal homes facing direct salt exposure.
+- **Benjamin Moore Ultra Spec Exterior Elastomeric Waterproof Coating** — comparable to Sherwin-Williams Conflex, slightly more flexible.
+- **Behr Premium Elastomeric Masonry, Stucco, and Brick Paint** — the strongest big-box option. Works for DIY homeowners painting a single wall.
+- **Dunn-Edwards Enduralastic** — primarily Southwest-distributed but available in Florida; very high elongation rating.
+
+Avoid generic "elastomeric" coatings under \\$35 a gallon — the solids content is too low and they will not hit 10 mils dry without four coats.
+
+## How to apply elastomeric paint properly
+
+A typical Paint-Techs LLC elastomeric paint project follows this sequence on a 2,000 sq ft stucco home:
+
+**Day 1 — Prep.** Power wash entire exterior with a TSP-substitute cleaner. Scrape any loose or peeling paint. Patch all cracks larger than 1/16 inch with a flexible exterior crack filler. Caulk windows, doors, flashing, and trim transitions with a high-quality elastomeric sealant. Let dry 24 hours.
+
+**Day 2 — Prime.** Apply a full coat of masonry bonding primer (Loxon, Fresh Start, or Behr Multi-Surface) at 4 to 5 mils wet. Cure time varies with humidity; 4 to 12 hours.
+
+**Day 3 — First topcoat.** Apply Sherwin-Williams Conflex Sherlastic or comparable at 10 mils dry. Brush, roll, or airless spray depending on access and texture depth. Back-roll sprayed sections to drive the coating into the substrate.
+
+**Day 4 — Second topcoat.** Apply the second coat at full 10 mils dry. Total dry film thickness after both topcoats: 20 mils — about the thickness of 4 sheets of office paper.
+
+**Day 5 — Walk-through.** Inspect every elevation, touch up any holidays or thin spots, hand off the project with a written workmanship warranty.
+
+The total elastomeric repaint typically runs \\$5,000 to \\$8,500 for a 2,000 sq ft Florida home — see the pricing table on the [exterior painting service page](/exterior-painting) for the full breakdown.
+
+## Elastomeric paint for stucco in Jacksonville
+
+Most Florida homes built between 1985 and 2010 have stucco exteriors that are now developing hairline cracks from thermal cycling. Elastomeric paint is the single highest-leverage exterior painting upgrade those homes can make — it seals the cracks, waterproofs the wall, and resets the repaint clock to 10 years.
+
+Paint-Techs LLC applies elastomeric coating systems on stucco and CMU homes throughout [Jacksonville](/jacksonville-house-painters), [Nocatee](/nocatee-house-painters), [Ponte Vedra Beach](/ponte-vedra-beach-house-painters), [St. Augustine](/st-augustine-house-painters), [Jacksonville Beach](/jacksonville-beach-house-painters), [Atlantic Beach](/atlantic-beach-house-painters), [Fernandina Beach](/fernandina-beach-house-painters), and the broader [Northeast Florida service area](/areas-we-serve). Each project includes pressure washing, full crack repair, bonding primer, two full coats of elastomeric paint at spec thickness, and a written workmanship warranty.
+
+Free, written, fixed-price estimates daily 8 AM to 10 PM. [Call (904) 762-7062](/contact) or send a quote request from any form on this site — a Paint-Techs estimator will be in touch within 24 hours with a clear scope and price for your specific home.
+
+---
+
+**Related Services:**
+- [Exterior Painting](/exterior-painting) — Stucco repaints, elastomeric coating systems, UV-resistant exterior paint
+- [Commercial Painting](/commercial-painting) — CMU and concrete block elastomeric for offices, retail, warehouses
+- [Pool Deck Painting & Staining](/pool-deck-painting-staining) — Cool-deck coatings and pool surround waterproofing
+
+**Related Service Areas:**
+- [House Painters in Jacksonville, FL](/jacksonville-house-painters)
+- [House Painters in Nocatee, FL](/nocatee-house-painters)
+- [House Painters in Ponte Vedra Beach, FL](/ponte-vedra-beach-house-painters)
+- [House Painters in St. Augustine, FL](/st-augustine-house-painters)
+    `,
+    category: 'Exterior Painting',
+    tags: ['elastomeric paint', 'stucco painting', 'exterior painting', 'florida painting', 'waterproofing', 'jacksonville', 'masonry'],
+    author: 'Paint-Techs Team',
+    publishedAt: '2026-05-16',
+    updatedAt: '2026-05-16',
+    readingTime: '11 min read',
+    metaTitle: 'Elastomeric Paint - (904) 762-7062 - Paint-Techs LLC',
+    metaDescription: 'Elastomeric paint guide for Florida homeowners — what it is, when to use it on stucco, when NOT to, primer requirements, lifespan, and best brands. Free quotes in Jacksonville.',
+  },
 ];
 
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
