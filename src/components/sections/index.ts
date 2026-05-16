@@ -5,3 +5,4 @@ export { default as Testimonials } from './Testimonials';
 export { default as ServiceAreas } from './ServiceAreas';
 export { default as About } from './About';
 export { default as HomeFAQ } from './HomeFAQ';
+export { default as PricingSnapshot } from './PricingSnapshot';

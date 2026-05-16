@@ -1,35 +1,45 @@
 import { Metadata } from 'next';
-import { Hero, Services, Stats, About, ServiceAreas, Testimonials, HomeFAQ } from '@/components/sections';
+import { Hero, Services, Stats, About, ServiceAreas, Testimonials, HomeFAQ, PricingSnapshot } from '@/components/sections';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateHomePageSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { BUSINESS_INFO } from '@/lib/constants';
 
-// Homepage FAQ data for schema and display
+// Homepage FAQ data for schema and display.
+// Questions match Google's "People Also Ask" block for "painting contractors jacksonville fl"
+// so we are eligible for both the PAA placement and a featured snippet on each one.
 const homepageFAQs = [
   {
-    question: 'How much do painters near me charge in Jacksonville?',
-    answer: 'Professional painting costs in Jacksonville vary based on project scope, surface condition, and paint quality. Paint-Techs LLC provides free, detailed estimates with transparent pricing and no hidden fees. Contact us for an accurate quote for your specific project.',
+    question: 'How much does it cost to paint a 2,000 square foot house in Jacksonville, FL?',
+    answer: 'Painting a 2,000 square foot house in Jacksonville typically costs $3,500 to $7,500 for interior repaints and $4,000 to $9,000 for exterior repaints. Most homeowners spend $5,000 to $7,000 for a full interior repaint with two coats of premium Sherwin-Williams or Benjamin Moore paint. Exterior pricing depends on stories, prep depth, and whether wood-rot repair is needed.',
   },
   {
-    question: 'How do I find reliable house painters near me?',
-    answer: `Look for licensed and insured painting contractors with strong Google reviews, like Paint-Techs LLC with ${BUSINESS_INFO.aggregateRating.reviewCount} five-star reviews. Ask for references, get multiple quotes, and verify they use quality paints from brands like Sherwin-Williams or Benjamin Moore.`,
+    question: 'How much should it cost to paint the interior of a 3,000 sq ft house?',
+    answer: 'Interior painting for a 3,000 sq ft Jacksonville home runs $5,000 to $12,000 depending on ceiling height, trim complexity, and paint line. The typical Paint-Techs LLC estimate for a 3,000 sq ft whole-home interior repaint is $7,000 to $9,000 using Sherwin-Williams Emerald or Benjamin Moore Aura in eggshell. Single-room interior repaints average $300 to $800.',
   },
   {
-    question: 'What painting services does Paint-Techs offer in Jacksonville?',
-    answer: 'Paint-Techs LLC offers comprehensive painting services including interior painting, exterior house painting, cabinet refinishing, and commercial painting. We serve Jacksonville, Nocatee, Ponte Vedra Beach, St. Augustine, and all of Northeast Florida.',
+    question: 'What is the hourly rate for a painter in Jacksonville, Florida?',
+    answer: 'Professional painters in Jacksonville, FL charge $40 to $80 per hour on average. Most reputable Jacksonville painting companies, including Paint-Techs LLC, quote by the project rather than the hour so the price is fixed and there are no surprises. Hourly work is more common for small touch-ups, color-sample applications, or minor repairs.',
+  },
+  {
+    question: 'How much should it cost to paint the exterior of a 2,000 square foot house?',
+    answer: 'Exterior painting for a 2,000 sq ft house in Jacksonville costs $4,000 to $9,000. A single-story 2,000 sq ft home is typically $4,000 to $6,000; a two-story comes in at $6,500 to $9,000 because of the extra labor, lift rental, and trim work. All Paint-Techs LLC exterior estimates include power washing, surface prep, two coats of UV-resistant Florida-formulated paint, and a 5-year workmanship warranty.',
+  },
+  {
+    question: 'How much do painters cost in Jacksonville?',
+    answer: `Painters in Jacksonville cost between $300 for a single-room repaint and $15,000+ for a complete two-story exterior with detailed trim and wood-rot repair. Most Jacksonville homeowners spend $4,000 to $9,000 for a typical full-house project. Paint-Techs LLC provides free, written, fixed-price estimates — call ${BUSINESS_INFO.phone} for a quote on your specific home.`,
   },
   {
     question: 'How long does it take to paint a house in Jacksonville?',
-    answer: 'Interior painting typically takes 2-5 days depending on home size. Exterior painting takes 3-7 days. Cabinet painting requires 3-5 days. Paint-Techs works efficiently while ensuring premium results that last.',
+    answer: 'Interior painting in Jacksonville typically takes 2 to 5 days depending on home size and prep needs. Exterior painting takes 3 to 7 days. Kitchen cabinet refinishing takes 3 to 5 days including spray, cure, and reinstallation. Paint-Techs LLC works in zones so most of the home stays usable while we paint.',
   },
   {
-    question: 'Are your Jacksonville painters licensed and insured?',
-    answer: 'Yes, Paint-Techs LLC is fully licensed and insured in Florida. We carry comprehensive liability insurance and workers compensation to protect your property and give you peace of mind throughout your painting project.',
+    question: 'Are Paint-Techs painters licensed and insured in Jacksonville?',
+    answer: `Yes — Paint-Techs LLC is fully licensed and insured in the State of Florida. We carry comprehensive general liability insurance and workers' compensation coverage on every job, and we are happy to send a copy of the certificate of insurance before work begins. We are rated 5.0 out of 5 stars across ${BUSINESS_INFO.aggregateRating.reviewCount} verified Google reviews.`,
   },
   {
     question: 'Do you offer free painting estimates in Jacksonville?',
-    answer: 'Yes! Paint-Techs LLC provides free, no-obligation estimates for all painting projects in Jacksonville and surrounding areas. Contact us via phone at (904) 762-7062 or WhatsApp for a quick response.',
+    answer: `Yes. Every Paint-Techs LLC estimate is free, on-site, written, and itemized — with a fixed price (not a range) and no obligation. Estimates are available daily 8 AM to 10 PM including evenings and weekends. Call ${BUSINESS_INFO.phone} or send a WhatsApp message and we will schedule the visit within 24 hours.`,
   },
 ];
 
@@ -93,6 +103,7 @@ export default function HomePage() {
       <Stats />
       <Testimonials />
       <About />
+      <PricingSnapshot />
       <ServiceAreas />
       <HomeFAQ faqs={homepageFAQs} />
       <WhatsAppCTA />

@@ -2,11 +2,82 @@ import { notFound } from 'next/navigation';
 import { Container, SectionHeading, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
+import PricingSnapshot from '@/components/sections/PricingSnapshot';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { servicesData, getServiceBySlug } from '@/data/services';
 import { BUSINESS_INFO, getWhatsAppLink, SERVICE_AREAS } from '@/lib/constants';
 import Link from 'next/link';
+
+// Service-specific pricing rows. Numbers are typical Jacksonville/Northeast Florida
+// painting-industry ranges as of 2026 and are kept in sync with the homepage block.
+const SERVICE_PRICING: Record<string, { heading: string; intro: string; rows: { label: string; detail: string; range: string }[] }> = {
+  'interior-painting': {
+    heading: 'How much does interior painting cost in Jacksonville, FL?',
+    intro:
+      'Interior painting in Jacksonville typically costs $300 for a single-room repaint and $5,000–$12,000 for a whole-home interior repaint depending on square footage, ceiling height, and trim complexity. Most Jacksonville homeowners spend $4,000–$7,000 on a 2,000–3,000 sq ft full interior repaint with two coats of Sherwin-Williams Emerald or Benjamin Moore Aura.',
+    rows: [
+      { label: 'Single-room repaint', detail: 'Walls + trim, ~12×14 ft bedroom or living room, 1 day', range: '$300 – $800' },
+      { label: 'Kitchen + dining + living room', detail: 'Open-plan main floor, walls + ceilings, 2 days', range: '$1,500 – $3,500' },
+      { label: 'Whole-home interior, 2,000 sq ft', detail: 'Walls, ceilings, trim, doors — 2 coats premium paint', range: '$3,500 – $7,500' },
+      { label: 'Whole-home interior, 3,000 sq ft', detail: 'Includes color consult, furniture protection, full prep', range: '$5,000 – $12,000' },
+      { label: 'Trim-only interior repaint', detail: 'Baseboards, casing, doors throughout home', range: '$1,000 – $2,500' },
+      { label: 'Accent wall', detail: 'Single feature wall, color match, 1 day', range: '$200 – $500' },
+    ],
+  },
+  'exterior-painting': {
+    heading: 'How much does exterior painting cost in Jacksonville, FL?',
+    intro:
+      'Exterior painting for a Jacksonville home costs $4,000–$15,000 depending on stories, square footage, prep depth, and wood-rot repair needed. A typical 2,000 sq ft single-story exterior runs $4,000–$6,000; a two-story 3,000 sq ft home runs $9,000–$15,000. Every Paint-Techs LLC exterior quote includes power washing, surface prep, Florida-formulated UV-resistant paint, and a 5-year workmanship warranty.',
+    rows: [
+      { label: 'Exterior, 2,000 sq ft single-story', detail: 'Power wash, scrape, prime, 2 coats Sherwin-Williams Duration', range: '$4,000 – $6,000' },
+      { label: 'Exterior, 2,000 sq ft two-story', detail: 'Lift access, gables, second-floor trim, full prep', range: '$6,500 – $9,000' },
+      { label: 'Exterior, 3,000 sq ft two-story', detail: 'Detailed trim, soffits, fascia, wood-rot repair as needed', range: '$9,000 – $15,000' },
+      { label: 'Trim-only exterior repaint', detail: 'Fascia, soffits, garage trim, door + shutters', range: '$1,500 – $3,500' },
+      { label: 'Garage door repaint', detail: 'Single or double door, prep + 2 coats', range: '$200 – $500' },
+      { label: 'Stucco repaint, 2,000 sq ft', detail: 'Elastomeric coating for hairline cracks', range: '$5,000 – $8,500' },
+    ],
+  },
+  'cabinet-painting': {
+    heading: 'How much does kitchen cabinet painting cost in Jacksonville, FL?',
+    intro:
+      'Kitchen cabinet painting in Jacksonville costs $3,000–$12,000 depending on door count, finish system, and whether you choose a single color or a two-tone scheme. The Paint-Techs LLC standard is HVLP spray application with a Sherwin-Williams ProClassic or Benjamin Moore Advance waterborne lacquer, which delivers a factory-smooth finish that holds up 10+ years. Cabinet painting typically saves 50–70% compared to full cabinet replacement.',
+    rows: [
+      { label: 'Bathroom vanity refinish', detail: 'Single vanity, 2–6 doors, full strip + spray', range: '$500 – $1,500' },
+      { label: 'Built-in or island refinish', detail: 'Bookshelf, entertainment center, or kitchen island', range: '$1,000 – $3,000' },
+      { label: 'Kitchen, 30 doors, single color', detail: 'White or bright color, HVLP spray', range: '$3,500 – $6,500' },
+      { label: 'Kitchen, 40 doors, two-tone', detail: 'White uppers + colored lowers, designer scheme', range: '$6,000 – $9,000' },
+      { label: 'Kitchen, 50+ doors, premium', detail: 'Custom color match, grain fill on oak, hardware upgrade', range: '$8,000 – $12,000' },
+      { label: 'Hardware + soft-close upgrade', detail: 'Add-on to any cabinet job — new pulls, soft-close hinges', range: '$300 – $900' },
+    ],
+  },
+  'commercial-painting': {
+    heading: 'How much does commercial painting cost in Jacksonville, FL?',
+    intro:
+      'Commercial painting in Jacksonville costs $1.50–$3.50 per square foot for interior work and $2.50–$5 per square foot for exterior, with most projects falling between $3,000 and $25,000 total. Pricing reflects access requirements, off-hours scheduling, surface conditions, and the type of coating system needed. Paint-Techs LLC quotes commercial projects per project (not hourly) and works nights, weekends, and off-hours to keep your business running.',
+    rows: [
+      { label: 'Small office, ≤2,000 sq ft interior', detail: 'Walls + ceilings, 2 coats, after-hours scheduling', range: '$3,000 – $8,000' },
+      { label: 'Retail space, 3,000–5,000 sq ft', detail: 'Brand-color match, fixtures protected, single overnight close', range: '$8,000 – $18,000' },
+      { label: 'Restaurant repaint', detail: 'Interior + accent walls, kitchen-safe coatings', range: '$5,000 – $15,000' },
+      { label: 'Storefront exterior repaint', detail: 'Facade, signage area, awning trim, 1–2 elevations', range: '$4,000 – $10,000' },
+      { label: 'Warehouse interior', detail: 'High-CFM block walls, ceiling deck, line striping', range: '$1.50 – $3 / sq ft' },
+      { label: 'Multi-unit complex exterior', detail: 'Per-unit pricing with volume discount', range: 'Per project' },
+    ],
+  },
+  'pool-deck-painting-staining': {
+    heading: 'How much does pool deck painting cost in Jacksonville, FL?',
+    intro:
+      'Pool deck painting in Jacksonville costs $3–$8 per square foot depending on the coating system and deck condition. A typical 500 sq ft pool deck runs $1,800–$3,500 for cool-deck coating, and a 1,000 sq ft deck runs $3,500–$6,500. Cool-deck coatings reduce surface temperature by up to 40°F and include slip-resistant additives — essential for bare-feet safety on hot Florida afternoons.',
+    rows: [
+      { label: 'Cool-deck coating, 500 sq ft', detail: 'Heat-reflective + slip-resistant additive, prep + 2 coats', range: '$1,800 – $3,500' },
+      { label: 'Cool-deck coating, 1,000 sq ft', detail: 'Full pool surround, includes crack repair', range: '$3,500 – $6,500' },
+      { label: 'Concrete pool deck stain', detail: 'Translucent acid stain or solid color, sealed', range: '$3 – $5 / sq ft' },
+      { label: 'Decorative flake finish', detail: 'Multi-color fleck pattern in clear coat, high-end look', range: '$4 – $8 / sq ft' },
+      { label: 'Cool-deck refinishing', detail: 'Recoat existing cool deck that is faded or peeling', range: '$2.50 – $5 / sq ft' },
+      { label: 'Pool deck repair + recoat combo', detail: 'Crack repair, hollow-spot patch, then full cool-deck coat', range: '$2,500 – $5,500' },
+    ],
+  },
+};
 
 interface ServicePageContentProps {
   slug: string;
@@ -284,6 +355,15 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
           </div>
         </Container>
       </section>
+
+      {SERVICE_PRICING[slug] && (
+        <PricingSnapshot
+          heading={SERVICE_PRICING[slug].heading}
+          subheading={`${service.name} prices in Jacksonville`}
+          intro={SERVICE_PRICING[slug].intro}
+          rows={SERVICE_PRICING[slug].rows}
+        />
+      )}
 
       <WhatsAppCTA
         title={`Get Your Free ${service.name} Estimate`}
