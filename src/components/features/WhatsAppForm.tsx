@@ -41,10 +41,6 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
   const [step, setStep] = useState(1);
   const [state, handleFormspreeSubmit] = useForm(FORMSPREE_ID);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
 
@@ -125,14 +121,25 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
 
         {/* Form */}
         <form onSubmit={handleFormspreeSubmit} className="p-6">
-          {/* Hidden routing context for the Formspree inbox */}
+          {/*
+            All form data is submitted via the hidden inputs below — they are
+            always in the DOM regardless of which step is visible, so the
+            submission carries every field even though Step 1 / Step 2 UI
+            unmount when the user advances. The visible inputs below DO NOT
+            have a `name` attribute; they only update component state, which
+            is what these hidden inputs read from.
+          */}
           <input type="hidden" name="_subject" value={`New quote — ${formData.serviceType || 'painting'} (${formData.propertyType})`} />
+          <input type="hidden" name="name" value={formData.name} />
+          <input type="hidden" name="phone" value={formData.phone} />
+          <input type="hidden" name="email" value={formData.email} />
+          <input type="hidden" name="serviceType" value={formData.serviceType} />
           <input type="hidden" name="propertyType" value={formData.propertyType} />
           <input type="hidden" name="squareFootage" value={formData.squareFootage} />
           <input type="hidden" name="rooms" value={formData.rooms} />
           <input type="hidden" name="cabinets" value={formData.cabinets} />
           <input type="hidden" name="timeline" value={formData.timeline} />
-          <input type="hidden" name="serviceType" value={formData.serviceType} />
+          <input type="hidden" name="additionalInfo" value={formData.additionalInfo} />
 
           {/* Step 1: Basic Info */}
           {step === 1 && (
@@ -144,9 +151,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                 <input
                   type="text"
                   id="name"
-                  name="name"
                   value={formData.name}
-                  onChange={handleChange}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                   placeholder="John Smith"
@@ -159,9 +165,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                 <input
                   type="tel"
                   id="phone"
-                  name="phone"
                   value={formData.phone}
-                  onChange={handleChange}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                   placeholder="(904) 555-0123"
@@ -174,9 +179,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                 <input
                   type="email"
                   id="email"
-                  name="email"
                   value={formData.email}
-                  onChange={handleChange}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                   placeholder="you@example.com"
                 />
@@ -187,9 +191,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                 <label htmlFor="serviceTypeSelect" className="block text-sm font-medium text-gray-700 mb-1">Service Needed *</label>
                 <select
                   id="serviceTypeSelect"
-                  name="serviceType"
                   value={formData.serviceType}
-                  onChange={handleChange}
+                  onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                 >
@@ -206,10 +209,9 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
                       type="radio"
-                      name="propertyType"
                       value="residential"
                       checked={formData.propertyType === 'residential'}
-                      onChange={handleChange}
+                      onChange={() => setFormData({ ...formData, propertyType: 'residential' })}
                       className="w-4 h-4 text-orange-500 focus:ring-orange-500"
                     />
                     <span className="text-gray-700">Residential</span>
@@ -217,10 +219,9 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
                       type="radio"
-                      name="propertyType"
                       value="commercial"
                       checked={formData.propertyType === 'commercial'}
-                      onChange={handleChange}
+                      onChange={() => setFormData({ ...formData, propertyType: 'commercial' })}
                       className="w-4 h-4 text-orange-500 focus:ring-orange-500"
                     />
                     <span className="text-gray-700">Commercial</span>
@@ -241,9 +242,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                     <label htmlFor="squareFootage" className="block text-sm font-medium text-gray-700 mb-1">Approximate Square Footage</label>
                     <select
                       id="squareFootage"
-                      name="squareFootage"
                       value={formData.squareFootage}
-                      onChange={handleChange}
+                      onChange={(e) => setFormData({ ...formData, squareFootage: e.target.value })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                     >
                       <option value="">Select size...</option>
@@ -262,9 +262,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                       <label htmlFor="rooms" className="block text-sm font-medium text-gray-700 mb-1">Number of Rooms</label>
                       <select
                         id="rooms"
-                        name="rooms"
                         value={formData.rooms}
-                        onChange={handleChange}
+                        onChange={(e) => setFormData({ ...formData, rooms: e.target.value })}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                       >
                         <option value="">Select rooms...</option>
@@ -284,9 +283,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                   <label htmlFor="cabinets" className="block text-sm font-medium text-gray-700 mb-1">Number of Cabinet Doors/Drawers</label>
                   <select
                     id="cabinets"
-                    name="cabinets"
                     value={formData.cabinets}
-                    onChange={handleChange}
+                    onChange={(e) => setFormData({ ...formData, cabinets: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                   >
                     <option value="">Select amount...</option>
@@ -303,9 +301,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                   <label htmlFor="commercialSquareFootage" className="block text-sm font-medium text-gray-700 mb-1">Approximate Square Footage</label>
                   <select
                     id="commercialSquareFootage"
-                    name="squareFootage"
                     value={formData.squareFootage}
-                    onChange={handleChange}
+                    onChange={(e) => setFormData({ ...formData, squareFootage: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                   >
                     <option value="">Select size...</option>
@@ -322,9 +319,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                 <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 mb-1">Preferred Timeline</label>
                 <select
                   id="timeline"
-                  name="timeline"
                   value={formData.timeline}
-                  onChange={handleChange}
+                  onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
                 >
                   <option value="">Select timeline...</option>
@@ -349,9 +345,8 @@ export default function WhatsAppForm({ isOpen, onClose, defaultService = '' }: Q
                 </label>
                 <textarea
                   id="additionalInfo"
-                  name="additionalInfo"
                   value={formData.additionalInfo}
-                  onChange={handleChange}
+                  onChange={(e) => setFormData({ ...formData, additionalInfo: e.target.value })}
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors resize-none"
                   placeholder="Any specific details, color preferences, or questions you have..."
