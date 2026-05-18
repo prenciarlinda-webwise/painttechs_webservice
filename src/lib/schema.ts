@@ -89,57 +89,7 @@ export const LOCATION_GEO: Record<string, { lat: number; lng: number }> = Object
   Object.entries(LOCATION_DATA).map(([key, value]) => [key, { lat: value.lat, lng: value.lng }])
 );
 
-// Premium HousePainter Master Schema (Primary schema for homepage)
-// Uses specific HousePainter type for better Local SEO and Map Pack visibility
-export const generateHousePainterSchema = () => ({
-  '@context': 'https://schema.org',
-  '@type': 'HousePainter',
-  '@id': `${BUSINESS_INFO.website}/#localbusiness`,
-  name: 'Paint-Techs LLC - Painting Company',
-  url: `${BUSINESS_INFO.website}/`,
-  telephone: BUSINESS_INFO.phoneRaw,
-  email: BUSINESS_INFO.email,
-  image: `${BUSINESS_INFO.website}${BUSINESS_INFO.logoPath}`,
-  priceRange: '$',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: BUSINESS_INFO.address.city,
-    addressRegion: BUSINESS_INFO.address.stateAbbr,
-    postalCode: BUSINESS_INFO.address.zip,
-    addressCountry: BUSINESS_INFO.address.country,
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: String(BUSINESS_INFO.geo.latitude),
-    longitude: String(BUSINESS_INFO.geo.longitude),
-  },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      opens: '08:00',
-      closes: '22:00',
-    },
-  ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: BUSINESS_INFO.aggregateRating.ratingValue,
-    reviewCount: String(BUSINESS_INFO.aggregateRating.reviewCount),
-  },
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Painting Services',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Interior Painting', url: `${BUSINESS_INFO.website}/interior-painting` } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Exterior Painting', url: `${BUSINESS_INFO.website}/exterior-painting` } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cabinet Painting', url: `${BUSINESS_INFO.website}/cabinet-painting` } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pool Deck Painting', url: `${BUSINESS_INFO.website}/pool-deck-painting-staining` } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Painting', url: `${BUSINESS_INFO.website}/commercial-painting` } },
-    ],
-  },
-});
-
-// LocalBusiness Schema (legacy support)
+// LocalBusiness Schema (sitewide, emitted by src/app/layout.tsx)
 export const generateLocalBusinessSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'HousePainter',
@@ -612,13 +562,10 @@ export const generateLocationBusinessSchema = (
         closes: '22:00',
       },
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: BUSINESS_INFO.aggregateRating.ratingValue,
-      reviewCount: String(BUSINESS_INFO.aggregateRating.reviewCount),
-      bestRating: '5',
-      worstRating: '1',
-    },
+    // aggregateRating intentionally omitted — the sitewide LocalBusiness emitted
+    // from src/app/layout.tsx shares the same `@id=#localbusiness`, so Google
+    // merges the two nodes. Two aggregateRating blocks under one @id trip the
+    // "Review has multiple aggregate ratings" rich-result error.
     sameAs: [
       BUSINESS_INFO.links.gmb,
       BUSINESS_INFO.links.facebook,
@@ -937,18 +884,3 @@ export const generateGalleryCategorySchema = (
   };
 };
 
-// Homepage Schema (combines multiple schemas)
-// Uses premium HousePainter master schema for optimal Local SEO
-export const generateHomePageSchema = () => [
-  generateHousePainterSchema(),
-  generateWebsiteSchema(),
-  generateOrganizationSchema(),
-];
-
-// Alternative homepage schema with Cabinet Painting service emphasis
-export const generateHomePageSchemaWithServices = () => [
-  generateHousePainterSchema(),
-  generateWebsiteSchema(),
-  generateOrganizationSchema(),
-  generateCabinetPaintingServiceSchema(),
-];

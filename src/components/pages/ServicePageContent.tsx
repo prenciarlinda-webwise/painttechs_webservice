@@ -4,9 +4,10 @@ import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import PricingSnapshot from '@/components/sections/PricingSnapshot';
 import JsonLd from '@/components/seo/JsonLd';
+import QuoteFormButton from '@/components/features/QuoteFormButton';
 import { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { servicesData, getServiceBySlug } from '@/data/services';
-import { BUSINESS_INFO, getWhatsAppLink, SERVICE_AREAS } from '@/lib/constants';
+import { BUSINESS_INFO, SERVICE_AREAS } from '@/lib/constants';
 import Link from 'next/link';
 
 // Service-specific pricing rows. Numbers are typical Jacksonville/Northeast Florida
@@ -126,14 +127,14 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
               {service.heroSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                href={getWhatsAppLink(`Hi! I'm interested in ${service.name} services. Can I get a free quote?`)}
-                variant="whatsapp"
+              <QuoteFormButton
+                variant="primary"
                 size="lg"
-                external
+                title={`Request a free ${service.name.toLowerCase()} quote`}
+                promoTag={`service-hero-${slug}`}
               >
                 Get Free Quote
-              </Button>
+              </QuoteFormButton>
               <Button href={`tel:${BUSINESS_INFO.phoneRaw}`} variant="white" size="lg" external>
                 Call {BUSINESS_INFO.phone}
               </Button>
@@ -156,7 +157,7 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
               </div>
 
               <div className="prose prose-gray max-w-none prose-headings:text-navy-800 prose-h2:text-2xl prose-h2:font-bold prose-h2:mt-8 prose-h2:mb-4 prose-strong:text-navy-700">
-                <h2>About Our {service.name} Services</h2>
+                <h2>About our {service.name.toLowerCase()} services</h2>
                 {service.longDescription.split('\n\n').map((paragraph, index) => {
                   // Handle H2 headers
                   if (paragraph.startsWith('## ')) {
@@ -196,7 +197,7 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
               {/* Benefits */}
               <div className="mt-12">
                 <h2 className="text-2xl font-bold text-navy-800 mb-6">
-                  Benefits of Our {service.name} Services
+                  Benefits of our {service.name.toLowerCase()} services
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {service.benefits.map((benefit, index) => (
@@ -216,7 +217,7 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
               {/* Process */}
               <div className="mt-12">
                 <h2 className="text-2xl font-bold text-navy-800 mb-6">
-                  Our {service.name} Process
+                  Our {service.name.toLowerCase()} process
                 </h2>
                 <div className="space-y-6">
                   {service.process.map((step) => (
@@ -236,7 +237,7 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
               {/* FAQs */}
               <div className="mt-12">
                 <h2 className="text-2xl font-bold text-navy-800 mb-6">
-                  Frequently Asked Questions
+                  Frequently asked questions
                 </h2>
                 <div className="space-y-4">
                   {service.faqs.map((faq, index) => (
@@ -251,7 +252,7 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
               {/* Areas We Serve */}
               <div className="mt-12">
                 <h2 className="text-2xl font-bold text-navy-800 mb-6">
-                  {service.name} Service Areas
+                  {service.name} service areas
                 </h2>
                 <p className="text-gray-600 mb-6">
                   Paint-Techs LLC provides professional {service.name.toLowerCase()} services throughout Jacksonville and Northeast Florida. We serve homeowners in these communities:
@@ -274,20 +275,20 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
-                {/* CTA Card */}
+                {/* CTA Card (sidebar uses styled p, not heading — sidebar is chrome) */}
                 <Card className="bg-gradient-to-br from-teal-500 to-teal-600 text-white border-0">
-                  <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>
+                  <p className="text-xl font-bold mb-4">Ready to get started?</p>
                   <p className="text-teal-100 mb-6">
-                    Contact us today for a free, no-obligation estimate on your {service.name.toLowerCase()} project.
+                    Request a free, no-obligation estimate on your {service.name.toLowerCase()} project.
                   </p>
-                  <Button
-                    href={getWhatsAppLink(`Hi! I'm interested in ${service.name} services.`)}
+                  <QuoteFormButton
                     variant="white"
                     className="w-full mb-3"
-                    external
+                    title={`Request a free ${service.name.toLowerCase()} quote`}
+                    promoTag={`service-sidebar-${slug}`}
                   >
-                    WhatsApp Us
-                  </Button>
+                    Get Free Quote
+                  </QuoteFormButton>
                   <Button
                     href={`tel:${BUSINESS_INFO.phoneRaw}`}
                     variant="outline"
@@ -298,9 +299,9 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
                   </Button>
                 </Card>
 
-                {/* Other Services */}
+                {/* Other Services (sidebar — chrome, no heading tag) */}
                 <Card>
-                  <h3 className="font-bold text-navy-800 mb-4">Our Other Services</h3>
+                  <p className="font-bold text-navy-800 mb-4">Our other services</p>
                   <ul className="space-y-3">
                     {servicesData
                       .filter((s) => s.slug !== slug)
@@ -320,9 +321,9 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
                   </ul>
                 </Card>
 
-                {/* Trust Badges */}
+                {/* Trust Badges (sidebar — chrome, no heading tag) */}
                 <Card className="bg-gray-50 border border-gray-200" hover={false}>
-                  <h3 className="font-bold text-navy-800 mb-4">Why Choose Us</h3>
+                  <p className="font-bold text-navy-800 mb-4">Why choose us</p>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-2 text-sm text-gray-600">
                       <svg className="w-5 h-5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">

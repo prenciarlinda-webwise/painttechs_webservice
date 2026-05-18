@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Hero, Services, Stats, About, ServiceAreas, Testimonials, HomeFAQ, PricingSnapshot } from '@/components/sections';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
-import { generateHomePageSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { BUSINESS_INFO } from '@/lib/constants';
 
 // Homepage FAQ data for schema and display.
@@ -79,14 +79,13 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const schemas = generateHomePageSchema();
-
   return (
     <>
-      {/* Structured Data */}
-      {schemas.map((schema, index) => (
-        <JsonLd key={index} data={schema} />
-      ))}
+      {/* Page-specific structured data.
+          LocalBusiness, Organization, and WebSite are emitted site-wide from
+          src/app/layout.tsx — do not re-emit here. Two HousePainter nodes that
+          share `@id=#localbusiness` get merged by Google and the duplicated
+          `aggregateRating` blocks trigger "multiple aggregate ratings". */}
       <JsonLd data={generateFAQSchema(homepageFAQs)} />
       <JsonLd
         data={generateBreadcrumbSchema([

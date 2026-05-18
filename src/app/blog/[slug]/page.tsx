@@ -8,7 +8,6 @@ import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { blogPosts, getBlogPostBySlug, getRecentPosts } from '@/data/blog-posts';
-import { locationsData } from '@/data/locations';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
 
 interface BlogPostPageProps {
@@ -216,7 +215,64 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
               {/* Rendered Content */}
               <div className="prose prose-lg max-w-none">
-                {post.content.split('\n').map((line, index) => {
+                {(() => {
+                  // First pass: collapse consecutive pipe-delimited lines into table
+                  // blocks so the line-by-line renderer below can emit a single <table>.
+                  type Block = { kind: 'line'; text: string } | { kind: 'table'; rows: string[][] };
+                  const lines = post.content.split('\n');
+                  const blocks: Block[] = [];
+                  let i = 0;
+                  while (i < lines.length) {
+                    const line = lines[i];
+                    const isPipeRow = /^\s*\|.*\|\s*$/.test(line);
+                    if (isPipeRow) {
+                      const rowLines: string[] = [];
+                      while (i < lines.length && /^\s*\|.*\|\s*$/.test(lines[i])) {
+                        rowLines.push(lines[i]);
+                        i++;
+                      }
+                      if (rowLines.length >= 2 && /^\s*\|[\s:|-]+\|\s*$/.test(rowLines[1])) {
+                        const parseRow = (r: string) =>
+                          r.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((c) => c.trim());
+                        const rows = [parseRow(rowLines[0]), ...rowLines.slice(2).map(parseRow)];
+                        blocks.push({ kind: 'table', rows });
+                        continue;
+                      }
+                      // Not a valid table — push the lines back individually
+                      for (const rl of rowLines) blocks.push({ kind: 'line', text: rl });
+                      continue;
+                    }
+                    blocks.push({ kind: 'line', text: line });
+                    i++;
+                  }
+                  return blocks;
+                })().map((block, index) => {
+                  if (block.kind === 'table') {
+                    const [header, ...body] = block.rows;
+                    return (
+                      <div key={index} className="not-prose my-8 overflow-x-auto rounded-xl border border-gray-200">
+                        <table className="w-full text-sm text-left text-gray-700">
+                          <thead className="bg-navy-50 text-navy-800 font-semibold">
+                            <tr>
+                              {header.map((cell, ci) => (
+                                <th key={ci} className="px-4 py-3 border-b border-gray-200">{renderInline(cell)}</th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {body.map((row, ri) => (
+                              <tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                                {row.map((cell, ci) => (
+                                  <td key={ci} className="px-4 py-3 border-b border-gray-100 align-top">{renderInline(cell)}</td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    );
+                  }
+                  const line = block.text;
                   // Skip H1
                   if (line.startsWith('# ') && !line.startsWith('## ')) return null;
 
@@ -319,62 +375,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     </p>
                   );
                 })}
-              </div>
-
-              {/* Service Cards — Related services at bottom */}
-              <div className="not-prose mt-12 pt-8 border-t border-gray-200">
-                <h3 className="text-xl font-bold text-navy-800 mb-6">Our Painting Services</h3>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  {[
-                    { name: 'Interior Painting', slug: 'interior-painting', desc: 'Walls, ceilings, trim & accent walls' },
-                    { name: 'Exterior Painting', slug: 'exterior-painting', desc: 'Weather-resistant coatings for FL homes' },
-                    { name: 'Cabinet Painting', slug: 'cabinet-painting', desc: 'Kitchen & bathroom cabinet refinishing' },
-                    { name: 'Pool Deck Painting', slug: 'pool-deck-painting-staining', desc: 'Cool-deck coatings & pool deck stain' },
-                    { name: 'Commercial Painting', slug: 'commercial-painting', desc: 'Offices, retail & commercial spaces' },
-                  ].map((svc) => (
-                    <Link
-                      key={svc.slug}
-                      href={`/${svc.slug}`}
-                      className="group flex items-start gap-3 p-4 bg-gray-50 hover:bg-teal-50 rounded-xl border border-gray-100 hover:border-teal-200 transition-all"
-                    >
-                      <div className="w-10 h-10 bg-teal-100 group-hover:bg-teal-200 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors">
-                        <svg className="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                        </svg>
-                      </div>
-                      <div>
-                        <p className="font-semibold text-navy-800 group-hover:text-teal-700 transition-colors">{svc.name}</p>
-                        <p className="text-sm text-gray-500">{svc.desc}</p>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Service Area Links — internal-link equity flow from blog to every location page */}
-              <div className="not-prose mt-10 p-6 bg-[#fff6ec] rounded-xl border border-orange-100/70">
-                <h3 className="text-xl font-bold text-navy-800 mb-2">Painting services in your neighborhood</h3>
-                <p className="text-sm text-navy-700/80 mb-4">
-                  Paint-Techs LLC works across Duval, St. Johns, Clay, and Nassau counties. Tap the city closest to you for pricing, neighborhood specifics, and recent local projects.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {locationsData.map((loc) => (
-                    <Link
-                      key={loc.slug}
-                      href={`/${loc.slug}-house-painters`}
-                      title={`${loc.name} House Painters - Paint-Techs LLC`}
-                      className="inline-flex items-center px-3 py-1.5 bg-white text-navy-700 hover:text-orange-600 hover:bg-orange-50 border border-orange-200/60 rounded-full text-sm font-medium transition-colors"
-                    >
-                      {loc.name}
-                    </Link>
-                  ))}
-                  <Link
-                    href="/areas-we-serve"
-                    className="inline-flex items-center px-3 py-1.5 bg-orange-500 hover:bg-orange-600 text-white rounded-full text-sm font-semibold transition-colors"
-                  >
-                    All service areas →
-                  </Link>
-                </div>
               </div>
 
               {/* Tags */}

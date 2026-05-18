@@ -83,7 +83,7 @@ Whether you're looking for interior house painting near me, need specialty finis
       'interior painting contractor',
     ],
     metaTitle: 'Interior Painters Jacksonville - (904) 762-7062 - Paint-Techs LLC',
-    metaDescription: 'Interior painters in Jacksonville, FL — 5★ rated, 52 Google reviews. Interior house painting, trim, and accent walls. Licensed, insured, evening estimates until 10 PM. Free quotes: (904) 762-7062',
+    metaDescription: 'Interior painters in Jacksonville, FL. 5★ rated with 52 Google reviews. Interior house painting, trim, and accent walls. Licensed, insured, evening estimates until 10 PM. Free quotes: (904) 762-7062',
   },
   {
     id: 'exterior-painting',
@@ -263,7 +263,7 @@ Our kitchen cabinet painting services are available throughout Jacksonville and 
     name: 'Commercial Painting',
     slug: 'commercial-painting',
     heroTitle: 'Commercial Painting Contractors Jacksonville FL',
-    heroSubtitle: 'Commercial painting contractors in Jacksonville, FL. We paint offices, retail, restaurants, warehouses, and industrial buildings on your schedule — nights, weekends, off-hours.',
+    heroSubtitle: 'Commercial painting contractors in Jacksonville, FL. We paint offices, retail, restaurants, warehouses, and industrial buildings on your schedule including nights, weekends, and off-hours.',
     description: 'Paint-Techs LLC is Jacksonville\'s trusted commercial painting contractor. We provide professional commercial interior painting, commercial exterior painting, and specialty coatings for offices, retail stores, restaurants, warehouses, and industrial buildings. Our commercial painters work flexible hours to minimize business disruption.',
     image: '/images/commercial-painting-company-jacksonville.webp',
     imageAlt: 'Commercial painting contractor Jacksonville FL',
