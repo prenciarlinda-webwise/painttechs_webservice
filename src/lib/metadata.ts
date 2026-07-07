@@ -64,9 +64,16 @@ export const generateMetadata = ({
 
 // Default metadata for the site
 export const defaultMetadata: Metadata = {
+  // Every page already appends "Paint-Techs LLC" (or "Paint-Techs") to its own title
+  // string, so a template here double-appends the brand on every child route (the
+  // root page is exempt from its own layout's template, which is why home looked fine
+  // while every other page rendered "... - Paint-Techs - Paint-Techs LLC"). `absolute`
+  // + template: null disables the auto-append; titles render exactly as each page
+  // authors them. (Next's DefaultTemplateString type requires a non-null template, so
+  // `absolute` is used instead of `default` to allow disabling it.)
   title: {
-    default: 'Paint-Techs LLC - Professional Painting Services Jacksonville FL',
-    template: '%s - Paint-Techs LLC',
+    absolute: 'Paint-Techs LLC - Professional Painting Services Jacksonville FL',
+    template: null,
   },
   description: BUSINESS_INFO.description,
   metadataBase: new URL(BUSINESS_INFO.website),

@@ -5,7 +5,24 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
 import JsonLd from '@/components/seo/JsonLd';
-import { generateProjectSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { generateProjectSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema';
+import RelatedArticles from '@/components/sections/RelatedArticles';
+import PaintChipFAQ from '@/components/features/PaintChipFAQ';
+
+const residentialExteriorFAQs = [
+  {
+    question: 'How much does residential exterior painting cost in Jacksonville?',
+    answer: 'Residential exterior painting in Jacksonville typically costs $4,000-15,000 depending on the home\'s size, number of stories, prep depth, and any wood-rot repair needed. A single-story 2,000 sq ft home usually runs $4,000-6,000, while a two-story 3,000 sq ft home with detailed trim runs $9,000-15,000. Every Paint-Techs LLC estimate is free, on-site, and itemized.',
+  },
+  {
+    question: 'How long does a residential exterior painting project take?',
+    answer: 'Most residential exterior painting projects in Jacksonville take 3-7 days depending on home size and prep needs. This includes power washing and drying time, scraping and sanding, caulking, primer where needed, and two coats of exterior paint. Wood-rot repair or extensive prep can add 1-2 days.',
+  },
+  {
+    question: 'What is included in a Paint-Techs residential exterior painting project?',
+    answer: 'Every project includes power washing, scraping and sanding of failing paint, caulking gaps and cracks, wood-rot repair where needed, primer on bare or repaired areas, and two coats of premium UV-resistant exterior paint on siding, trim, fascia, and soffits, backed by a 5-year workmanship warranty.',
+  },
+];
 
 const projectImages = [
   {
@@ -98,6 +115,7 @@ export default function ResidentialExteriorPaintingProject() {
           { name: 'Residential Exterior Painting Jacksonville', url: `${BUSINESS_INFO.website}/residential-exterior-painting-jacksonville` },
         ])}
       />
+      <JsonLd data={generateFAQSchema(residentialExteriorFAQs)} />
 
       {/* Hero Section */}
       <section className="relative bg-navy-900 py-16 md:py-24">
@@ -241,10 +259,15 @@ export default function ResidentialExteriorPaintingProject() {
                 </p>
 
                 <h3 className="text-xl font-semibold text-navy-900 mb-4">Results</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mb-6">
                   The homeowner received a stunning exterior transformation that dramatically improved their
                   home's curb appeal and property value. The new paint job provides excellent protection
                   against Florida's intense sun, humidity, and seasonal storms.
+                </p>
+
+                <h3 className="text-xl font-semibold text-navy-900 mb-4">What residential exterior painting costs in Jacksonville</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Projects like this typically run $4,000-15,000 in Jacksonville depending on home size, stories, and prep depth. A single-story 2,000 sq ft home usually falls in the $4,000-6,000 range; a two-story 3,000 sq ft home with detailed trim and wood-rot repair runs $9,000-15,000. Every Paint-Techs LLC estimate is free, on-site, and itemized so you know exactly what is included before work starts.
                 </p>
               </div>
 
@@ -371,6 +394,21 @@ export default function ResidentialExteriorPaintingProject() {
           </div>
         </div>
       </section>
+
+      <section className="py-16 bg-[#fff6ec]">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <PaintChipFAQ
+            faqs={residentialExteriorFAQs}
+            heading="Residential exterior painting FAQs"
+            subheading="Common questions from Jacksonville homeowners before starting an exterior project."
+          />
+        </div>
+      </section>
+
+      <RelatedArticles
+        slugs={['best-exterior-paint-humid-climate', 'how-to-paint-hardie-board-siding', 'benefits-of-professional-exterior-painting']}
+        subtitle="Exterior painting tips and cost guides for Jacksonville homeowners."
+      />
 
       {/* Lightbox */}
       {lightboxOpen && (

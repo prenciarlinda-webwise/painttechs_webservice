@@ -264,7 +264,7 @@ Our kitchen cabinet painting services are available throughout Jacksonville and 
     slug: 'commercial-painting',
     heroTitle: 'Commercial Painting Contractors Jacksonville FL',
     heroSubtitle: 'Commercial painting contractors in Jacksonville, FL. We paint offices, retail, restaurants, warehouses, and industrial buildings on your schedule including nights, weekends, and off-hours.',
-    description: 'Paint-Techs LLC is Jacksonville\'s trusted commercial painting contractor. We provide professional commercial interior painting, commercial exterior painting, and specialty coatings for offices, retail stores, restaurants, warehouses, and industrial buildings. Our commercial painters work flexible hours to minimize business disruption.',
+    description: 'Paint-Techs LLC is one of the commercial painting contractors Jacksonville businesses trust most, with a 5.0-star rating across 52 Google reviews. We provide professional commercial interior painting, commercial exterior painting, and specialty coatings for offices, retail stores, restaurants, warehouses, and industrial buildings. Our commercial painters work flexible hours, including nights and weekends, to minimize business disruption.',
     image: '/images/commercial-painting-company-jacksonville.webp',
     imageAlt: 'Commercial painting contractor Jacksonville FL',
     longDescription: `## Commercial Painting Services in Jacksonville, FL
@@ -313,6 +313,7 @@ Our commercial painting services cover a wide range of properties, from small of
     ],
     keywords: [
       'commercial painting jacksonville',
+      'commercial painting contractors jacksonville',
       'commercial painting contractors jacksonville fl',
       'commercial painters jacksonville fl',
       'commercial painting services',
@@ -328,16 +329,20 @@ Our commercial painting services cover a wide range of properties, from small of
       'commercial building exterior painting',
       'commercial painting prices',
     ],
-    metaTitle: 'Commercial Painters Jacksonville FL - (904) 762-7062 - Paint-Techs',
-    metaDescription: 'Commercial painting contractors in Jacksonville, FL. Offices, retail, warehouses, industrial. Off-hours scheduling, fully insured. 5★ rated. Free quotes: (904) 762-7062',
+    // Retargeted 2026-07-07: title now includes "Contractors" to match the confirmed
+    // ranking keyword "commercial painting contractors jacksonville" (KD 10, pos 41 —
+    // 360painting ranks pos 19 for the same term from a non-dedicated hub page, so this
+    // is an achievable on-page win, not a domain-authority ceiling).
+    metaTitle: 'Commercial Painting Contractors Jacksonville - Paint-Techs',
+    metaDescription: 'Commercial painting contractors Jacksonville businesses trust. Off-hours scheduling, fully insured, 5-star rated. Free quotes: (904) 762-7062',
   },
   {
     id: 'pool-deck-painting',
     name: 'Pool Deck Painting & Staining',
     slug: 'pool-deck-painting-staining',
-    heroTitle: 'Pool Deck Painting Jacksonville FL - Cool Deck Coatings',
+    heroTitle: 'Pool Deck Painting Near You in Jacksonville, FL',
     heroSubtitle: 'Professional pool deck painting, staining, and cool deck coatings for Jacksonville homes. Beat the Florida heat with heat-reflective pool deck surfaces.',
-    description: 'Paint-Techs LLC provides professional pool deck painting and staining services in Jacksonville, FL. Our cool deck coatings and heat-reflective finishes keep your pool deck comfortable in the Florida sun while protecting against UV damage, moisture, and wear.',
+    description: 'Searching for deck painting near you? Paint-Techs LLC provides professional pool deck painting and staining services throughout Jacksonville, FL, with a 5.0-star rating across 52 Google reviews. Our cool deck coatings and heat-reflective finishes keep your pool deck comfortable in the Florida sun while protecting against UV damage, moisture, and wear.',
     image: '/images/deck-painting-services-nocatee-fl.webp',
     imageAlt: 'Pool deck painting and staining Jacksonville FL',
     longDescription: `## Pool Deck Painting and Staining Services in Jacksonville, FL
@@ -394,6 +399,7 @@ Whether you have a concrete pool deck, paver deck, or existing cool deck surface
       { question: 'Do you offer slip-resistant pool deck finishes?', answer: 'Absolutely. All our pool deck coatings include slip-resistant additives. We can also add extra texture for enhanced grip in high-traffic areas like pool steps and diving board approaches.' },
     ],
     keywords: [
+      'deck painting near me',
       'pool deck painting near me',
       'pool deck painting jacksonville',
       'cool deck coating jacksonville',
@@ -404,10 +410,22 @@ Whether you have a concrete pool deck, paver deck, or existing cool deck surface
       'cool deck refinishing',
       'pool deck contractors jacksonville',
       'deck staining near me',
+      'deck paint near me',
       'pool deck coating florida',
+      'pool deck painter',
+      'pool deck painters near me',
+      'pool painting company',
+      'best pool deck paint for florida',
     ],
-    metaTitle: 'Pool Deck Painting Jacksonville - (904) 762-7062 - Paint-Techs LLC',
-    metaDescription: 'Pool deck painting & cool deck coatings in Jacksonville, FL. Heat-reflective surfaces 40°F cooler, slip-resistant, UV-proof. 5★ rated. Free quotes: (904) 762-7062',
+    // Retargeted 2026-07-07 for the confirmed opportunity: "deck painting near me" is
+    // 6.6K/mo at KD 25, currently pos 33 (up from ~58) — the single largest raw-volume
+    // keyword found in the account. Title tag uses the literal query phrase "near me"
+    // (matches searcher intent verbatim); H1/description use "near you" instead, since
+    // a business page describing itself shouldn't use the searcher's own phrasing.
+    // Kept "Pool Deck" in the title (not generic "Deck Painting") so the page doesn't
+    // overclaim scope — Paint-Techs does pool decks, not general wood decks/porches.
+    metaTitle: 'Pool Deck Painting Near Me - Jacksonville, FL - Paint-Techs',
+    metaDescription: 'Deck painting near me? Paint-Techs delivers cool deck coatings for Jacksonville, FL pools. Heat-reflective, slip-resistant, 5-star rated. (904) 762-7062',
   },
 ];
 

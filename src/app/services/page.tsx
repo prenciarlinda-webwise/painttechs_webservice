@@ -4,18 +4,38 @@ import Image from 'next/image';
 import { Container, SectionHeading, Card } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
+import PaintChipFAQ from '@/components/features/PaintChipFAQ';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateMetadata } from '@/lib/metadata';
-import { generateServicesListSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { generateServicesListSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema';
 import { servicesData } from '@/data/services';
 import { locationsData } from '@/data/locations';
 import { BUSINESS_INFO } from '@/lib/constants';
 
+// Retargeted 2026-07-07: this page was invisible in the SEMrush export entirely (home
+// page was incidentally capturing "painting services jacksonville" at pos 49 instead).
+// Title already includes the brand so the sitewide metadata template doesn't append it
+// a second time (see src/lib/metadata.ts fullTitle check).
 export const metadata: Metadata = generateMetadata({
-  title: 'Painting Services Jacksonville FL - Interior, Exterior, Cabinet',
-  description: 'Professional painting services in Jacksonville, FL. Interior painting, exterior painting, cabinet refinishing, and commercial painting. Free estimates from Paint-Techs LLC.',
+  title: 'Painting Services in Jacksonville, FL - Paint-Techs LLC',
+  description: 'Painting services in Jacksonville, FL from a licensed painting company: interior, exterior, cabinet, pool deck and commercial. Free quotes: (904) 762-7062',
   path: '/services',
 });
+
+const servicesPageFAQs = [
+  {
+    question: 'What painting services does Paint-Techs LLC offer in Jacksonville?',
+    answer: 'Paint-Techs LLC is a full-service painting company in Jacksonville, FL offering interior painting, exterior painting, kitchen cabinet refinishing, pool deck painting and staining, and commercial painting. The same in-house crew handles every service, so you are never handed off to a subcontractor mid-project.',
+  },
+  {
+    question: 'How do I choose the right painting company in Jacksonville?',
+    answer: 'Confirm the painting company is licensed and insured, ask for a written, itemized, fixed-price estimate rather than a rough verbal number, and check recent Google reviews from your own neighborhood. Paint-Techs LLC is licensed and insured with a 5.0-star rating across 52 Google reviews, and every estimate is free, on-site, and in writing.',
+  },
+  {
+    question: 'How much do painting services cost in Jacksonville?',
+    answer: 'Interior painting typically runs $3-7 per square foot, exterior painting $4-9 per square foot, and cabinet refinishing $80-150 per door. Most whole-house projects in Jacksonville fall between $3,500 and $12,000 depending on size, prep, and paint line. Every Paint-Techs LLC estimate is free and itemized so you can compare against other painting services in Jacksonville.',
+  },
+];
 
 const serviceImages: Record<string, string> = {
   'interior-painting': '/images/interior-living-room-sage-green-accent-wall.webp',
@@ -29,6 +49,7 @@ export default function ServicesPage() {
   return (
     <>
       <JsonLd data={generateServicesListSchema()} />
+      <JsonLd data={generateFAQSchema(servicesPageFAQs)} />
       <JsonLd
         data={generateBreadcrumbSchema([
           { name: 'Home', url: BUSINESS_INFO.website },
@@ -42,10 +63,22 @@ export default function ServicesPage() {
         <Container>
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Professional Painting Services in <span className="text-teal-400">Jacksonville, FL</span>
+              Painting Services in <span className="text-teal-400">Jacksonville, FL</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              From interior refreshes to complete exterior transformations, Paint-Techs LLC delivers exceptional painting services for homes and businesses throughout Northeast Florida.
+              Paint-Techs LLC is a licensed painting company offering interior, exterior, cabinet, pool deck, and commercial painting services throughout Jacksonville and Northeast Florida, backed by a 5.0-star rating across {BUSINESS_INFO.aggregateRating.reviewCount} Google reviews.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Direct-answer block for "painting services jacksonville" / "painting company jacksonville" AEO/AI-Overview intent */}
+      <section className="py-10 bg-white border-b border-gray-100">
+        <Container>
+          <div className="max-w-3xl bg-teal-50 border border-teal-200 rounded-2xl p-6">
+            <h2 className="text-xl font-bold text-navy-800 mb-2">What painting company should I hire in Jacksonville?</h2>
+            <p className="text-gray-700 leading-relaxed">
+              Choose a Jacksonville painting company that is licensed and insured, gives a free written estimate with a fixed price, and shows recent local reviews. Paint-Techs LLC meets all three: licensed and insured since {BUSINESS_INFO.foundedYear}, free on-site estimates daily until 10 PM, and a 5.0-star rating across {BUSINESS_INFO.aggregateRating.reviewCount} Google reviews across Jacksonville and Northeast Florida.
             </p>
           </div>
         </Container>
@@ -161,7 +194,16 @@ export default function ServicesPage() {
               </div>
               <h3 className="text-xl font-bold text-navy-800 mb-3">Licensed & Insured</h3>
               <p className="text-gray-600">
-                Fully licensed and insured painting contractor. Your property is protected throughout the project.
+                Fully licensed and insured painting contractor. Your property is protected throughout the project, and our crews follow{' '}
+                <a
+                  href="https://www.epa.gov/lead/renovation-repair-and-painting-program-contractors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal-600 hover:underline"
+                >
+                  EPA Lead-Safe (RRP) practices
+                </a>{' '}
+                on every pre-1978 home.
               </p>
             </Card>
 
@@ -217,6 +259,17 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+        </Container>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-[#fff6ec]">
+        <Container>
+          <PaintChipFAQ
+            faqs={servicesPageFAQs}
+            heading="Painting services FAQs"
+            subheading="Common questions from Jacksonville homeowners and businesses before booking."
+          />
         </Container>
       </section>
 

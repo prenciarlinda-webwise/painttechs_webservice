@@ -41,7 +41,10 @@ export const LOCATION_CONTENT: Record<string, LocationContent> = {
   jacksonville: {
     heroSubtitle:
       'Paint-Techs LLC is a top-rated painting contractor in Jacksonville, FL serving Duval County homeowners with interior painting, exterior painting, cabinet refinishing, and commercial painting. Our licensed and insured Jacksonville painters are 5-star rated with 52 Google reviews and have repainted homes in every neighborhood from Riverside and San Marco to Mandarin and the Town Center area. Free estimates daily 8 AM to 10 PM, including evenings and weekends after work.',
-    heroAccent: 'Jacksonville, FL',
+    // heroAccent set to 'Every Jacksonville Neighborhood' (not 'Jacksonville, FL') so this
+    // page's H1 reads "Painters in Every Jacksonville Neighborhood" instead of duplicating
+    // the home page's H1/title target ("Jacksonville Painters"). See metaTitle note below.
+    heroAccent: 'Every Jacksonville Neighborhood',
     heroImage: '/images/hero-painting-jacksonville-fl-1.webp',
     serviceInLocation: {
       heading: 'Top-rated painting contractor in Jacksonville, FL',
@@ -76,6 +79,15 @@ export const LOCATION_CONTENT: Record<string, LocationContent> = {
         question: 'Can you schedule the estimate after I finish work?',
         answer:
           'Daily 8 AM to 10 PM. Most Jacksonville homeowners book us between 6 PM and 9 PM on weekdays so they can walk the project with us in person without burning a vacation day. Saturday and Sunday slots fill first, so book a few days out for weekends.',
+      },
+      {
+        // Neighborhood-level companion to the home page's "best painting contractor in
+        // Jacksonville" FAQ, phrased distinctly to target the same superlative/AI-prompt
+        // intent for hyper-local queries (e.g. "best painter in San Marco") without
+        // duplicating home's exact question or answer.
+        question: 'Which painting contractor is top-rated across Jacksonville neighborhoods like San Marco and Mandarin?',
+        answer:
+          'Paint-Techs LLC holds a 5.0-star rating across 52 Google reviews from homeowners in Riverside, San Marco, Mandarin, Southside, Arlington, and every other Duval County neighborhood. The same licensed, insured crew handles every project from estimate to walk-through, with free evening estimates available until 10 PM.',
       },
     ],
     whyChoose: [],

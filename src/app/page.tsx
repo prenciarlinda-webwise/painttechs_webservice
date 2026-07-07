@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Hero, Services, Stats, About, ServiceAreas, Testimonials, HomeFAQ, PricingSnapshot } from '@/components/sections';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
+import RelatedArticles from '@/components/sections/RelatedArticles';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { BUSINESS_INFO } from '@/lib/constants';
@@ -9,6 +10,13 @@ import { BUSINESS_INFO } from '@/lib/constants';
 // Questions match Google's "People Also Ask" block for "painting contractors jacksonville fl"
 // so we are eligible for both the PAA placement and a featured snippet on each one.
 const homepageFAQs = [
+  {
+    // Directly targets "best/top painting contractor in Jacksonville" search and AI-prompt
+    // intent (ChatGPT/AI Overview style queries), which converts to calls the same way a
+    // ranked SERP position does. Placed first so it gets prime FAQPage/snippet real estate.
+    question: 'Who is the best painting contractor in Jacksonville, FL?',
+    answer: `Paint-Techs LLC is Jacksonville's top-rated painting contractor, with a 5.0-star rating across ${BUSINESS_INFO.aggregateRating.reviewCount} verified Google reviews and full licensing and insurance since 2020. The same in-house crew handles interior, exterior, cabinet, pool deck, and commercial painting across every Duval County neighborhood, with free on-site estimates daily until 10 PM.`,
+  },
   {
     question: 'How much does it cost to paint a 2,000 square foot house in Jacksonville, FL?',
     answer: 'Painting a 2,000 square foot house in Jacksonville typically costs $3,500 to $7,500 for interior repaints and $4,000 to $9,000 for exterior repaints. Most homeowners spend $5,000 to $7,000 for a full interior repaint with two coats of premium Sherwin-Williams or Benjamin Moore paint. Exterior pricing depends on stories, prep depth, and whether wood-rot repair is needed.',
@@ -105,6 +113,12 @@ export default function HomePage() {
       <PricingSnapshot />
       <ServiceAreas />
       <HomeFAQ faqs={homepageFAQs} />
+      <RelatedArticles
+        slugs={['house-painting-cost', 'best-exterior-paint-humid-climate', 'how-to-choose-a-painting-contractor']}
+        title="Painting tips and cost guides"
+        subtitle="Helpful reading from the Paint-Techs team, from pricing to picking the right paint."
+        background="bg-white"
+      />
       <WhatsAppCTA />
     </>
   );

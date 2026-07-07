@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
 import JsonLd from '@/components/seo/JsonLd';
 import { generateProjectSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import RelatedArticles from '@/components/sections/RelatedArticles';
 
 const projectImages = [
   {
@@ -317,6 +318,11 @@ export default function CabinetRefinishingNocatee() {
           </div>
         </div>
       </section>
+
+      <RelatedArticles
+        slugs={['best-white-cabinet-paint-colors', 'cabinet-painting-vs-replacement-cost-comparison', 'how-to-choose-paint-colors-for-your-home']}
+        subtitle="Cabinet painting tips and cost guides for Nocatee homeowners."
+      />
 
       {/* Lightbox */}
       {lightboxOpen && (

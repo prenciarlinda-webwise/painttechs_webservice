@@ -56,7 +56,7 @@ export default function About() {
               Jacksonville&apos;s Trusted Painting Professionals
             </h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              Paint-Techs LLC is a locally owned and operated painting company serving Jacksonville and Northeast Florida. We take pride in delivering exceptional painting services with a focus on quality, reliability, and customer satisfaction.
+              Paint-Techs LLC is a locally owned and operated painting company and painting contractor serving Jacksonville and Northeast Florida. We take pride in delivering exceptional painting services with a focus on quality, reliability, and customer satisfaction.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Our experienced team handles projects of all sizes, from single-room refreshes to complete interior and exterior transformations. We use premium paints designed for Florida&apos;s unique climate and always prepare surfaces properly for lasting results.

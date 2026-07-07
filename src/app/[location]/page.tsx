@@ -13,6 +13,7 @@ import GoogleReviewsEmbed from '@/components/features/GoogleReviewsEmbed';
 import ServiceInLocation from '@/components/sections/ServiceInLocation';
 import WhyHireSection from '@/components/sections/WhyHireSection';
 import ServicesShowcase from '@/components/sections/ServicesShowcase';
+import RelatedArticles from '@/components/sections/RelatedArticles';
 import JsonLd from '@/components/seo/JsonLd';
 import {
   generateLocationBusinessSchema,
@@ -384,6 +385,11 @@ export default async function LocationPage({ params }: LocationPageProps) {
           </Container>
         </section>
       )}
+
+      <RelatedArticles
+        slugs={['house-painting-cost', 'best-time-of-year-to-paint-house', 'how-to-choose-a-painting-contractor']}
+        subtitle={`Painting tips and cost guides for ${locationData.name} homeowners.`}
+      />
 
       <WhatsAppCTA
         title={`Ready to repaint your ${locationData.name} home?`}

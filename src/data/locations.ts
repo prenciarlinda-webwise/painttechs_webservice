@@ -132,9 +132,13 @@ We cover every Duval County ZIP code, including 32202 downtown, 32204-32210 in R
       'Same-day free estimates available',
     ],
     neighborhoods: ['Riverside', 'Avondale', 'San Marco', 'Mandarin', 'Southside', 'Arlington', 'Beaches', 'Northside', 'Westside', 'Ortega', 'Springfield', 'Murray Hill', 'Baymeadows', 'Town Center', 'Lakewood', 'San Jose'],
-    metaTitle: 'Jacksonville House Painters - (904) 762-7062 - Paint-Techs LLC',
-    metaDescription: 'House painters in Jacksonville, FL — 5★ rated, 52 Google reviews. Interior, exterior, cabinet & commercial painting across Duval County. Evening estimates until 10 PM. Free quotes: (904) 762-7062',
-    keywords: ['jacksonville painters', 'painters jacksonville fl', 'house painters jacksonville', 'jacksonville house painters', 'interior painter jacksonville fl', 'exterior painters jacksonville fl', 'painting companies jacksonville', 'jacksonville painting company', 'painters near me jacksonville'],
+    // Retargeted 2026-07-06 to fix cannibalization with the home page, which already
+    // ranks better on the broad "Jacksonville painters/painting contractors" cluster
+    // (SEMrush: home pos 25-42 vs. this page pos 58-83 on the same queries). This page
+    // now targets the neighborhood-level Duval County angle instead of duplicating home.
+    metaTitle: 'Jacksonville Neighborhood House Painters - Paint-Techs LLC',
+    metaDescription: 'Jacksonville house painters for every Duval County neighborhood: Riverside, San Marco, Mandarin. 5-star rated, 52 reviews. Free quotes: (904) 762-7062',
+    keywords: ['jacksonville neighborhood painters', 'duval county house painters', 'duval county painting contractor', 'riverside san marco painters', 'mandarin house painters jacksonville', 'painters by neighborhood jacksonville', 'southside arlington painters'],
   },
   {
     name: 'Nocatee',
@@ -379,9 +383,14 @@ Our Atlantic Beach painting service covers ZIP code 32233 across every neighborh
       'Local knowledge and quick response',
     ],
     neighborhoods: ['Atlantic Beach', 'Selva Marina', 'Plaza'],
+    // Tightened metaDescription 2026-07-07 to include the literal "painting services
+    // atlantic beach" phrase (was ranking pos 24, KD 5, the H2 already targets it well,
+    // this is reinforcement, not a cannibalization fix — jacksonville-beach's incidental
+    // mention of "Atlantic Beach" as a neighboring service area ranks a distant pos 69
+    // for the same term, not a real competing signal).
     metaTitle: 'Atlantic Beach House Painters - (904) 762-7062 - Paint-Techs',
-    metaDescription: 'Expert painters serving Atlantic Beach, FL. Coastal painting specialists for beach homes. Quality work, fair prices. Call Paint-Techs: (904) 762-7062',
-    keywords: ['atlantic beach painters', 'painting atlantic beach fl', 'atlantic beach painting services', 'painters near atlantic beach'],
+    metaDescription: 'Painting services in Atlantic Beach, FL from a coastal home specialist. Salt-resistant exterior systems, fair pricing. Call Paint-Techs: (904) 762-7062',
+    keywords: ['atlantic beach painters', 'painting atlantic beach fl', 'painting services atlantic beach', 'atlantic beach painting services', 'painters near atlantic beach'],
   },
   {
     name: 'St. Augustine',

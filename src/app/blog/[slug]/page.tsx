@@ -6,7 +6,7 @@ import { Container, Card, Button } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
 import JsonLd from '@/components/seo/JsonLd';
-import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { generateArticleSchema, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema';
 import { blogPosts, getBlogPostBySlug, getRecentPosts } from '@/data/blog-posts';
 import { BUSINESS_INFO, getWhatsAppLink, getPhoneLink } from '@/lib/constants';
 
@@ -73,8 +73,14 @@ function renderInline(text: string) {
       parts.push(<strong key={match.index} className="text-navy-800 font-semibold">{match[2]}</strong>);
     } else if (match[3] && match[4]) {
       // Link
+      const isExternal = /^https?:\/\//.test(match[4]);
       parts.push(
-        <Link key={match.index} href={match[4]} className="text-teal-600 hover:text-teal-700 underline decoration-teal-300 hover:decoration-teal-500 transition-colors">
+        <Link
+          key={match.index}
+          href={match[4]}
+          {...(isExternal ? { target: '_blank', rel: 'noopener' } : {})}
+          className="font-medium text-teal-600 underline decoration-2 decoration-teal-400 underline-offset-2 hover:text-teal-700 hover:decoration-teal-600 transition-colors"
+        >
           {match[3]}
         </Link>
       );
@@ -96,7 +102,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const recentPosts = getRecentPosts(4).filter((p) => p.slug !== slug).slice(0, 3);
-  const headings = extractHeadings(post.content);
+  const headings = [
+    ...extractHeadings(post.content),
+    ...(post.faqs && post.faqs.length > 0
+      ? [{ id: 'frequently-asked-questions', text: 'Frequently asked questions' }]
+      : []),
+  ];
   const publishDate = new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   const updateDate = new Date(post.updatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
@@ -133,6 +144,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           { name: post.title, url: `${BUSINESS_INFO.website}/blog/${slug}` },
         ])}
       />
+      {post.faqs && post.faqs.length > 0 && (
+        <JsonLd data={generateFAQSchema(post.faqs)} />
+      )}
 
       <Breadcrumbs
         items={[
@@ -214,7 +228,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
 
               {/* Rendered Content */}
-              <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg max-w-none prose-a:font-medium prose-a:text-teal-600 prose-a:underline prose-a:decoration-2 prose-a:decoration-teal-400 prose-a:underline-offset-2 hover:prose-a:text-teal-700">
                 {(() => {
                   // First pass: collapse consecutive pipe-delimited lines into table
                   // blocks so the line-by-line renderer below can emit a single <table>.
@@ -376,6 +390,36 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   );
                 })}
               </div>
+
+              {/* FAQ accordion — renders from post.faqs and mirrors the FAQPage schema */}
+              {post.faqs && post.faqs.length > 0 && (
+                <div className="mt-12">
+                  <h2 id="frequently-asked-questions" className="text-2xl font-bold text-navy-800 mb-4 scroll-mt-24">
+                    Frequently asked questions
+                  </h2>
+                  <div className="space-y-3">
+                    {post.faqs.map((faq, fi) => (
+                      <details
+                        key={fi}
+                        className="group rounded-xl border border-gray-200 bg-gray-50 px-5 py-4 [&_summary]:list-none"
+                      >
+                        <summary className="flex cursor-pointer items-center justify-between gap-3 font-semibold text-navy-800">
+                          <span>{faq.question}</span>
+                          <svg
+                            className="h-5 w-5 flex-shrink-0 text-teal-600 transition-transform group-open:rotate-180"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </summary>
+                        <p className="mt-3 text-gray-700 leading-relaxed">{renderInline(faq.answer)}</p>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Tags */}
               <div className="mt-8 pt-6 border-t border-gray-200">
