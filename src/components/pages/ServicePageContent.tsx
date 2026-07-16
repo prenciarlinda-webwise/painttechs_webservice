@@ -6,6 +6,7 @@ import PricingSnapshot from '@/components/sections/PricingSnapshot';
 import RelatedArticles from '@/components/sections/RelatedArticles';
 import JsonLd from '@/components/seo/JsonLd';
 import QuoteFormButton from '@/components/features/QuoteFormButton';
+import StillLookingPopup from '@/components/features/StillLookingPopup';
 import { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { servicesData, getServiceBySlug } from '@/data/services';
 import { BUSINESS_INFO, SERVICE_AREAS } from '@/lib/constants';
@@ -463,6 +464,8 @@ export default function ServicePageContent({ slug }: ServicePageContentProps) {
         subtitle="Contact Paint-Techs LLC today. We'll provide a detailed quote and answer all your questions."
         message={`Hi! I'm interested in ${service.name} services. Can I get a free quote?`}
       />
+
+      <StillLookingPopup promoTag={`still-looking-${slug}`} />
     </>
   );
 }

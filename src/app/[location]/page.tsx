@@ -9,6 +9,7 @@ import QuickQuoteForm from '@/components/features/QuickQuoteForm';
 import PaintChipFAQ from '@/components/features/PaintChipFAQ';
 import TrustBadgeRow from '@/components/features/TrustBadgeRow';
 import StickyMobileCallBar from '@/components/features/StickyMobileCallBar';
+import StillLookingPopup from '@/components/features/StillLookingPopup';
 import GoogleReviewsEmbed from '@/components/features/GoogleReviewsEmbed';
 import ServiceInLocation from '@/components/sections/ServiceInLocation';
 import WhyHireSection from '@/components/sections/WhyHireSection';
@@ -400,6 +401,8 @@ export default async function LocationPage({ params }: LocationPageProps) {
       <StickyMobileCallBar
         whatsappMessage={`Hi! I'm looking for painting services in ${locationData.name}. Can I get a free quote?`}
       />
+
+      <StillLookingPopup locationName={locationData.name} promoTag={`still-looking-${locationData.slug}`} />
     </>
   );
 }
