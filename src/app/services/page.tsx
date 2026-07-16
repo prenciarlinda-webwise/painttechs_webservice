@@ -35,6 +35,10 @@ const servicesPageFAQs = [
     question: 'How much do painting services cost in Jacksonville?',
     answer: 'Interior painting typically runs $3-7 per square foot, exterior painting $4-9 per square foot, and cabinet refinishing $80-150 per door. Most whole-house projects in Jacksonville fall between $3,500 and $12,000 depending on size, prep, and paint line. Every Paint-Techs LLC estimate is free and itemized so you can compare against other painting services in Jacksonville.',
   },
+  {
+    question: 'Are Paint-Techs LLC local painters for residential painting in Jacksonville?',
+    answer: 'Yes — Paint-Techs LLC is a team of local painters based in Jacksonville, FL, not a national franchise. We provide residential painting services for interior, exterior, and cabinet projects throughout Duval County and Northeast Florida, with the same in-house crew handling every job from estimate to final walkthrough.',
+  },
 ];
 
 const serviceImages: Record<string, string> = {

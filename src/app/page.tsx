@@ -53,13 +53,13 @@ const homepageFAQs = [
 
 export const metadata: Metadata = {
   title: 'Jacksonville Painters - (904) 762-7062 - Paint-Techs LLC',
-  description: 'Top-rated Jacksonville painters offering professional house painting services. Interior, exterior & cabinet painting. Licensed, insured, 5-star rated. Free estimates!',
+  description: "Jacksonville's top-rated painting company and painting contractors for interior, exterior & cabinet painting. Licensed, insured, 5-star rated. Free estimates!",
   alternates: {
     canonical: BUSINESS_INFO.website,
   },
   openGraph: {
     title: 'Jacksonville Painters - (904) 762-7062 - Paint-Techs LLC',
-    description: 'Top-rated Jacksonville painters offering professional house painting services. Interior, exterior & cabinet painting. Licensed, insured, 5-star rated. Free estimates!',
+    description: "Jacksonville's top-rated painting company and painting contractors for interior, exterior & cabinet painting. Licensed, insured, 5-star rated. Free estimates!",
     url: BUSINESS_INFO.website,
     siteName: BUSINESS_INFO.name,
     locale: 'en_US',
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jacksonville Painters - (904) 762-7062 - Paint-Techs LLC',
-    description: 'Top-rated Jacksonville painters offering professional house painting services. Free estimates!',
+    description: "Jacksonville's top-rated painting company and painting contractors. Free estimates!",
   },
   other: {
     'geo.region': 'US-FL',

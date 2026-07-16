@@ -85,13 +85,17 @@ export const SERVICE_AREAS = [
   { name: 'Yulee', slug: 'yulee', priority: false },
 ] as const;
 
+// Ordered by project priority, not alphabetically: commercial/apartment and large
+// residential exteriors lead (biggest-ticket work), cabinet and pool deck are last
+// (small-ticket jobs we no longer want to lead with). This order cascades to the
+// homepage grid, header/footer nav, and quote-form service pickers.
 export const SERVICES = [
   {
-    id: 'interior-painting',
-    name: 'Interior Painting',
-    shortDescription: 'Transform your indoor spaces with professional interior painting services.',
-    slug: 'interior-painting',
-    icon: 'interior',
+    id: 'commercial-painting',
+    name: 'Commercial Painting',
+    shortDescription: 'Professional painting solutions for businesses, apartment complexes, and commercial properties.',
+    slug: 'commercial-painting',
+    icon: 'commercial',
   },
   {
     id: 'exterior-painting',
@@ -99,6 +103,13 @@ export const SERVICES = [
     shortDescription: 'Protect and beautify your home\'s exterior with expert painting.',
     slug: 'exterior-painting',
     icon: 'exterior',
+  },
+  {
+    id: 'interior-painting',
+    name: 'Interior Painting',
+    shortDescription: 'Transform your indoor spaces with professional interior painting services.',
+    slug: 'interior-painting',
+    icon: 'interior',
   },
   {
     id: 'cabinet-painting',
@@ -113,13 +124,6 @@ export const SERVICES = [
     shortDescription: 'Professional pool deck painting and staining with cool deck coatings for Florida homes.',
     slug: 'pool-deck-painting-staining',
     icon: 'pool',
-  },
-  {
-    id: 'commercial-painting',
-    name: 'Commercial Painting',
-    shortDescription: 'Professional painting solutions for businesses and commercial properties.',
-    slug: 'commercial-painting',
-    icon: 'commercial',
   },
 ] as const;
 

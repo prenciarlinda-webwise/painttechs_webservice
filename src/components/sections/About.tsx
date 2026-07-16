@@ -53,7 +53,7 @@ export default function About() {
               About Paint-Techs LLC
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-6">
-              Jacksonville&apos;s Trusted Painting Professionals
+              Jacksonville&apos;s trusted painting company and contractor team
             </h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
               Paint-Techs LLC is a locally owned and operated painting company and painting contractor serving Jacksonville and Northeast Florida. We take pride in delivering exceptional painting services with a focus on quality, reliability, and customer satisfaction.
