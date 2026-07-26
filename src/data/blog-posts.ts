@@ -5662,6 +5662,214 @@ A one-bedroom apartment typically runs $500 to $900 for a full two-coat repaint,
     metaTitle: "Rental Property Turnover Painting: A Landlord's Guide (2026)",
     metaDescription: 'Learn how often to repaint rental units, what sheen holds up best, per-unit costs, and how Paint-Techs LLC speeds up turnover painting in 2026.',
   },
+  {
+    id: '37',
+    slug: 'home-remodeling-checklist',
+    title: '9 Things to Know Before You Start a Home Remodel (2026)',
+    excerpt: 'A practical checklist for homeowners before a remodel: realistic budgeting, trade sequencing, permits, debris removal, and why the painting contractor is always scheduled last.',
+    featuredImage: '/images/hero-painting-jacksonville-fl-2.webp',
+    faqs: [
+      {
+        question: 'Do I need a permit to remodel my home in Jacksonville?',
+        answer: 'Structural changes, electrical and plumbing rework, additions, and most window or roofline changes need a permit through the City of Jacksonville Building Inspection Division. Cosmetic work like painting, flooring, and cabinet refacing typically does not require a permit. Homeowners can pull their own permit for their primary residence, but most hire a licensed general contractor to manage it.',
+      },
+      {
+        question: 'What order should home renovation trades happen in?',
+        answer: 'Demolition comes first, followed by structural and framing work, then electrical, plumbing, and HVAC rough-in before walls close up. Drywall, cabinets, and flooring underlayment come next, paint usually happens in two passes around that stage, and final flooring, trim, and fixtures finish the job. Skipping this order is the most common cause of remodel rework.',
+      },
+      {
+        question: 'How much contingency should I budget for a home remodel?',
+        answer: 'Add 10 to 20 percent on top of your total estimated project cost as a contingency fund before you start. That budget covers issues that only show up once walls are open, such as rotted subfloor, outdated wiring, or a structural beam that needs reinforcement. Projects without a contingency line are the most likely to stall halfway through.',
+      },
+      {
+        question: 'Should painting happen before or after a kitchen remodel?',
+        answer: 'Both. Walls and ceilings usually get a primer coat and sometimes a first finish coat before new flooring and cabinets go in, so drips land on subfloor instead of finished surfaces. The final coat, trim work, and touch-ups happen after cabinets, countertops, and flooring are installed so the painter can cut in cleanly around everything permanent.',
+      },
+    ],
+    content: `Most home remodels blow their budget and their timeline for the same two reasons: trades get scheduled out of order, and nobody plans for where weeks of demo debris and dust are going to go. Before you sign a single contract, it helps to understand how the trades fit together, because the sequence you hire people in, right down to when you book [exterior painting services](/exterior-painting), affects your final bill more than almost any single material choice.
+
+![Home remodel in progress ahead of the final paint pass in Jacksonville, FL](/images/hero-painting-jacksonville-fl-2.webp)
+
+## Set a real budget, then add a contingency line
+
+Whole-home remodels in Northeast Florida typically run $50,000 to $150,000 depending on scope, while a kitchen-only remodel usually lands between $25,000 and $60,000 and a bathroom remodel between $12,000 and $30,000. Layer a full interior repaint on top of a kitchen or whole-home project and budget another $3,500 to $9,000 depending on square footage and paint line (our [house painting cost guide](/blog/house-painting-cost) breaks this down room by room).
+
+Contractors and remodeling associations generally agree on one number: add 10 to 20 percent on top as a contingency line before you start. That money covers the things nobody sees until the walls are open, rotted subfloor under a 1990s kitchen, outdated wiring behind a wall you were only supposed to skim coat, or a structural beam that needs reinforcing once a load-bearing wall comes down. Homeowners who skip the contingency line are the ones who stop a project halfway through because a surprise ate the whole budget.
+
+## Get the trade order right, because it decides your timeline more than anything else
+
+The order trades work in during a remodel is almost always the same, and skipping ahead is the single biggest cause of rework. Demolition comes first, followed by structural and framing changes, then rough-in work: electrical, plumbing, and HVAC, all before anything gets closed up behind drywall. Drywall and taping come next, then cabinets and flooring underlayment go in.
+
+Paint usually happens twice. A primer coat, and sometimes a first finish coat, goes on walls and ceilings before flooring is installed, so drips and overspray land on subfloor instead of new hardwood or tile. The final coat and all the trim, door, and touch-up work for the [interior repaint](/interior-painting) happens after flooring, cabinets, and fixtures are in, so the crew can cut in cleanly around everything that is now permanent. Book your painting contractor into the schedule at both points from day one instead of calling around once the drywall crew finishes, because the good crews book out 2 to 4 weeks in this market.
+
+## Permits and inspections you cannot skip in Jacksonville
+
+Not every remodel needs a permit, but more projects need one than most homeowners expect. Structural changes, moving or removing load-bearing walls, electrical and plumbing rework, additions, and most window or roofline changes all require a permit and inspection through the City of Jacksonville [Building Inspection Division](https://www.jacksonville.gov/departments/public-works/building-inspection-division/residential-permits). Cosmetic work like painting, flooring, and cabinet refacing typically does not require one.
+
+Homeowners can pull their own permits for their primary residence if their name is on the deed, but most people hire a licensed general contractor to handle permitting because a missed inspection can delay a project by weeks. Skipping a required permit is worse than the delay itself: it can complicate a future home sale when the buyer's inspector or the title company asks for permit history on a renovated kitchen or an added bathroom.
+
+## Where all that demolition debris actually goes
+
+A single kitchen gut can generate 2 to 4 tons of debris, cabinets, countertops, flooring, and old fixtures, and a whole-home remodel can produce two or three times that. Most homeowners underestimate this until the second dumpster trip of the week. Renting a 15- or 20-yard roll-off from a [trusted dumpster rental in Jacksonville, Fl](https://www.904dumpster.com/) for the demo and rough-in phase keeps the job site clean, keeps contractors from tripping over debris piles, and is almost always cheaper than paying a crew to haul truckloads to the landfill themselves.
+
+Order the dumpster a few days before demo starts, not the morning of, and plan for it to sit through the heaviest debris-producing phases: demo, drywall tear-out, and flooring removal. Most residential remodels only need the bin for 7 to 14 days even on a full-home project.
+
+## Living in the house during the remodel
+
+Whole-home remodels rarely require moving out, but they do require zoning your life around the work. Most crews recommend closing off one bathroom and one functional kitchen area, even a folding table with a microwave and mini-fridge, so you are not without basic function for weeks. Dust containment barriers, plastic sheeting over doorways, and a dedicated entrance for the crew that avoids your main living space all reduce daily disruption significantly.
+
+Remodels that involve painting typically work in zones, one section closed off at a time, so most of the house stays usable while work continues elsewhere. Ask any contractor you hire, painters included, how they zone a job before you sign, not after.
+
+## Common remodel mistakes that cost the most time
+
+The remodels that run longest almost always trace back to the same handful of mistakes. Ordering custom cabinets, countertops, or tile before confirming lead times is the biggest one: a quartz slab or a custom vanity can take 4 to 8 weeks to arrive, and a crew standing around waiting on materials still costs money even when nobody is working. Order long-lead items the day your design is finalized, not the week before installation.
+
+Choosing paint colors in isolation is another common misstep. A color that looks right on a paint chip under showroom lighting can read completely differently against new flooring, countertops, and cabinet hardware once they are all in the room together. Whenever possible, sample paint colors on an actual wall after flooring and cabinet samples are on site, not before demo.
+
+Protecting finished work from the trades that come after it also gets skipped more often than it should. Once new flooring is down, cover it before painters, electricians, or trim carpenters walk back through with tools and ladders. A scratched floor or a paint drip on new tile costs far more to fix after the fact than a few rolls of protective floor paper cost up front.
+
+Finally, walk the full punch list, room by room, before making a final payment to any trade, painting included. A punch list walkthrough catches touch-ups, missed outlets, and uneven caulk lines while the crew is still on site and able to fix them the same day, instead of becoming a second trip two weeks later.
+
+## DIY, general contractor, or hiring trades directly
+
+For a single-trade project, a repaint, a cabinet refinish, a pool deck resurface, hiring that trade directly almost always costs less than routing it through a general contractor's markup, which typically runs 10 to 20 percent. For a multi-trade remodel touching structural, electrical, plumbing, and finishes all at once, a general contractor earns that markup by coordinating the sequence above so trades are not waiting on each other or, worse, working over each other's finished work.
+
+If painting is the only trade left standing between you and a finished remodel, [Paint-Techs LLC](/about), run by owner Vitor and an in-house crew rather than subcontractors, can step in directly for the interior repaint, exterior refresh, or cabinet refinishing that closes out the project. For guidance on vetting any painting contractor, ours or otherwise, see [how to choose a painting contractor](/blog/how-to-choose-a-painting-contractor).
+
+[Call Paint-Techs LLC for a free painting quote in Jacksonville](tel:+19047627062) once your remodel timeline is set, and we will build the painting schedule around your other trades instead of making you work around ours.
+
+## Frequently asked questions
+
+**Do I need a permit to remodel my home in Jacksonville?**
+
+Structural changes, electrical and plumbing rework, additions, and most window or roofline changes need a permit through the City of Jacksonville Building Inspection Division. Cosmetic work like painting, flooring, and cabinet refacing typically does not require a permit. Homeowners can pull their own permit for their primary residence, but most hire a licensed general contractor to manage it.
+
+**What order should home renovation trades happen in?**
+
+Demolition comes first, followed by structural and framing work, then electrical, plumbing, and HVAC rough-in before walls close up. Drywall, cabinets, and flooring underlayment come next, paint usually happens in two passes around that stage, and final flooring, trim, and fixtures finish the job. Skipping this order is the most common cause of remodel rework.
+
+**How much contingency should I budget for a home remodel?**
+
+Add 10 to 20 percent on top of your total estimated project cost as a contingency fund before you start. That budget covers issues that only show up once walls are open, such as rotted subfloor, outdated wiring, or a structural beam that needs reinforcement. Projects without a contingency line are the most likely to stall halfway through.
+
+**Should painting happen before or after a kitchen remodel?**
+
+Both. Walls and ceilings usually get a primer coat and sometimes a first finish coat before new flooring and cabinets go in, so drips land on subfloor instead of finished surfaces. The final coat, trim work, and touch-ups happen after cabinets, countertops, and flooring are installed so the painter can cut in cleanly around everything permanent.`,
+    category: 'Home Improvement',
+    tags: ['home remodeling', 'renovation checklist', 'remodeling budget', 'home improvement', 'Jacksonville renovation'],
+    author: 'Paint-Techs Team',
+    publishedAt: '2026-07-26',
+    updatedAt: '2026-07-26',
+    readingTime: '8 min read',
+    metaTitle: '9 Things to Know Before You Start a Home Remodel (2026)',
+    metaDescription: 'A practical checklist before you start a home remodel: budget, trade order, permits, and debris removal, plus why painting always goes last.',
+  },
+  {
+    id: '38',
+    slug: 'commercial-remodeling-checklist',
+    title: '8 Things to Know Before a Commercial Remodel (2026)',
+    excerpt: 'What business owners need to know before a commercial remodel: TI budgets, permits and certificate of occupancy, ADA compliance, staying open during construction, and debris removal.',
+    featuredImage: '/images/jacksonville-commercial-painting-service.webp',
+    faqs: [
+      {
+        question: 'How long does a commercial remodel take?',
+        answer: 'A single-suite office or retail buildout typically takes 6 to 12 weeks from permit approval to opening, while a restaurant buildout with kitchen equipment and a change of use often runs 3 to 6 months. Permitting timelines, occupied-space phasing, and equipment lead times are the most common causes of delay beyond the construction work itself.',
+      },
+      {
+        question: 'Do commercial remodels require a certificate of occupancy?',
+        answer: 'A new certificate of occupancy is typically required when a space changes use, such as retail converting to a restaurant, or when structural, electrical, plumbing, or HVAC systems are significantly altered. Cosmetic updates like painting, flooring, or fixture swaps inside the same use classification usually do not trigger a new CO, but confirming with the City of Jacksonville Building Inspection Division before assuming is worth the phone call.',
+      },
+      {
+        question: 'Can commercial painting happen while the business stays open?',
+        answer: 'Yes. Commercial painting is one of the easiest trades to schedule around business hours because crews can work nights or weekends using fast-dry, low-VOC coatings that clear odor before the next shift or opening. Phased painting, one section or floor at a time, lets the rest of the business keep operating normally throughout the project.',
+      },
+      {
+        question: 'What is the difference between a commercial remodel and a tenant improvement?',
+        answer: 'A tenant improvement (TI) is a buildout inside a leased space, usually funded partly by a landlord allowance of $20 to $75 per square foot, where the tenant finishes everything inside the lease line. A commercial remodel of a building you own has no landlord allowance to offset costs but gives you full control over structural changes and long-term finish decisions without lease restrictions.',
+      },
+    ],
+    content: `A commercial remodel has one constraint a home remodel never has to think about: the business often has to keep operating through some or all of it. Getting occupancy sequencing, permits, and your finishing trades right, including when you bring in [commercial painting contractors](/commercial-painting), determines whether you finish on schedule or bleed revenue through weeks of unplanned closures.
+
+![Commercial remodel buildout ready for the final coat in Jacksonville, FL](/images/jacksonville-commercial-painting-service.webp)
+
+## Tenant improvement vs. ground-up remodel: know which one you are actually doing
+
+Most commercial buildouts are tenant improvements (TI), not ground-up remodels. In a TI, the landlord usually owns the shell and core, structure, roof, and main HVAC, and the tenant funds and manages everything inside the lease line: partition walls, finishes, fixtures, and paint. Landlords in Jacksonville commonly offer a TI allowance of $20 to $50 per square foot for a basic office buildout in a previously occupied space, and $40 to $75 per square foot for a raw, unfinished shell. Anything your buildout costs above that allowance comes out of your budget, not the landlord's.
+
+A ground-up remodel of a building you own works differently. There is no landlord allowance to offset costs, but you also have full control over structural changes, layout, and long-term finish decisions without lease restrictions. Know which category your project falls into before you price anything, because it changes who approves your scope and who is paying for what.
+
+## Budget by square foot, then add for occupied-space work
+
+General office buildouts in Jacksonville typically run $60 to $150 per square foot depending on finish level, retail buildouts run $50 to $120 per square foot, and restaurant buildouts with commercial kitchen equipment run $150 to $350 per square foot. Layer a commercial repaint on top and budget $1.50 to $4 per square foot depending on ceiling height, coating system, and how many colors and logo walls are involved.
+
+Occupied-space work, remodeling around a business that stays open, typically costs 15 to 30 percent more than the same scope in a vacant space, because crews work nights, weekends, or in small phased zones instead of running a full crew for eight straight hours. Budget for that premium up front instead of being surprised by it in a change order.
+
+## Permits and the certificate of occupancy
+
+Structural changes, electrical, plumbing, and HVAC rework, and any change of use (a retail space becoming a restaurant, for example) all require permits through the City of Jacksonville [Building Inspection Division](https://www.jacksonville.gov/departments/public-works/building-inspection-division/residential-permits), and a change of use typically requires a new certificate of occupancy before you can open. Cosmetic work like painting, flooring, and fixture swaps inside an existing use classification usually does not trigger a new CO, but it is worth confirming with the building department before you assume.
+
+Commercial permitting in Jacksonville generally takes longer than residential. Plan for 2 to 6 weeks depending on scope and how busy the department is, and build that into your opening-day timeline rather than treating it as a formality at the end.
+
+## ADA compliance triggers most business owners miss
+
+Under the [2010 ADA Standards for Accessible Design](https://www.ada.gov/law-and-regs/design-standards/2010-stds), an alteration to a primary function area of a commercial space generally has to bring the accessible route to that area, entrances, restrooms, and the path connecting them, up to current standards to the extent it is readily achievable, even if the remodel itself is only cosmetic. Restroom renovations, front counter changes, and entryway work are the most common places this gets missed, and retrofitting for compliance after the fact costs far more than designing for it during the original scope.
+
+Loop your architect or general contractor in on ADA review before finishes are selected, not after, especially for restroom and entrance work.
+
+## Staying open during construction
+
+Phased occupancy, closing and finishing one section of a space while the rest stays open to customers or staff, is how most Jacksonville retail, office, and restaurant remodels avoid a full shutdown. Temporary partition walls, dedicated contractor entrances, and HVAC isolation for dust control all make phased work possible without shutting the doors.
+
+Painting is usually the easiest trade to run around business hours because it can happen entirely at night or over a weekend using fast-dry, low-VOC coatings that clear odor before the morning shift arrives. We cover the exact scheduling approach in [how we repaint commercial buildings without closing](/blog/repaint-commercial-building-without-closing), including how a phased, after-hours schedule keeps a multi-tenant building open through a full repaint.
+
+## Debris removal on a commercial timeline
+
+Commercial demo moves fast and generates volume: dropped ceiling tile, old flooring, partition framing, and fixtures can fill a 30- or 40-yard roll-off in the first few days of a mid-size buildout. Ordering a commercial-scale dumpster from a [trusted dumpster rental in Jacksonville, Fl](https://www.904dumpster.com/) before demo starts, sized for the square footage and scope rather than guessing low, keeps the job site clear enough for other trades to keep working around it instead of waiting on debris removal.
+
+For a business staying open during the work, schedule dumpster swaps for early morning or after close, the same way you would schedule any other disruptive trade, so a truck in the parking lot is never blocking customer access during business hours.
+
+## Vendor coordination, insurance, and lien waivers
+
+A commercial remodel usually involves more subcontractors running in parallel than a home remodel. Electrical, plumbing, HVAC, flooring, millwork, and painting can all be on site in the same week, and a missed handoff between any two of them is the most common cause of a blown schedule. Confirm a single point of contact, either your general contractor or your own project manager, who tracks the sequence and flags conflicts before they become delays.
+
+Every subcontractor on a commercial job should carry general liability insurance and provide a certificate of insurance naming the property owner or tenant as an additional insured before work starts. This protects you if a trade damages existing finishes, the building envelope, or a neighboring tenant's space during the buildout.
+
+Lien waivers matter just as much as insurance. Florida's construction lien law allows subcontractors and suppliers who are not paid to file a claim against the property itself, even if the general contractor was paid in full. Collecting a signed lien waiver from each vendor as they are paid, and a final waiver at project completion, protects the property owner from a lien surfacing months after the remodel is finished and everyone has moved on to the next job.
+
+## Why commercial painting contractors go last, and why that works in your favor
+
+Paint is scheduled after flooring, fixtures, millwork, and equipment installation for the same reason it goes last in a home remodel: every other trade has the potential to scuff, drip on, or damage a finished paint job, and the reverse is rarely true. Scheduling [commercial painting](/commercial-painting) last also means your final walkthrough, brand color matching, logo walls, accent colors, is one of the last things that happens before you open, which is a useful checkpoint for catching anything else that needs a touch-up.
+
+Paint-Techs LLC, run in-house by owner [Vitor](/about) rather than a rotating subcontractor crew, builds commercial schedules around a business's actual operating hours from the first estimate, not as an afterthought once the rest of the buildout is already behind schedule.
+
+[Call Paint-Techs LLC for a free painting quote in Jacksonville](tel:+19047627062) to get commercial painting on your remodel calendar early, especially if the work has to happen around business hours.
+
+## Frequently asked questions
+
+**How long does a commercial remodel take?**
+
+A single-suite office or retail buildout typically takes 6 to 12 weeks from permit approval to opening, while a restaurant buildout with kitchen equipment and a change of use often runs 3 to 6 months. Permitting timelines, occupied-space phasing, and equipment lead times are the most common causes of delay beyond the construction work itself.
+
+**Do commercial remodels require a certificate of occupancy?**
+
+A new certificate of occupancy is typically required when a space changes use, such as retail converting to a restaurant, or when structural, electrical, plumbing, or HVAC systems are significantly altered. Cosmetic updates like painting, flooring, or fixture swaps inside the same use classification usually do not trigger a new CO, but confirming with the City of Jacksonville Building Inspection Division before assuming is worth the phone call.
+
+**Can commercial painting happen while the business stays open?**
+
+Yes. Commercial painting is one of the easiest trades to schedule around business hours because crews can work nights or weekends using fast-dry, low-VOC coatings that clear odor before the next shift or opening. Phased painting, one section or floor at a time, lets the rest of the business keep operating normally throughout the project.
+
+**What is the difference between a commercial remodel and a tenant improvement?**
+
+A tenant improvement (TI) is a buildout inside a leased space, usually funded partly by a landlord allowance of $20 to $75 per square foot, where the tenant finishes everything inside the lease line. A commercial remodel of a building you own has no landlord allowance to offset costs but gives you full control over structural changes and long-term finish decisions without lease restrictions.`,
+    category: 'Tips & Guides',
+    tags: ['commercial remodeling', 'tenant improvement', 'commercial construction', 'business renovation', 'Jacksonville commercial'],
+    author: 'Paint-Techs Team',
+    publishedAt: '2026-07-26',
+    updatedAt: '2026-07-26',
+    readingTime: '8 min read',
+    metaTitle: '8 Things to Know Before a Commercial Remodel (2026)',
+    metaDescription: 'A practical guide before a commercial remodel: budgets by square foot, permits, ADA compliance, staying open, and why commercial painters go last.',
+  },
 ];
 
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {

@@ -91,7 +91,7 @@ Whether you're looking for interior house painting near me, need specialty finis
     slug: 'exterior-painting',
     heroTitle: 'Exterior House Painters Jacksonville FL - Exterior Painting',
     heroSubtitle: 'Looking for exterior house painters in Jacksonville, FL? Paint-Techs LLC delivers UV-resistant exterior painting built for Florida sun, salt air, and humidity. 5-year workmanship warranty.',
-    description: 'Paint-Techs LLC provides professional exterior painting services in Jacksonville, FL. Our exterior house painters specialize in residential exterior painting with weather-resistant coatings that protect your home from Florida\'s UV rays, salt air, and humidity. As trusted exterior painting contractors near you, we deliver quality exterior home painting throughout Northeast Florida.',
+    description: 'Paint-Techs LLC provides professional exterior painting services in Jacksonville, FL. Our exterior house painters specialize in residential exterior painting with weather-resistant coatings that protect your home from Florida\'s UV rays, salt air, and humidity. As trusted exterior painters in Jacksonville, FL, we deliver quality exterior home painting throughout Northeast Florida.',
     image: '/images/exterior-painting-nocatee-fl-1.webp',
     imageAlt: 'Exterior painting contractor Nocatee FL',
     longDescription: `## Why Jacksonville Homes Need Specialized Exterior Painting

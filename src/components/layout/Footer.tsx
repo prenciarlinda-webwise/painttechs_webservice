@@ -199,6 +199,9 @@ export default function Footer() {
               <Link href="/sitemap-page" title="Sitemap - Paint-Techs LLC Jacksonville Painters" className="text-gray-500 hover:text-orange-400 transition-colors">
                 Sitemap
               </Link>
+              <a href="/llms.txt" title="AI/LLM reference file for Paint-Techs LLC" className="text-gray-500 hover:text-orange-400 transition-colors">
+                AI Info
+              </a>
             </div>
           </div>
         </Container>
