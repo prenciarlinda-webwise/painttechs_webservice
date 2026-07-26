@@ -256,7 +256,7 @@ Rinse the exterior once or twice a year to remove salt and mildew spores, especi
 
 ---
 
-Not sure which product or color is right for your siding? Paint-Techs LLC gives free, no-obligation exterior assessments across [Jacksonville](/jacksonville-house-painters) and Northeast Florida and recommends the right system for your specific walls. [Contact us](/contact) or call (904) 762-7062 to get started.
+Not sure which product or color is right for your siding? Paint-Techs LLC gives free, no-obligation [exterior painting](/exterior-painting) assessments across [Jacksonville](/jacksonville-house-painters) and Northeast Florida and recommends the right system for your specific walls. [Contact us](/contact) or call (904) 762-7062 to get started.
 `,
     category: 'Exterior Painting',
     tags: ['exterior paint', 'best exterior paint', 'coastal home paint', 'humidity', 'acrylic paint'],
@@ -653,7 +653,7 @@ Credentials and quotes do most of the work, but pay attention to how a contracto
 
 ---
 
-Looking for a painter who checks every box on this list? Paint-Techs LLC is licensed, insured, and backed by dozens of five-star reviews across [Jacksonville](/jacksonville-house-painters) and Northeast Florida. [Contact us](/contact) or call (904) 762-7062 for a free, no-obligation estimate.
+Looking for a painter who checks every box on this list? Paint-Techs LLC is licensed, insured, offers a full range of [painting services](/services), and is backed by dozens of five-star reviews across [Jacksonville](/jacksonville-house-painters) and Northeast Florida. [Contact us](/contact) or call (904) 762-7062 for a free, no-obligation estimate.
 `,
     category: 'Hiring Guides',
     tags: ['how to choose a painter', 'hiring a painting contractor', 'painting contractor', 'painter checklist'],
@@ -1298,7 +1298,7 @@ Exterior projects involve more environmental coordination than interior projects
 
 ### Debris staging (large exteriors only)
 
-If your exterior project involves significant scrape-and-replace of rotten fascia, soffit, or trim, or you're combining the paint job with a popcorn-ceiling tear-off or cabinet replacement, plan for a roll-off dumpster in the driveway during the heavy-prep days. A 10- or 15-yard residential bin from a [trusted dumpster rental in Jacksonville, Fl](https://www.904dumpster.com/) costs less than ferrying truckloads to the landfill and keeps the worksite clean for the painting phase.
+If your exterior project involves significant scrape-and-replace of rotten fascia, soffit, or trim, or you're combining the paint job with a popcorn-ceiling tear-off or cabinet replacement, plan for a roll-off dumpster in the driveway during the heavy-prep days. A 10- or 15-yard residential bin from a [trusted dumpster rental in Jacksonville, Fl](https://www.904dumpster.com/) costs less than ferrying truckloads to the landfill and keeps the worksite clean for the painting phase. If painting is just one piece of a bigger project, our [home remodeling checklist](/blog/home-remodeling-checklist) covers how to sequence trades so paint doesn't get scheduled at the wrong point.
 
 ### Pre-paint inspection
 
@@ -2483,7 +2483,7 @@ The best way to get accurate pricing is a professional assessment. Every floor i
 
 We coat garage floors across [Jacksonville](/jacksonville-house-painters), [Orange Park](/orange-park-house-painters), [Middleburg](/middleburg-house-painters), [Yulee](/yulee-house-painters), [Nocatee](/nocatee-house-painters), [Ponte Vedra Beach](/ponte-vedra-beach-house-painters), [Atlantic Beach](/atlantic-beach-house-painters), [Jacksonville Beach](/jacksonville-beach-house-painters), [St. Augustine](/st-augustine-house-painters), [Fernandina Beach](/fernandina-beach-house-painters), and the rest of our [Northeast Florida service area](/areas-we-serve), so wherever your garage is, we can usually be on-site within the week.
 
-While we're there, we can also quote any [exterior painting](/exterior-painting) you've been putting off. Many homeowners pair a garage floor coating with an exterior refresh so the whole house finishes together.
+While we're there, we can also quote any [exterior painting](/exterior-painting) you've been putting off. Many homeowners pair a garage floor coating with a broader [home remodel](/blog/home-remodeling-checklist) or an exterior refresh so the whole house finishes together.
 
 Contact Paint-Techs LLC for a free garage floor epoxy estimate. We'll assess your floor condition, discuss your options, and provide transparent pricing with no surprises.
 
@@ -4078,7 +4078,7 @@ The single biggest predictor of a finish that lasts is the prep and the spray sy
 - **Licensed, insured, and locally reviewed.** Ask for recent Jacksonville-area projects and check Google reviews.
 - **A written warranty.** Get the finish system, cure time, and workmanship warranty in writing.
 
-If you are also planning broader updates — new countertops, a tile backsplash, crown moulding, or trim work — line up the refinishing to happen after the dusty trades and before final styling. We routinely coordinate cabinet finishing around a homeowner's other remodeling contractors so the sprayed surfaces stay pristine.
+If you are also planning broader updates — new countertops, a tile backsplash, crown moulding, or trim work — line up the refinishing to happen after the dusty trades and before final styling. We routinely coordinate cabinet finishing around a homeowner's other remodeling contractors so the sprayed surfaces stay pristine, and our [home remodeling checklist](/blog/home-remodeling-checklist) walks through that trade order in more detail.
 
 ## Best cabinet color options in 2026
 
@@ -4149,7 +4149,7 @@ The IRS draws the line around whether work **betters, restores, or adapts** a pr
 - **Repair (usually deductible now).** Work that keeps the property operating in its normal condition — repainting worn walls, touching up trim, repainting between tenants.
 - **Capital improvement (usually depreciated).** Work that betters the property, restores it after major damage, or adapts it to a new use — a full remodel, an addition, or a gut restoration. Painting done as part of one of these is folded into the improvement.
 
-So the same brush stroke can be a repair or an improvement depending on the project it belongs to. Repainting a tired office is a repair; painting as the finishing step of a full tenant build-out is part of a capital improvement.
+So the same brush stroke can be a repair or an improvement depending on the project it belongs to. Repainting a tired office is a repair; painting as the finishing step of a full [tenant improvement build-out](/blog/commercial-remodeling-checklist) is part of a capital improvement.
 
 ## The depreciation life of interior painting
 
@@ -4470,7 +4470,7 @@ Choosing the right wall-and-trim pairing is the same undertone exercise covered 
 
 Paint-Techs LLC is a painting and finishing company, not a millwork installer — and that is good news if you are mid-remodel. We routinely **finish moulding and built-ins that a carpenter or remodeling contractor installs**, scheduling our spray work right after the trim goes in and the dusty trades are done. If you are searching for a carpenter in Jacksonville for the install, line up the finishing at the same time so the millwork is primed and painted promptly — bare wood trim left unfinished in Florida humidity can swell and open at the joints.
 
-The smoothest sequence on a remodel is: carpenter installs the moulding and built-ins, the trim is caulked and filled, we prime and spray-finish, and wall painting follows. Our post on [preparing your home for professional painters](/blog/preparing-your-home-for-painting) covers how we phase the work around other trades.
+The smoothest sequence on a remodel is: carpenter installs the moulding and built-ins, the trim is caulked and filled, we prime and spray-finish, and wall painting follows. Our post on [preparing your home for professional painters](/blog/preparing-your-home-for-painting) covers how we phase the work around other trades, and our [home remodeling checklist](/blog/home-remodeling-checklist) covers the full trade sequence from demo to final paint.
 
 ## What it costs
 
@@ -5311,7 +5311,7 @@ A contractor that answers all four without hesitation, and can point to a real p
 
 ## Repair expense or capital improvement: how the budget line matters
 
-How a repaint gets classified affects more than bookkeeping, it affects how quickly the project gets approved internally. Routine repainting of an existing surface is often treated as a deductible repair expense in the year it's completed, while work that's part of a larger renovation, or that changes the building's use, can be classified as a capital improvement and depreciated over years instead. That distinction is worth confirming with an accountant before finalizing a budget, and the [difference between a capital improvement and a repair](/blog/is-painting-a-capital-improvement-or-repair) is worth understanding in more detail before a project gets signed off. For a general sense of what painting costs look like before phasing and off-hours labor are factored in, [typical house painting cost](/blog/house-painting-cost) ranges are a useful starting reference, even for a commercial budget conversation.
+How a repaint gets classified affects more than bookkeeping, it affects how quickly the project gets approved internally. Routine repainting of an existing surface is often treated as a deductible repair expense in the year it's completed, while work that's part of a larger renovation, or that changes the building's use, can be classified as a capital improvement and depreciated over years instead. That distinction is worth confirming with an accountant before finalizing a budget, and the [difference between a capital improvement and a repair](/blog/is-painting-a-capital-improvement-or-repair) is worth understanding in more detail before a project gets signed off. For a general sense of what painting costs look like before phasing and off-hours labor are factored in, [typical house painting cost](/blog/house-painting-cost) ranges are a useful starting reference, even for a commercial budget conversation. If the repaint is actually one piece of a larger buildout rather than a standalone job, our [guide to commercial remodels](/blog/commercial-remodeling-checklist) covers permits, ADA compliance, and budgeting by square foot.
 
 Paint-Techs LLC has run phased, occupied-building projects across Northeast Florida since 2020, from retail strips in [Jacksonville](/jacksonville-house-painters) to office parks in [Ponte Vedra Beach](/ponte-vedra-beach-house-painters) and mixed-use buildings in [St. Augustine](/st-augustine-house-painters). Coastal humidity in this part of Florida changes how coatings cure, low-odor waterborne products still need adequate airflow to set properly, which is part of why the walkthrough includes a look at existing HVAC and window ventilation before a schedule is finalized. Business owners in Nocatee, Orange Park, and Fernandina Beach face the same core problem as a downtown Jacksonville office tower: customers and employees need the building to function normally during the work. The scheduling approach doesn't change by zip code, but local humidity, storm season timing, and each municipality's own signage or parking rules do get factored into the written plan.
 
@@ -5614,7 +5614,7 @@ That distinction is exactly why documentation matters. Keep dated, time-stamped 
 
 A landlord with one or two single-family rental homes and a property manager overseeing 40 units across three apartment buildings need very different things from a painting crew. The single-family owner mostly needs a reliable vendor who can turn one unit fast, once or twice a year, without much back-and-forth. Larger portfolios need something closer to a property management painting program: a standing price list by unit type, a crew that can rotate through multiple buildings in a set week, and a single point of contact instead of re-explaining the scope on every work order. Matching crew size and scheduling style to portfolio size is the difference between a smooth rental property turnover painting program and a bottleneck.
 
-For a 200-unit apartment complex doing rolling turnovers every month, or a commercial property manager overseeing office and retail tenants between leases, [commercial painting](/commercial-painting) services make more sense than a residential-scale crew handling one house at a time. Commercial-scale work usually means multiple units running in parallel, crews large enough to hit tight reletting deadlines, and pricing structured around volume rather than a single job. If your portfolio has grown past a handful of doors, it is worth asking a painting contractor directly whether they run a property management painting program or only quote one-off jobs.
+For a 200-unit apartment complex doing rolling turnovers every month, or a commercial property manager overseeing office and retail tenants between leases, [commercial painting](/commercial-painting) services make more sense than a residential-scale crew handling one house at a time, and if that manager is planning a larger buildout between tenants rather than a routine repaint, our [guide to commercial remodels](/blog/commercial-remodeling-checklist) covers the budgeting and permitting side of that bigger project. Commercial-scale work usually means multiple units running in parallel, crews large enough to hit tight reletting deadlines, and pricing structured around volume rather than a single job. If your portfolio has grown past a handful of doors, it is worth asking a painting contractor directly whether they run a property management painting program or only quote one-off jobs.
 
 ## Bundling turnover painting with other make-ready work
 
