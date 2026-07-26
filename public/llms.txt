@@ -4,6 +4,8 @@
 
 Paint-Techs LLC provides interior painting, exterior painting, kitchen cabinet refinishing, pool deck painting and staining, and commercial painting for homeowners and businesses across Northeast Florida. Call (904) 762-7062 for a free quote.
 
+For expanded page content, see [llms-full.txt](https://www.paint-techs.com/llms-full.txt). For a machine-readable summary, see [ai-context.json](https://www.paint-techs.com/ai-context.json). A human-readable version of this page is at [/ai](https://www.paint-techs.com/ai).
+
 ## Services
 
 - [Interior Painting](https://www.paint-techs.com/interior-painting): Wall, ceiling, trim, and door painting.

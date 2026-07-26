@@ -195,13 +195,28 @@ export default function Footer() {
                 </a>
               </p>
             </div>
-            <div className="flex gap-6 text-sm">
+            <div className="flex flex-col items-center md:items-end gap-2 text-sm">
               <Link href="/sitemap-page" title="Sitemap - Paint-Techs LLC Jacksonville Painters" className="text-gray-500 hover:text-orange-400 transition-colors">
                 Sitemap
               </Link>
-              <a href="/llms.txt" title="AI/LLM reference file for Paint-Techs LLC" className="text-gray-500 hover:text-orange-400 transition-colors">
-                AI Info
-              </a>
+              <p className="text-gray-500 text-center md:text-right">
+                For AI agents:{' '}
+                <Link href="/ai" title="AI agent resources - Paint-Techs LLC" className="text-gray-400 hover:text-orange-400 transition-colors">
+                  /ai
+                </Link>
+                {' · '}
+                <a href="/llms.txt" title="llms.txt reference file" className="text-gray-400 hover:text-orange-400 transition-colors">
+                  llms.txt
+                </a>
+                {' · '}
+                <a href="/llms-full.txt" title="llms-full.txt reference file" className="text-gray-400 hover:text-orange-400 transition-colors">
+                  llms-full.txt
+                </a>
+                {' · '}
+                <a href="/ai-context.json" title="ai-context.json structured data file" className="text-gray-400 hover:text-orange-400 transition-colors">
+                  ai-context.json
+                </a>
+              </p>
             </div>
           </div>
         </Container>

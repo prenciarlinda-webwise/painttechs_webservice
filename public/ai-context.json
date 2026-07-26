@@ -1,0 +1,101 @@
+{
+  "$schema": "https://www.paint-techs.com/ai-context.json",
+  "generatedFor": "AI agents, assistants, and answer engines",
+  "business": {
+    "name": "Paint-Techs LLC",
+    "legalName": "Paint-Techs LLC",
+    "tagline": "Professional Painting Services in Jacksonville, FL",
+    "description": "Paint-Techs LLC is Jacksonville's painting contractor offering interior, exterior, cabinet, and commercial painting services, serving Jacksonville, Nocatee, Ponte Vedra Beach, St. Augustine, and surrounding Northeast Florida areas.",
+    "foundedYear": 2020,
+    "owner": "Vitor",
+    "priceRange": "$$",
+    "contact": {
+      "phone": "(904) 762-7062",
+      "phoneE164": "+19047627062",
+      "email": "info@paint-techs.com",
+      "website": "https://www.paint-techs.com"
+    },
+    "address": {
+      "addressLocality": "Jacksonville",
+      "addressRegion": "FL",
+      "postalCode": "32246",
+      "addressCountry": "US",
+      "note": "Service Area Business — no public street address; service area covers Duval, St. Johns, Clay, and Nassau counties"
+    },
+    "geo": {
+      "latitude": 30.1729195,
+      "longitude": -81.6287255
+    },
+    "hours": {
+      "monday": "08:00-22:00",
+      "tuesday": "08:00-22:00",
+      "wednesday": "08:00-22:00",
+      "thursday": "08:00-22:00",
+      "friday": "08:00-22:00",
+      "saturday": "08:00-22:00",
+      "sunday": "08:00-22:00",
+      "display": "Daily 8:00 AM - 10:00 PM"
+    },
+    "aggregateRating": {
+      "ratingValue": 5.0,
+      "reviewCount": 52,
+      "source": "Google Business Profile"
+    },
+    "licensing": "Fully licensed and insured in the State of Florida; carries general liability insurance and workers' compensation coverage",
+    "links": {
+      "googleBusinessProfile": "https://maps.app.goo.gl/cMBt1hHzYeySz4h28",
+      "facebook": "https://www.facebook.com/p/Paint-Techs-100083284513462/"
+    }
+  },
+  "services": [
+    {
+      "name": "Commercial Painting",
+      "slug": "commercial-painting",
+      "url": "https://www.paint-techs.com/commercial-painting",
+      "description": "Professional painting solutions for businesses, apartment complexes, and commercial properties, with flexible off-hours and weekend scheduling."
+    },
+    {
+      "name": "Exterior Painting",
+      "slug": "exterior-painting",
+      "url": "https://www.paint-techs.com/exterior-painting",
+      "description": "Florida-formulated, UV- and humidity-resistant exterior house painting with a 5-year workmanship warranty."
+    },
+    {
+      "name": "Interior Painting",
+      "slug": "interior-painting",
+      "url": "https://www.paint-techs.com/interior-painting",
+      "description": "Interior wall, ceiling, trim, and door painting for homes throughout Jacksonville and Northeast Florida."
+    },
+    {
+      "name": "Cabinet Painting & Refinishing",
+      "slug": "cabinet-painting",
+      "url": "https://www.paint-techs.com/cabinet-painting",
+      "description": "Factory-smooth kitchen cabinet refinishing using HVLP spray equipment, at 50-70% savings versus cabinet replacement."
+    },
+    {
+      "name": "Pool Deck Painting & Staining",
+      "slug": "pool-deck-painting-staining",
+      "url": "https://www.paint-techs.com/pool-deck-painting-staining",
+      "description": "Heat-reflective cool deck coatings and slip-resistant pool deck painting and staining for Florida homes."
+    }
+  ],
+  "serviceAreas": [
+    { "name": "Jacksonville", "county": "Duval", "url": "https://www.paint-techs.com/jacksonville-house-painters" },
+    { "name": "Nocatee", "county": "St. Johns", "url": "https://www.paint-techs.com/nocatee-house-painters" },
+    { "name": "Ponte Vedra Beach", "county": "St. Johns", "url": "https://www.paint-techs.com/ponte-vedra-beach-house-painters" },
+    { "name": "Jacksonville Beach", "county": "Duval", "url": "https://www.paint-techs.com/jacksonville-beach-house-painters" },
+    { "name": "Atlantic Beach", "county": "Duval", "url": "https://www.paint-techs.com/atlantic-beach-house-painters" },
+    { "name": "St. Augustine", "county": "St. Johns", "url": "https://www.paint-techs.com/st-augustine-house-painters" },
+    { "name": "Fernandina Beach", "county": "Nassau", "url": "https://www.paint-techs.com/fernandina-beach-house-painters" },
+    { "name": "Middleburg", "county": "Clay", "url": "https://www.paint-techs.com/middleburg-house-painters" },
+    { "name": "Orange Park", "county": "Clay", "url": "https://www.paint-techs.com/orange-park-house-painters" },
+    { "name": "Yulee", "county": "Nassau", "url": "https://www.paint-techs.com/yulee-house-painters" }
+  ],
+  "resources": {
+    "aiLandingPage": "https://www.paint-techs.com/ai",
+    "llmsTxt": "https://www.paint-techs.com/llms.txt",
+    "llmsFullTxt": "https://www.paint-techs.com/llms-full.txt",
+    "sitemap": "https://www.paint-techs.com/sitemap.xml",
+    "blog": "https://www.paint-techs.com/blog"
+  }
+}

@@ -1,0 +1,136 @@
+# Paint-Techs LLC — Full Reference for AI Agents
+
+> Licensed and insured painting contractor serving Jacksonville, FL and Northeast Florida (Duval, St. Johns, Clay, and Nassau counties). 5.0-star rating across 52 verified Google reviews. Founded 2020. Free, on-site, written estimates daily 8 AM to 10 PM.
+
+This file is the expanded companion to [llms.txt](https://www.paint-techs.com/llms.txt) — it includes full service and location detail rather than just links, for agents and models that ingest full page content. A machine-readable version of the same facts is available at [ai-context.json](https://www.paint-techs.com/ai-context.json).
+
+## Company facts
+
+- Legal name: Paint-Techs LLC
+- Founded: 2020
+- Phone: (904) 762-7062 (call or text)
+- Email: info@paint-techs.com
+- Website: https://www.paint-techs.com
+- Service area: Jacksonville, FL and Northeast Florida — Duval, St. Johns, Clay, and Nassau counties
+- Hours: Daily 8:00 AM - 10:00 PM
+- Rating: 5.0 out of 5 stars across 52 verified Google reviews
+- Licensing: Fully licensed and insured in the State of Florida, general liability and workers' compensation coverage on every job
+- Owner: Vitor (runs the in-house crew directly, no subcontractors)
+
+## Services
+
+### Interior Painting — https://www.paint-techs.com/interior-painting
+
+Paint-Techs LLC is Jacksonville's premier interior painting company. Professional interior painters transform homes with expert craftsmanship, premium paints, and meticulous attention to detail, covering interior house painting, interior home painting, and interior residential painting throughout Jacksonville and surrounding areas.
+
+Benefits: Jacksonville's trusted interior painting contractor; premium quality paints with lasting durability; expert color consultation and matching; thorough surface preparation and priming; clean, dust-free work environment; furniture and floor protection included; detailed trim and edge work; quick turnaround with minimal disruption; full clean-up upon completion; licensed and insured.
+
+FAQs:
+- How much does interior painting cost in Jacksonville? Interior painting costs vary based on room size, ceiling height, and prep work needed. Paint-Techs provides a free, detailed estimate for every project.
+- How long does interior house painting take? Most single rooms take 1-2 days. Whole house interior painting projects typically take 3-7 days depending on size and complexity.
+- Do I need to move my furniture for interior painting? No. Large items are moved to the center of the room and covered with drop cloths.
+- What paint brands do you use? Sherwin-Williams, Benjamin Moore, and PPG, with finish recommendations based on each room's traffic level.
+- Do you offer color consultation? Yes, included with every project.
+- Are you licensed? Yes, fully licensed and insured, serving Jacksonville and all of Northeast Florida.
+
+### Exterior Painting — https://www.paint-techs.com/exterior-painting
+
+Professional exterior painting with weather-resistant coatings that protect homes from Florida's UV rays, salt air, and humidity. Trusted exterior painters in Jacksonville, FL, serving Northeast Florida with a 5-year workmanship warranty.
+
+Benefits: Florida-formulated UV and weather-resistant paints; complete surface prep (power washing, scraping, caulking, priming); expert color consultation for HOA compliance; wood rot repair and minor carpentry included; protection of landscaping, walkways, and outdoor features; mold and mildew resistant coatings standard; 5-year workmanship warranty; fully licensed and insured.
+
+FAQs:
+- How much does exterior painting cost in Jacksonville? Depends on home size, number of stories, surface condition, and prep work required. Free, detailed estimates for every project.
+- How long does exterior paint last in Florida? Typically 7-10 years with quality paint and proper prep; budget paint or poor prep may only last 3-5 years.
+- Best time of year to paint exteriors in Jacksonville? Year-round is possible; October through May offers the most consistent conditions.
+- Do you handle wood rot repair? Yes, standard part of the exterior painting service; extensive carpentry is quoted separately.
+- Can you help with HOA color approval? Yes, including Nocatee, Ponte Vedra, and World Golf Village communities.
+- Are there exterior house painters near me in Jacksonville? Yes, Paint-Techs LLC is Jacksonville-based, serving Duval County, Ponte Vedra, and St. Augustine with free on-site estimates and a 5-year workmanship warranty.
+
+### Cabinet Painting & Refinishing — https://www.paint-techs.com/cabinet-painting
+
+Professional kitchen cabinet refinishing delivering factory-smooth finishes at 50-70% savings versus cabinet replacement, using HVLP spray equipment and specialized cabinet coatings from Sherwin-Williams and Benjamin Moore.
+
+Benefits: Save 50-70% compared to cabinet replacement; factory-smooth spray finish using HVLP equipment; specialized cabinet paints that resist chips and scratches; complete kitchen transformation in 3-5 days; no demolition or countertop modifications required; unlimited color options including custom matching; hardware upgrade and soft-close hinge options; 10+ year durability with proper care.
+
+FAQs:
+- How much does cabinet painting cost in Jacksonville? Depends on kitchen size, cabinet count, and condition; typically 50-70% less than full replacement.
+- Can any type of cabinet be painted? Yes, wood, MDF, laminate, and thermofoil, assessed during a free consultation.
+- How long does cabinet refinishing take? Most kitchens are completed in 3-5 days.
+- Will painted cabinets hold up to daily use? Yes, commercial-grade cabinet coatings last 10-15 years with proper care.
+- Cabinet painting vs. cabinet refacing? Refacing replaces doors/drawer fronts and adds veneer to boxes (2-3 weeks); cabinet painting refinishes existing doors and boxes (3-5 days) at a lower cost with unlimited color options.
+
+### Commercial Painting — https://www.paint-techs.com/commercial-painting
+
+Commercial painting contractors serving offices, retail, restaurants, warehouses, and industrial buildings across Jacksonville, with flexible scheduling including nights, weekends, and off-hours to minimize business disruption.
+
+Benefits: Experienced commercial painting contractors; flexible scheduling (nights, weekends, off-hours); minimal disruption to business operations; commercial interior and exterior painting expertise; fully licensed and insured for commercial projects; specialty coatings for high-traffic areas; commercial building painting for all property types; volume discounts for large projects; strict adherence to timelines; safety compliance and clean work practices.
+
+FAQs:
+- How much does commercial painting cost in Jacksonville? Varies by project scope, surface conditions, square footage, and coating requirements; free detailed estimates provided.
+- Can commercial painters work outside business hours? Yes, evenings, nights, and weekends are routine.
+- Do you handle both interior and exterior commercial painting? Yes.
+- Are you licensed for commercial painting? Yes, fully licensed and insured with liability insurance and workers' compensation coverage.
+- What types of commercial buildings do you paint? Offices, retail, restaurants, medical facilities, warehouses, industrial buildings, and apartment/multi-unit complexes.
+- Can you match brand colors? Yes, using Sherwin-Williams, Benjamin Moore, and PPG commercial lines.
+
+### Pool Deck Painting & Staining — https://www.paint-techs.com/pool-deck-painting-staining
+
+Pool deck painting, staining, and cool deck coatings for Jacksonville homes. Heat-reflective cool deck coatings can reduce surface temperature by up to 40 degrees, keeping decks comfortable for bare feet.
+
+Benefits: Cool deck coatings reduce surface temperature by up to 40°F; slip-resistant finishes for pool safety; UV-resistant formulas prevent fading; chlorine and chemical resistant; multiple color and texture options; extends life of concrete pool decks; professional surface preparation; Florida climate expertise; protects stucco and landscaping during application; evening estimates available until 10 PM.
+
+FAQs:
+- How much does pool deck painting cost in Jacksonville? Typically $3-$8 per square foot depending on coating type, deck condition, and repairs needed.
+- How long does pool deck coating last in Florida? 5-10 years typically; cool deck coatings 8-10 years with proper care.
+- Can you paint over existing cool deck? Yes, either recoat directly or strip and recoat depending on condition.
+- How long before the pool can be used after deck painting? 24-48 hours cure before foot traffic, 3-5 days before furniture returns.
+- Do you offer slip-resistant finishes? Yes, standard on all pool deck coatings, with extra texture available for steps and diving board approaches.
+
+## Service areas
+
+### Jacksonville, FL (Duval County) — https://www.paint-techs.com/jacksonville-house-painters
+Jacksonville's trusted painting contractor since 2020, providing interior, exterior, cabinet, and commercial painting throughout Duval County.
+
+### Nocatee, FL (St. Johns County) — https://www.paint-techs.com/nocatee-house-painters
+Top-rated house painters serving Nocatee and the greater St. Johns County area, specializing in cabinet refinishing, interior, and exterior painting for luxury homes.
+
+### Ponte Vedra Beach, FL (St. Johns County) — https://www.paint-techs.com/ponte-vedra-beach-house-painters
+Premium painting services for Ponte Vedra Beach luxury homes, serving Sawgrass, Marsh Landing, TPC Sawgrass, and oceanfront properties with marine-grade coatings.
+
+### Jacksonville Beach, FL (Duval County) — https://www.paint-techs.com/jacksonville-beach-house-painters
+Salt-resistant exterior repaints and full interior refreshes for Jax Beach cottages and condos.
+
+### Atlantic Beach, FL (Duval County) — https://www.paint-techs.com/atlantic-beach-house-painters
+Specializing in 1960s coastal cottage repaints, mid-century block-home restorations, and Selva Marina-area interior projects.
+
+### St. Augustine, FL (St. Johns County) — https://www.paint-techs.com/st-augustine-house-painters
+Experienced with HARB historic district color approvals, lime-wash and coquina substrates, and modern coastal repaints.
+
+### Fernandina Beach, FL (Nassau County) — https://www.paint-techs.com/fernandina-beach-house-painters
+Amelia Island Victorian restorations, Centre Street historic repaints, and Atlantic-facing exterior work.
+
+### Middleburg, FL (Clay County) — https://www.paint-techs.com/middleburg-house-painters
+Serving Clay County rural properties along Black Creek, Two Creeks, and Pine Ridge Plantation, no rural surcharge.
+
+### Orange Park, FL (Clay County) — https://www.paint-techs.com/orange-park-house-painters
+PCS-deadline interior repaints for NAS Jacksonville military families, plus full house repaints in Fleming Island, Eagle Harbor, and Oakleaf Plantation. 10% military discount.
+
+### Yulee, FL (Nassau County) — https://www.paint-techs.com/yulee-house-painters
+Serving Yulee and Nassau County with professional painting services.
+
+## Other project and combo pages
+
+- Residential Exterior Painting in Jacksonville — https://www.paint-techs.com/residential-exterior-painting-jacksonville (real before-and-after photos, process breakdown, $4,000-15,000 pricing)
+- Cabinet Refinishing Project in Nocatee — https://www.paint-techs.com/cabinet-refinishing-nocatee (before-and-after case study)
+- Commercial Retail Renovation — https://www.paint-techs.com/commercial-retail-renovation
+
+## Company
+
+- About: https://www.paint-techs.com/about
+- Reviews: https://www.paint-techs.com/reviews
+- Project Gallery: https://www.paint-techs.com/gallery
+- Contact / Free Estimate: https://www.paint-techs.com/contact
+- FAQ: https://www.paint-techs.com/faq
+- All Service Areas: https://www.paint-techs.com/areas-we-serve
+- Blog (cost guides, color guides, how-to articles): https://www.paint-techs.com/blog
