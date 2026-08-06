@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Container, Card } from '@/components/ui';
 import { getBlogPostBySlug } from '@/data/blog-posts';
 
@@ -41,41 +40,27 @@ export default function RelatedArticles({
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => (
             <Link key={post.id} href={`/blog/${post.slug}`}>
-              <Card className="h-full group cursor-pointer p-0 overflow-hidden">
-                <div className="aspect-[16/9] relative overflow-hidden">
-                  {post.featuredImage ? (
-                    <Image
-                      src={post.featuredImage}
-                      alt={post.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-teal-400 to-teal-600" />
-                  )}
-                  <span className="absolute bottom-4 left-4 bg-white text-teal-600 text-xs font-medium px-3 py-1 rounded-full">
-                    {post.category}
-                  </span>
+              <Card className="h-full group cursor-pointer">
+                <span className="inline-block bg-teal-50 text-teal-600 text-xs font-medium px-3 py-1 rounded-full mb-4">
+                  {post.category}
+                </span>
+
+                <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                  <span>{post.readingTime}</span>
                 </div>
 
-                <div className="p-6">
-                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                    <span>{post.readingTime}</span>
-                  </div>
+                <h3 className="text-xl font-bold text-navy-800 mb-3 group-hover:text-teal-600 transition-colors line-clamp-2">
+                  {post.title}
+                </h3>
 
-                  <h3 className="text-xl font-bold text-navy-800 mb-3 group-hover:text-teal-600 transition-colors line-clamp-2">
-                    {post.title}
-                  </h3>
+                <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
 
-                  <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-
-                  <span className="inline-flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
-                    Read more
-                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </span>
-                </div>
+                <span className="inline-flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
+                  Read more
+                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
               </Card>
             </Link>
           ))}

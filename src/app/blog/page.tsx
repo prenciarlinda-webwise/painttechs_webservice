@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Container, SectionHeading, Card } from '@/components/ui';
 import Breadcrumbs from '@/components/seo/Breadcrumbs';
 import WhatsAppCTA from '@/components/features/WhatsAppCTA';
@@ -76,50 +75,31 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[...blogPosts].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()).map((post) => (
               <Link key={post.id} href={`/blog/${post.slug}`}>
-                <Card className="h-full group cursor-pointer p-0 overflow-hidden">
-                  {/* Featured Image */}
-                  <div className="aspect-[16/9] relative overflow-hidden">
-                    {post.featuredImage ? (
-                      <Image
-                        src={post.featuredImage}
-                        alt={post.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
-                        <svg className="w-16 h-16 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                    )}
-                    <span className="absolute bottom-4 left-4 bg-white text-teal-600 text-xs font-medium px-3 py-1 rounded-full">
-                      {post.category}
-                    </span>
+                <Card className="h-full group cursor-pointer">
+                  <span className="inline-block bg-teal-50 text-teal-600 text-xs font-medium px-3 py-1 rounded-full mb-4">
+                    {post.category}
+                  </span>
+
+                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                    <span>{new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                    <span>•</span>
+                    <span>{post.readingTime}</span>
                   </div>
 
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                      <span>{new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                      <span>•</span>
-                      <span>{post.readingTime}</span>
-                    </div>
+                  <h2 className="text-xl font-bold text-navy-800 mb-3 group-hover:text-teal-600 transition-colors line-clamp-2">
+                    {post.title}
+                  </h2>
 
-                    <h2 className="text-xl font-bold text-navy-800 mb-3 group-hover:text-teal-600 transition-colors line-clamp-2">
-                      {post.title}
-                    </h2>
+                  <p className="text-gray-600 mb-4 line-clamp-3">
+                    {post.excerpt}
+                  </p>
 
-                    <p className="text-gray-600 mb-4 line-clamp-3">
-                      {post.excerpt}
-                    </p>
-
-                    <span className="inline-flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
-                      Read More
-                      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </span>
-                  </div>
+                  <span className="inline-flex items-center text-teal-500 font-semibold group-hover:gap-2 transition-all">
+                    Read More
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
                 </Card>
               </Link>
             ))}
