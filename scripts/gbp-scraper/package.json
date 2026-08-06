@@ -1,0 +1,13 @@
+{
+  "name": "gbp-scraper",
+  "private": true,
+  "version": "1.0.0",
+  "description": "One-off manual research tool: scrapes public Google Maps listing data (reviews, GBP Updates/posts, profile completeness) for named competitors. Isolated from the root Next.js app's dependency tree.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}
