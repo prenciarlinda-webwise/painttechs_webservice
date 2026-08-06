@@ -22,6 +22,10 @@ const residentialExteriorFAQs = [
     question: 'What is included in a Paint-Techs residential exterior painting project?',
     answer: 'Every project includes power washing, scraping and sanding of failing paint, caulking gaps and cracks, wood-rot repair where needed, primer on bare or repaired areas, and two coats of premium UV-resistant exterior paint on siding, trim, fascia, and soffits, backed by a 5-year workmanship warranty.',
   },
+  {
+    question: 'Are there residential painters near me in Jacksonville?',
+    answer: `Yes — Paint-Techs LLC is a Jacksonville-based residential painting company, not a national franchise, so the same local crew that quotes your home also does the work. If you're comparing residential painting near me, we're licensed and insured, rated 5.0 stars across ${BUSINESS_INFO.aggregateRating.reviewCount} verified Google reviews, with free on-site estimates daily until 10 PM.`,
+  },
 ];
 
 const projectImages = [

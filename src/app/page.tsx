@@ -49,6 +49,14 @@ const homepageFAQs = [
     question: 'Do you offer free painting estimates in Jacksonville?',
     answer: `Yes. Every Paint-Techs LLC estimate is free, on-site, written, and itemized — with a fixed price (not a range) and no obligation. Estimates are available daily 8 AM to 10 PM including evenings and weekends. Call ${BUSINESS_INFO.phone} or send a WhatsApp message and we will schedule the visit within 24 hours.`,
   },
+  {
+    question: 'Are there house painters near me in Jacksonville?',
+    answer: 'Yes — Paint-Techs LLC is a Jacksonville-based house painter, not a national dispatch service, so the same local crew that gives your estimate does the work. Whether you\'re searching for a house painter near me or house painters near me, we serve Duval, St. Johns, Clay, and Nassau counties with free on-site estimates daily until 10 PM.',
+  },
+  {
+    question: 'Are there painting contractors near me in Jacksonville?',
+    answer: `Yes — Paint-Techs LLC is one of the local painting contractors and painting companies near you in Jacksonville, not a national call center. We're licensed and insured since 2020, rated 5.0 stars across ${BUSINESS_INFO.aggregateRating.reviewCount} verified Google reviews, and the same professional painters who quote your project complete the work.`,
+  },
 ];
 
 export const metadata: Metadata = {
